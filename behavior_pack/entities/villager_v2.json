@@ -28,6 +28,7 @@
           "timeout_cooldown": 8.0
         }
       },
+      
       "trade_resupply_component_group": {
         "minecraft:trade_resupply": {}
       },
@@ -740,8 +741,8 @@
           "table": "trading/economy_trades/farmer_trades.json",
           "new_screen": true,
           "persist_trades": true,
-          "cured_discount": [-25, -20],
-          "max_cured_discount": [-25, -20]
+          "cured_discount": [-100, -100],
+          "max_cured_discount": [-500, -500]
         },
         "minecraft:dweller": {
           "dwelling_type": "village",
@@ -775,8 +776,8 @@
           "table": "trading/economy_trades/fisherman_trades.json",
           "new_screen": true,
           "persist_trades": true,
-          "cured_discount": [-25, -20],
-          "max_cured_discount": [-25, -20]
+          "cured_discount": [-100, -100],
+          "max_cured_discount": [-500, -500]
         },
         "minecraft:dweller": {
           "dwelling_type": "village",
@@ -810,8 +811,8 @@
           "table": "trading/economy_trades/shepherd_trades.json",
           "new_screen": true,
           "persist_trades": true,
-          "cured_discount": [-25, -20],
-          "max_cured_discount": [-25, -20]
+          "cured_discount": [-100, -100],
+          "max_cured_discount": [-500, -500]
         },
         "minecraft:dweller": {
           "dwelling_type": "village",
@@ -845,8 +846,8 @@
           "table": "trading/economy_trades/fletcher_trades.json",
           "new_screen": true,
           "persist_trades": true,
-          "cured_discount": [-25, -20],
-          "max_cured_discount": [-25, -20]
+          "cured_discount": [-100, -100],
+          "max_cured_discount": [-500, -500]
         },
         "minecraft:dweller": {
           "dwelling_type": "village",
@@ -880,8 +881,8 @@
           "table": "trading/economy_trades/librarian_trades.json",
           "new_screen": true,
           "persist_trades": true,
-          "cured_discount": [-25, -20],
-          "max_cured_discount": [-25, -20]
+          "cured_discount": [-100, -100],
+          "max_cured_discount": [-500, -500]
         },
         "minecraft:dweller": {
           "dwelling_type": "village",
@@ -915,8 +916,8 @@
           "table": "trading/economy_trades/cartographer_trades.json",
           "new_screen": true,
           "persist_trades": true,
-          "cured_discount": [-25, -20],
-          "max_cured_discount": [-25, -20]
+          "cured_discount": [-100, -100],
+          "max_cured_discount": [-500, -500]
         },
         "minecraft:dweller": {
           "dwelling_type": "village",
@@ -950,8 +951,8 @@
           "table": "trading/economy_trades/cleric_trades.json",
           "new_screen": true,
           "persist_trades": true,
-          "cured_discount": [-25, -20],
-          "max_cured_discount": [-25, -20]
+          "cured_discount": [-100, -100],
+          "max_cured_discount": [-500, -500]
         },
         "minecraft:dweller": {
           "dwelling_type": "village",
@@ -985,8 +986,8 @@
           "table": "trading/economy_trades/armorer_trades.json",
           "new_screen": true,
           "persist_trades": true,
-          "cured_discount": [-25, -20],
-          "max_cured_discount": [-25, -20]
+          "cured_discount": [-100, -100],
+          "max_cured_discount": [-500, -500]
         },
         "minecraft:dweller": {
           "dwelling_type": "village",
@@ -1020,8 +1021,8 @@
           "table": "trading/economy_trades/weapon_smith_trades.json",
           "new_screen": true,
           "persist_trades": true,
-          "cured_discount": [-25, -20],
-          "max_cured_discount": [-25, -20]
+          "cured_discount": [-100, -100],
+          "max_cured_discount": [-500, -500]
         },
         "minecraft:dweller": {
           "dwelling_type": "village",
@@ -1055,8 +1056,8 @@
           "table": "trading/economy_trades/tool_smith_trades.json",
           "new_screen": true,
           "persist_trades": true,
-          "cured_discount": [-25, -20],
-          "max_cured_discount": [-25, -20]
+          "cured_discount": [-100, -100],
+          "max_cured_discount": [-500, -500]
         },
         "minecraft:dweller": {
           "dwelling_type": "village",
@@ -1090,8 +1091,8 @@
           "table": "trading/economy_trades/butcher_trades.json",
           "new_screen": true,
           "persist_trades": true,
-          "cured_discount": [-25, -20],
-          "max_cured_discount": [-25, -20]
+          "cured_discount": [-100, -100],
+          "max_cured_discount": [-500, -500]
         },
         "minecraft:dweller": {
           "dwelling_type": "village",
@@ -1125,8 +1126,8 @@
           "table": "trading/economy_trades/leather_worker_trades.json",
           "new_screen": true,
           "persist_trades": true,
-          "cured_discount": [-25, -20],
-          "max_cured_discount": [-25, -20]
+          "cured_discount": [-100, -100],
+          "max_cured_discount": [-500, -500]
         },
         "minecraft:dweller": {
           "dwelling_type": "village",
@@ -1160,8 +1161,8 @@
           "table": "trading/economy_trades/stone_mason_trades.json",
           "new_screen": true,
           "persist_trades": true,
-          "cured_discount": [-25, -20],
-          "max_cured_discount": [-25, -20]
+          "cured_discount": [-100, -100],
+          "max_cured_discount": [-500, -500]
         },
         "minecraft:dweller": {
           "dwelling_type": "village",
@@ -1240,22 +1241,7 @@
                 "red_nether_brick",
                 "end_bricks",
                 "red_sandstone",
-                "white_stained_glass",
-                "orange_stained_glass",
-                "magenta_stained_glass",
-                "light_blue_stained_glass",
-                "yellow_stained_glass",
-                "lime_stained_glass",
-                "pink_stained_glass",
-                "gray_stained_glass",
-                "light_gray_stained_glass",
-                "cyan_stained_glass",
-                "purple_stained_glass",
-                "blue_stained_glass",
-                "brown_stained_glass",
-                "green_stained_glass",
-                "red_stained_glass",
-                "black_stained_glass",
+                "stained_glass",
                 "glass",
                 "glowstone",
                 "prismarine",
@@ -1348,22 +1334,7 @@
                 "red_nether_brick",
                 "end_bricks",
                 "red_sandstone",
-                "white_stained_glass",
-                "orange_stained_glass",
-                "magenta_stained_glass",
-                "light_blue_stained_glass",
-                "yellow_stained_glass",
-                "lime_stained_glass",
-                "pink_stained_glass",
-                "gray_stained_glass",
-                "light_gray_stained_glass",
-                "cyan_stained_glass",
-                "purple_stained_glass",
-                "blue_stained_glass",
-                "brown_stained_glass",
-                "green_stained_glass",
-                "red_stained_glass",
-                "black_stained_glass",
+                "stained_glass",
                 "glass",
                 "glowstone",
                 "prismarine",
@@ -1487,14 +1458,6 @@
     },
 
     "components": {
-      "minecraft:equipment": {
-          "slot_drop_chance": [
-            {
-              "slot": "slot.weapon.mainhand",
-              "drop_chance": 0.0
-            }
-          ]
-        },
       "minecraft:is_hidden_when_invisible": {
       },
       "minecraft:type_family": {

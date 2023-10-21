@@ -28,7 +28,8 @@
 	  }
     ],
     "result": {
-      "item": "minecraft:magenta_stained_glass",
+      "item": "minecraft:stained_glass",
+      "data": 2,
       "count": 8
     }
   }

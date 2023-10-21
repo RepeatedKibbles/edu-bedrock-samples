@@ -32,7 +32,8 @@
       }
     ],
     "result": {
-      "item": "minecraft:lime_stained_glass_pane",
+      "item": "minecraft:stained_glass_pane",
+      "data": 5,
       "count": 8
     }
   }

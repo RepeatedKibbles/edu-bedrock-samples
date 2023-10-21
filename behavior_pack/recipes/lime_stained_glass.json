@@ -28,7 +28,8 @@
       }
     ],
     "result": {
-      "item": "minecraft:lime_stained_glass",
+      "item": "minecraft:stained_glass",
+      "data": 5,
       "count": 8
     }
   }

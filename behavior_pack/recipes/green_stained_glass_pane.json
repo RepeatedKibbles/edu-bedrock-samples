@@ -14,16 +14,19 @@
     ],
     "key": {
       "#": {
-        "item": "minecraft:green_stained_glass"
+        "item": "minecraft:stained_glass",
+        "data": 13
       }
     },
 	"unlock": [
       {
-        "item": "minecraft:green_stained_glass"
+        "item": "minecraft:stained_glass",
+        "data": 13
       }
     ],
     "result": {
-      "item": "minecraft:green_stained_glass_pane",
+      "item": "minecraft:stained_glass_pane",
+      "data": 13,
       "count": 16
     }
   }

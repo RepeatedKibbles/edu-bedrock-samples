@@ -29,7 +29,8 @@
       }
     ],
     "result": {
-      "item": "minecraft:brown_stained_glass",
+      "item": "minecraft:stained_glass",
+      "data": 12,
       "count": 8
     }
   }

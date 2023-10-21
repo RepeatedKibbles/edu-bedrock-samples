@@ -10,8 +10,7 @@
          "name" : "minecraft:the_end"
       }
    ],
-   "minecraft_version" : "1.20.30-beta.0",
-   "module_type" : "vanilla_data",
-   "name" : "mojang-dimension",
-   "vanilla_data_type" : "dimension"
+   "minecraft_version" : "1.20.10-beta.0",
+   "module_type" : "dimension",
+   "name" : "mojang-dimension"
 }

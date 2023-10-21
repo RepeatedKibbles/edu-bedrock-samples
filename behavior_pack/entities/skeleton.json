@@ -99,8 +99,7 @@
           "attack_radius": 15.0
         },
         "minecraft:shooter": {
-          "def": "minecraft:arrow",
-          "sound": "bow"
+          "def": "minecraft:arrow"
         },
         "minecraft:environment_sensor": {
           "triggers": [
@@ -185,11 +184,6 @@
         "on_death": "query.last_hit_by_player ? 5 + (query.equipment_count * Math.Random(1,3)) : 0"
       },
       "minecraft:equip_item": {
-        "excluded_items": [
-          {
-            "item": "minecraft:banner:15"
-          }
-        ]
       },
       "minecraft:collision_box": {
         "width": 0.6,
@@ -280,7 +274,6 @@
         "despawn_from_distance": {}
       },
       "minecraft:shareables": {
-        "singular_pickup": true,
         "items": [
           {
             "item": "minecraft:netherite_sword",
