@@ -6,6 +6,6 @@
         "pattern": "^(?:(?!^(minecraft):).)+:(?:.)+$",
         "type": "string"
     },
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "2059045829"
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "minecraft:custom_components v1.20.80"
 }

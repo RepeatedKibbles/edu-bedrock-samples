@@ -24,7 +24,8 @@
       }
     ],
     "result": {
-      "item": "minecraft:stone_bricks",
+      "item": "minecraft:stonebrick",
+      "data": 0,
       "count": 4
     }
   }

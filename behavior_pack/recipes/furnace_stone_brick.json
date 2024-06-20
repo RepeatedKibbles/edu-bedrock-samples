@@ -6,12 +6,13 @@
     },
     "unlock": [
       {
-        "item": "minecraft:stone_bricks"
+        "item": "minecraft:stonebrick",
+		"data": 0
       }
     ],
     "tags": ["furnace"],
-    "input": "minecraft:stone_bricks",
-    "output": "minecraft:cracked_stone_bricks"
+    "input": "minecraft:stonebrick:0",
+    "output": "minecraft:stonebrick:2"
   }
 
 }

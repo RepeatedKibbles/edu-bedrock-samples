@@ -10,12 +10,14 @@
     "priority": 2,
     "ingredients": [
       {
-        "item": "minecraft:mossy_stone_bricks"
+        "item": "minecraft:stonebrick",
+        "data": 1
       }
     ],
     "unlock": [
       {
-        "item": "minecraft:mossy_stone_bricks"
+        "item": "minecraft:stonebrick",
+        "data": 1
       }
     ],
     "result": {

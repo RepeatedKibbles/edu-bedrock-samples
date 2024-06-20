@@ -74,21 +74,11 @@
   },
 
   "instructions_text": {
-    "type": "panel",
-    "size": [ "100%", "100%c + 6px" ],
-    "controls": [
-      {
-        "inner_label": {
-          "type": "label",
-          "layer": 1,
-          "size": [ "100% - 6px", "default" ],
-          "text": "options.safeZone.description",
-          "color": "$body_text_color",
-          "anchor_to": "center",
-          "anchor_from": "center"
-        }
-      }
-    ]
+    "type": "label",
+    "layer": 1,
+    "size": [ "100%", "default" ],
+    "text": "options.safeZone.description",
+    "color": "$body_text_color"
   },
 
   "label_button@common.button": {
@@ -101,16 +91,14 @@
 
   "label_button_hover": {
     "type": "panel",
-    "size": [ "100%", "100%c + 2px" ],
+    "size": [ "100%", "100%c" ],
     "controls": [
       {
         "hover@common.focus_border_white": {
-          "size": [ "100%", "100%c + 2px" ],
+          "size": [ "100%", "100%c" ],
           "controls": [
             {
-              "button_hover_text@safe_zone.instructions_text": {
-                "size": [ "100%", "100%c + 2px" ]
-              }
+              "button_hover_text@safe_zone.instructions_text": {}
             }
           ]
         }

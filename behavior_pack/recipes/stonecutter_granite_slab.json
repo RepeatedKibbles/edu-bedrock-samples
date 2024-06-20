@@ -10,16 +10,19 @@
     "priority": 0,
     "ingredients": [
       {
-        "item": "minecraft:granite"
+        "item": "minecraft:stone",
+        "data": 1
       }
     ],
     "unlock": [
       {
-        "item": "minecraft:granite"
+        "item": "minecraft:stone",
+        "data": 1
       }
     ],
     "result": {
-      "item": "minecraft:granite_slab",
+      "item": "minecraft:double_stone_slab3",
+      "data": 6,
       "count": 2
     }
   }

@@ -10,12 +10,14 @@
     "priority": 0,
     "ingredients": [
       {
-        "item": "minecraft:stone_bricks"
+        "item": "minecraft:stonebrick",
+        "data": 0
       }
     ],
     "unlock": [
       {
-        "item": "minecraft:stone_bricks"
+        "item": "minecraft:stonebrick",
+        "data": 0
       }
     ],
     "result": {

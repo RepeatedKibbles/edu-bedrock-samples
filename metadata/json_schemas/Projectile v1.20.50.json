@@ -18,6 +18,6 @@
     "required": [
         "projectile_entity"
     ],
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "2543985138"
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "minecraft:projectile v1.20.50"
 }

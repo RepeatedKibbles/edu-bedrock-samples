@@ -9,7 +9,8 @@
     "tags": [ "crafting_table" ],
     "ingredients": [
       {
-        "item": "minecraft:stone_bricks"
+        "item": "minecraft:stonebrick",
+        "data": 0
       },
       {
         "item": "minecraft:vine"
@@ -21,7 +22,8 @@
         }
     ],
     "result": {
-      "item": "minecraft:mossy_stone_bricks"
+      "item": "minecraft:stonebrick",
+      "data": 1
     }
   }
 }

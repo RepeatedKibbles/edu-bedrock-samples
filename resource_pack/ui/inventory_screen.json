@@ -220,6 +220,7 @@
     "$button_auto_place|default": "button.container_auto_place",
     "$button_take_all_place_all|default": "button.container_take_all_place_all",
     "$coalesce_button|default": "button.coalesce_stack",
+    "$item_painting_button|default": "button.shape_drawing",
     "button_mappings": [
       {
         "from_button_id": "button.menu_cancel",
@@ -283,7 +284,7 @@
         "mapping_type": "double_pressed"
       },
       {
-        "to_button_id": "button.shape_drawing",
+        "to_button_id": "$item_painting_button",
         "mapping_type": "pressed"
       },
       {
@@ -1889,7 +1890,7 @@
             },
             {
               "durability_bar@common.durability_bar": {
-                "layer": 22
+                "layer": 8
               }
             },
             {
@@ -1935,6 +1936,15 @@
       {
         "item_lock_cell_image@common.item_lock_cell_image": {
           "layer": 2
+        }
+      },
+      {
+        "item_container_transfer_mode_overlay@common.item_container_transfer_mode_overlay": {
+          "size": "$item_renderer_size",
+          "offset": [ 1, 1 ],
+          "anchor_to": "top_left",
+          "anchor_from": "top_left",
+          "layer": 10
         }
       }
     ]
@@ -2829,7 +2839,7 @@
       },
       { "selected_item_details_factory@common.selected_item_details_factory": {} },
       { "item_lock_notification_factory@common.item_lock_notification_factory": {} },
-      { "flying_item_renderer@common.flying_item_renderer": { "layer": 15 } }
+      { "flying_item_renderer@common.flying_item_renderer": {} }
     ]
   }
 }

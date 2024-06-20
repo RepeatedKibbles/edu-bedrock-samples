@@ -2155,49 +2155,6 @@
             "sounds/block/mangrove_roots/step6"
          ]
       },
-      "block.mob_spawner.break" : {
-         "__use_legacy_max_distance" : "true",
-         "category" : "block",
-         "max_distance" : null,
-         "min_distance" : null,
-         "sounds" : [
-            {
-               "name" : "sounds/block/mob_spawner/break1"
-            },
-            {
-               "name" : "sounds/block/mob_spawner/break2"
-            },
-            {
-               "name" : "sounds/block/mob_spawner/break3"
-            },
-            {
-               "name" : "sounds/block/mob_spawner/break4"
-            }
-         ]
-      },
-      "block.mob_spawner.step" : {
-         "__use_legacy_max_distance" : "true",
-         "category" : "block",
-         "max_distance" : null,
-         "min_distance" : null,
-         "sounds" : [
-            {
-               "name" : "sounds/block/mob_spawner/step1"
-            },
-            {
-               "name" : "sounds/block/mob_spawner/step2"
-            },
-            {
-               "name" : "sounds/block/mob_spawner/step3"
-            },
-            {
-               "name" : "sounds/block/mob_spawner/step4"
-            },
-            {
-               "name" : "sounds/block/mob_spawner/step5"
-            }
-         ]
-      },
       "block.mud.break" : {
          "category" : "block",
          "max_distance" : null,
@@ -4353,13 +4310,13 @@
          ]
       },
       "crafter.craft" : {
-         "__use_legacy_max_distance" : "true",
          "category" : "block",
-         "max_distance" : 5.0,
+         "max_distance" : null,
          "min_distance" : null,
          "sounds" : [
             {
                "name" : "sounds/block/crafter/craft",
+               "pitch" : 1.0,
                "volume" : 1.0
             }
          ]
@@ -4377,13 +4334,13 @@
          ]
       },
       "crafter.fail" : {
-         "__use_legacy_max_distance" : "true",
          "category" : "block",
-         "max_distance" : 5.0,
+         "max_distance" : null,
          "min_distance" : null,
          "sounds" : [
             {
                "name" : "sounds/block/crafter/fail",
+               "pitch" : 1.0,
                "volume" : 1.0
             }
          ]
@@ -20701,8 +20658,7 @@
          ]
       },
       "step.heavy_core" : {
-         "__use_legacy_max_distance" : "true",
-         "category" : "player",
+         "category" : "block",
          "max_distance" : null,
          "min_distance" : null,
          "sounds" : [
@@ -21636,42 +21592,6 @@
             }
          ]
       },
-      "ui.hardcore_disable" : {
-         "__use_legacy_max_distance" : "true",
-         "category" : "ui",
-         "max_distance" : null,
-         "min_distance" : null,
-         "sounds" : [
-            {
-               "name" : "sounds/ui/hardcore/hardcore_disable",
-               "volume" : 0.40
-            }
-         ]
-      },
-      "ui.hardcore_enable" : {
-         "__use_legacy_max_distance" : "true",
-         "category" : "ui",
-         "max_distance" : null,
-         "min_distance" : null,
-         "sounds" : [
-            {
-               "name" : "sounds/ui/hardcore/hardcore_enable",
-               "volume" : 0.40
-            }
-         ]
-      },
-      "ui.hardcore_toggle_press" : {
-         "__use_legacy_max_distance" : "true",
-         "category" : "ui",
-         "max_distance" : null,
-         "min_distance" : null,
-         "sounds" : [
-            {
-               "name" : "sounds/fire/ignite",
-               "volume" : 0.50
-            }
-         ]
-      },
       "ui.loom.select_pattern" : {
          "__use_legacy_max_distance" : "true",
          "category" : "block",
@@ -22411,17 +22331,6 @@
             "sounds/block/vault/place2",
             "sounds/block/vault/place3",
             "sounds/block/vault/place4"
-         ]
-      },
-      "vault.reject_rewarded_player" : {
-         "__use_legacy_max_distance" : "true",
-         "category" : "block",
-         "max_distance" : null,
-         "min_distance" : null,
-         "sounds" : [
-            {
-               "name" : "sounds/block/vault/reject_rewarded_player"
-            }
          ]
       },
       "vault.step" : {

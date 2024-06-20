@@ -2053,12 +2053,7 @@
                "return_type" : {
                   "is_bind_type" : false,
                   "is_errorable" : true,
-                  "name" : "optional",
-                  "optional_type" : {
-                     "is_bind_type" : true,
-                     "is_errorable" : false,
-                     "name" : "Effect"
-                  }
+                  "name" : "undefined"
                }
             },
             {
@@ -3758,7 +3753,7 @@
                "privilege" : "none",
                "return_type" : {
                   "is_bind_type" : false,
-                  "is_errorable" : false,
+                  "is_errorable" : true,
                   "name" : "undefined"
                }
             }
@@ -4270,7 +4265,7 @@
                "privilege" : "none",
                "return_type" : {
                   "is_bind_type" : false,
-                  "is_errorable" : false,
+                  "is_errorable" : true,
                   "name" : "undefined"
                }
             }
@@ -4455,7 +4450,7 @@
                "privilege" : "none",
                "return_type" : {
                   "is_bind_type" : false,
-                  "is_errorable" : false,
+                  "is_errorable" : true,
                   "name" : "undefined"
                }
             }
@@ -4601,7 +4596,7 @@
                "privilege" : "none",
                "return_type" : {
                   "is_bind_type" : false,
-                  "is_errorable" : false,
+                  "is_errorable" : true,
                   "name" : "undefined"
                }
             }
@@ -4760,7 +4755,7 @@
                "privilege" : "none",
                "return_type" : {
                   "is_bind_type" : false,
-                  "is_errorable" : false,
+                  "is_errorable" : true,
                   "name" : "undefined"
                }
             }
@@ -5865,7 +5860,7 @@
                "privilege" : "none",
                "return_type" : {
                   "is_bind_type" : false,
-                  "is_errorable" : false,
+                  "is_errorable" : true,
                   "name" : "undefined"
                }
             }
@@ -13044,7 +13039,7 @@
                "privilege" : "none",
                "return_type" : {
                   "is_bind_type" : false,
-                  "is_errorable" : false,
+                  "is_errorable" : true,
                   "name" : "undefined"
                }
             }
@@ -18300,7 +18295,7 @@
          }
       }
    ],
-   "minecraft_version" : "1.21.10-beta.24",
+   "minecraft_version" : "1.21.0-beta.0",
    "module_type" : "script",
    "name" : "@minecraft/server",
    "objects" : [

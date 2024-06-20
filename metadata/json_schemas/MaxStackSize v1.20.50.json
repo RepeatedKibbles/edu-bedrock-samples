@@ -19,6 +19,6 @@
             }
         }
     ],
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "3633237758"
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "minecraft:max_stack_size v1.20.50"
 }

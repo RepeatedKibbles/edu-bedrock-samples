@@ -569,10 +569,7 @@
       ]
     },
     "sunflower_additional": {
-      "textures": [
-        "textures/blocks/double_plant_sunflower_front",
-        "textures/blocks/double_plant_sunflower_back"
-      ]
+      "textures": "textures/blocks/double_plant_sunflower_front"
     },
     "sapling": {
       "textures": [
@@ -2100,10 +2097,14 @@
       ]
     },
     "dark_prismarine": {
-      "textures": "textures/blocks/prismarine_dark"
+      "textures": [
+        "textures/blocks/prismarine_dark"
+      ]
     },
     "prismarine_bricks": {
-      "textures": "textures/blocks/prismarine_bricks"
+      "textures": [
+        "textures/blocks/prismarine_bricks"
+      ]
     },
     "sea_lantern": {
       "textures": "textures/blocks/sea_lantern"
@@ -4706,141 +4707,6 @@
     },
     "nether_brick_slab": {
       "textures": "textures/blocks/nether_brick"
-    },
-    "infested_stone": {
-      "textures": "textures/blocks/stone"
-    },
-    "infested_cobblestone": {
-      "textures": "textures/blocks/cobblestone"
-    },
-    "infested_stone_bricks": {
-      "textures": "textures/blocks/stonebrick"
-    },
-    "infested_mossy_stone_bricks": {
-      "textures": "textures/blocks/stonebrick_mossy"
-    },
-    "infested_cracked_stone_bricks": {
-      "textures": "textures/blocks/stonebrick_cracked"
-    },
-    "infested_chiseled_stone_bricks": {
-      "textures": "textures/blocks/stonebrick_carved"
-    },
-    "red_sandstone_slab_top": {
-      "textures": "textures/blocks/red_sandstone_top"
-    },
-    "red_sandstone_slab_bottom": {
-      "textures": "textures/blocks/red_sandstone_bottom"
-    },
-    "red_sandstone_slab_side": {
-      "textures": "textures/blocks/red_sandstone_normal"
-    },
-    "purpur_slab": {
-      "textures": "textures/blocks/purpur_block"
-    },
-    "prismarine_slab": {
-      "textures": "textures/blocks/prismarine_rough"
-    },
-    "dark_prismarine_slab": {
-      "textures": "textures/blocks/prismarine_dark"
-    },
-    "prismarine_brick_slab": {
-      "textures": "textures/blocks/prismarine_bricks"
-    },
-    "mossy_cobblestone_slab": {
-      "textures": "textures/blocks/cobblestone_mossy"
-    },
-    "smooth_sandstone_slab": {
-      "textures": "textures/blocks/sandstone_top"
-    },
-    "red_nether_brick_slab": {
-      "textures": "textures/blocks/red_nether_brick"
-    },
-    "end_stone_brick_slab": {
-      "textures": "textures/blocks/end_bricks"
-    },
-    "smooth_red_sandstone_slab": {
-      "textures": "textures/blocks/red_sandstone_top"
-    },
-    "polished_andesite_slab": {
-      "textures": "textures/blocks/stone_andesite_smooth"
-    },
-    "andesite_slab": {
-      "textures": "textures/blocks/stone_andesite"
-    },
-    "diorite_slab": {
-      "textures": "textures/blocks/stone_diorite"
-    },
-    "polished_diorite_slab": {
-      "textures": "textures/blocks/stone_diorite_smooth"
-    },
-    "granite_slab": {
-      "textures": "textures/blocks/stone_granite"
-    },
-    "polished_granite_slab": {
-      "textures": "textures/blocks/stone_granite_smooth"
-    },
-    "mossy_stone_brick_slab": {
-      "textures": "textures/blocks/stonebrick_mossy"
-    },
-    "smooth_quartz_slab": {
-      "textures": "textures/blocks/quartz_block_bottom"
-    },
-    "normal_stone_slab": {
-      "textures": "textures/blocks/stone"
-    },
-    "cut_sandstone_slab_top": {
-      "textures": "textures/blocks/sandstone_top"
-    },
-    "cut_sandstone_slab_side": {
-      "textures": "textures/blocks/sandstone_smooth"
-    },
-    "cut_red_sandstone_slab_top": {
-      "textures": "textures/blocks/red_sandstone_top"
-    },
-    "cut_red_sandstone_slab_side": {
-      "textures": "textures/blocks/red_sandstone_smooth"
-    },
-    "stone_bricks": {
-      "textures": "textures/blocks/stonebrick"
-    },
-    "mossy_stone_bricks": {
-      "textures": "textures/blocks/stonebrick_mossy"
-    },
-    "cracked_stone_bricks": {
-      "textures": "textures/blocks/stonebrick_cracked"
-    },
-    "chiseled_stone_bricks": {
-      "textures": "textures/blocks/stonebrick_carved"
-    },
-    "tube_coral_wall_fan": {
-      "textures": "textures/blocks/coral_fan_blue"
-    },
-    "brain_coral_wall_fan": {
-      "textures": "textures/blocks/coral_fan_pink"
-    },
-    "bubble_coral_wall_fan": {
-      "textures": "textures/blocks/coral_fan_purple"
-    },
-    "fire_coral_wall_fan": {
-      "textures": "textures/blocks/coral_fan_red"
-    },
-    "horn_coral_wall_fan": {
-      "textures": "textures/blocks/coral_fan_yellow"
-    },
-    "dead_tube_coral_wall_fan": {
-      "textures": "textures/blocks/coral_fan_blue_dead"
-    },
-    "dead_brain_coral_wall_fan": {
-      "textures": "textures/blocks/coral_fan_pink_dead"
-    },
-    "dead_bubble_coral_wall_fan": {
-      "textures": "textures/blocks/coral_fan_purple_dead"
-    },
-    "dead_fire_coral_wall_fan": {
-      "textures": "textures/blocks/coral_fan_red_dead"
-    },
-    "dead_horn_coral_wall_fan": {
-      "textures": "textures/blocks/coral_fan_yellow_dead"
     }
   }
 }
