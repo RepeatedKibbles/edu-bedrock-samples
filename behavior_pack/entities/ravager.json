@@ -3,6 +3,7 @@
   "minecraft:entity": {
     "description": {
       "identifier": "minecraft:ravager",
+      "spawn_category": "monster",
       "is_spawnable": true,
       "is_summonable": true,
       "is_experimental": false
@@ -300,6 +301,8 @@
       "minecraft:pushable": {
         "is_pushable": true,
         "is_pushable_by_piston": true
+      },
+      "minecraft:can_join_raid": {
       },
       "minecraft:conditional_bandwidth_optimization": {
       },

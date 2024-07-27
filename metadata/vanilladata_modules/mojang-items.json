@@ -22,13 +22,25 @@
          "name" : "minecraft:acacia_hanging_sign"
       },
       {
+         "name" : "minecraft:acacia_leaves"
+      },
+      {
          "name" : "minecraft:acacia_log"
+      },
+      {
+         "name" : "minecraft:acacia_planks"
       },
       {
          "name" : "minecraft:acacia_pressure_plate"
       },
       {
+         "name" : "minecraft:acacia_sapling"
+      },
+      {
          "name" : "minecraft:acacia_sign"
+      },
+      {
+         "name" : "minecraft:acacia_slab"
       },
       {
          "name" : "minecraft:acacia_stairs"
@@ -37,10 +49,19 @@
          "name" : "minecraft:acacia_trapdoor"
       },
       {
+         "name" : "minecraft:acacia_wood"
+      },
+      {
          "name" : "minecraft:activator_rail"
       },
       {
+         "name" : "minecraft:air"
+      },
+      {
          "name" : "minecraft:allay_spawn_egg"
+      },
+      {
+         "name" : "minecraft:allium"
       },
       {
          "name" : "minecraft:allow"
@@ -58,6 +79,9 @@
          "name" : "minecraft:ancient_debris"
       },
       {
+         "name" : "minecraft:andesite"
+      },
+      {
          "name" : "minecraft:andesite_stairs"
       },
       {
@@ -71,6 +95,12 @@
       },
       {
          "name" : "minecraft:archer_pottery_sherd"
+      },
+      {
+         "name" : "minecraft:armadillo_scute"
+      },
+      {
+         "name" : "minecraft:armadillo_spawn_egg"
       },
       {
          "name" : "minecraft:armor_stand"
@@ -95,6 +125,9 @@
       },
       {
          "name" : "minecraft:azalea_leaves_flowered"
+      },
+      {
+         "name" : "minecraft:azure_bluet"
       },
       {
          "name" : "minecraft:baked_potato"
@@ -229,19 +262,34 @@
          "name" : "minecraft:birch_hanging_sign"
       },
       {
+         "name" : "minecraft:birch_leaves"
+      },
+      {
          "name" : "minecraft:birch_log"
+      },
+      {
+         "name" : "minecraft:birch_planks"
       },
       {
          "name" : "minecraft:birch_pressure_plate"
       },
       {
+         "name" : "minecraft:birch_sapling"
+      },
+      {
          "name" : "minecraft:birch_sign"
+      },
+      {
+         "name" : "minecraft:birch_slab"
       },
       {
          "name" : "minecraft:birch_stairs"
       },
       {
          "name" : "minecraft:birch_trapdoor"
+      },
+      {
+         "name" : "minecraft:birch_wood"
       },
       {
          "name" : "minecraft:black_candle"
@@ -253,6 +301,9 @@
          "name" : "minecraft:black_concrete"
       },
       {
+         "name" : "minecraft:black_concrete_powder"
+      },
+      {
          "name" : "minecraft:black_dye"
       },
       {
@@ -260,6 +311,15 @@
       },
       {
          "name" : "minecraft:black_shulker_box"
+      },
+      {
+         "name" : "minecraft:black_stained_glass"
+      },
+      {
+         "name" : "minecraft:black_stained_glass_pane"
+      },
+      {
+         "name" : "minecraft:black_terracotta"
       },
       {
          "name" : "minecraft:black_wool"
@@ -301,6 +361,9 @@
          "name" : "minecraft:blue_concrete"
       },
       {
+         "name" : "minecraft:blue_concrete_powder"
+      },
+      {
          "name" : "minecraft:blue_dye"
       },
       {
@@ -310,13 +373,31 @@
          "name" : "minecraft:blue_ice"
       },
       {
+         "name" : "minecraft:blue_orchid"
+      },
+      {
          "name" : "minecraft:blue_shulker_box"
+      },
+      {
+         "name" : "minecraft:blue_stained_glass"
+      },
+      {
+         "name" : "minecraft:blue_stained_glass_pane"
+      },
+      {
+         "name" : "minecraft:blue_terracotta"
       },
       {
          "name" : "minecraft:blue_wool"
       },
       {
          "name" : "minecraft:boat"
+      },
+      {
+         "name" : "minecraft:bogged_spawn_egg"
+      },
+      {
+         "name" : "minecraft:bolt_armor_trim_smithing_template"
       },
       {
          "name" : "minecraft:bone"
@@ -349,7 +430,19 @@
          "name" : "minecraft:brain_coral"
       },
       {
+         "name" : "minecraft:brain_coral_block"
+      },
+      {
+         "name" : "minecraft:brain_coral_fan"
+      },
+      {
          "name" : "minecraft:bread"
+      },
+      {
+         "name" : "minecraft:breeze_rod"
+      },
+      {
+         "name" : "minecraft:breeze_spawn_egg"
       },
       {
          "name" : "minecraft:brewer_pottery_sherd"
@@ -364,6 +457,9 @@
          "name" : "minecraft:brick_block"
       },
       {
+         "name" : "minecraft:brick_slab"
+      },
+      {
          "name" : "minecraft:brick_stairs"
       },
       {
@@ -374,6 +470,9 @@
       },
       {
          "name" : "minecraft:brown_concrete"
+      },
+      {
+         "name" : "minecraft:brown_concrete_powder"
       },
       {
          "name" : "minecraft:brown_dye"
@@ -391,6 +490,15 @@
          "name" : "minecraft:brown_shulker_box"
       },
       {
+         "name" : "minecraft:brown_stained_glass"
+      },
+      {
+         "name" : "minecraft:brown_stained_glass_pane"
+      },
+      {
+         "name" : "minecraft:brown_terracotta"
+      },
+      {
          "name" : "minecraft:brown_wool"
       },
       {
@@ -398,6 +506,12 @@
       },
       {
          "name" : "minecraft:bubble_coral"
+      },
+      {
+         "name" : "minecraft:bubble_coral_block"
+      },
+      {
+         "name" : "minecraft:bubble_coral_fan"
       },
       {
          "name" : "minecraft:bucket"
@@ -544,6 +658,9 @@
          "name" : "minecraft:chiseled_bookshelf"
       },
       {
+         "name" : "minecraft:chiseled_copper"
+      },
+      {
          "name" : "minecraft:chiseled_deepslate"
       },
       {
@@ -551,6 +668,12 @@
       },
       {
          "name" : "minecraft:chiseled_polished_blackstone"
+      },
+      {
+         "name" : "minecraft:chiseled_tuff"
+      },
+      {
+         "name" : "minecraft:chiseled_tuff_bricks"
       },
       {
          "name" : "minecraft:chorus_flower"
@@ -596,6 +719,9 @@
       },
       {
          "name" : "minecraft:cobblestone"
+      },
+      {
+         "name" : "minecraft:cobblestone_slab"
       },
       {
          "name" : "minecraft:cobblestone_wall"
@@ -664,10 +790,22 @@
          "name" : "minecraft:copper_block"
       },
       {
+         "name" : "minecraft:copper_bulb"
+      },
+      {
+         "name" : "minecraft:copper_door"
+      },
+      {
+         "name" : "minecraft:copper_grate"
+      },
+      {
          "name" : "minecraft:copper_ingot"
       },
       {
          "name" : "minecraft:copper_ore"
+      },
+      {
+         "name" : "minecraft:copper_trapdoor"
       },
       {
          "name" : "minecraft:coral"
@@ -680,6 +818,9 @@
       },
       {
          "name" : "minecraft:coral_fan_dead"
+      },
+      {
+         "name" : "minecraft:cornflower"
       },
       {
          "name" : "minecraft:cow_spawn_egg"
@@ -695,6 +836,9 @@
       },
       {
          "name" : "minecraft:cracked_polished_blackstone_bricks"
+      },
+      {
+         "name" : "minecraft:crafter"
       },
       {
          "name" : "minecraft:crafting_table"
@@ -778,6 +922,9 @@
          "name" : "minecraft:cyan_concrete"
       },
       {
+         "name" : "minecraft:cyan_concrete_powder"
+      },
+      {
          "name" : "minecraft:cyan_dye"
       },
       {
@@ -785,6 +932,15 @@
       },
       {
          "name" : "minecraft:cyan_shulker_box"
+      },
+      {
+         "name" : "minecraft:cyan_stained_glass"
+      },
+      {
+         "name" : "minecraft:cyan_stained_glass_pane"
+      },
+      {
+         "name" : "minecraft:cyan_terracotta"
       },
       {
          "name" : "minecraft:cyan_wool"
@@ -814,19 +970,34 @@
          "name" : "minecraft:dark_oak_hanging_sign"
       },
       {
+         "name" : "minecraft:dark_oak_leaves"
+      },
+      {
          "name" : "minecraft:dark_oak_log"
+      },
+      {
+         "name" : "minecraft:dark_oak_planks"
       },
       {
          "name" : "minecraft:dark_oak_pressure_plate"
       },
       {
+         "name" : "minecraft:dark_oak_sapling"
+      },
+      {
          "name" : "minecraft:dark_oak_sign"
+      },
+      {
+         "name" : "minecraft:dark_oak_slab"
       },
       {
          "name" : "minecraft:dark_oak_stairs"
       },
       {
          "name" : "minecraft:dark_oak_trapdoor"
+      },
+      {
+         "name" : "minecraft:dark_oak_wood"
       },
       {
          "name" : "minecraft:dark_prismarine_stairs"
@@ -838,16 +1009,46 @@
          "name" : "minecraft:dead_brain_coral"
       },
       {
+         "name" : "minecraft:dead_brain_coral_block"
+      },
+      {
+         "name" : "minecraft:dead_brain_coral_fan"
+      },
+      {
          "name" : "minecraft:dead_bubble_coral"
+      },
+      {
+         "name" : "minecraft:dead_bubble_coral_block"
+      },
+      {
+         "name" : "minecraft:dead_bubble_coral_fan"
       },
       {
          "name" : "minecraft:dead_fire_coral"
       },
       {
+         "name" : "minecraft:dead_fire_coral_block"
+      },
+      {
+         "name" : "minecraft:dead_fire_coral_fan"
+      },
+      {
          "name" : "minecraft:dead_horn_coral"
       },
       {
+         "name" : "minecraft:dead_horn_coral_block"
+      },
+      {
+         "name" : "minecraft:dead_horn_coral_fan"
+      },
+      {
          "name" : "minecraft:dead_tube_coral"
+      },
+      {
+         "name" : "minecraft:dead_tube_coral_block"
+      },
+      {
+         "name" : "minecraft:dead_tube_coral_fan"
       },
       {
          "name" : "minecraft:deadbush"
@@ -950,6 +1151,9 @@
       },
       {
          "name" : "minecraft:diamond_sword"
+      },
+      {
+         "name" : "minecraft:diorite"
       },
       {
          "name" : "minecraft:diorite_stairs"
@@ -1081,7 +1285,22 @@
          "name" : "minecraft:explorer_pottery_sherd"
       },
       {
+         "name" : "minecraft:exposed_chiseled_copper"
+      },
+      {
          "name" : "minecraft:exposed_copper"
+      },
+      {
+         "name" : "minecraft:exposed_copper_bulb"
+      },
+      {
+         "name" : "minecraft:exposed_copper_door"
+      },
+      {
+         "name" : "minecraft:exposed_copper_grate"
+      },
+      {
+         "name" : "minecraft:exposed_copper_trapdoor"
       },
       {
          "name" : "minecraft:exposed_cut_copper"
@@ -1111,6 +1330,9 @@
          "name" : "minecraft:fermented_spider_eye"
       },
       {
+         "name" : "minecraft:fern"
+      },
+      {
          "name" : "minecraft:field_masoned_banner_pattern"
       },
       {
@@ -1121,6 +1343,12 @@
       },
       {
          "name" : "minecraft:fire_coral"
+      },
+      {
+         "name" : "minecraft:fire_coral_block"
+      },
+      {
+         "name" : "minecraft:fire_coral_fan"
       },
       {
          "name" : "minecraft:firework_rocket"
@@ -1139,6 +1367,15 @@
       },
       {
          "name" : "minecraft:flint_and_steel"
+      },
+      {
+         "name" : "minecraft:flow_armor_trim_smithing_template"
+      },
+      {
+         "name" : "minecraft:flow_banner_pattern"
+      },
+      {
+         "name" : "minecraft:flow_pottery_sherd"
       },
       {
          "name" : "minecraft:flower_banner_pattern"
@@ -1273,10 +1510,13 @@
          "name" : "minecraft:golden_sword"
       },
       {
+         "name" : "minecraft:granite"
+      },
+      {
          "name" : "minecraft:granite_stairs"
       },
       {
-         "name" : "minecraft:grass"
+         "name" : "minecraft:grass_block"
       },
       {
          "name" : "minecraft:grass_path"
@@ -1294,6 +1534,9 @@
          "name" : "minecraft:gray_concrete"
       },
       {
+         "name" : "minecraft:gray_concrete_powder"
+      },
+      {
          "name" : "minecraft:gray_dye"
       },
       {
@@ -1301,6 +1544,15 @@
       },
       {
          "name" : "minecraft:gray_shulker_box"
+      },
+      {
+         "name" : "minecraft:gray_stained_glass"
+      },
+      {
+         "name" : "minecraft:gray_stained_glass_pane"
+      },
+      {
+         "name" : "minecraft:gray_terracotta"
       },
       {
          "name" : "minecraft:gray_wool"
@@ -1315,6 +1567,9 @@
          "name" : "minecraft:green_concrete"
       },
       {
+         "name" : "minecraft:green_concrete_powder"
+      },
+      {
          "name" : "minecraft:green_dye"
       },
       {
@@ -1322,6 +1577,15 @@
       },
       {
          "name" : "minecraft:green_shulker_box"
+      },
+      {
+         "name" : "minecraft:green_stained_glass"
+      },
+      {
+         "name" : "minecraft:green_stained_glass_pane"
+      },
+      {
+         "name" : "minecraft:green_terracotta"
       },
       {
          "name" : "minecraft:green_wool"
@@ -1336,7 +1600,19 @@
          "name" : "minecraft:gunpowder"
       },
       {
+         "name" : "minecraft:guster_banner_pattern"
+      },
+      {
+         "name" : "minecraft:guster_pottery_sherd"
+      },
+      {
          "name" : "minecraft:hanging_roots"
+      },
+      {
+         "name" : "minecraft:hard_stained_glass"
+      },
+      {
+         "name" : "minecraft:hard_stained_glass_pane"
       },
       {
          "name" : "minecraft:hardened_clay"
@@ -1352,6 +1628,9 @@
       },
       {
          "name" : "minecraft:heartbreak_pottery_sherd"
+      },
+      {
+         "name" : "minecraft:heavy_core"
       },
       {
          "name" : "minecraft:heavy_weighted_pressure_plate"
@@ -1379,6 +1658,12 @@
       },
       {
          "name" : "minecraft:horn_coral"
+      },
+      {
+         "name" : "minecraft:horn_coral_block"
+      },
+      {
+         "name" : "minecraft:horn_coral_fan"
       },
       {
          "name" : "minecraft:horse_spawn_egg"
@@ -1483,19 +1768,34 @@
          "name" : "minecraft:jungle_hanging_sign"
       },
       {
+         "name" : "minecraft:jungle_leaves"
+      },
+      {
          "name" : "minecraft:jungle_log"
+      },
+      {
+         "name" : "minecraft:jungle_planks"
       },
       {
          "name" : "minecraft:jungle_pressure_plate"
       },
       {
+         "name" : "minecraft:jungle_sapling"
+      },
+      {
          "name" : "minecraft:jungle_sign"
+      },
+      {
+         "name" : "minecraft:jungle_slab"
       },
       {
          "name" : "minecraft:jungle_stairs"
       },
       {
          "name" : "minecraft:jungle_trapdoor"
+      },
+      {
+         "name" : "minecraft:jungle_wood"
       },
       {
          "name" : "minecraft:kelp"
@@ -1517,6 +1817,9 @@
       },
       {
          "name" : "minecraft:large_amethyst_bud"
+      },
+      {
+         "name" : "minecraft:large_fern"
       },
       {
          "name" : "minecraft:lava_bucket"
@@ -1567,6 +1870,9 @@
          "name" : "minecraft:light_blue_concrete"
       },
       {
+         "name" : "minecraft:light_blue_concrete_powder"
+      },
+      {
          "name" : "minecraft:light_blue_dye"
       },
       {
@@ -1574,6 +1880,15 @@
       },
       {
          "name" : "minecraft:light_blue_shulker_box"
+      },
+      {
+         "name" : "minecraft:light_blue_stained_glass"
+      },
+      {
+         "name" : "minecraft:light_blue_stained_glass_pane"
+      },
+      {
+         "name" : "minecraft:light_blue_terracotta"
       },
       {
          "name" : "minecraft:light_blue_wool"
@@ -1588,10 +1903,22 @@
          "name" : "minecraft:light_gray_concrete"
       },
       {
+         "name" : "minecraft:light_gray_concrete_powder"
+      },
+      {
          "name" : "minecraft:light_gray_dye"
       },
       {
          "name" : "minecraft:light_gray_shulker_box"
+      },
+      {
+         "name" : "minecraft:light_gray_stained_glass"
+      },
+      {
+         "name" : "minecraft:light_gray_stained_glass_pane"
+      },
+      {
+         "name" : "minecraft:light_gray_terracotta"
       },
       {
          "name" : "minecraft:light_gray_wool"
@@ -1603,6 +1930,12 @@
          "name" : "minecraft:lightning_rod"
       },
       {
+         "name" : "minecraft:lilac"
+      },
+      {
+         "name" : "minecraft:lily_of_the_valley"
+      },
+      {
          "name" : "minecraft:lime_candle"
       },
       {
@@ -1612,6 +1945,9 @@
          "name" : "minecraft:lime_concrete"
       },
       {
+         "name" : "minecraft:lime_concrete_powder"
+      },
+      {
          "name" : "minecraft:lime_dye"
       },
       {
@@ -1619,6 +1955,15 @@
       },
       {
          "name" : "minecraft:lime_shulker_box"
+      },
+      {
+         "name" : "minecraft:lime_stained_glass"
+      },
+      {
+         "name" : "minecraft:lime_stained_glass_pane"
+      },
+      {
+         "name" : "minecraft:lime_terracotta"
       },
       {
          "name" : "minecraft:lime_wool"
@@ -1648,6 +1993,9 @@
          "name" : "minecraft:loom"
       },
       {
+         "name" : "minecraft:mace"
+      },
+      {
          "name" : "minecraft:magenta_candle"
       },
       {
@@ -1657,6 +2005,9 @@
          "name" : "minecraft:magenta_concrete"
       },
       {
+         "name" : "minecraft:magenta_concrete_powder"
+      },
+      {
          "name" : "minecraft:magenta_dye"
       },
       {
@@ -1664,6 +2015,15 @@
       },
       {
          "name" : "minecraft:magenta_shulker_box"
+      },
+      {
+         "name" : "minecraft:magenta_stained_glass"
+      },
+      {
+         "name" : "minecraft:magenta_stained_glass_pane"
+      },
+      {
+         "name" : "minecraft:magenta_terracotta"
       },
       {
          "name" : "minecraft:magenta_wool"
@@ -1825,6 +2185,12 @@
          "name" : "minecraft:music_disc_chirp"
       },
       {
+         "name" : "minecraft:music_disc_creator"
+      },
+      {
+         "name" : "minecraft:music_disc_creator_music_box"
+      },
+      {
          "name" : "minecraft:music_disc_far"
       },
       {
@@ -1838,6 +2204,9 @@
       },
       {
          "name" : "minecraft:music_disc_pigstep"
+      },
+      {
+         "name" : "minecraft:music_disc_precipice"
       },
       {
          "name" : "minecraft:music_disc_relic"
@@ -1871,6 +2240,9 @@
       },
       {
          "name" : "minecraft:nether_brick_fence"
+      },
+      {
+         "name" : "minecraft:nether_brick_slab"
       },
       {
          "name" : "minecraft:nether_brick_stairs"
@@ -1954,13 +2326,28 @@
          "name" : "minecraft:oak_hanging_sign"
       },
       {
+         "name" : "minecraft:oak_leaves"
+      },
+      {
          "name" : "minecraft:oak_log"
+      },
+      {
+         "name" : "minecraft:oak_planks"
+      },
+      {
+         "name" : "minecraft:oak_sapling"
       },
       {
          "name" : "minecraft:oak_sign"
       },
       {
+         "name" : "minecraft:oak_slab"
+      },
+      {
          "name" : "minecraft:oak_stairs"
+      },
+      {
+         "name" : "minecraft:oak_wood"
       },
       {
          "name" : "minecraft:observer"
@@ -1975,6 +2362,12 @@
          "name" : "minecraft:ochre_froglight"
       },
       {
+         "name" : "minecraft:ominous_bottle"
+      },
+      {
+         "name" : "minecraft:ominous_trial_key"
+      },
+      {
          "name" : "minecraft:orange_candle"
       },
       {
@@ -1982,6 +2375,9 @@
       },
       {
          "name" : "minecraft:orange_concrete"
+      },
+      {
+         "name" : "minecraft:orange_concrete_powder"
       },
       {
          "name" : "minecraft:orange_dye"
@@ -1993,10 +2389,40 @@
          "name" : "minecraft:orange_shulker_box"
       },
       {
+         "name" : "minecraft:orange_stained_glass"
+      },
+      {
+         "name" : "minecraft:orange_stained_glass_pane"
+      },
+      {
+         "name" : "minecraft:orange_terracotta"
+      },
+      {
+         "name" : "minecraft:orange_tulip"
+      },
+      {
          "name" : "minecraft:orange_wool"
       },
       {
+         "name" : "minecraft:oxeye_daisy"
+      },
+      {
+         "name" : "minecraft:oxidized_chiseled_copper"
+      },
+      {
          "name" : "minecraft:oxidized_copper"
+      },
+      {
+         "name" : "minecraft:oxidized_copper_bulb"
+      },
+      {
+         "name" : "minecraft:oxidized_copper_door"
+      },
+      {
+         "name" : "minecraft:oxidized_copper_grate"
+      },
+      {
+         "name" : "minecraft:oxidized_copper_trapdoor"
       },
       {
          "name" : "minecraft:oxidized_cut_copper"
@@ -2029,6 +2455,12 @@
          "name" : "minecraft:pearlescent_froglight"
       },
       {
+         "name" : "minecraft:peony"
+      },
+      {
+         "name" : "minecraft:petrified_oak_slab"
+      },
+      {
          "name" : "minecraft:phantom_membrane"
       },
       {
@@ -2059,6 +2491,9 @@
          "name" : "minecraft:pink_concrete"
       },
       {
+         "name" : "minecraft:pink_concrete_powder"
+      },
+      {
          "name" : "minecraft:pink_dye"
       },
       {
@@ -2069,6 +2504,18 @@
       },
       {
          "name" : "minecraft:pink_shulker_box"
+      },
+      {
+         "name" : "minecraft:pink_stained_glass"
+      },
+      {
+         "name" : "minecraft:pink_stained_glass_pane"
+      },
+      {
+         "name" : "minecraft:pink_terracotta"
+      },
+      {
+         "name" : "minecraft:pink_tulip"
       },
       {
          "name" : "minecraft:pink_wool"
@@ -2099,6 +2546,9 @@
       },
       {
          "name" : "minecraft:polar_bear_spawn_egg"
+      },
+      {
+         "name" : "minecraft:polished_andesite"
       },
       {
          "name" : "minecraft:polished_andesite_stairs"
@@ -2149,13 +2599,34 @@
          "name" : "minecraft:polished_deepslate_wall"
       },
       {
+         "name" : "minecraft:polished_diorite"
+      },
+      {
          "name" : "minecraft:polished_diorite_stairs"
+      },
+      {
+         "name" : "minecraft:polished_granite"
       },
       {
          "name" : "minecraft:polished_granite_stairs"
       },
       {
+         "name" : "minecraft:polished_tuff"
+      },
+      {
+         "name" : "minecraft:polished_tuff_slab"
+      },
+      {
+         "name" : "minecraft:polished_tuff_stairs"
+      },
+      {
+         "name" : "minecraft:polished_tuff_wall"
+      },
+      {
          "name" : "minecraft:popped_chorus_fruit"
+      },
+      {
+         "name" : "minecraft:poppy"
       },
       {
          "name" : "minecraft:porkchop"
@@ -2215,6 +2686,9 @@
          "name" : "minecraft:purple_concrete"
       },
       {
+         "name" : "minecraft:purple_concrete_powder"
+      },
+      {
          "name" : "minecraft:purple_dye"
       },
       {
@@ -2222,6 +2696,15 @@
       },
       {
          "name" : "minecraft:purple_shulker_box"
+      },
+      {
+         "name" : "minecraft:purple_stained_glass"
+      },
+      {
+         "name" : "minecraft:purple_stained_glass_pane"
+      },
+      {
+         "name" : "minecraft:purple_terracotta"
       },
       {
          "name" : "minecraft:purple_wool"
@@ -2243,6 +2726,9 @@
       },
       {
          "name" : "minecraft:quartz_ore"
+      },
+      {
+         "name" : "minecraft:quartz_slab"
       },
       {
          "name" : "minecraft:quartz_stairs"
@@ -2302,6 +2788,9 @@
          "name" : "minecraft:red_concrete"
       },
       {
+         "name" : "minecraft:red_concrete_powder"
+      },
+      {
          "name" : "minecraft:red_dye"
       },
       {
@@ -2330,6 +2819,18 @@
       },
       {
          "name" : "minecraft:red_shulker_box"
+      },
+      {
+         "name" : "minecraft:red_stained_glass"
+      },
+      {
+         "name" : "minecraft:red_stained_glass_pane"
+      },
+      {
+         "name" : "minecraft:red_terracotta"
+      },
+      {
+         "name" : "minecraft:red_tulip"
       },
       {
          "name" : "minecraft:red_wool"
@@ -2365,6 +2866,9 @@
          "name" : "minecraft:rib_armor_trim_smithing_template"
       },
       {
+         "name" : "minecraft:rose_bush"
+      },
+      {
          "name" : "minecraft:rotten_flesh"
       },
       {
@@ -2386,6 +2890,9 @@
          "name" : "minecraft:sandstone"
       },
       {
+         "name" : "minecraft:sandstone_slab"
+      },
+      {
          "name" : "minecraft:sandstone_stairs"
       },
       {
@@ -2393,6 +2900,9 @@
       },
       {
          "name" : "minecraft:scaffolding"
+      },
+      {
+         "name" : "minecraft:scrape_pottery_sherd"
       },
       {
          "name" : "minecraft:sculk"
@@ -2408,9 +2918,6 @@
       },
       {
          "name" : "minecraft:sculk_vein"
-      },
-      {
-         "name" : "minecraft:scute"
       },
       {
          "name" : "minecraft:sea_lantern"
@@ -2441,6 +2948,9 @@
       },
       {
          "name" : "minecraft:shield"
+      },
+      {
+         "name" : "minecraft:short_grass"
       },
       {
          "name" : "minecraft:shroomlight"
@@ -2513,6 +3023,9 @@
       },
       {
          "name" : "minecraft:smooth_stone"
+      },
+      {
+         "name" : "minecraft:smooth_stone_slab"
       },
       {
          "name" : "minecraft:sniffer_egg"
@@ -2596,19 +3109,34 @@
          "name" : "minecraft:spruce_hanging_sign"
       },
       {
+         "name" : "minecraft:spruce_leaves"
+      },
+      {
          "name" : "minecraft:spruce_log"
+      },
+      {
+         "name" : "minecraft:spruce_planks"
       },
       {
          "name" : "minecraft:spruce_pressure_plate"
       },
       {
+         "name" : "minecraft:spruce_sapling"
+      },
+      {
          "name" : "minecraft:spruce_sign"
+      },
+      {
+         "name" : "minecraft:spruce_slab"
       },
       {
          "name" : "minecraft:spruce_stairs"
       },
       {
          "name" : "minecraft:spruce_trapdoor"
+      },
+      {
+         "name" : "minecraft:spruce_wood"
       },
       {
          "name" : "minecraft:spyglass"
@@ -2648,6 +3176,9 @@
       },
       {
          "name" : "minecraft:stone_block_slab4"
+      },
+      {
+         "name" : "minecraft:stone_brick_slab"
       },
       {
          "name" : "minecraft:stone_brick_stairs"
@@ -2692,10 +3223,16 @@
          "name" : "minecraft:stripped_acacia_log"
       },
       {
+         "name" : "minecraft:stripped_acacia_wood"
+      },
+      {
          "name" : "minecraft:stripped_bamboo_block"
       },
       {
          "name" : "minecraft:stripped_birch_log"
+      },
+      {
+         "name" : "minecraft:stripped_birch_wood"
       },
       {
          "name" : "minecraft:stripped_cherry_log"
@@ -2713,7 +3250,13 @@
          "name" : "minecraft:stripped_dark_oak_log"
       },
       {
+         "name" : "minecraft:stripped_dark_oak_wood"
+      },
+      {
          "name" : "minecraft:stripped_jungle_log"
+      },
+      {
+         "name" : "minecraft:stripped_jungle_wood"
       },
       {
          "name" : "minecraft:stripped_mangrove_log"
@@ -2725,7 +3268,13 @@
          "name" : "minecraft:stripped_oak_log"
       },
       {
+         "name" : "minecraft:stripped_oak_wood"
+      },
+      {
          "name" : "minecraft:stripped_spruce_log"
+      },
+      {
+         "name" : "minecraft:stripped_spruce_wood"
       },
       {
          "name" : "minecraft:stripped_warped_hyphae"
@@ -2746,6 +3295,9 @@
          "name" : "minecraft:sugar_cane"
       },
       {
+         "name" : "minecraft:sunflower"
+      },
+      {
          "name" : "minecraft:suspicious_gravel"
       },
       {
@@ -2762,6 +3314,9 @@
       },
       {
          "name" : "minecraft:tadpole_spawn_egg"
+      },
+      {
+         "name" : "minecraft:tall_grass"
       },
       {
          "name" : "minecraft:tallgrass"
@@ -2803,6 +3358,12 @@
          "name" : "minecraft:trapped_chest"
       },
       {
+         "name" : "minecraft:trial_key"
+      },
+      {
+         "name" : "minecraft:trial_spawner"
+      },
+      {
          "name" : "minecraft:trident"
       },
       {
@@ -2821,13 +3382,43 @@
          "name" : "minecraft:tube_coral"
       },
       {
+         "name" : "minecraft:tube_coral_block"
+      },
+      {
+         "name" : "minecraft:tube_coral_fan"
+      },
+      {
          "name" : "minecraft:tuff"
+      },
+      {
+         "name" : "minecraft:tuff_brick_slab"
+      },
+      {
+         "name" : "minecraft:tuff_brick_stairs"
+      },
+      {
+         "name" : "minecraft:tuff_brick_wall"
+      },
+      {
+         "name" : "minecraft:tuff_bricks"
+      },
+      {
+         "name" : "minecraft:tuff_slab"
+      },
+      {
+         "name" : "minecraft:tuff_stairs"
+      },
+      {
+         "name" : "minecraft:tuff_wall"
       },
       {
          "name" : "minecraft:turtle_egg"
       },
       {
          "name" : "minecraft:turtle_helmet"
+      },
+      {
+         "name" : "minecraft:turtle_scute"
       },
       {
          "name" : "minecraft:turtle_spawn_egg"
@@ -2837,6 +3428,9 @@
       },
       {
          "name" : "minecraft:undyed_shulker_box"
+      },
+      {
+         "name" : "minecraft:vault"
       },
       {
          "name" : "minecraft:verdant_froglight"
@@ -2926,7 +3520,22 @@
          "name" : "minecraft:waterlily"
       },
       {
+         "name" : "minecraft:waxed_chiseled_copper"
+      },
+      {
          "name" : "minecraft:waxed_copper"
+      },
+      {
+         "name" : "minecraft:waxed_copper_bulb"
+      },
+      {
+         "name" : "minecraft:waxed_copper_door"
+      },
+      {
+         "name" : "minecraft:waxed_copper_grate"
+      },
+      {
+         "name" : "minecraft:waxed_copper_trapdoor"
       },
       {
          "name" : "minecraft:waxed_cut_copper"
@@ -2938,7 +3547,22 @@
          "name" : "minecraft:waxed_cut_copper_stairs"
       },
       {
+         "name" : "minecraft:waxed_exposed_chiseled_copper"
+      },
+      {
          "name" : "minecraft:waxed_exposed_copper"
+      },
+      {
+         "name" : "minecraft:waxed_exposed_copper_bulb"
+      },
+      {
+         "name" : "minecraft:waxed_exposed_copper_door"
+      },
+      {
+         "name" : "minecraft:waxed_exposed_copper_grate"
+      },
+      {
+         "name" : "minecraft:waxed_exposed_copper_trapdoor"
       },
       {
          "name" : "minecraft:waxed_exposed_cut_copper"
@@ -2950,7 +3574,22 @@
          "name" : "minecraft:waxed_exposed_cut_copper_stairs"
       },
       {
+         "name" : "minecraft:waxed_oxidized_chiseled_copper"
+      },
+      {
          "name" : "minecraft:waxed_oxidized_copper"
+      },
+      {
+         "name" : "minecraft:waxed_oxidized_copper_bulb"
+      },
+      {
+         "name" : "minecraft:waxed_oxidized_copper_door"
+      },
+      {
+         "name" : "minecraft:waxed_oxidized_copper_grate"
+      },
+      {
+         "name" : "minecraft:waxed_oxidized_copper_trapdoor"
       },
       {
          "name" : "minecraft:waxed_oxidized_cut_copper"
@@ -2962,7 +3601,22 @@
          "name" : "minecraft:waxed_oxidized_cut_copper_stairs"
       },
       {
+         "name" : "minecraft:waxed_weathered_chiseled_copper"
+      },
+      {
          "name" : "minecraft:waxed_weathered_copper"
+      },
+      {
+         "name" : "minecraft:waxed_weathered_copper_bulb"
+      },
+      {
+         "name" : "minecraft:waxed_weathered_copper_door"
+      },
+      {
+         "name" : "minecraft:waxed_weathered_copper_grate"
+      },
+      {
+         "name" : "minecraft:waxed_weathered_copper_trapdoor"
       },
       {
          "name" : "minecraft:waxed_weathered_cut_copper"
@@ -2977,7 +3631,22 @@
          "name" : "minecraft:wayfinder_armor_trim_smithing_template"
       },
       {
+         "name" : "minecraft:weathered_chiseled_copper"
+      },
+      {
          "name" : "minecraft:weathered_copper"
+      },
+      {
+         "name" : "minecraft:weathered_copper_bulb"
+      },
+      {
+         "name" : "minecraft:weathered_copper_door"
+      },
+      {
+         "name" : "minecraft:weathered_copper_grate"
+      },
+      {
+         "name" : "minecraft:weathered_copper_trapdoor"
       },
       {
          "name" : "minecraft:weathered_cut_copper"
@@ -3010,6 +3679,9 @@
          "name" : "minecraft:white_concrete"
       },
       {
+         "name" : "minecraft:white_concrete_powder"
+      },
+      {
          "name" : "minecraft:white_dye"
       },
       {
@@ -3019,10 +3691,25 @@
          "name" : "minecraft:white_shulker_box"
       },
       {
+         "name" : "minecraft:white_stained_glass"
+      },
+      {
+         "name" : "minecraft:white_stained_glass_pane"
+      },
+      {
+         "name" : "minecraft:white_terracotta"
+      },
+      {
+         "name" : "minecraft:white_tulip"
+      },
+      {
          "name" : "minecraft:white_wool"
       },
       {
          "name" : "minecraft:wild_armor_trim_smithing_template"
+      },
+      {
+         "name" : "minecraft:wind_charge"
       },
       {
          "name" : "minecraft:witch_spawn_egg"
@@ -3035,6 +3722,9 @@
       },
       {
          "name" : "minecraft:wither_spawn_egg"
+      },
+      {
+         "name" : "minecraft:wolf_armor"
       },
       {
          "name" : "minecraft:wolf_spawn_egg"
@@ -3085,6 +3775,9 @@
          "name" : "minecraft:yellow_concrete"
       },
       {
+         "name" : "minecraft:yellow_concrete_powder"
+      },
+      {
          "name" : "minecraft:yellow_dye"
       },
       {
@@ -3095,6 +3788,15 @@
       },
       {
          "name" : "minecraft:yellow_shulker_box"
+      },
+      {
+         "name" : "minecraft:yellow_stained_glass"
+      },
+      {
+         "name" : "minecraft:yellow_stained_glass_pane"
+      },
+      {
+         "name" : "minecraft:yellow_terracotta"
       },
       {
          "name" : "minecraft:yellow_wool"
@@ -3115,7 +3817,8 @@
          "name" : "minecraft:zombie_villager_spawn_egg"
       }
    ],
-   "minecraft_version" : "1.20.10-beta.0",
-   "module_type" : "item",
-   "name" : "mojang-item"
+   "minecraft_version" : "1.21.0-beta.0",
+   "module_type" : "vanilla_data",
+   "name" : "mojang-item",
+   "vanilla_data_type" : "item"
 }

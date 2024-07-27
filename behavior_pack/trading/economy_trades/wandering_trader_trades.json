@@ -155,7 +155,7 @@
               ],
               "gives": [
                 {
-                  "item": "minecraft:red_flower:0"
+                  "item": "minecraft:poppy"
                 }
               ]
             },
@@ -169,7 +169,7 @@
               ],
               "gives": [
                 {
-                  "item": "minecraft:red_flower:1"
+                  "item": "minecraft:blue_orchid"
                 }
               ]
             },
@@ -183,7 +183,7 @@
               ],
               "gives": [
                 {
-                  "item": "minecraft:red_flower:2"
+                  "item": "minecraft:allium"
                 }
               ]
             },
@@ -197,7 +197,7 @@
               ],
               "gives": [
                 {
-                  "item": "minecraft:red_flower:3"
+                  "item": "minecraft:azure_bluet"
                 }
               ]
             },
@@ -211,7 +211,7 @@
               ],
               "gives": [
                 {
-                  "item": "minecraft:red_flower:4"
+                  "item": "minecraft:red_tulip"
                 }
               ]
             },
@@ -225,7 +225,7 @@
               ],
               "gives": [
                 {
-                  "item": "minecraft:red_flower:5"
+                  "item": "minecraft:orange_tulip"
                 }
               ]
             },
@@ -239,7 +239,7 @@
               ],
               "gives": [
                 {
-                  "item": "minecraft:red_flower:6"
+                  "item": "minecraft:white_tulip"
                 }
               ]
             },
@@ -253,7 +253,7 @@
               ],
               "gives": [
                 {
-                  "item": "minecraft:red_flower:7"
+                  "item": "minecraft:pink_tulip"
                 }
               ]
             },
@@ -267,7 +267,7 @@
               ],
               "gives": [
                 {
-                  "item": "minecraft:red_flower:8"
+                  "item": "minecraft:oxeye_daisy"
                 }
               ]
             },
@@ -281,7 +281,7 @@
               ],
               "gives": [
                 {
-                  "item": "minecraft:red_flower:9"
+                  "item": "minecraft:cornflower"
                 }
               ]
             },
@@ -295,7 +295,7 @@
               ],
               "gives": [
                 {
-                  "item": "minecraft:red_flower:10"
+                  "item": "minecraft:lily_of_the_valley"
                 }
               ]
             },
@@ -381,6 +381,9 @@
                       ]
                     },
                     {
+                      "item": "minecraft:cherry_sapling"
+                    },
+                    {
                       "item": "minecraft:mangrove_propagule"
                     }
                   ]
@@ -398,16 +401,23 @@
               ],
               "gives": [
                 {
-                  "item": "minecraft:dye",
-                  "quantity": 3,
-                  "functions": [
-                    {
-                      "function": "random_aux_value",
-                      "values": {
-                        "min": 0,
-                        "max": 15
-                      }
-                    }
+                  "choice": [
+                    {"item": "minecraft:red_dye", "quantity": 3},
+                    {"item": "minecraft:white_dye", "quantity": 3},
+                    {"item": "minecraft:blue_dye", "quantity": 3},
+                    {"item": "minecraft:pink_dye", "quantity": 3},
+                    {"item": "minecraft:black_dye", "quantity": 3},
+                    {"item": "minecraft:green_dye", "quantity": 3},
+                    {"item": "minecraft:light_gray_dye", "quantity": 3},
+                    {"item": "minecraft:magenta_dye", "quantity": 3},
+                    {"item": "minecraft:yellow_dye", "quantity": 3},
+                    {"item": "minecraft:gray_dye", "quantity": 3},
+                    {"item": "minecraft:purple_dye", "quantity": 3},
+                    {"item": "minecraft:light_blue_dye", "quantity": 3},
+                    {"item": "minecraft:lime_dye", "quantity": 3},
+                    {"item": "minecraft:orange_dye", "quantity": 3},
+                    {"item": "minecraft:brown_dye", "quantity": 3},
+                    {"item": "minecraft:cyan_dye", "quantity": 3}
                   ]
                 }
               ]

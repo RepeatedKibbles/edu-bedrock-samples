@@ -146,8 +146,8 @@
               "binding_collection_name": "$keymapping_collection"
             },
             {
-              "binding_name":  "#audible_keymapping_name",
-              "binding_type":  "collection",
+              "binding_name": "#audible_keymapping_name",
+              "binding_type": "collection",
               "binding_collection_name": "$keymapping_collection"
             }
           ]
@@ -192,7 +192,7 @@
     "$keymapping_grid_dimension": "#keyboard_full_grid_dimension",
     "$keymapping_collection": "keyboard_full_collection"
   },
-  
+
 
   // gamepad controls
   "gamepad_mapping_item": {
@@ -231,7 +231,7 @@
       },
       {
         "keymapping_button_0@controls_section.image_binding_button": {
-          "$button_tts_header":  "#audible_keymapping_name",
+          "$button_tts_header": "#audible_keymapping_name",
           "size": [ "20% + 1px", "100% - 4px" ],
           "anchor_from": "top_left",
           "anchor_to": "top_left",
@@ -241,8 +241,8 @@
               "binding_collection_name": "$keymapping_collection"
             },
             {
-              "binding_name":  "#audible_keymapping_name",
-              "binding_type":  "collection",
+              "binding_name": "#audible_keymapping_name",
+              "binding_type": "collection",
               "binding_collection_name": "$keymapping_collection"
             }
           ]
@@ -958,7 +958,7 @@
                     "select_control_mode@settings_common.action_button": {
                       "$pressed_button_name": "button.select_control_mode",
                       "$button_text": "options.controlMode.selectControlMode",
-                      "size": [ "100%", 20 ],
+                      "size": [ "100%", 30 ],
                       "anchor_to": "bottom_middle",
                       "anchor_from": "bottom_middle"
                     }
@@ -974,6 +974,52 @@
                   {
                     "binding_name": "#new_touch_control_schemes_settings",
                     "binding_name_override": "#visible"
+                  }
+                ]
+              }
+            },
+            {
+              "option_resizable_ui@settings_common.option_toggle": {
+                "$option_label": "options.resizableUI",
+                "$option_binding_name": "#resizable_ui",
+                "$option_enabled_binding_name": "#resizable_ui_enabled",
+                "$toggle_name": "resizable_ui"
+              }
+            },
+            {
+              "modify_control_layout_section": {
+                "type": "stack_panel",
+                "size": [ "100%", "100%c" ],
+                "controls": [
+                  {
+                    "modify_control_layout_button@settings_common.action_button": {
+                      "$pressed_button_name": "button.modify_control_layout",
+                      "$button_text": "hudScreen.controlCustomization.customiseControls",
+                      "$focus_override_down": "FOCUS_OVERRIDE_STOP",
+                      "size": [ "100%", 30 ],
+                      "bindings": [
+                        {
+                          "binding_name": "#modify_layout_enabled",
+                          "binding_name_override": "#enabled"
+                        }
+                      ]
+                    }
+                  },
+                  { 
+                    "customize_tooltip_option@controls_section.customize_tooltip_option": {} 
+                  },
+                  {
+                    "padding": {
+                      "type": "panel",
+                      "size": [ "100%", "5px" ]
+                    }
+                  }
+                ],
+                "bindings": [
+                  {
+                    "binding_name": "#resizable_ui_active",
+                    "binding_name_override": "#visible",
+                    "binding_type": "global"
                   }
                 ]
               }
@@ -1021,47 +1067,11 @@
               }
             },
             {
-              "modify_control_layout_button@settings_common.action_button": {
-                "$pressed_button_name": "button.modify_control_layout",
-                "$button_text": "Modify Control Layout",
-                "$focus_override_down": "FOCUS_OVERRIDE_STOP",
-                "bindings": [
-                  {
-                    "binding_name": "#resizable_ui",
-                    "binding_name_override": "#visible",
-                    "binding_type": "global"
-                  }
-                ]
-              }
-            },
-            {
-              "option_toggle_invert_y@settings_common.option_toggle": {
-                "$option_label": "options.invertYAxis",
-                "$option_binding_name": "#touch_invert_y_axis",
-                "$option_enabled_binding_name": "#touch_invert_y_axis_enabled",
-                "$toggle_name": "touch_invert_y_axis"
-              }
-            },
-            {
               "option_toggle_auto_jump@settings_common.option_toggle": {
                 "$option_label": "options.autojump",
                 "$option_binding_name": "#touch_autojump",
                 "$option_enabled_binding_name": "#touch_autojump_enabled",
                 "$toggle_name": "touch_autojump"
-              }
-            },
-            {
-              "option_toggle_toggle_crouch@settings_common.option_toggle": {
-                "$option_label": "options.toggleCrouch",
-                "$option_binding_name": "#touch_toggle_crouch",
-                "$option_enabled_binding_name": "#touch_toggle_crouch_enabled",
-                "$toggle_name": "touch_toggle_crouch",
-                "bindings": [
-                  {
-                    "binding_name": "#touch_controls_v2",
-                    "binding_name_override": "#visible"
-                  }
-                ]
               }
             },
             {
@@ -1079,70 +1089,17 @@
               }
             },
             {
-              "option_always_highlight_hovering_box_in_crosshair@settings_common.option_toggle": {
-                "$option_label": "options.alwaysHighlightHoveringBoxInCrosshair",
-                "$option_binding_name": "#always_highlight_hovering_box_in_crosshair",
-                "$option_enabled_binding_name": "#always_highlight_hovering_box_in_crosshair_enabled",
-                "$toggle_name": "always_highlight_hovering_box_in_crosshair",
-                "bindings": [
-                  {
-                    "binding_name": "#touch_controls_v2_crosshair_mode",
-                    "binding_name_override": "#visible"
-                  }
-                ]
-              }
-            },
-            {
-              "option_static_joystick@settings_common.option_toggle": {
-                "$option_label": "options.staticjoystick",
-                "$option_binding_name": "#static_joystick",
-                "$option_enabled_binding_name": "#static_joystick_enabled",
-                "$toggle_name": "static_joystick",
+              "joystick_visibility_dropdown@settings_common.option_dropdown": {
+                "$option_label": "options.joystickVisibilityOption",
+                "$dropdown_content": "controls_section.joystick_visibility_dropdown_content",
+                "$dropdown_area": "content_area",
+                "$dropdown_name": "joystick_visibility_dropdown",
+                "$option_enabled_binding_name": "#joystick_visibility_dropdown_enabled",
+                "$options_dropdown_toggle_label_binding": "#joystick_visibility_dropdown_toggle_label",
+                "$dropdown_scroll_content_size": [ "100%", "200%" ],
                 "bindings": [
                   {
                     "binding_name": "#touch_controls_v2",
-                    "binding_name_override": "#visible"
-                  }
-                ]
-              }
-            },
-            {
-              "option_toggle_move_stick_visible@settings_common.option_toggle": {
-                "$option_label": "options.joystickMoveVisible",
-                "$option_binding_name": "#move_stick_visible",
-                "$option_enabled_binding_name": "#move_stick_visible_enabled",
-                "$toggle_name": "move_stick_visible",
-                "bindings": [
-                  {
-                    "binding_name": "#touch_controls_v2",
-                    "binding_name_override": "#visible"
-                  }
-                ]
-              }
-            },
-            {
-              "option_toggle_default_move_stick_visible@settings_common.option_toggle": {
-                "$option_label": "options.defaultJoystickMoveVisible",
-                "$option_binding_name": "#default_move_stick_visible",
-                "$option_enabled_binding_name": "#default_move_stick_visible_enabled",
-                "$toggle_name": "default_move_stick_visible",
-                "bindings": [
-                  {
-                    "binding_name": "#touch_controls_v2",
-                    "binding_name_override": "#visible"
-                  }
-                ]
-              }
-            },
-            {
-              "option_creative_delayed_block_breaking@settings_common.option_toggle": {
-                "$option_label": "options.creativeDelayedBlockBreaking",
-                "$option_binding_name": "#creative_delayed_block_breaking",
-                "$option_enabled_binding_name": "#creative_delayed_block_breaking_enabled",
-                "$toggle_name": "creative_delayed_block_breaking",
-                "bindings": [
-                  {
-                    "binding_name": "(not #crosshair_action_button_on)",
                     "binding_name_override": "#visible"
                   }
                 ]
@@ -1169,6 +1126,37 @@
               }
             },
             {
+              "sneak_dropdown@settings_common.option_dropdown": {
+                "$option_label": "options.sneakOption",
+                "$dropdown_content": "controls_section.sneak_dropdown_content",
+                "$dropdown_area": "content_area",
+                "$dropdown_name": "sneak_dropdown",
+                "$option_enabled_binding_name": "#sneak_dropdown_enabled",
+                "$options_dropdown_toggle_label_binding": "#sneak_dropdown_toggle_label",
+                "$dropdown_scroll_content_size": [ "100%", "145%" ],
+                "bindings": [
+                  {
+                    "binding_name": "#touch_controls_v2",
+                    "binding_name_override": "#visible"
+                  }
+                ]
+              }
+            },
+            {
+              "option_slider_1@settings_common.option_slider": {
+                "$option_label": "#button_size_slider_label",
+                "$slider_name": "button_size",
+                "$slider_value_binding_name": "#button_size",
+                "$slider_tts_text_value": "#button_size_text_value",
+                "$option_enabled_binding_name": "#button_size_enabled",
+                "$label_bindings": [
+                  {
+                    "binding_name": "$option_label"
+                  }
+                ]
+              }
+            },
+            {
               "option_toggle_destroy_vibration@settings_common.option_toggle": {
                 "$option_label": "options.destroyvibration",
                 "$option_binding_name": "#touch_destroy_vibration",
@@ -1185,6 +1173,42 @@
               }
             },
             {
+              "option_creative_delayed_block_breaking@settings_common.option_toggle": {
+                "$option_label": "options.creativeDelayedBlockBreaking",
+                "$option_binding_name": "#creative_delayed_block_breaking",
+                "$option_enabled_binding_name": "#creative_delayed_block_breaking_enabled",
+                "$toggle_name": "creative_delayed_block_breaking",
+                "bindings": [
+                  {
+                    "binding_name": "(not #crosshair_action_button_on)",
+                    "binding_name_override": "#visible"
+                  }
+                ]
+              }
+            },
+            {
+              "option_toggle_invert_y@settings_common.option_toggle": {
+                "$option_label": "options.invertYAxis",
+                "$option_binding_name": "#touch_invert_y_axis",
+                "$option_enabled_binding_name": "#touch_invert_y_axis_enabled",
+                "$toggle_name": "touch_invert_y_axis"
+              }
+            },
+            {
+              "option_always_highlight_hovering_box_in_crosshair@settings_common.option_toggle": {
+                "$option_label": "options.alwaysHighlightHoveringBoxInCrosshair",
+                "$option_binding_name": "#always_highlight_hovering_box_in_crosshair",
+                "$option_enabled_binding_name": "#always_highlight_hovering_box_in_crosshair_enabled",
+                "$toggle_name": "always_highlight_hovering_box_in_crosshair",
+                "bindings": [
+                  {
+                    "binding_name": "#touch_controls_v2_crosshair_mode",
+                    "binding_name_override": "#visible"
+                  }
+                ]
+              }
+            },
+            {
               "option_toggle_use_touchpad@settings_common.option_toggle": {
                 "$option_label": "options.usetouchpad",
                 "$option_binding_name": "#split_controls",
@@ -1196,14 +1220,6 @@
                     "binding_name_override": "#visible"
                   }
                 ]
-              }
-            },
-            {
-              "option_toggle_left_handed@settings_common.option_toggle": {
-                "$option_label": "options.lefthanded",
-                "$option_binding_name": "#left_handed",
-                "$option_enabled_binding_name": "#left_handed_enabled",
-                "$toggle_name": "left_handed"
               }
             },
             {
@@ -1227,40 +1243,6 @@
                 "$option_enabled_binding_name": "#hotbar_only_touch_enabled",
                 "$toggle_name": "hotbar_only_touch"
               }
-            },
-            {
-              "option_slider_1@settings_common.option_slider": {
-                "$option_label": "#button_size_slider_label",
-                "$slider_name": "button_size",
-                "$slider_value_binding_name": "#button_size",
-                "$slider_tts_text_value": "#button_size_text_value",
-                "$option_enabled_binding_name": "#button_size_enabled",
-                "$label_bindings": [
-                  {
-                    "binding_name": "$option_label"
-                  }
-                ]
-              }
-            },
-            {
-              "hotbar_scale@settings_common.option_slider": {
-                "$option_label": "#hotbar_scale_slider_label",
-                "$slider_name": "hotbar_scale",
-                "$slider_value_binding_name": "#hotbar_scale",
-                "$slider_tts_text_value": "#hotbar_scale_text_value",
-                "$option_enabled_binding_name": "#hotbar_scale_enabled",
-                "$label_bindings": [
-                  {
-                    "binding_name": "$option_label"
-                  }
-                ],
-                "bindings": [
-                  {
-                    "binding_name": "#resizable_ui_active",
-                    "binding_name_override": "#visible"
-                  }
-                ]
-              }
             }
           ]
         }
@@ -1271,6 +1253,109 @@
           "$button_text": "controllerLayoutScreen.resetAllBindings",
           "$focus_override_down": "FOCUS_OVERRIDE_STOP"
         }
+      }
+    ]
+  },
+
+  "joystick_visibility_dropdown_content@settings_common.option_radio_dropdown_group": {
+    "$radio_buttons": [
+      {
+        "@settings_common.radio_with_label": {
+          "$toggle_state_binding_name": "#joystick_visibility_visible",
+          "$radio_label_text": "options.joystickVisibilityOption.visibleJoystick"
+        }
+      },
+      {
+        "@settings_common.radio_with_label": {
+          "$toggle_state_binding_name": "#joystick_visibility_hidden",
+          "$radio_label_text": "options.joystickVisibilityOption.hiddenJoystick"
+        }
+      },
+      {
+        "@settings_common.radio_with_label": {
+          "$toggle_state_binding_name": "#joystick_visibility_hidden_when_unused",
+          "$radio_label_text": "options.joystickVisibilityOption.hiddenJoystickWhenUnused"
+        }
+      }
+    ]
+  },
+
+  "sneak_dropdown_content@settings_common.option_radio_dropdown_group": {
+    "$radio_buttons": [
+      {
+        "@settings_common.radio_with_label": {
+          "$toggle_state_binding_name": "#sneak_toggle",
+          "$radio_label_text": "options.sneakOption.toggle"
+        }
+      },
+      {
+        "@settings_common.radio_with_label": {
+          "$toggle_state_binding_name": "#sneak_hold",
+          "$radio_label_text": "options.sneakOption.hold"
+        }
+      }
+    ]
+  },
+  
+  "customize_tooltip_option_image": {
+    "type": "image",
+    "size": [ 7, 11 ],
+    "texture": "textures/ui/infobulb"
+  },
+
+  "customize_tooltip_option_popup@common.static_tooltip_popup_with_image_and_text": {
+    "size": [ "100% - 4px", "100%cm + 8px" ],
+    "anchor_from": "top_middle",
+    "anchor_to": "bottom_middle",
+    "$tooltip_panel_offset": [ 0, -30 ],
+    "$tooltip_popup_image": "textures/ui/infobulb",
+    "$tooltip_button_binding_type": "global",
+    "$tooltip_button_collection_name": "",
+    "$tooltip_popup_visible_binding|default": "#customize_tooltip_option_visible",
+    "$tooltip_text_binding_name": "#customize_tooltip_option_text",
+    "$tooltip_chevron_anchor": "bottom_right",
+    "$tooltip_popup_chevron_offset": [ "-30%x", "100%y - 3px" ]
+  },
+
+  "customize_tooltip_option": {
+    "type": "panel",
+    "size": [ "100%", 0 ],
+    "anchor_from": "top_right",
+    "anchor_to": "top_right",
+    "controls": [
+      {
+        "customize_tooltip_option_image@controls_section.customize_tooltip_option_image": {
+          "offset": [ -14, -20 ],
+          "anchor_from": "top_right",
+          "anchor_to": "top_right",
+          "layer": 3,
+          "controls": [
+            {
+              "hover_detection_input_panel": {
+                "type": "input_panel",
+                "consume_hover_events": false,
+                "focus_enabled": true,
+                "tts_skip_message": true,
+                "button_mappings": [
+                  {
+                    "to_button_id": "button.customize_tooltip_option_is_hovered",
+                    "mapping_type": "pressed"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      { 
+        "customize_tooltip_option_popup@controls_section.customize_tooltip_option_popup": {} 
+      }
+    ],
+    "bindings": [
+      {
+         "binding_name": "#resizable_tooltip_enable",
+         "binding_name_override": "#visible",
+         "binding_type": "global"
       }
     ]
   }

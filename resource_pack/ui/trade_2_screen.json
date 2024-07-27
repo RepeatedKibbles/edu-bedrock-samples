@@ -919,7 +919,10 @@
 
                 "alpha": "$alpha_anim",
                 "text": "#selected_hover_text",
-                "color": "$item_hover_text_color"
+                "color": "$item_hover_text_color",
+                // Disable profanity filter for this control so that
+                // we can enable it on the fly only for items with custom names
+                "enable_profanity_filter": false
               }
             }
           ]
@@ -1496,18 +1499,14 @@
       { "item_lock_notification_factory@common.item_lock_notification_factory": {} },
       { "inventory_selected_icon_button@common.inventory_selected_icon_button": {} },
       { "inventory_take_progress_icon_button@common.inventory_take_progress_icon_button": {} },
-      {
-        "flying_item_renderer@common.flying_item_renderer": {
-          "layer": 20
-        }
-      }
+      { "flying_item_renderer@common.flying_item_renderer": {} }
     ]
   },
 
   "trade_screen@common.inventory_screen_common": {
     "close_on_player_hurt": true,
     "$screen_bg_content": "common.screen_background",
-
+    "$screen_background_alpha": 0.4,
     "button_mappings": "$button_mappings",
 
     "variables": [

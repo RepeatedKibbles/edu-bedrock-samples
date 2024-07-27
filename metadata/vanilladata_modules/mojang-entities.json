@@ -10,6 +10,9 @@
          "name" : "area_effect_cloud"
       },
       {
+         "name" : "armadillo"
+      },
+      {
          "name" : "armor_stand"
       },
       {
@@ -29,6 +32,15 @@
       },
       {
          "name" : "boat"
+      },
+      {
+         "name" : "bogged"
+      },
+      {
+         "name" : "breeze"
+      },
+      {
+         "name" : "breeze_wind_charge_projectile"
       },
       {
          "name" : "camel"
@@ -172,6 +184,9 @@
          "name" : "ocelot"
       },
       {
+         "name" : "ominous_item_spawner"
+      },
+      {
          "name" : "panda"
       },
       {
@@ -301,6 +316,9 @@
          "name" : "warden"
       },
       {
+         "name" : "wind_charge_projectile"
+      },
+      {
          "name" : "witch"
       },
       {
@@ -343,7 +361,8 @@
          "name" : "zombie_villager_v2"
       }
    ],
-   "minecraft_version" : "1.20.10-beta.0",
-   "module_type" : "entity",
-   "name" : "mojang-entity"
+   "minecraft_version" : "1.21.0-beta.0",
+   "module_type" : "vanilla_data",
+   "name" : "mojang-entity",
+   "vanilla_data_type" : "entity"
 }

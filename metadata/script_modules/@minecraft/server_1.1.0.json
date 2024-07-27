@@ -21,6 +21,18 @@
                "name" : "setPermutation",
                "privilege" : "none",
                "return_type" : {
+                  "error_types" : [
+                     {
+                        "is_bind_type" : true,
+                        "is_errorable" : false,
+                        "name" : "LocationInUnloadedChunkError"
+                     },
+                     {
+                        "is_bind_type" : true,
+                        "is_errorable" : false,
+                        "name" : "LocationOutOfWorldBoundariesError"
+                     }
+                  ],
                   "is_bind_type" : false,
                   "is_errorable" : true,
                   "name" : "undefined"
@@ -51,6 +63,18 @@
                "is_read_only" : true,
                "name" : "permutation",
                "type" : {
+                  "error_types" : [
+                     {
+                        "is_bind_type" : true,
+                        "is_errorable" : false,
+                        "name" : "LocationInUnloadedChunkError"
+                     },
+                     {
+                        "is_bind_type" : true,
+                        "is_errorable" : false,
+                        "name" : "LocationOutOfWorldBoundariesError"
+                     }
+                  ],
                   "is_bind_type" : true,
                   "is_errorable" : true,
                   "name" : "BlockPermutation"
@@ -300,6 +324,18 @@
                "name" : "getBlock",
                "privilege" : "read_only",
                "return_type" : {
+                  "error_types" : [
+                     {
+                        "is_bind_type" : true,
+                        "is_errorable" : false,
+                        "name" : "LocationInUnloadedChunkError"
+                     },
+                     {
+                        "is_bind_type" : true,
+                        "is_errorable" : false,
+                        "name" : "LocationOutOfWorldBoundariesError"
+                     }
+                  ],
                   "is_bind_type" : false,
                   "is_errorable" : true,
                   "name" : "optional",
@@ -440,7 +476,7 @@
                "name" : "id",
                "type" : {
                   "is_bind_type" : false,
-                  "is_errorable" : true,
+                  "is_errorable" : false,
                   "name" : "string"
                }
             }
@@ -535,7 +571,7 @@
                "name" : "id",
                "type" : {
                   "is_bind_type" : false,
-                  "is_errorable" : true,
+                  "is_errorable" : false,
                   "name" : "string"
                }
             },
@@ -563,7 +599,7 @@
                "name" : "typeId",
                "type" : {
                   "is_bind_type" : false,
-                  "is_errorable" : true,
+                  "is_errorable" : false,
                   "name" : "string"
                }
             }
@@ -1047,7 +1083,13 @@
       }
    ],
    "constants" : [],
-   "dependencies" : [],
+   "dependencies" : [
+      {
+         "name" : "@minecraft/common",
+         "uuid" : "77ec12b4-1b2b-4c98-8d34-d1cd63f849d5",
+         "version" : "1.0.0"
+      }
+   ],
    "enums" : [
       {
          "constants" : [
@@ -1099,30 +1141,32 @@
          "name" : "GameMode"
       }
    ],
-   "errors" : [],
+   "errors" : [
+      {
+         "name" : "LocationInUnloadedChunkError",
+         "properties" : [],
+         "type" : {
+            "is_bind_type" : true,
+            "is_errorable" : false,
+            "name" : "LocationInUnloadedChunkError"
+         }
+      },
+      {
+         "name" : "LocationOutOfWorldBoundariesError",
+         "properties" : [],
+         "type" : {
+            "is_bind_type" : true,
+            "is_errorable" : false,
+            "name" : "LocationOutOfWorldBoundariesError"
+         }
+      }
+   ],
    "functions" : [],
    "interfaces" : [
       {
-         "name" : "EntityQueryOptions",
+         "base_types" : [],
+         "name" : "EntityFilter",
          "properties" : [
-            {
-               "is_read_only" : false,
-               "name" : "closest",
-               "type" : {
-                  "is_bind_type" : false,
-                  "is_errorable" : false,
-                  "name" : "optional",
-                  "optional_type" : {
-                     "is_bind_type" : false,
-                     "is_errorable" : false,
-                     "name" : "int32",
-                     "valid_range" : {
-                        "max" : 2147483647,
-                        "min" : -2147483648
-                     }
-                  }
-               }
-            },
             {
                "is_read_only" : false,
                "name" : "excludeFamilies",
@@ -1239,24 +1283,6 @@
             },
             {
                "is_read_only" : false,
-               "name" : "farthest",
-               "type" : {
-                  "is_bind_type" : false,
-                  "is_errorable" : false,
-                  "name" : "optional",
-                  "optional_type" : {
-                     "is_bind_type" : false,
-                     "is_errorable" : false,
-                     "name" : "int32",
-                     "valid_range" : {
-                        "max" : 2147483647,
-                        "min" : -2147483648
-                     }
-                  }
-               }
-            },
-            {
-               "is_read_only" : false,
                "name" : "gameMode",
                "type" : {
                   "is_bind_type" : false,
@@ -1266,38 +1292,6 @@
                      "is_bind_type" : true,
                      "is_errorable" : false,
                      "name" : "GameMode"
-                  }
-               }
-            },
-            {
-               "is_read_only" : false,
-               "name" : "location",
-               "type" : {
-                  "is_bind_type" : false,
-                  "is_errorable" : false,
-                  "name" : "optional",
-                  "optional_type" : {
-                     "is_bind_type" : true,
-                     "is_errorable" : false,
-                     "name" : "Vector3"
-                  }
-               }
-            },
-            {
-               "is_read_only" : false,
-               "name" : "maxDistance",
-               "type" : {
-                  "is_bind_type" : false,
-                  "is_errorable" : false,
-                  "name" : "optional",
-                  "optional_type" : {
-                     "is_bind_type" : false,
-                     "is_errorable" : false,
-                     "name" : "float",
-                     "valid_range" : {
-                        "max" : 2147483647,
-                        "min" : -2147483648
-                     }
                   }
                }
             },
@@ -1340,24 +1334,6 @@
             {
                "is_read_only" : false,
                "name" : "maxVerticalRotation",
-               "type" : {
-                  "is_bind_type" : false,
-                  "is_errorable" : false,
-                  "name" : "optional",
-                  "optional_type" : {
-                     "is_bind_type" : false,
-                     "is_errorable" : false,
-                     "name" : "float",
-                     "valid_range" : {
-                        "max" : 2147483647,
-                        "min" : -2147483648
-                     }
-                  }
-               }
-            },
-            {
-               "is_read_only" : false,
-               "name" : "minDistance",
                "type" : {
                   "is_bind_type" : false,
                   "is_errorable" : false,
@@ -1497,10 +1473,114 @@
          "type" : {
             "is_bind_type" : true,
             "is_errorable" : false,
+            "name" : "EntityFilter"
+         }
+      },
+      {
+         "base_types" : [
+            {
+               "is_bind_type" : true,
+               "is_errorable" : false,
+               "name" : "EntityFilter"
+            }
+         ],
+         "name" : "EntityQueryOptions",
+         "properties" : [
+            {
+               "is_read_only" : false,
+               "name" : "closest",
+               "type" : {
+                  "is_bind_type" : false,
+                  "is_errorable" : false,
+                  "name" : "optional",
+                  "optional_type" : {
+                     "is_bind_type" : false,
+                     "is_errorable" : false,
+                     "name" : "int32",
+                     "valid_range" : {
+                        "max" : 2147483647,
+                        "min" : -2147483648
+                     }
+                  }
+               }
+            },
+            {
+               "is_read_only" : false,
+               "name" : "farthest",
+               "type" : {
+                  "is_bind_type" : false,
+                  "is_errorable" : false,
+                  "name" : "optional",
+                  "optional_type" : {
+                     "is_bind_type" : false,
+                     "is_errorable" : false,
+                     "name" : "int32",
+                     "valid_range" : {
+                        "max" : 2147483647,
+                        "min" : -2147483648
+                     }
+                  }
+               }
+            },
+            {
+               "is_read_only" : false,
+               "name" : "location",
+               "type" : {
+                  "is_bind_type" : false,
+                  "is_errorable" : false,
+                  "name" : "optional",
+                  "optional_type" : {
+                     "is_bind_type" : true,
+                     "is_errorable" : false,
+                     "name" : "Vector3"
+                  }
+               }
+            },
+            {
+               "is_read_only" : false,
+               "name" : "maxDistance",
+               "type" : {
+                  "is_bind_type" : false,
+                  "is_errorable" : false,
+                  "name" : "optional",
+                  "optional_type" : {
+                     "is_bind_type" : false,
+                     "is_errorable" : false,
+                     "name" : "float",
+                     "valid_range" : {
+                        "max" : 2147483647,
+                        "min" : -2147483648
+                     }
+                  }
+               }
+            },
+            {
+               "is_read_only" : false,
+               "name" : "minDistance",
+               "type" : {
+                  "is_bind_type" : false,
+                  "is_errorable" : false,
+                  "name" : "optional",
+                  "optional_type" : {
+                     "is_bind_type" : false,
+                     "is_errorable" : false,
+                     "name" : "float",
+                     "valid_range" : {
+                        "max" : 2147483647,
+                        "min" : -2147483648
+                     }
+                  }
+               }
+            }
+         ],
+         "type" : {
+            "is_bind_type" : true,
+            "is_errorable" : false,
             "name" : "EntityQueryOptions"
          }
       },
       {
+         "base_types" : [],
          "name" : "EntityQueryScoreOptions",
          "properties" : [
             {
@@ -1575,6 +1655,7 @@
          }
       },
       {
+         "base_types" : [],
          "name" : "RawMessage",
          "properties" : [
             {
@@ -1677,6 +1758,7 @@
          }
       },
       {
+         "base_types" : [],
          "name" : "RawMessageScore",
          "properties" : [
             {
@@ -1715,6 +1797,7 @@
          }
       },
       {
+         "base_types" : [],
          "name" : "Vector3",
          "properties" : [
             {
@@ -1764,7 +1847,7 @@
          }
       }
    ],
-   "minecraft_version" : "1.20.10-beta.0",
+   "minecraft_version" : "1.21.0-beta.0",
    "module_type" : "script",
    "name" : "@minecraft/server",
    "objects" : [
@@ -1789,6 +1872,7 @@
          }
       }
    ],
+   "type_aliases" : [],
    "uuid" : "b26a4d4c-afdf-4690-88f8-931846312678",
    "version" : "1.1.0"
 }

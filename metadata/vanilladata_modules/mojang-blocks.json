@@ -835,6 +835,18 @@
          ]
       },
       {
+         "name" : "crafting",
+         "type" : "bool",
+         "values" : [
+            {
+               "value" : false
+            },
+            {
+               "value" : true
+            }
+         ]
+      },
+      {
          "name" : "damage",
          "type" : "string",
          "values" : [
@@ -2062,6 +2074,18 @@
          ]
       },
       {
+         "name" : "ominous",
+         "type" : "bool",
+         "values" : [
+            {
+               "value" : false
+            },
+            {
+               "value" : true
+            }
+         ]
+      },
+      {
          "name" : "open_bit",
          "type" : "bool",
          "values" : [
@@ -2070,6 +2094,48 @@
             },
             {
                "value" : true
+            }
+         ]
+      },
+      {
+         "name" : "orientation",
+         "type" : "string",
+         "values" : [
+            {
+               "value" : "down_east"
+            },
+            {
+               "value" : "down_north"
+            },
+            {
+               "value" : "down_south"
+            },
+            {
+               "value" : "down_west"
+            },
+            {
+               "value" : "up_east"
+            },
+            {
+               "value" : "up_north"
+            },
+            {
+               "value" : "up_south"
+            },
+            {
+               "value" : "up_west"
+            },
+            {
+               "value" : "west_up"
+            },
+            {
+               "value" : "east_up"
+            },
+            {
+               "value" : "north_up"
+            },
+            {
+               "value" : "south_up"
             }
          ]
       },
@@ -2770,6 +2836,30 @@
          ]
       },
       {
+         "name" : "trial_spawner_state",
+         "type" : "int",
+         "values" : [
+            {
+               "value" : 0
+            },
+            {
+               "value" : 1
+            },
+            {
+               "value" : 2
+            },
+            {
+               "value" : 3
+            },
+            {
+               "value" : 4
+            },
+            {
+               "value" : 5
+            }
+         ]
+      },
+      {
          "name" : "triggered_bit",
          "type" : "bool",
          "values" : [
@@ -2916,6 +3006,24 @@
             },
             {
                "value" : true
+            }
+         ]
+      },
+      {
+         "name" : "vault_state",
+         "type" : "string",
+         "values" : [
+            {
+               "value" : "inactive"
+            },
+            {
+               "value" : "active"
+            },
+            {
+               "value" : "unlocking"
+            },
+            {
+               "value" : "ejecting"
             }
          ]
       },
@@ -3250,6 +3358,14 @@
          ]
       },
       {
+         "name" : "minecraft:acacia_double_slab",
+         "properties" : [
+            {
+               "name" : "minecraft:vertical_half"
+            }
+         ]
+      },
+      {
          "name" : "minecraft:acacia_fence",
          "properties" : []
       },
@@ -3285,6 +3401,17 @@
          ]
       },
       {
+         "name" : "minecraft:acacia_leaves",
+         "properties" : [
+            {
+               "name" : "persistent_bit"
+            },
+            {
+               "name" : "update_bit"
+            }
+         ]
+      },
+      {
          "name" : "minecraft:acacia_log",
          "properties" : [
             {
@@ -3293,10 +3420,30 @@
          ]
       },
       {
+         "name" : "minecraft:acacia_planks",
+         "properties" : []
+      },
+      {
          "name" : "minecraft:acacia_pressure_plate",
          "properties" : [
             {
                "name" : "redstone_signal"
+            }
+         ]
+      },
+      {
+         "name" : "minecraft:acacia_sapling",
+         "properties" : [
+            {
+               "name" : "age_bit"
+            }
+         ]
+      },
+      {
+         "name" : "minecraft:acacia_slab",
+         "properties" : [
+            {
+               "name" : "minecraft:vertical_half"
             }
          ]
       },
@@ -3342,6 +3489,14 @@
          ]
       },
       {
+         "name" : "minecraft:acacia_wood",
+         "properties" : [
+            {
+               "name" : "pillar_axis"
+            }
+         ]
+      },
+      {
          "name" : "minecraft:activator_rail",
          "properties" : [
             {
@@ -3357,6 +3512,10 @@
          "properties" : []
       },
       {
+         "name" : "minecraft:allium",
+         "properties" : []
+      },
+      {
          "name" : "minecraft:allow",
          "properties" : []
       },
@@ -3368,12 +3527,16 @@
          "name" : "minecraft:amethyst_cluster",
          "properties" : [
             {
-               "name" : "facing_direction"
+               "name" : "minecraft:block_face"
             }
          ]
       },
       {
          "name" : "minecraft:ancient_debris",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:andesite",
          "properties" : []
       },
       {
@@ -3394,7 +3557,7 @@
                "name" : "damage"
             },
             {
-               "name" : "direction"
+               "name" : "minecraft:cardinal_direction"
             }
          ]
       },
@@ -3423,6 +3586,10 @@
                "name" : "update_bit"
             }
          ]
+      },
+      {
+         "name" : "minecraft:azure_bluet",
+         "properties" : []
       },
       {
          "name" : "minecraft:bamboo",
@@ -3478,7 +3645,7 @@
          "name" : "minecraft:bamboo_double_slab",
          "properties" : [
             {
-               "name" : "top_slot_bit"
+               "name" : "minecraft:vertical_half"
             }
          ]
       },
@@ -3525,7 +3692,7 @@
          "name" : "minecraft:bamboo_mosaic_double_slab",
          "properties" : [
             {
-               "name" : "top_slot_bit"
+               "name" : "minecraft:vertical_half"
             }
          ]
       },
@@ -3533,7 +3700,7 @@
          "name" : "minecraft:bamboo_mosaic_slab",
          "properties" : [
             {
-               "name" : "top_slot_bit"
+               "name" : "minecraft:vertical_half"
             }
          ]
       },
@@ -3565,9 +3732,6 @@
          "properties" : [
             {
                "name" : "age_bit"
-            },
-            {
-               "name" : "sapling_type"
             }
          ]
       },
@@ -3575,7 +3739,7 @@
          "name" : "minecraft:bamboo_slab",
          "properties" : [
             {
-               "name" : "top_slot_bit"
+               "name" : "minecraft:vertical_half"
             }
          ]
       },
@@ -3723,7 +3887,7 @@
                "name" : "big_dripleaf_tilt"
             },
             {
-               "name" : "direction"
+               "name" : "minecraft:cardinal_direction"
             }
          ]
       },
@@ -3752,6 +3916,14 @@
             },
             {
                "name" : "upper_block_bit"
+            }
+         ]
+      },
+      {
+         "name" : "minecraft:birch_double_slab",
+         "properties" : [
+            {
+               "name" : "minecraft:vertical_half"
             }
          ]
       },
@@ -3791,6 +3963,17 @@
          ]
       },
       {
+         "name" : "minecraft:birch_leaves",
+         "properties" : [
+            {
+               "name" : "persistent_bit"
+            },
+            {
+               "name" : "update_bit"
+            }
+         ]
+      },
+      {
          "name" : "minecraft:birch_log",
          "properties" : [
             {
@@ -3799,10 +3982,30 @@
          ]
       },
       {
+         "name" : "minecraft:birch_planks",
+         "properties" : []
+      },
+      {
          "name" : "minecraft:birch_pressure_plate",
          "properties" : [
             {
                "name" : "redstone_signal"
+            }
+         ]
+      },
+      {
+         "name" : "minecraft:birch_sapling",
+         "properties" : [
+            {
+               "name" : "age_bit"
+            }
+         ]
+      },
+      {
+         "name" : "minecraft:birch_slab",
+         "properties" : [
+            {
+               "name" : "minecraft:vertical_half"
             }
          ]
       },
@@ -3848,6 +4051,14 @@
          ]
       },
       {
+         "name" : "minecraft:birch_wood",
+         "properties" : [
+            {
+               "name" : "pillar_axis"
+            }
+         ]
+      },
+      {
          "name" : "minecraft:black_candle",
          "properties" : [
             {
@@ -3875,6 +4086,10 @@
          "properties" : []
       },
       {
+         "name" : "minecraft:black_concrete_powder",
+         "properties" : []
+      },
+      {
          "name" : "minecraft:black_glazed_terracotta",
          "properties" : [
             {
@@ -3884,6 +4099,18 @@
       },
       {
          "name" : "minecraft:black_shulker_box",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:black_stained_glass",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:black_stained_glass_pane",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:black_terracotta",
          "properties" : []
       },
       {
@@ -3898,7 +4125,7 @@
          "name" : "minecraft:blackstone_double_slab",
          "properties" : [
             {
-               "name" : "top_slot_bit"
+               "name" : "minecraft:vertical_half"
             }
          ]
       },
@@ -3906,7 +4133,7 @@
          "name" : "minecraft:blackstone_slab",
          "properties" : [
             {
-               "name" : "top_slot_bit"
+               "name" : "minecraft:vertical_half"
             }
          ]
       },
@@ -3945,7 +4172,7 @@
          "name" : "minecraft:blast_furnace",
          "properties" : [
             {
-               "name" : "facing_direction"
+               "name" : "minecraft:cardinal_direction"
             }
          ]
       },
@@ -3977,6 +4204,10 @@
          "properties" : []
       },
       {
+         "name" : "minecraft:blue_concrete_powder",
+         "properties" : []
+      },
+      {
          "name" : "minecraft:blue_glazed_terracotta",
          "properties" : [
             {
@@ -3989,7 +4220,23 @@
          "properties" : []
       },
       {
+         "name" : "minecraft:blue_orchid",
+         "properties" : []
+      },
+      {
          "name" : "minecraft:blue_shulker_box",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:blue_stained_glass",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:blue_stained_glass_pane",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:blue_terracotta",
          "properties" : []
       },
       {
@@ -4036,6 +4283,18 @@
          "properties" : []
       },
       {
+         "name" : "minecraft:brain_coral_block",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:brain_coral_fan",
+         "properties" : [
+            {
+               "name" : "coral_fan_direction"
+            }
+         ]
+      },
+      {
          "name" : "minecraft:brewing_stand",
          "properties" : [
             {
@@ -4052,6 +4311,14 @@
       {
          "name" : "minecraft:brick_block",
          "properties" : []
+      },
+      {
+         "name" : "minecraft:brick_slab",
+         "properties" : [
+            {
+               "name" : "minecraft:vertical_half"
+            }
+         ]
       },
       {
          "name" : "minecraft:brick_stairs",
@@ -4092,6 +4359,10 @@
          "properties" : []
       },
       {
+         "name" : "minecraft:brown_concrete_powder",
+         "properties" : []
+      },
+      {
          "name" : "minecraft:brown_glazed_terracotta",
          "properties" : [
             {
@@ -4116,6 +4387,18 @@
          "properties" : []
       },
       {
+         "name" : "minecraft:brown_stained_glass",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:brown_stained_glass_pane",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:brown_terracotta",
+         "properties" : []
+      },
+      {
          "name" : "minecraft:brown_wool",
          "properties" : []
       },
@@ -4130,6 +4413,18 @@
       {
          "name" : "minecraft:bubble_coral",
          "properties" : []
+      },
+      {
+         "name" : "minecraft:bubble_coral_block",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:bubble_coral_fan",
+         "properties" : [
+            {
+               "name" : "coral_fan_direction"
+            }
+         ]
       },
       {
          "name" : "minecraft:budding_amethyst",
@@ -4159,7 +4454,7 @@
          "name" : "minecraft:calibrated_sculk_sensor",
          "properties" : [
             {
-               "name" : "direction"
+               "name" : "minecraft:cardinal_direction"
             },
             {
                "name" : "sculk_sensor_phase"
@@ -4174,10 +4469,10 @@
          "name" : "minecraft:campfire",
          "properties" : [
             {
-               "name" : "direction"
+               "name" : "extinguished"
             },
             {
-               "name" : "extinguished"
+               "name" : "minecraft:cardinal_direction"
             }
          ]
       },
@@ -4321,7 +4616,7 @@
          "name" : "minecraft:cherry_double_slab",
          "properties" : [
             {
-               "name" : "top_slot_bit"
+               "name" : "minecraft:vertical_half"
             }
          ]
       },
@@ -4403,7 +4698,7 @@
          "name" : "minecraft:cherry_slab",
          "properties" : [
             {
-               "name" : "top_slot_bit"
+               "name" : "minecraft:vertical_half"
             }
          ]
       },
@@ -4463,7 +4758,7 @@
          "name" : "minecraft:chest",
          "properties" : [
             {
-               "name" : "facing_direction"
+               "name" : "minecraft:cardinal_direction"
             }
          ]
       },
@@ -4479,6 +4774,10 @@
          ]
       },
       {
+         "name" : "minecraft:chiseled_copper",
+         "properties" : []
+      },
+      {
          "name" : "minecraft:chiseled_deepslate",
          "properties" : []
       },
@@ -4488,6 +4787,14 @@
       },
       {
          "name" : "minecraft:chiseled_polished_blackstone",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:chiseled_tuff",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:chiseled_tuff_bricks",
          "properties" : []
       },
       {
@@ -4526,7 +4833,7 @@
          "name" : "minecraft:cobbled_deepslate_double_slab",
          "properties" : [
             {
-               "name" : "top_slot_bit"
+               "name" : "minecraft:vertical_half"
             }
          ]
       },
@@ -4534,7 +4841,7 @@
          "name" : "minecraft:cobbled_deepslate_slab",
          "properties" : [
             {
-               "name" : "top_slot_bit"
+               "name" : "minecraft:vertical_half"
             }
          ]
       },
@@ -4572,6 +4879,14 @@
       {
          "name" : "minecraft:cobblestone",
          "properties" : []
+      },
+      {
+         "name" : "minecraft:cobblestone_slab",
+         "properties" : [
+            {
+               "name" : "minecraft:vertical_half"
+            }
+         ]
       },
       {
          "name" : "minecraft:cobblestone_wall",
@@ -4649,14 +4964,6 @@
          ]
       },
       {
-         "name" : "minecraft:concrete_powder",
-         "properties" : [
-            {
-               "name" : "color"
-            }
-         ]
-      },
-      {
          "name" : "minecraft:conduit",
          "properties" : []
       },
@@ -4665,39 +4972,52 @@
          "properties" : []
       },
       {
+         "name" : "minecraft:copper_bulb",
+         "properties" : [
+            {
+               "name" : "lit"
+            },
+            {
+               "name" : "powered_bit"
+            }
+         ]
+      },
+      {
+         "name" : "minecraft:copper_door",
+         "properties" : [
+            {
+               "name" : "direction"
+            },
+            {
+               "name" : "door_hinge_bit"
+            },
+            {
+               "name" : "open_bit"
+            },
+            {
+               "name" : "upper_block_bit"
+            }
+         ]
+      },
+      {
+         "name" : "minecraft:copper_grate",
+         "properties" : []
+      },
+      {
          "name" : "minecraft:copper_ore",
          "properties" : []
       },
       {
-         "name" : "minecraft:coral_block",
+         "name" : "minecraft:copper_trapdoor",
          "properties" : [
             {
-               "name" : "coral_color"
+               "name" : "direction"
             },
             {
-               "name" : "dead_bit"
-            }
-         ]
-      },
-      {
-         "name" : "minecraft:coral_fan",
-         "properties" : [
-            {
-               "name" : "coral_color"
+               "name" : "open_bit"
             },
             {
-               "name" : "coral_fan_direction"
-            }
-         ]
-      },
-      {
-         "name" : "minecraft:coral_fan_dead",
-         "properties" : [
-            {
-               "name" : "coral_color"
-            },
-            {
-               "name" : "coral_fan_direction"
+               "name" : "upside_down_bit"
             }
          ]
       },
@@ -4744,6 +5064,10 @@
          ]
       },
       {
+         "name" : "minecraft:cornflower",
+         "properties" : []
+      },
+      {
          "name" : "minecraft:cracked_deepslate_bricks",
          "properties" : []
       },
@@ -4758,6 +5082,20 @@
       {
          "name" : "minecraft:cracked_polished_blackstone_bricks",
          "properties" : []
+      },
+      {
+         "name" : "minecraft:crafter",
+         "properties" : [
+            {
+               "name" : "crafting"
+            },
+            {
+               "name" : "orientation"
+            },
+            {
+               "name" : "triggered_bit"
+            }
+         ]
       },
       {
          "name" : "minecraft:crafting_table",
@@ -4795,7 +5133,7 @@
          "name" : "minecraft:crimson_double_slab",
          "properties" : [
             {
-               "name" : "top_slot_bit"
+               "name" : "minecraft:vertical_half"
             }
          ]
       },
@@ -4870,7 +5208,7 @@
          "name" : "minecraft:crimson_slab",
          "properties" : [
             {
-               "name" : "top_slot_bit"
+               "name" : "minecraft:vertical_half"
             }
          ]
       },
@@ -4935,7 +5273,7 @@
          "name" : "minecraft:cut_copper_slab",
          "properties" : [
             {
-               "name" : "top_slot_bit"
+               "name" : "minecraft:vertical_half"
             }
          ]
       },
@@ -4978,6 +5316,10 @@
          "properties" : []
       },
       {
+         "name" : "minecraft:cyan_concrete_powder",
+         "properties" : []
+      },
+      {
          "name" : "minecraft:cyan_glazed_terracotta",
          "properties" : [
             {
@@ -4987,6 +5329,18 @@
       },
       {
          "name" : "minecraft:cyan_shulker_box",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:cyan_stained_glass",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:cyan_stained_glass_pane",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:cyan_terracotta",
          "properties" : []
       },
       {
@@ -5018,6 +5372,14 @@
             },
             {
                "name" : "upper_block_bit"
+            }
+         ]
+      },
+      {
+         "name" : "minecraft:dark_oak_double_slab",
+         "properties" : [
+            {
+               "name" : "minecraft:vertical_half"
             }
          ]
       },
@@ -5057,6 +5419,17 @@
          ]
       },
       {
+         "name" : "minecraft:dark_oak_leaves",
+         "properties" : [
+            {
+               "name" : "persistent_bit"
+            },
+            {
+               "name" : "update_bit"
+            }
+         ]
+      },
+      {
          "name" : "minecraft:dark_oak_log",
          "properties" : [
             {
@@ -5065,10 +5438,30 @@
          ]
       },
       {
+         "name" : "minecraft:dark_oak_planks",
+         "properties" : []
+      },
+      {
          "name" : "minecraft:dark_oak_pressure_plate",
          "properties" : [
             {
                "name" : "redstone_signal"
+            }
+         ]
+      },
+      {
+         "name" : "minecraft:dark_oak_sapling",
+         "properties" : [
+            {
+               "name" : "age_bit"
+            }
+         ]
+      },
+      {
+         "name" : "minecraft:dark_oak_slab",
+         "properties" : [
+            {
+               "name" : "minecraft:vertical_half"
             }
          ]
       },
@@ -5094,6 +5487,14 @@
             },
             {
                "name" : "upside_down_bit"
+            }
+         ]
+      },
+      {
+         "name" : "minecraft:dark_oak_wood",
+         "properties" : [
+            {
+               "name" : "pillar_axis"
             }
          ]
       },
@@ -5145,20 +5546,80 @@
          "properties" : []
       },
       {
+         "name" : "minecraft:dead_brain_coral_block",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:dead_brain_coral_fan",
+         "properties" : [
+            {
+               "name" : "coral_fan_direction"
+            }
+         ]
+      },
+      {
          "name" : "minecraft:dead_bubble_coral",
          "properties" : []
+      },
+      {
+         "name" : "minecraft:dead_bubble_coral_block",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:dead_bubble_coral_fan",
+         "properties" : [
+            {
+               "name" : "coral_fan_direction"
+            }
+         ]
       },
       {
          "name" : "minecraft:dead_fire_coral",
          "properties" : []
       },
       {
+         "name" : "minecraft:dead_fire_coral_block",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:dead_fire_coral_fan",
+         "properties" : [
+            {
+               "name" : "coral_fan_direction"
+            }
+         ]
+      },
+      {
          "name" : "minecraft:dead_horn_coral",
          "properties" : []
       },
       {
+         "name" : "minecraft:dead_horn_coral_block",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:dead_horn_coral_fan",
+         "properties" : [
+            {
+               "name" : "coral_fan_direction"
+            }
+         ]
+      },
+      {
          "name" : "minecraft:dead_tube_coral",
          "properties" : []
+      },
+      {
+         "name" : "minecraft:dead_tube_coral_block",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:dead_tube_coral_fan",
+         "properties" : [
+            {
+               "name" : "coral_fan_direction"
+            }
+         ]
       },
       {
          "name" : "minecraft:deadbush",
@@ -5184,7 +5645,7 @@
          "name" : "minecraft:deepslate_brick_double_slab",
          "properties" : [
             {
-               "name" : "top_slot_bit"
+               "name" : "minecraft:vertical_half"
             }
          ]
       },
@@ -5192,7 +5653,7 @@
          "name" : "minecraft:deepslate_brick_slab",
          "properties" : [
             {
-               "name" : "top_slot_bit"
+               "name" : "minecraft:vertical_half"
             }
          ]
       },
@@ -5267,7 +5728,7 @@
          "name" : "minecraft:deepslate_tile_double_slab",
          "properties" : [
             {
-               "name" : "top_slot_bit"
+               "name" : "minecraft:vertical_half"
             }
          ]
       },
@@ -5275,7 +5736,7 @@
          "name" : "minecraft:deepslate_tile_slab",
          "properties" : [
             {
-               "name" : "top_slot_bit"
+               "name" : "minecraft:vertical_half"
             }
          ]
       },
@@ -5338,6 +5799,10 @@
          "properties" : []
       },
       {
+         "name" : "minecraft:diorite",
+         "properties" : []
+      },
+      {
          "name" : "minecraft:diorite_stairs",
          "properties" : [
             {
@@ -5375,18 +5840,7 @@
          "name" : "minecraft:double_cut_copper_slab",
          "properties" : [
             {
-               "name" : "top_slot_bit"
-            }
-         ]
-      },
-      {
-         "name" : "minecraft:double_plant",
-         "properties" : [
-            {
-               "name" : "double_plant_type"
-            },
-            {
-               "name" : "upper_block_bit"
+               "name" : "minecraft:vertical_half"
             }
          ]
       },
@@ -5394,10 +5848,10 @@
          "name" : "minecraft:double_stone_block_slab",
          "properties" : [
             {
-               "name" : "stone_slab_type"
+               "name" : "minecraft:vertical_half"
             },
             {
-               "name" : "top_slot_bit"
+               "name" : "stone_slab_type"
             }
          ]
       },
@@ -5405,10 +5859,10 @@
          "name" : "minecraft:double_stone_block_slab2",
          "properties" : [
             {
-               "name" : "stone_slab_type_2"
+               "name" : "minecraft:vertical_half"
             },
             {
-               "name" : "top_slot_bit"
+               "name" : "stone_slab_type_2"
             }
          ]
       },
@@ -5416,10 +5870,10 @@
          "name" : "minecraft:double_stone_block_slab3",
          "properties" : [
             {
-               "name" : "stone_slab_type_3"
+               "name" : "minecraft:vertical_half"
             },
             {
-               "name" : "top_slot_bit"
+               "name" : "stone_slab_type_3"
             }
          ]
       },
@@ -5427,21 +5881,10 @@
          "name" : "minecraft:double_stone_block_slab4",
          "properties" : [
             {
+               "name" : "minecraft:vertical_half"
+            },
+            {
                "name" : "stone_slab_type_4"
-            },
-            {
-               "name" : "top_slot_bit"
-            }
-         ]
-      },
-      {
-         "name" : "minecraft:double_wooden_slab",
-         "properties" : [
-            {
-               "name" : "top_slot_bit"
-            },
-            {
-               "name" : "wood_type"
             }
          ]
       },
@@ -5983,10 +6426,10 @@
          "name" : "minecraft:end_portal_frame",
          "properties" : [
             {
-               "name" : "direction"
+               "name" : "end_portal_eye_bit"
             },
             {
-               "name" : "end_portal_eye_bit"
+               "name" : "minecraft:cardinal_direction"
             }
          ]
       },
@@ -6006,13 +6449,63 @@
          "name" : "minecraft:ender_chest",
          "properties" : [
             {
-               "name" : "facing_direction"
+               "name" : "minecraft:cardinal_direction"
             }
          ]
       },
       {
+         "name" : "minecraft:exposed_chiseled_copper",
+         "properties" : []
+      },
+      {
          "name" : "minecraft:exposed_copper",
          "properties" : []
+      },
+      {
+         "name" : "minecraft:exposed_copper_bulb",
+         "properties" : [
+            {
+               "name" : "lit"
+            },
+            {
+               "name" : "powered_bit"
+            }
+         ]
+      },
+      {
+         "name" : "minecraft:exposed_copper_door",
+         "properties" : [
+            {
+               "name" : "direction"
+            },
+            {
+               "name" : "door_hinge_bit"
+            },
+            {
+               "name" : "open_bit"
+            },
+            {
+               "name" : "upper_block_bit"
+            }
+         ]
+      },
+      {
+         "name" : "minecraft:exposed_copper_grate",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:exposed_copper_trapdoor",
+         "properties" : [
+            {
+               "name" : "direction"
+            },
+            {
+               "name" : "open_bit"
+            },
+            {
+               "name" : "upside_down_bit"
+            }
+         ]
       },
       {
          "name" : "minecraft:exposed_cut_copper",
@@ -6022,7 +6515,7 @@
          "name" : "minecraft:exposed_cut_copper_slab",
          "properties" : [
             {
-               "name" : "top_slot_bit"
+               "name" : "minecraft:vertical_half"
             }
          ]
       },
@@ -6041,7 +6534,7 @@
          "name" : "minecraft:exposed_double_cut_copper_slab",
          "properties" : [
             {
-               "name" : "top_slot_bit"
+               "name" : "minecraft:vertical_half"
             }
          ]
       },
@@ -6068,6 +6561,10 @@
          ]
       },
       {
+         "name" : "minecraft:fern",
+         "properties" : []
+      },
+      {
          "name" : "minecraft:fire",
          "properties" : [
             {
@@ -6078,6 +6575,18 @@
       {
          "name" : "minecraft:fire_coral",
          "properties" : []
+      },
+      {
+         "name" : "minecraft:fire_coral_block",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:fire_coral_fan",
+         "properties" : [
+            {
+               "name" : "coral_fan_direction"
+            }
+         ]
       },
       {
          "name" : "minecraft:fletching_table",
@@ -6141,7 +6650,7 @@
          "name" : "minecraft:furnace",
          "properties" : [
             {
-               "name" : "facing_direction"
+               "name" : "minecraft:cardinal_direction"
             }
          ]
       },
@@ -6207,6 +6716,10 @@
          ]
       },
       {
+         "name" : "minecraft:granite",
+         "properties" : []
+      },
+      {
          "name" : "minecraft:granite_stairs",
          "properties" : [
             {
@@ -6218,7 +6731,7 @@
          ]
       },
       {
-         "name" : "minecraft:grass",
+         "name" : "minecraft:grass_block",
          "properties" : []
       },
       {
@@ -6257,6 +6770,10 @@
          "properties" : []
       },
       {
+         "name" : "minecraft:gray_concrete_powder",
+         "properties" : []
+      },
+      {
          "name" : "minecraft:gray_glazed_terracotta",
          "properties" : [
             {
@@ -6266,6 +6783,18 @@
       },
       {
          "name" : "minecraft:gray_shulker_box",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:gray_stained_glass",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:gray_stained_glass_pane",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:gray_terracotta",
          "properties" : []
       },
       {
@@ -6300,6 +6829,10 @@
          "properties" : []
       },
       {
+         "name" : "minecraft:green_concrete_powder",
+         "properties" : []
+      },
+      {
          "name" : "minecraft:green_glazed_terracotta",
          "properties" : [
             {
@@ -6309,6 +6842,18 @@
       },
       {
          "name" : "minecraft:green_shulker_box",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:green_stained_glass",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:green_stained_glass_pane",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:green_terracotta",
          "properties" : []
       },
       {
@@ -6331,6 +6876,38 @@
          "properties" : []
       },
       {
+         "name" : "minecraft:hard_black_stained_glass",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:hard_black_stained_glass_pane",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:hard_blue_stained_glass",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:hard_blue_stained_glass_pane",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:hard_brown_stained_glass",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:hard_brown_stained_glass_pane",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:hard_cyan_stained_glass",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:hard_cyan_stained_glass_pane",
+         "properties" : []
+      },
+      {
          "name" : "minecraft:hard_glass",
          "properties" : []
       },
@@ -6339,20 +6916,100 @@
          "properties" : []
       },
       {
-         "name" : "minecraft:hard_stained_glass",
-         "properties" : [
-            {
-               "name" : "color"
-            }
-         ]
+         "name" : "minecraft:hard_gray_stained_glass",
+         "properties" : []
       },
       {
-         "name" : "minecraft:hard_stained_glass_pane",
-         "properties" : [
-            {
-               "name" : "color"
-            }
-         ]
+         "name" : "minecraft:hard_gray_stained_glass_pane",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:hard_green_stained_glass",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:hard_green_stained_glass_pane",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:hard_light_blue_stained_glass",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:hard_light_blue_stained_glass_pane",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:hard_light_gray_stained_glass",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:hard_light_gray_stained_glass_pane",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:hard_lime_stained_glass",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:hard_lime_stained_glass_pane",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:hard_magenta_stained_glass",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:hard_magenta_stained_glass_pane",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:hard_orange_stained_glass",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:hard_orange_stained_glass_pane",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:hard_pink_stained_glass",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:hard_pink_stained_glass_pane",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:hard_purple_stained_glass",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:hard_purple_stained_glass_pane",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:hard_red_stained_glass",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:hard_red_stained_glass_pane",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:hard_white_stained_glass",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:hard_white_stained_glass_pane",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:hard_yellow_stained_glass",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:hard_yellow_stained_glass_pane",
+         "properties" : []
       },
       {
          "name" : "minecraft:hardened_clay",
@@ -6368,6 +7025,10 @@
                "name" : "pillar_axis"
             }
          ]
+      },
+      {
+         "name" : "minecraft:heavy_core",
+         "properties" : []
       },
       {
          "name" : "minecraft:heavy_weighted_pressure_plate",
@@ -6399,6 +7060,18 @@
       {
          "name" : "minecraft:horn_coral",
          "properties" : []
+      },
+      {
+         "name" : "minecraft:horn_coral_block",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:horn_coral_fan",
+         "properties" : [
+            {
+               "name" : "coral_fan_direction"
+            }
+         ]
       },
       {
          "name" : "minecraft:ice",
@@ -6511,6 +7184,14 @@
          ]
       },
       {
+         "name" : "minecraft:jungle_double_slab",
+         "properties" : [
+            {
+               "name" : "minecraft:vertical_half"
+            }
+         ]
+      },
+      {
          "name" : "minecraft:jungle_fence",
          "properties" : []
       },
@@ -6546,6 +7227,17 @@
          ]
       },
       {
+         "name" : "minecraft:jungle_leaves",
+         "properties" : [
+            {
+               "name" : "persistent_bit"
+            },
+            {
+               "name" : "update_bit"
+            }
+         ]
+      },
+      {
          "name" : "minecraft:jungle_log",
          "properties" : [
             {
@@ -6554,10 +7246,30 @@
          ]
       },
       {
+         "name" : "minecraft:jungle_planks",
+         "properties" : []
+      },
+      {
          "name" : "minecraft:jungle_pressure_plate",
          "properties" : [
             {
                "name" : "redstone_signal"
+            }
+         ]
+      },
+      {
+         "name" : "minecraft:jungle_sapling",
+         "properties" : [
+            {
+               "name" : "age_bit"
+            }
+         ]
+      },
+      {
+         "name" : "minecraft:jungle_slab",
+         "properties" : [
+            {
+               "name" : "minecraft:vertical_half"
             }
          ]
       },
@@ -6603,6 +7315,14 @@
          ]
       },
       {
+         "name" : "minecraft:jungle_wood",
+         "properties" : [
+            {
+               "name" : "pillar_axis"
+            }
+         ]
+      },
+      {
          "name" : "minecraft:kelp",
          "properties" : [
             {
@@ -6638,7 +7358,15 @@
          "name" : "minecraft:large_amethyst_bud",
          "properties" : [
             {
-               "name" : "facing_direction"
+               "name" : "minecraft:block_face"
+            }
+         ]
+      },
+      {
+         "name" : "minecraft:large_fern",
+         "properties" : [
+            {
+               "name" : "upper_block_bit"
             }
          ]
       },
@@ -6651,38 +7379,10 @@
          ]
       },
       {
-         "name" : "minecraft:leaves",
-         "properties" : [
-            {
-               "name" : "old_leaf_type"
-            },
-            {
-               "name" : "persistent_bit"
-            },
-            {
-               "name" : "update_bit"
-            }
-         ]
-      },
-      {
-         "name" : "minecraft:leaves2",
-         "properties" : [
-            {
-               "name" : "new_leaf_type"
-            },
-            {
-               "name" : "persistent_bit"
-            },
-            {
-               "name" : "update_bit"
-            }
-         ]
-      },
-      {
          "name" : "minecraft:lectern",
          "properties" : [
             {
-               "name" : "direction"
+               "name" : "minecraft:cardinal_direction"
             },
             {
                "name" : "powered_bit"
@@ -6736,6 +7436,10 @@
          "properties" : []
       },
       {
+         "name" : "minecraft:light_blue_concrete_powder",
+         "properties" : []
+      },
+      {
          "name" : "minecraft:light_blue_glazed_terracotta",
          "properties" : [
             {
@@ -6745,6 +7449,18 @@
       },
       {
          "name" : "minecraft:light_blue_shulker_box",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:light_blue_stained_glass",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:light_blue_stained_glass_pane",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:light_blue_terracotta",
          "properties" : []
       },
       {
@@ -6779,7 +7495,23 @@
          "properties" : []
       },
       {
+         "name" : "minecraft:light_gray_concrete_powder",
+         "properties" : []
+      },
+      {
          "name" : "minecraft:light_gray_shulker_box",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:light_gray_stained_glass",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:light_gray_stained_glass_pane",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:light_gray_terracotta",
          "properties" : []
       },
       {
@@ -6801,6 +7533,18 @@
                "name" : "facing_direction"
             }
          ]
+      },
+      {
+         "name" : "minecraft:lilac",
+         "properties" : [
+            {
+               "name" : "upper_block_bit"
+            }
+         ]
+      },
+      {
+         "name" : "minecraft:lily_of_the_valley",
+         "properties" : []
       },
       {
          "name" : "minecraft:lime_candle",
@@ -6830,6 +7574,10 @@
          "properties" : []
       },
       {
+         "name" : "minecraft:lime_concrete_powder",
+         "properties" : []
+      },
+      {
          "name" : "minecraft:lime_glazed_terracotta",
          "properties" : [
             {
@@ -6842,6 +7590,18 @@
          "properties" : []
       },
       {
+         "name" : "minecraft:lime_stained_glass",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:lime_stained_glass_pane",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:lime_terracotta",
+         "properties" : []
+      },
+      {
          "name" : "minecraft:lime_wool",
          "properties" : []
       },
@@ -6849,7 +7609,7 @@
          "name" : "minecraft:lit_blast_furnace",
          "properties" : [
             {
-               "name" : "facing_direction"
+               "name" : "minecraft:cardinal_direction"
             }
          ]
       },
@@ -6861,7 +7621,7 @@
          "name" : "minecraft:lit_furnace",
          "properties" : [
             {
-               "name" : "facing_direction"
+               "name" : "minecraft:cardinal_direction"
             }
          ]
       },
@@ -6885,7 +7645,7 @@
          "name" : "minecraft:lit_smoker",
          "properties" : [
             {
-               "name" : "facing_direction"
+               "name" : "minecraft:cardinal_direction"
             }
          ]
       },
@@ -6929,6 +7689,10 @@
          "properties" : []
       },
       {
+         "name" : "minecraft:magenta_concrete_powder",
+         "properties" : []
+      },
+      {
          "name" : "minecraft:magenta_glazed_terracotta",
          "properties" : [
             {
@@ -6938,6 +7702,18 @@
       },
       {
          "name" : "minecraft:magenta_shulker_box",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:magenta_stained_glass",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:magenta_stained_glass_pane",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:magenta_terracotta",
          "properties" : []
       },
       {
@@ -6980,7 +7756,7 @@
          "name" : "minecraft:mangrove_double_slab",
          "properties" : [
             {
-               "name" : "top_slot_bit"
+               "name" : "minecraft:vertical_half"
             }
          ]
       },
@@ -7069,7 +7845,7 @@
          "name" : "minecraft:mangrove_slab",
          "properties" : [
             {
-               "name" : "top_slot_bit"
+               "name" : "minecraft:vertical_half"
             }
          ]
       },
@@ -7129,7 +7905,7 @@
          "name" : "minecraft:medium_amethyst_bud",
          "properties" : [
             {
-               "name" : "facing_direction"
+               "name" : "minecraft:block_face"
             }
          ]
       },
@@ -7206,7 +7982,7 @@
          "name" : "minecraft:mud_brick_double_slab",
          "properties" : [
             {
-               "name" : "top_slot_bit"
+               "name" : "minecraft:vertical_half"
             }
          ]
       },
@@ -7214,7 +7990,7 @@
          "name" : "minecraft:mud_brick_slab",
          "properties" : [
             {
-               "name" : "top_slot_bit"
+               "name" : "minecraft:vertical_half"
             }
          ]
       },
@@ -7272,6 +8048,14 @@
       {
          "name" : "minecraft:nether_brick_fence",
          "properties" : []
+      },
+      {
+         "name" : "minecraft:nether_brick_slab",
+         "properties" : [
+            {
+               "name" : "minecraft:vertical_half"
+            }
+         ]
       },
       {
          "name" : "minecraft:nether_brick_stairs",
@@ -7332,6 +8116,14 @@
          "properties" : []
       },
       {
+         "name" : "minecraft:oak_double_slab",
+         "properties" : [
+            {
+               "name" : "minecraft:vertical_half"
+            }
+         ]
+      },
+      {
          "name" : "minecraft:oak_fence",
          "properties" : []
       },
@@ -7353,10 +8145,41 @@
          ]
       },
       {
+         "name" : "minecraft:oak_leaves",
+         "properties" : [
+            {
+               "name" : "persistent_bit"
+            },
+            {
+               "name" : "update_bit"
+            }
+         ]
+      },
+      {
          "name" : "minecraft:oak_log",
          "properties" : [
             {
                "name" : "pillar_axis"
+            }
+         ]
+      },
+      {
+         "name" : "minecraft:oak_planks",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:oak_sapling",
+         "properties" : [
+            {
+               "name" : "age_bit"
+            }
+         ]
+      },
+      {
+         "name" : "minecraft:oak_slab",
+         "properties" : [
+            {
+               "name" : "minecraft:vertical_half"
             }
          ]
       },
@@ -7368,6 +8191,14 @@
             },
             {
                "name" : "weirdo_direction"
+            }
+         ]
+      },
+      {
+         "name" : "minecraft:oak_wood",
+         "properties" : [
+            {
+               "name" : "pillar_axis"
             }
          ]
       },
@@ -7422,6 +8253,10 @@
          "properties" : []
       },
       {
+         "name" : "minecraft:orange_concrete_powder",
+         "properties" : []
+      },
+      {
          "name" : "minecraft:orange_glazed_terracotta",
          "properties" : [
             {
@@ -7434,12 +8269,82 @@
          "properties" : []
       },
       {
+         "name" : "minecraft:orange_stained_glass",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:orange_stained_glass_pane",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:orange_terracotta",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:orange_tulip",
+         "properties" : []
+      },
+      {
          "name" : "minecraft:orange_wool",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:oxeye_daisy",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:oxidized_chiseled_copper",
          "properties" : []
       },
       {
          "name" : "minecraft:oxidized_copper",
          "properties" : []
+      },
+      {
+         "name" : "minecraft:oxidized_copper_bulb",
+         "properties" : [
+            {
+               "name" : "lit"
+            },
+            {
+               "name" : "powered_bit"
+            }
+         ]
+      },
+      {
+         "name" : "minecraft:oxidized_copper_door",
+         "properties" : [
+            {
+               "name" : "direction"
+            },
+            {
+               "name" : "door_hinge_bit"
+            },
+            {
+               "name" : "open_bit"
+            },
+            {
+               "name" : "upper_block_bit"
+            }
+         ]
+      },
+      {
+         "name" : "minecraft:oxidized_copper_grate",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:oxidized_copper_trapdoor",
+         "properties" : [
+            {
+               "name" : "direction"
+            },
+            {
+               "name" : "open_bit"
+            },
+            {
+               "name" : "upside_down_bit"
+            }
+         ]
       },
       {
          "name" : "minecraft:oxidized_cut_copper",
@@ -7449,7 +8354,7 @@
          "name" : "minecraft:oxidized_cut_copper_slab",
          "properties" : [
             {
-               "name" : "top_slot_bit"
+               "name" : "minecraft:vertical_half"
             }
          ]
       },
@@ -7468,7 +8373,7 @@
          "name" : "minecraft:oxidized_double_cut_copper_slab",
          "properties" : [
             {
-               "name" : "top_slot_bit"
+               "name" : "minecraft:vertical_half"
             }
          ]
       },
@@ -7485,6 +8390,22 @@
          "properties" : [
             {
                "name" : "pillar_axis"
+            }
+         ]
+      },
+      {
+         "name" : "minecraft:peony",
+         "properties" : [
+            {
+               "name" : "upper_block_bit"
+            }
+         ]
+      },
+      {
+         "name" : "minecraft:petrified_oak_slab",
+         "properties" : [
+            {
+               "name" : "minecraft:vertical_half"
             }
          ]
       },
@@ -7516,6 +8437,10 @@
          "properties" : []
       },
       {
+         "name" : "minecraft:pink_concrete_powder",
+         "properties" : []
+      },
+      {
          "name" : "minecraft:pink_glazed_terracotta",
          "properties" : [
             {
@@ -7527,15 +8452,31 @@
          "name" : "minecraft:pink_petals",
          "properties" : [
             {
-               "name" : "direction"
+               "name" : "growth"
             },
             {
-               "name" : "growth"
+               "name" : "minecraft:cardinal_direction"
             }
          ]
       },
       {
          "name" : "minecraft:pink_shulker_box",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:pink_stained_glass",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:pink_stained_glass_pane",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:pink_terracotta",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:pink_tulip",
          "properties" : []
       },
       {
@@ -7578,14 +8519,6 @@
          ]
       },
       {
-         "name" : "minecraft:planks",
-         "properties" : [
-            {
-               "name" : "wood_type"
-            }
-         ]
-      },
-      {
          "name" : "minecraft:podzol",
          "properties" : []
       },
@@ -7599,6 +8532,10 @@
                "name" : "hanging"
             }
          ]
+      },
+      {
+         "name" : "minecraft:polished_andesite",
+         "properties" : []
       },
       {
          "name" : "minecraft:polished_andesite_stairs",
@@ -7627,7 +8564,7 @@
          "name" : "minecraft:polished_blackstone_brick_double_slab",
          "properties" : [
             {
-               "name" : "top_slot_bit"
+               "name" : "minecraft:vertical_half"
             }
          ]
       },
@@ -7635,7 +8572,7 @@
          "name" : "minecraft:polished_blackstone_brick_slab",
          "properties" : [
             {
-               "name" : "top_slot_bit"
+               "name" : "minecraft:vertical_half"
             }
          ]
       },
@@ -7689,7 +8626,7 @@
          "name" : "minecraft:polished_blackstone_double_slab",
          "properties" : [
             {
-               "name" : "top_slot_bit"
+               "name" : "minecraft:vertical_half"
             }
          ]
       },
@@ -7705,7 +8642,7 @@
          "name" : "minecraft:polished_blackstone_slab",
          "properties" : [
             {
-               "name" : "top_slot_bit"
+               "name" : "minecraft:vertical_half"
             }
          ]
       },
@@ -7748,7 +8685,7 @@
          "name" : "minecraft:polished_deepslate_double_slab",
          "properties" : [
             {
-               "name" : "top_slot_bit"
+               "name" : "minecraft:vertical_half"
             }
          ]
       },
@@ -7756,7 +8693,7 @@
          "name" : "minecraft:polished_deepslate_slab",
          "properties" : [
             {
-               "name" : "top_slot_bit"
+               "name" : "minecraft:vertical_half"
             }
          ]
       },
@@ -7792,6 +8729,10 @@
          ]
       },
       {
+         "name" : "minecraft:polished_diorite",
+         "properties" : []
+      },
+      {
          "name" : "minecraft:polished_diorite_stairs",
          "properties" : [
             {
@@ -7803,6 +8744,10 @@
          ]
       },
       {
+         "name" : "minecraft:polished_granite",
+         "properties" : []
+      },
+      {
          "name" : "minecraft:polished_granite_stairs",
          "properties" : [
             {
@@ -7812,6 +8757,61 @@
                "name" : "weirdo_direction"
             }
          ]
+      },
+      {
+         "name" : "minecraft:polished_tuff",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:polished_tuff_double_slab",
+         "properties" : [
+            {
+               "name" : "minecraft:vertical_half"
+            }
+         ]
+      },
+      {
+         "name" : "minecraft:polished_tuff_slab",
+         "properties" : [
+            {
+               "name" : "minecraft:vertical_half"
+            }
+         ]
+      },
+      {
+         "name" : "minecraft:polished_tuff_stairs",
+         "properties" : [
+            {
+               "name" : "upside_down_bit"
+            },
+            {
+               "name" : "weirdo_direction"
+            }
+         ]
+      },
+      {
+         "name" : "minecraft:polished_tuff_wall",
+         "properties" : [
+            {
+               "name" : "wall_connection_type_east"
+            },
+            {
+               "name" : "wall_connection_type_north"
+            },
+            {
+               "name" : "wall_connection_type_south"
+            },
+            {
+               "name" : "wall_connection_type_west"
+            },
+            {
+               "name" : "wall_post_bit"
+            }
+         ]
+      },
+      {
+         "name" : "minecraft:poppy",
+         "properties" : []
       },
       {
          "name" : "minecraft:portal",
@@ -7837,7 +8837,7 @@
          "name" : "minecraft:powered_comparator",
          "properties" : [
             {
-               "name" : "direction"
+               "name" : "minecraft:cardinal_direction"
             },
             {
                "name" : "output_lit_bit"
@@ -7851,7 +8851,7 @@
          "name" : "minecraft:powered_repeater",
          "properties" : [
             {
-               "name" : "direction"
+               "name" : "minecraft:cardinal_direction"
             },
             {
                "name" : "repeater_delay"
@@ -7935,6 +8935,10 @@
          "properties" : []
       },
       {
+         "name" : "minecraft:purple_concrete_powder",
+         "properties" : []
+      },
+      {
          "name" : "minecraft:purple_glazed_terracotta",
          "properties" : [
             {
@@ -7944,6 +8948,18 @@
       },
       {
          "name" : "minecraft:purple_shulker_box",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:purple_stained_glass",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:purple_stained_glass_pane",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:purple_terracotta",
          "properties" : []
       },
       {
@@ -7990,6 +9006,14 @@
       {
          "name" : "minecraft:quartz_ore",
          "properties" : []
+      },
+      {
+         "name" : "minecraft:quartz_slab",
+         "properties" : [
+            {
+               "name" : "minecraft:vertical_half"
+            }
+         ]
       },
       {
          "name" : "minecraft:quartz_stairs",
@@ -8050,12 +9074,8 @@
          "properties" : []
       },
       {
-         "name" : "minecraft:red_flower",
-         "properties" : [
-            {
-               "name" : "flower_type"
-            }
-         ]
+         "name" : "minecraft:red_concrete_powder",
+         "properties" : []
       },
       {
          "name" : "minecraft:red_glazed_terracotta",
@@ -8113,6 +9133,22 @@
       },
       {
          "name" : "minecraft:red_shulker_box",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:red_stained_glass",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:red_stained_glass_pane",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:red_terracotta",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:red_tulip",
          "properties" : []
       },
       {
@@ -8183,6 +9219,14 @@
          ]
       },
       {
+         "name" : "minecraft:rose_bush",
+         "properties" : [
+            {
+               "name" : "upper_block_bit"
+            }
+         ]
+      },
+      {
          "name" : "minecraft:sand",
          "properties" : [
             {
@@ -8199,6 +9243,14 @@
          ]
       },
       {
+         "name" : "minecraft:sandstone_slab",
+         "properties" : [
+            {
+               "name" : "minecraft:vertical_half"
+            }
+         ]
+      },
+      {
          "name" : "minecraft:sandstone_stairs",
          "properties" : [
             {
@@ -8206,17 +9258,6 @@
             },
             {
                "name" : "weirdo_direction"
-            }
-         ]
-      },
-      {
-         "name" : "minecraft:sapling",
-         "properties" : [
-            {
-               "name" : "age_bit"
-            },
-            {
-               "name" : "sapling_type"
             }
          ]
       },
@@ -8294,6 +9335,10 @@
          ]
       },
       {
+         "name" : "minecraft:short_grass",
+         "properties" : []
+      },
+      {
          "name" : "minecraft:shroomlight",
          "properties" : []
       },
@@ -8321,7 +9366,7 @@
          "name" : "minecraft:small_amethyst_bud",
          "properties" : [
             {
-               "name" : "facing_direction"
+               "name" : "minecraft:block_face"
             }
          ]
       },
@@ -8329,7 +9374,7 @@
          "name" : "minecraft:small_dripleaf_block",
          "properties" : [
             {
-               "name" : "direction"
+               "name" : "minecraft:cardinal_direction"
             },
             {
                "name" : "upper_block_bit"
@@ -8344,7 +9389,7 @@
          "name" : "minecraft:smoker",
          "properties" : [
             {
-               "name" : "facing_direction"
+               "name" : "minecraft:cardinal_direction"
             }
          ]
       },
@@ -8390,6 +9435,14 @@
          "properties" : []
       },
       {
+         "name" : "minecraft:smooth_stone_slab",
+         "properties" : [
+            {
+               "name" : "minecraft:vertical_half"
+            }
+         ]
+      },
+      {
          "name" : "minecraft:sniffer_egg",
          "properties" : [
             {
@@ -8416,10 +9469,10 @@
          "name" : "minecraft:soul_campfire",
          "properties" : [
             {
-               "name" : "direction"
+               "name" : "extinguished"
             },
             {
-               "name" : "extinguished"
+               "name" : "minecraft:cardinal_direction"
             }
          ]
       },
@@ -8496,6 +9549,14 @@
          ]
       },
       {
+         "name" : "minecraft:spruce_double_slab",
+         "properties" : [
+            {
+               "name" : "minecraft:vertical_half"
+            }
+         ]
+      },
+      {
          "name" : "minecraft:spruce_fence",
          "properties" : []
       },
@@ -8531,6 +9592,17 @@
          ]
       },
       {
+         "name" : "minecraft:spruce_leaves",
+         "properties" : [
+            {
+               "name" : "persistent_bit"
+            },
+            {
+               "name" : "update_bit"
+            }
+         ]
+      },
+      {
          "name" : "minecraft:spruce_log",
          "properties" : [
             {
@@ -8539,10 +9611,30 @@
          ]
       },
       {
+         "name" : "minecraft:spruce_planks",
+         "properties" : []
+      },
+      {
          "name" : "minecraft:spruce_pressure_plate",
          "properties" : [
             {
                "name" : "redstone_signal"
+            }
+         ]
+      },
+      {
+         "name" : "minecraft:spruce_sapling",
+         "properties" : [
+            {
+               "name" : "age_bit"
+            }
+         ]
+      },
+      {
+         "name" : "minecraft:spruce_slab",
+         "properties" : [
+            {
+               "name" : "minecraft:vertical_half"
             }
          ]
       },
@@ -8588,26 +9680,10 @@
          ]
       },
       {
-         "name" : "minecraft:stained_glass",
+         "name" : "minecraft:spruce_wood",
          "properties" : [
             {
-               "name" : "color"
-            }
-         ]
-      },
-      {
-         "name" : "minecraft:stained_glass_pane",
-         "properties" : [
-            {
-               "name" : "color"
-            }
-         ]
-      },
-      {
-         "name" : "minecraft:stained_hardened_clay",
-         "properties" : [
-            {
-               "name" : "color"
+               "name" : "pillar_axis"
             }
          ]
       },
@@ -8645,31 +9721,16 @@
       },
       {
          "name" : "minecraft:stone",
-         "properties" : [
-            {
-               "name" : "stone_type"
-            }
-         ]
-      },
-      {
-         "name" : "minecraft:stone_block_slab",
-         "properties" : [
-            {
-               "name" : "stone_slab_type"
-            },
-            {
-               "name" : "top_slot_bit"
-            }
-         ]
+         "properties" : []
       },
       {
          "name" : "minecraft:stone_block_slab2",
          "properties" : [
             {
-               "name" : "stone_slab_type_2"
+               "name" : "minecraft:vertical_half"
             },
             {
-               "name" : "top_slot_bit"
+               "name" : "stone_slab_type_2"
             }
          ]
       },
@@ -8677,10 +9738,10 @@
          "name" : "minecraft:stone_block_slab3",
          "properties" : [
             {
-               "name" : "stone_slab_type_3"
+               "name" : "minecraft:vertical_half"
             },
             {
-               "name" : "top_slot_bit"
+               "name" : "stone_slab_type_3"
             }
          ]
       },
@@ -8688,10 +9749,18 @@
          "name" : "minecraft:stone_block_slab4",
          "properties" : [
             {
-               "name" : "stone_slab_type_4"
+               "name" : "minecraft:vertical_half"
             },
             {
-               "name" : "top_slot_bit"
+               "name" : "stone_slab_type_4"
+            }
+         ]
+      },
+      {
+         "name" : "minecraft:stone_brick_slab",
+         "properties" : [
+            {
+               "name" : "minecraft:vertical_half"
             }
          ]
       },
@@ -8752,12 +9821,20 @@
          "name" : "minecraft:stonecutter_block",
          "properties" : [
             {
-               "name" : "facing_direction"
+               "name" : "minecraft:cardinal_direction"
             }
          ]
       },
       {
          "name" : "minecraft:stripped_acacia_log",
+         "properties" : [
+            {
+               "name" : "pillar_axis"
+            }
+         ]
+      },
+      {
+         "name" : "minecraft:stripped_acacia_wood",
          "properties" : [
             {
                "name" : "pillar_axis"
@@ -8774,6 +9851,14 @@
       },
       {
          "name" : "minecraft:stripped_birch_log",
+         "properties" : [
+            {
+               "name" : "pillar_axis"
+            }
+         ]
+      },
+      {
+         "name" : "minecraft:stripped_birch_wood",
          "properties" : [
             {
                "name" : "pillar_axis"
@@ -8821,7 +9906,23 @@
          ]
       },
       {
+         "name" : "minecraft:stripped_dark_oak_wood",
+         "properties" : [
+            {
+               "name" : "pillar_axis"
+            }
+         ]
+      },
+      {
          "name" : "minecraft:stripped_jungle_log",
+         "properties" : [
+            {
+               "name" : "pillar_axis"
+            }
+         ]
+      },
+      {
+         "name" : "minecraft:stripped_jungle_wood",
          "properties" : [
             {
                "name" : "pillar_axis"
@@ -8853,7 +9954,23 @@
          ]
       },
       {
+         "name" : "minecraft:stripped_oak_wood",
+         "properties" : [
+            {
+               "name" : "pillar_axis"
+            }
+         ]
+      },
+      {
          "name" : "minecraft:stripped_spruce_log",
+         "properties" : [
+            {
+               "name" : "pillar_axis"
+            }
+         ]
+      },
+      {
+         "name" : "minecraft:stripped_spruce_wood",
          "properties" : [
             {
                "name" : "pillar_axis"
@@ -8893,6 +10010,14 @@
          ]
       },
       {
+         "name" : "minecraft:sunflower",
+         "properties" : [
+            {
+               "name" : "upper_block_bit"
+            }
+         ]
+      },
+      {
          "name" : "minecraft:suspicious_gravel",
          "properties" : [
             {
@@ -8923,10 +10048,10 @@
          ]
       },
       {
-         "name" : "minecraft:tallgrass",
+         "name" : "minecraft:tall_grass",
          "properties" : [
             {
-               "name" : "tall_grass_type"
+               "name" : "upper_block_bit"
             }
          ]
       },
@@ -8987,7 +10112,18 @@
          "name" : "minecraft:trapped_chest",
          "properties" : [
             {
-               "name" : "facing_direction"
+               "name" : "minecraft:cardinal_direction"
+            }
+         ]
+      },
+      {
+         "name" : "minecraft:trial_spawner",
+         "properties" : [
+            {
+               "name" : "ominous"
+            },
+            {
+               "name" : "trial_spawner_state"
             }
          ]
       },
@@ -9027,8 +10163,118 @@
          "properties" : []
       },
       {
+         "name" : "minecraft:tube_coral_block",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:tube_coral_fan",
+         "properties" : [
+            {
+               "name" : "coral_fan_direction"
+            }
+         ]
+      },
+      {
          "name" : "minecraft:tuff",
          "properties" : []
+      },
+      {
+         "name" : "minecraft:tuff_brick_double_slab",
+         "properties" : [
+            {
+               "name" : "minecraft:vertical_half"
+            }
+         ]
+      },
+      {
+         "name" : "minecraft:tuff_brick_slab",
+         "properties" : [
+            {
+               "name" : "minecraft:vertical_half"
+            }
+         ]
+      },
+      {
+         "name" : "minecraft:tuff_brick_stairs",
+         "properties" : [
+            {
+               "name" : "upside_down_bit"
+            },
+            {
+               "name" : "weirdo_direction"
+            }
+         ]
+      },
+      {
+         "name" : "minecraft:tuff_brick_wall",
+         "properties" : [
+            {
+               "name" : "wall_connection_type_east"
+            },
+            {
+               "name" : "wall_connection_type_north"
+            },
+            {
+               "name" : "wall_connection_type_south"
+            },
+            {
+               "name" : "wall_connection_type_west"
+            },
+            {
+               "name" : "wall_post_bit"
+            }
+         ]
+      },
+      {
+         "name" : "minecraft:tuff_bricks",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:tuff_double_slab",
+         "properties" : [
+            {
+               "name" : "minecraft:vertical_half"
+            }
+         ]
+      },
+      {
+         "name" : "minecraft:tuff_slab",
+         "properties" : [
+            {
+               "name" : "minecraft:vertical_half"
+            }
+         ]
+      },
+      {
+         "name" : "minecraft:tuff_stairs",
+         "properties" : [
+            {
+               "name" : "upside_down_bit"
+            },
+            {
+               "name" : "weirdo_direction"
+            }
+         ]
+      },
+      {
+         "name" : "minecraft:tuff_wall",
+         "properties" : [
+            {
+               "name" : "wall_connection_type_east"
+            },
+            {
+               "name" : "wall_connection_type_north"
+            },
+            {
+               "name" : "wall_connection_type_south"
+            },
+            {
+               "name" : "wall_connection_type_west"
+            },
+            {
+               "name" : "wall_post_bit"
+            }
+         ]
       },
       {
          "name" : "minecraft:turtle_egg",
@@ -9077,7 +10323,7 @@
          "name" : "minecraft:unpowered_comparator",
          "properties" : [
             {
-               "name" : "direction"
+               "name" : "minecraft:cardinal_direction"
             },
             {
                "name" : "output_lit_bit"
@@ -9091,10 +10337,24 @@
          "name" : "minecraft:unpowered_repeater",
          "properties" : [
             {
-               "name" : "direction"
+               "name" : "minecraft:cardinal_direction"
             },
             {
                "name" : "repeater_delay"
+            }
+         ]
+      },
+      {
+         "name" : "minecraft:vault",
+         "properties" : [
+            {
+               "name" : "minecraft:cardinal_direction"
+            },
+            {
+               "name" : "ominous"
+            },
+            {
+               "name" : "vault_state"
             }
          ]
       },
@@ -9162,7 +10422,7 @@
          "name" : "minecraft:warped_double_slab",
          "properties" : [
             {
-               "name" : "top_slot_bit"
+               "name" : "minecraft:vertical_half"
             }
          ]
       },
@@ -9237,7 +10497,7 @@
          "name" : "minecraft:warped_slab",
          "properties" : [
             {
-               "name" : "top_slot_bit"
+               "name" : "minecraft:vertical_half"
             }
          ]
       },
@@ -9307,8 +10567,58 @@
          "properties" : []
       },
       {
+         "name" : "minecraft:waxed_chiseled_copper",
+         "properties" : []
+      },
+      {
          "name" : "minecraft:waxed_copper",
          "properties" : []
+      },
+      {
+         "name" : "minecraft:waxed_copper_bulb",
+         "properties" : [
+            {
+               "name" : "lit"
+            },
+            {
+               "name" : "powered_bit"
+            }
+         ]
+      },
+      {
+         "name" : "minecraft:waxed_copper_door",
+         "properties" : [
+            {
+               "name" : "direction"
+            },
+            {
+               "name" : "door_hinge_bit"
+            },
+            {
+               "name" : "open_bit"
+            },
+            {
+               "name" : "upper_block_bit"
+            }
+         ]
+      },
+      {
+         "name" : "minecraft:waxed_copper_grate",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:waxed_copper_trapdoor",
+         "properties" : [
+            {
+               "name" : "direction"
+            },
+            {
+               "name" : "open_bit"
+            },
+            {
+               "name" : "upside_down_bit"
+            }
+         ]
       },
       {
          "name" : "minecraft:waxed_cut_copper",
@@ -9318,7 +10628,7 @@
          "name" : "minecraft:waxed_cut_copper_slab",
          "properties" : [
             {
-               "name" : "top_slot_bit"
+               "name" : "minecraft:vertical_half"
             }
          ]
       },
@@ -9337,13 +10647,63 @@
          "name" : "minecraft:waxed_double_cut_copper_slab",
          "properties" : [
             {
-               "name" : "top_slot_bit"
+               "name" : "minecraft:vertical_half"
             }
          ]
       },
       {
+         "name" : "minecraft:waxed_exposed_chiseled_copper",
+         "properties" : []
+      },
+      {
          "name" : "minecraft:waxed_exposed_copper",
          "properties" : []
+      },
+      {
+         "name" : "minecraft:waxed_exposed_copper_bulb",
+         "properties" : [
+            {
+               "name" : "lit"
+            },
+            {
+               "name" : "powered_bit"
+            }
+         ]
+      },
+      {
+         "name" : "minecraft:waxed_exposed_copper_door",
+         "properties" : [
+            {
+               "name" : "direction"
+            },
+            {
+               "name" : "door_hinge_bit"
+            },
+            {
+               "name" : "open_bit"
+            },
+            {
+               "name" : "upper_block_bit"
+            }
+         ]
+      },
+      {
+         "name" : "minecraft:waxed_exposed_copper_grate",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:waxed_exposed_copper_trapdoor",
+         "properties" : [
+            {
+               "name" : "direction"
+            },
+            {
+               "name" : "open_bit"
+            },
+            {
+               "name" : "upside_down_bit"
+            }
+         ]
       },
       {
          "name" : "minecraft:waxed_exposed_cut_copper",
@@ -9353,7 +10713,7 @@
          "name" : "minecraft:waxed_exposed_cut_copper_slab",
          "properties" : [
             {
-               "name" : "top_slot_bit"
+               "name" : "minecraft:vertical_half"
             }
          ]
       },
@@ -9372,13 +10732,63 @@
          "name" : "minecraft:waxed_exposed_double_cut_copper_slab",
          "properties" : [
             {
-               "name" : "top_slot_bit"
+               "name" : "minecraft:vertical_half"
             }
          ]
       },
       {
+         "name" : "minecraft:waxed_oxidized_chiseled_copper",
+         "properties" : []
+      },
+      {
          "name" : "minecraft:waxed_oxidized_copper",
          "properties" : []
+      },
+      {
+         "name" : "minecraft:waxed_oxidized_copper_bulb",
+         "properties" : [
+            {
+               "name" : "lit"
+            },
+            {
+               "name" : "powered_bit"
+            }
+         ]
+      },
+      {
+         "name" : "minecraft:waxed_oxidized_copper_door",
+         "properties" : [
+            {
+               "name" : "direction"
+            },
+            {
+               "name" : "door_hinge_bit"
+            },
+            {
+               "name" : "open_bit"
+            },
+            {
+               "name" : "upper_block_bit"
+            }
+         ]
+      },
+      {
+         "name" : "minecraft:waxed_oxidized_copper_grate",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:waxed_oxidized_copper_trapdoor",
+         "properties" : [
+            {
+               "name" : "direction"
+            },
+            {
+               "name" : "open_bit"
+            },
+            {
+               "name" : "upside_down_bit"
+            }
+         ]
       },
       {
          "name" : "minecraft:waxed_oxidized_cut_copper",
@@ -9388,7 +10798,7 @@
          "name" : "minecraft:waxed_oxidized_cut_copper_slab",
          "properties" : [
             {
-               "name" : "top_slot_bit"
+               "name" : "minecraft:vertical_half"
             }
          ]
       },
@@ -9407,13 +10817,63 @@
          "name" : "minecraft:waxed_oxidized_double_cut_copper_slab",
          "properties" : [
             {
-               "name" : "top_slot_bit"
+               "name" : "minecraft:vertical_half"
             }
          ]
       },
       {
+         "name" : "minecraft:waxed_weathered_chiseled_copper",
+         "properties" : []
+      },
+      {
          "name" : "minecraft:waxed_weathered_copper",
          "properties" : []
+      },
+      {
+         "name" : "minecraft:waxed_weathered_copper_bulb",
+         "properties" : [
+            {
+               "name" : "lit"
+            },
+            {
+               "name" : "powered_bit"
+            }
+         ]
+      },
+      {
+         "name" : "minecraft:waxed_weathered_copper_door",
+         "properties" : [
+            {
+               "name" : "direction"
+            },
+            {
+               "name" : "door_hinge_bit"
+            },
+            {
+               "name" : "open_bit"
+            },
+            {
+               "name" : "upper_block_bit"
+            }
+         ]
+      },
+      {
+         "name" : "minecraft:waxed_weathered_copper_grate",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:waxed_weathered_copper_trapdoor",
+         "properties" : [
+            {
+               "name" : "direction"
+            },
+            {
+               "name" : "open_bit"
+            },
+            {
+               "name" : "upside_down_bit"
+            }
+         ]
       },
       {
          "name" : "minecraft:waxed_weathered_cut_copper",
@@ -9423,7 +10883,7 @@
          "name" : "minecraft:waxed_weathered_cut_copper_slab",
          "properties" : [
             {
-               "name" : "top_slot_bit"
+               "name" : "minecraft:vertical_half"
             }
          ]
       },
@@ -9442,13 +10902,63 @@
          "name" : "minecraft:waxed_weathered_double_cut_copper_slab",
          "properties" : [
             {
-               "name" : "top_slot_bit"
+               "name" : "minecraft:vertical_half"
             }
          ]
       },
       {
+         "name" : "minecraft:weathered_chiseled_copper",
+         "properties" : []
+      },
+      {
          "name" : "minecraft:weathered_copper",
          "properties" : []
+      },
+      {
+         "name" : "minecraft:weathered_copper_bulb",
+         "properties" : [
+            {
+               "name" : "lit"
+            },
+            {
+               "name" : "powered_bit"
+            }
+         ]
+      },
+      {
+         "name" : "minecraft:weathered_copper_door",
+         "properties" : [
+            {
+               "name" : "direction"
+            },
+            {
+               "name" : "door_hinge_bit"
+            },
+            {
+               "name" : "open_bit"
+            },
+            {
+               "name" : "upper_block_bit"
+            }
+         ]
+      },
+      {
+         "name" : "minecraft:weathered_copper_grate",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:weathered_copper_trapdoor",
+         "properties" : [
+            {
+               "name" : "direction"
+            },
+            {
+               "name" : "open_bit"
+            },
+            {
+               "name" : "upside_down_bit"
+            }
+         ]
       },
       {
          "name" : "minecraft:weathered_cut_copper",
@@ -9458,7 +10968,7 @@
          "name" : "minecraft:weathered_cut_copper_slab",
          "properties" : [
             {
-               "name" : "top_slot_bit"
+               "name" : "minecraft:vertical_half"
             }
          ]
       },
@@ -9477,7 +10987,7 @@
          "name" : "minecraft:weathered_double_cut_copper_slab",
          "properties" : [
             {
-               "name" : "top_slot_bit"
+               "name" : "minecraft:vertical_half"
             }
          ]
       },
@@ -9529,6 +11039,10 @@
          "properties" : []
       },
       {
+         "name" : "minecraft:white_concrete_powder",
+         "properties" : []
+      },
+      {
          "name" : "minecraft:white_glazed_terracotta",
          "properties" : [
             {
@@ -9541,26 +11055,28 @@
          "properties" : []
       },
       {
+         "name" : "minecraft:white_stained_glass",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:white_stained_glass_pane",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:white_terracotta",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:white_tulip",
+         "properties" : []
+      },
+      {
          "name" : "minecraft:white_wool",
          "properties" : []
       },
       {
          "name" : "minecraft:wither_rose",
          "properties" : []
-      },
-      {
-         "name" : "minecraft:wood",
-         "properties" : [
-            {
-               "name" : "pillar_axis"
-            },
-            {
-               "name" : "stripped_bit"
-            },
-            {
-               "name" : "wood_type"
-            }
-         ]
       },
       {
          "name" : "minecraft:wooden_button",
@@ -9599,17 +11115,6 @@
          ]
       },
       {
-         "name" : "minecraft:wooden_slab",
-         "properties" : [
-            {
-               "name" : "top_slot_bit"
-            },
-            {
-               "name" : "wood_type"
-            }
-         ]
-      },
-      {
          "name" : "minecraft:yellow_candle",
          "properties" : [
             {
@@ -9637,6 +11142,10 @@
          "properties" : []
       },
       {
+         "name" : "minecraft:yellow_concrete_powder",
+         "properties" : []
+      },
+      {
          "name" : "minecraft:yellow_flower",
          "properties" : []
       },
@@ -9653,11 +11162,24 @@
          "properties" : []
       },
       {
+         "name" : "minecraft:yellow_stained_glass",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:yellow_stained_glass_pane",
+         "properties" : []
+      },
+      {
+         "name" : "minecraft:yellow_terracotta",
+         "properties" : []
+      },
+      {
          "name" : "minecraft:yellow_wool",
          "properties" : []
       }
    ],
-   "minecraft_version" : "1.20.10-beta.0",
-   "module_type" : "block",
-   "name" : "mojang-block"
+   "minecraft_version" : "1.21.0-beta.0",
+   "module_type" : "vanilla_data",
+   "name" : "mojang-block",
+   "vanilla_data_type" : "block"
 }

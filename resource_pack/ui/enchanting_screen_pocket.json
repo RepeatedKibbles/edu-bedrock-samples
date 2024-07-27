@@ -240,7 +240,7 @@
           "type": "grid",
           "collection_name": "#enchant_buttons",
           "size": [ "100%", "100%" ],
-          "layer": 4,
+          "layer": 6,
           "anchor_from": "center",
           "anchor_to": "center",
           "grid_dimensions": [ 1, 3 ],
@@ -554,6 +554,8 @@
             {
               "title_label@enchanting_pocket.generic_label": {
                 "text": "$container_title",
+                "color": "$title_text_color",
+                "shadow": false,
                 "layer": 1
               }
             }
@@ -646,13 +648,13 @@
       { "container_gamepad_helpers@common.container_gamepad_helpers": { "layer": 2 } },
       { "inventory_selected_icon_button@common.inventory_selected_icon_button": {} },
       { "hold_icon@common.inventory_take_progress_icon_button": {} },
-      { "flying_item_renderer@common.flying_item_renderer": {} },
       { "selected_item_details_factory@common.selected_item_details_factory": {} },
       {
         "item_lock_notification_factory@common.item_lock_notification_factory": {
           "$offset": [ 0, "85%" ]
         }
-      }
+      },
+      { "flying_item_renderer@common.flying_item_renderer": {} }
     ]
   }
 }
