@@ -21,7 +21,6 @@
               "shake_time" : 0.35
             },
             "arrow_effect": {
-              "apply_effect_to_blocking_targets": false
             }
           },
           "hit_sound": "bow.hit",
@@ -51,7 +50,6 @@
               "shake_time" : 0.35
             },
             "arrow_effect": {
-              "apply_effect_to_blocking_targets":  false
             }
           },
           "hit_sound": "bow.hit",
@@ -78,7 +76,6 @@
               "shake_time": 0.35
             },
             "arrow_effect": {
-              "apply_effect_to_blocking_targets": false
             }
           },
           "hit_sound": "bow.hit",
@@ -119,7 +116,6 @@
             "shake_time" : 0.35
           },
           "arrow_effect": {
-            "apply_effect_to_blocking_targets": false
           }
         },
         "hit_sound": "bow.hit",
@@ -136,13 +132,6 @@
       "minecraft:pushable": {
         "is_pushable": false,
         "is_pushable_by_piston": true
-      },
-      "minecraft:conditional_bandwidth_optimization": {
-        "default_values": {
-          "max_optimized_distance": 80.0,
-          "max_dropped_ticks": 7,
-          "use_motion_prediction_hints": true
-        }
       }
     },
 

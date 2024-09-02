@@ -152,8 +152,8 @@
         }
       },
       {
-        "edu_cloud_button@world_section.edu_cloud_button": {
-          "ignored": "(not $education_edition and not $edu_save_to_cloud_on and not $edu_save_to_cloud_general_toggle_on)",
+        "cloud_button@world_section.cloud_button": {
+          "visible": "($education_edition and $edu_save_to_cloud_on and $edu_save_to_cloud_general_toggle_on)",
           "$toggle_group_forced_index": "$edu_cloud_level_forced_index"
         }
       },
@@ -1716,6 +1716,7 @@
       },
       {
         "player_spectator_mode_toggle@settings_common.radio_with_label": {
+          "ignored": "($is_publish and $education_edition)",
           "$toggle_state_binding_name": "#player_game_mode_radio_spectator",
           "$radio_label_text": "createWorldScreen.gameMode.spectator"
         }
@@ -2026,7 +2027,7 @@
     }
   },
 
-  "edu_cloud_button@settings_common.section_toggle_base": {
+  "cloud_button@settings_common.section_toggle_base": {
     "$toggle_view_binding_name": "cloud_button_toggle",
     "$glyph_texture": "textures/ui/onedrive_pixel_logo_stroke",
     "$glyph_color_texture": "textures/ui/onedrive_pixel_logo",
@@ -2037,7 +2038,7 @@
     }
   },
 
-  "edu_cloud_section": {
+  "cloud_section": {
     "type": "stack_panel",
     "size": [ "100%", "100%c" ],
     "anchor_from": "top_left",
@@ -2082,8 +2083,8 @@
       {
         "cloud_upload_toggle@settings_common.option_toggle": {
           "$option_label": "options.cloudToggleCloudSave",
-          "$option_binding_name": "#edu_cloud_upload",
-          "$option_enabled_binding_name": "#edu_cloud_upload_enabled",
+          "$option_binding_name": "#cloud_upload",
+          "$option_enabled_binding_name": "#cloud_upload_enabled",
           "$toggle_name": "cloud_upload"
         }
       },

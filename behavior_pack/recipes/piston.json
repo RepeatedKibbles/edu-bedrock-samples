@@ -1,5 +1,5 @@
 {
-    "format_version": "1.20.10",
+    "format_version": "1.12",
     "minecraft:recipe_shaped": {
         "description": {
             "identifier": "minecraft:piston"
@@ -14,7 +14,7 @@
         ],
         "key": {
             "A": {
-                "tag": "minecraft:planks"
+                "item": "minecraft:planks"
             },
             "B": {
                 "item": "cobblestone"
@@ -26,16 +26,10 @@
                 "item": "redstone"
             }
         },
-        "unlock": [
-          {
-            "item": "minecraft:redstone"
-          }
-        ],
         "result": {
             "item": "piston",
             "count": 1,
             "data": 1
-        },
-        "priority": -1
+        }
     }
 }

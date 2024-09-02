@@ -155,7 +155,7 @@
 							"gliding" : "query.is_gliding"
 						},
 						{
-							"swimming" : "query.is_swimming || query.is_crawling"
+							"swimming" : "query.is_swimming"
 						}
 					]
 				},
@@ -163,7 +163,7 @@
 					"animations" : [ "look_at_target_gliding" ],
 					"transitions" : [
 						{
-							"swimming" : "query.is_swimming || query.is_crawling"
+							"swimming" : "query.is_swimming"
 						},
 						{
 							"default" : "!query.is_gliding"
@@ -177,7 +177,7 @@
 							"gliding" : "query.is_gliding"
 						},
 						{
-							"default" : "!query.is_swimming && !query.is_crawling"
+							"default" : "!query.is_swimming"
 						}
 					]
 				}
@@ -203,26 +203,6 @@
 				},
 				"riding" : {
 					"animations" : [ "riding.arms", "riding.legs" ],
-					"transitions" : [
-						{
-							"default" : "!query.is_riding"
-						}
-					]
-				}
-			}
-		},
-		"controller.animation.humanoid.riding_legs_only" : {
-			"initial_state" : "default",
-			"states" : {
-				"default" : {
-					"transitions" : [
-						{
-							"riding" : "query.is_riding"
-						}
-					]
-				},
-				"riding" : {
-					"animations" : [ "riding.legs" ],
 					"transitions" : [
 						{
 							"default" : "!query.is_riding"

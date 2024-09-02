@@ -166,11 +166,6 @@
         },
         {
           "type": "item",
-          "name": "minecraft:record_otherside",
-          "weight": 5
-        },
-        {
-          "type": "item",
           "name": "minecraft:book",
           "weight": 6,
           "functions": [
@@ -180,20 +175,6 @@
               "treasure": true
             }
           ]
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "empty",
-          "weight": 9
-        },
-        {
-          "type": "item",
-          "name": "minecraft:eye_armor_trim_smithing_template",
-          "weight": 1
         }
       ]
     }

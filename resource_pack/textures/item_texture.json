@@ -1,4 +1,3 @@
-// Do not copy this file directly into your resource pack as a starter; instead, use this file as a reference or to copy specific JSON snippets.
 {
   "resource_pack_name": "vanilla",
   "texture_name": "atlas.items",
@@ -18,8 +17,7 @@
         "textures/items/stone_axe",
         "textures/items/iron_axe",
         "textures/items/gold_axe",
-        "textures/items/diamond_axe",
-        "textures/items/netherite_axe"
+        "textures/items/diamond_axe"
       ]
     },
     "bed": {
@@ -61,10 +59,7 @@
         "textures/items/boat_birch",
         "textures/items/boat_jungle",
         "textures/items/boat_acacia",
-        "textures/items/boat_darkoak",
-        "textures/items/mangrove_boat",
-        "textures/items/bamboo_raft",
-        "textures/items/cherry_boat"
+        "textures/items/boat_darkoak"
       ]
     },
     "bone": {
@@ -91,8 +86,7 @@
         "textures/items/chainmail_boots",
         "textures/items/iron_boots",
         "textures/items/gold_boots",
-        "textures/items/diamond_boots",
-        "textures/items/netherite_boots"
+        "textures/items/diamond_boots"
       ]
     },
     "bowl": {
@@ -126,10 +120,7 @@
         "textures/items/bucket_cod",
         "textures/items/bucket_salmon",
         "textures/items/bucket_tropical",
-        "textures/items/bucket_pufferfish",
-        "textures/items/bucket_powder_snow",
-        "textures/items/bucket_axolotl",
-        "textures/items/bucket_tadpole"
+        "textures/items/bucket_pufferfish"
       ]
     },
     "cake": {
@@ -162,8 +153,7 @@
         "textures/items/chainmail_chestplate",
         "textures/items/iron_chestplate",
         "textures/items/gold_chestplate",
-        "textures/items/diamond_chestplate",
-        "textures/items/netherite_chestplate"
+        "textures/items/diamond_chestplate"
       ]
     },
     "chicken_cooked": {
@@ -262,8 +252,7 @@
         "textures/items/dye_powder_black_new",
         "textures/items/dye_powder_brown_new",
         "textures/items/dye_powder_blue_new",
-        "textures/items/dye_powder_white_new",
-        "textures/items/dye_powder_glow"
+        "textures/items/dye_powder_white_new"
       ]
     },
     "egg": {
@@ -379,8 +368,7 @@
         "textures/items/chainmail_helmet",
         "textures/items/iron_helmet",
         "textures/items/gold_helmet",
-        "textures/items/diamond_helmet",
-        "textures/items/netherite_helmet"
+        "textures/items/diamond_helmet"
       ]
     },
     "hoe": {
@@ -389,8 +377,7 @@
         "textures/items/stone_hoe",
         "textures/items/iron_hoe",
         "textures/items/gold_hoe",
-        "textures/items/diamond_hoe",
-        "textures/items/netherite_hoe"
+        "textures/items/diamond_hoe"
       ]
     },
     "hopper": {
@@ -423,8 +410,7 @@
         "textures/items/chainmail_leggings",
         "textures/items/iron_leggings",
         "textures/items/gold_leggings",
-        "textures/items/diamond_leggings",
-        "textures/items/netherite_leggings"
+        "textures/items/diamond_leggings"
       ]
     },
     "magma_cream": {
@@ -448,8 +434,7 @@
         "textures/items/map_filled",
         "textures/items/map_filled",
         "textures/items/map_filled",
-        "textures/items/map_filled",
-        "textures/items/map_trial_chambers"
+        "textures/items/map_filled"
       ]
     },
     "melon": {
@@ -512,8 +497,7 @@
         "textures/items/stone_pickaxe",
         "textures/items/iron_pickaxe",
         "textures/items/gold_pickaxe",
-        "textures/items/diamond_pickaxe",
-        "textures/items/netherite_pickaxe"
+        "textures/items/diamond_pickaxe"
       ]
     },
     "phantom_membrane": {
@@ -562,11 +546,7 @@
         "textures/items/potion_bottle_saturation",
         "textures/items/potion_bottle_levitation",
         "textures/items/potion_bottle_turtleMaster",
-        "textures/items/potion_bottle_slowFall",
-        "textures/items/potion_bottle_windCharged",
-        "textures/items/potion_bottle_weaving",
-        "textures/items/potion_bottle_oozing",
-        "textures/items/potion_bottle_infested"
+        "textures/items/potion_bottle_slowFall"
       ]
     },
     "potion_bottle_empty": {
@@ -590,11 +570,7 @@
         "textures/items/potion_bottle_lingering_poison",
         "textures/items/potion_bottle_lingering_wither",
         "textures/items/potion_bottle_lingering_turtleMaster",
-        "textures/items/potion_bottle_lingering_slowFall",
-        "textures/items/potion_bottle_lingering_windCharged",
-        "textures/items/potion_bottle_lingering_weaving",
-        "textures/items/potion_bottle_lingering_oozing",
-        "textures/items/potion_bottle_lingering_infested"
+        "textures/items/potion_bottle_lingering_slowFall"
       ]
     },
     "potion_bottle_splash": {
@@ -624,11 +600,7 @@
         "textures/items/potion_bottle_splash_absorption",
         "textures/items/potion_bottle_splash_saturation",
         "textures/items/potion_bottle_splash_turtleMaster",
-        "textures/items/potion_bottle_splash_slowFall",
-        "textures/items/potion_bottle_splash_windCharged",
-        "textures/items/potion_bottle_splash_weaving",
-        "textures/items/potion_bottle_splash_oozing",
-        "textures/items/potion_bottle_splash_infested"
+        "textures/items/potion_bottle_splash_slowFall"
       ]
     },
     "potion_overlay": {
@@ -727,8 +699,7 @@
         "textures/items/stone_shovel",
         "textures/items/iron_shovel",
         "textures/items/gold_shovel",
-        "textures/items/diamond_shovel",
-        "textures/items/netherite_shovel"
+        "textures/items/diamond_shovel"
       ]
     },
     "sign": {
@@ -843,8 +814,7 @@
         "textures/items/stone_sword",
         "textures/items/iron_sword",
         "textures/items/gold_sword",
-        "textures/items/diamond_sword",
-        "textures/items/netherite_sword"
+        "textures/items/diamond_sword"
       ]
     },
     "wheat": {
@@ -902,11 +872,7 @@
         "textures/items/tipped_arrow_poison",
         "textures/items/tipped_arrow_wither",
         "textures/items/tipped_arrow_turtlemaster",
-        "textures/items/tipped_arrow_slowfalling",
-        "textures/items/tipped_arrow_windCharged",
-        "textures/items/tipped_arrow_weaving",
-        "textures/items/tipped_arrow_oozing",
-        "textures/items/tipped_arrow_infested"
+        "textures/items/tipped_arrow_slowfalling"
       ]
     },
     "shulker_shell": {
@@ -938,355 +904,6 @@
     },
     "spawn_egg_bee": {
       "textures": "textures/items/egg_bee"
-    },
-    "honeycomb": {
-      "textures": [
-        "textures/items/honeycomb"
-      ]
-    },
-    "honey_bottle": {
-      "textures": [
-        "textures/items/honey_bottle"
-      ]
-    },
-    "egg_bee": {
-      "textures": [
-        "textures/items/egg_bee"
-      ]
-    },
-    "netherite_ingot": {
-      "textures": "textures/items/netherite_ingot"
-    },
-    "netherite_scrap": {
-      "textures": "textures/items/netherite_scrap"
-    },
-    "warped_sign_item": {
-      "textures": "textures/items/sign_warped"
-    },
-    "crimson_sign_item": {
-      "textures": "textures/items/sign_crimson"
-    },
-    "crimson_door": {
-      "textures": "textures/items/crimson_door"
-    },
-    "warped_door": {
-      "textures": "textures/items/warped_door"
-    },
-    "lodestonecompass_item": {
-      "textures": "textures/items/lodestonecompass_item"
-    },
-    "warped_fungus_on_a_stick": {
-      "textures": "textures/items/warped_fungus_on_a_stick"
-    },
-    "chain": {
-      "textures": "textures/items/chain"
-    },
-    "soul_campfire": {
-      "textures": "textures/items/soul_campfire"
-    },
-    "nether_sprouts": {
-      "textures": "textures/items/nether_sprouts"
-    },
-    "hanging_roots": {
-      "textures": "textures/items/hanging_roots"
-    },
-    "glow_berries": {
-      "textures": "textures/items/glow_berries"
-    },
-    "amethyst_shard": {
-      "textures": "textures/items/amethyst_shard"
-    },
-    "spyglass": {
-      "textures": "textures/items/spyglass"
-    },
-    "copper_ingot": {
-      "textures": "textures/items/copper_ingot"
-    },
-    "raw_copper": {
-      "textures": "textures/items/raw_copper"
-    },
-    "raw_iron": {
-      "textures": "textures/items/raw_iron"
-    },
-    "raw_gold": {
-      "textures": "textures/items/raw_gold"
-    },
-    "glow_item_frame": {
-      "textures": "textures/items/glow_item_frame"
-    },
-    "record_otherside": {
-      "textures": "textures/items/record_otherside"
-    },
-    "mangrove_door": {
-      "textures": "textures/items/mangrove_door"
-    },
-    "mangrove_sign": {
-      "textures": "textures/items/mangrove_sign"
-    },
-    "chest_boat": {
-      "textures": [
-        "textures/items/oak_chest_boat",
-        "textures/items/spruce_chest_boat",
-        "textures/items/birch_chest_boat",
-        "textures/items/jungle_chest_boat",
-        "textures/items/acacia_chest_boat",
-        "textures/items/dark_oak_chest_boat",
-        "textures/items/mangrove_chest_boat",
-        "textures/items/bamboo_chest_raft",
-        "textures/items/cherry_chest_boat"
-      ]
-    },
-    "recovery_compass": {
-      "textures": "textures/items/recovery_compass_item"
-    },
-    "echo_shard": {
-      "textures": "textures/items/echo_shard"
-    },
-    "goat_horn": {
-      "textures": "textures/items/goat_horn"
-    },
-    "record_5": {
-      "textures": "textures/items/record_5"
-    },
-    "disc_fragment_5": {
-      "textures": "textures/items/disc_fragment_5"
-    },
-    "pitcher_pod": {
-      "textures": "textures/items/pitcher_pod"
-    },
-    "torchflower_seeds": {
-      "textures": "textures/items/torchflower_seeds"
-    },
-    "sign_oak_hanging": {
-      "textures": "textures/items/oak_hanging_sign"
-    },
-    "sign_spruce_hanging": {
-      "textures": "textures/items/spruce_hanging_sign"
-    },
-    "sign_birch_hanging": {
-      "textures": "textures/items/birch_hanging_sign"
-    },
-    "sign_jungle_hanging": {
-      "textures": "textures/items/jungle_hanging_sign"
-    },
-    "sign_acacia_hanging": {
-      "textures": "textures/items/acacia_hanging_sign"
-    },
-    "sign_darkoak_hanging": {
-      "textures": "textures/items/dark_oak_hanging_sign"
-    },
-    "sign_crimson_hanging": {
-      "textures": "textures/items/crimson_hanging_sign"
-    },
-    "sign_warped_hanging": {
-      "textures": "textures/items/warped_hanging_sign"
-    },
-    "sign_mangrove_hanging": {
-      "textures": "textures/items/mangrove_hanging_sign"
-    },
-    "sign_bamboo_hanging": {
-      "textures": "textures/items/bamboo_hanging_sign"
-    },
-    "bamboo_door": {
-      "textures": "textures/items/bamboo_door"
-    },
-    "bamboo_sign": {
-      "textures": "textures/items/bamboo_sign"
-    },
-    "cherry_door": {
-      "textures": "textures/items/cherry_door"
-    },
-    "sign_cherry_hanging": {
-      "textures": "textures/items/cherry_hanging_sign"
-    },
-    "cherry_sign": {
-      "textures": "textures/items/cherry_sign"
-    },
-    "angler_pottery_sherd": {
-      "textures": "textures/items/angler_pottery_sherd"
-    },
-    "archer_pottery_sherd": {
-      "textures": "textures/items/archer_pottery_sherd"
-    },
-    "arms_up_pottery_sherd": {
-      "textures": "textures/items/arms_up_pottery_sherd"
-    },
-    "blade_pottery_sherd": {
-      "textures": "textures/items/blade_pottery_sherd"
-    },
-    "brewer_pottery_sherd": {
-      "textures": "textures/items/brewer_pottery_sherd"
-    },
-    "burn_pottery_sherd": {
-      "textures": "textures/items/burn_pottery_sherd"
-    },
-    "danger_pottery_sherd": {
-      "textures": "textures/items/danger_pottery_sherd"
-    },
-    "explorer_pottery_sherd": {
-      "textures": "textures/items/explorer_pottery_sherd"
-    },
-    "friend_pottery_sherd": {
-      "textures": "textures/items/friend_pottery_sherd"
-    },
-    "heart_pottery_sherd": {
-      "textures": "textures/items/heart_pottery_sherd"
-    },
-    "heartbreak_pottery_sherd": {
-      "textures": "textures/items/heartbreak_pottery_sherd"
-    },
-    "howl_pottery_sherd": {
-      "textures": "textures/items/howl_pottery_sherd"
-    },
-    "miner_pottery_sherd": {
-      "textures": "textures/items/miner_pottery_sherd"
-    },
-    "mourner_pottery_sherd": {
-      "textures": "textures/items/mourner_pottery_sherd"
-    },
-    "plenty_pottery_sherd": {
-      "textures": "textures/items/plenty_pottery_sherd"
-    },
-    "prize_pottery_sherd": {
-      "textures": "textures/items/prize_pottery_sherd"
-    },
-    "sheaf_pottery_sherd": {
-      "textures": "textures/items/sheaf_pottery_sherd"
-    },
-    "shelter_pottery_sherd": {
-      "textures": "textures/items/shelter_pottery_sherd"
-    },
-    "skull_pottery_sherd": {
-      "textures": "textures/items/skull_pottery_sherd"
-    },
-    "snort_pottery_sherd": {
-      "textures": "textures/items/snort_pottery_sherd"
-    },
-    "brush": {
-      "textures": "textures/items/brush"
-    },
-    "netherite_upgrade_smithing_template": {
-      "textures": "textures/items/netherite_upgrade_smithing_template"
-    },
-    "sentry_armor_trim_smithing_template": {
-      "textures": "textures/items/sentry_armor_trim_smithing_template"
-    },
-    "dune_armor_trim_smithing_template": {
-      "textures": "textures/items/dune_armor_trim_smithing_template"
-    },
-    "coast_armor_trim_smithing_template": {
-      "textures": "textures/items/coast_armor_trim_smithing_template"
-    },
-    "wild_armor_trim_smithing_template": {
-      "textures": "textures/items/wild_armor_trim_smithing_template"
-    },
-    "ward_armor_trim_smithing_template": {
-      "textures": "textures/items/ward_armor_trim_smithing_template"
-    },
-    "eye_armor_trim_smithing_template": {
-      "textures": "textures/items/eye_armor_trim_smithing_template"
-    },
-    "vex_armor_trim_smithing_template": {
-      "textures": "textures/items/vex_armor_trim_smithing_template"
-    },
-    "tide_armor_trim_smithing_template": {
-      "textures": "textures/items/tide_armor_trim_smithing_template"
-    },
-    "snout_armor_trim_smithing_template": {
-      "textures": "textures/items/snout_armor_trim_smithing_template"
-    },
-    "rib_armor_trim_smithing_template": {
-      "textures": "textures/items/rib_armor_trim_smithing_template"
-    },
-    "spire_armor_trim_smithing_template": {
-      "textures": "textures/items/spire_armor_trim_smithing_template"
-    },
-    "silence_armor_trim_smithing_template": {
-      "textures": "textures/items/silence_armor_trim_smithing_template"
-    },
-    "wayfinder_armor_trim_smithing_template": {
-      "textures": "textures/items/wayfinder_armor_trim_smithing_template"
-    },
-    "raiser_armor_trim_smithing_template": {
-      "textures": "textures/items/raiser_armor_trim_smithing_template"
-    },
-    "shaper_armor_trim_smithing_template": {
-      "textures": "textures/items/shaper_armor_trim_smithing_template"
-    },
-    "host_armor_trim_smithing_template": {
-      "textures": "textures/items/host_armor_trim_smithing_template"
-    },
-    "record_relic": {
-      "textures": "textures/items/music_disc_relic"
-    },
-    "armadillo_scute": {
-      "textures": "textures/items/armadillo_scute"
-    },
-    "wolf_armor": {
-      "textures": [
-        "textures/items/wolf_armor",
-        "textures/items/wolf_armor_dyed"
-      ]
-    },
-    "copper_door": {
-      "textures": "textures/items/copper_door"
-    },
-    "exposed_copper_door": {
-      "textures": "textures/items/exposed_copper_door"
-    },
-    "weathered_copper_door": {
-      "textures": "textures/items/weathered_copper_door"
-    },
-    "oxidized_copper_door": {
-      "textures": "textures/items/oxidized_copper_door"
-    },
-    "trial_key": {
-      "textures": "textures/items/trial_key"
-    },
-    "ominous_trial_key": {
-      "textures": "textures/items/ominous_trial_key"
-    },
-    "wind_charge": {
-      "textures": "textures/items/wind_charge"
-    },
-    "guster_pottery_sherd": {
-      "textures": "textures/items/guster_pottery_sherd"
-    },
-    "ominous_bottle": {
-      "textures": "textures/items/ominous_bottle"
-    },
-    "flow_pottery_sherd": {
-      "textures": "textures/items/flow_pottery_sherd"
-    },
-    "scrape_pottery_sherd": {
-      "textures": "textures/items/scrape_pottery_sherd"
-    },
-    "flow_banner_pattern": {
-      "textures": "textures/items/flow_banner_pattern"
-    },
-    "guster_banner_pattern": {
-      "textures": "textures/items/guster_banner_pattern"
-    },
-    "breeze_rod": {
-      "textures": "textures/items/breeze_rod"
-    },
-    "mace": {
-      "textures": "textures/items/mace"
-    },
-    "flow_armor_trim_smithing_template": {
-      "textures": "textures/items/flow_armor_trim_smithing_template"
-    },
-    "bolt_armor_trim_smithing_template": {
-      "textures": "textures/items/bolt_armor_trim_smithing_template"
-    },
-    "record_creator": {
-      "textures": "textures/items/music_disc_creator"
-    },
-    "record_creator_music_box": {
-      "textures": "textures/items/music_disc_creator_music_box"
-    },
-    "record_precipice": {
-      "textures": "textures/items/music_disc_precipice"
     }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "format_version": "1.20.10",
+  "format_version": "1.12",
   "minecraft:recipe_shaped": {
     "description": {
     "identifier": "minecraft:green_stained_hardened_clay"
@@ -22,11 +22,6 @@
         "data": 2
       }
     },
-	"unlock": [
-      {
-        "item": "minecraft:hardened_clay"
-      }
-    ],
     "result": {
       "item": "minecraft:stained_hardened_clay",
       "data": 13,

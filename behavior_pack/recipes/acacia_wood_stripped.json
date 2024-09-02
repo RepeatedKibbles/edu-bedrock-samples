@@ -1,5 +1,5 @@
 {
-  "format_version": "1.20.10",
+  "format_version": "1.12",
   "minecraft:recipe_shaped": {
     "description": {
     "identifier": "minecraft:acacia_wood_stripped"
@@ -17,13 +17,9 @@
         "item": "minecraft:stripped_acacia_log"
       }
     },
-	"unlock": [
-      {
-        "item": "minecraft:stripped_acacia_log"
-      }
-    ],
     "result": {
-      "item": "minecraft:stripped_acacia_wood",
+      "item": "minecraft:wood",
+      "data": 12,
       "count": 3
     }
   }

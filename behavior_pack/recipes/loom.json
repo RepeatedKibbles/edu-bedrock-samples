@@ -1,5 +1,5 @@
 {
-    "format_version": "1.20.10",
+    "format_version": "1.12",
     "minecraft:recipe_shaped": {
         "description": {
             "identifier": "minecraft:loom"
@@ -16,17 +16,12 @@
                 "item": "minecraft:string"
             },
             "B": {
-                "tag": "minecraft:planks"
+                "item": "minecraft:planks"
             }
         },
-        "unlock": [
-          {
-            "item": "minecraft:string"
-          }
-        ],
         "result": {
-            "item": "loom"
-        },
-        "priority": -1
+            "item": "loom",
+            "count": 1
+        }
     }
 }

@@ -1,8 +1,8 @@
 {
-  "format_version": "1.20.10",
+  "format_version": "1.12",
   "minecraft:recipe_shaped": {
     "description": {
-      "identifier": "minecraft:smithing_table"
+    "identifier": "minecraft:smithing_table"
     },
     "tags": [ "crafting_table" ],
     "pattern": [
@@ -15,17 +15,11 @@
         "item": "minecraft:iron_ingot"
       },
       "#": {
-        "tag": "minecraft:planks"
+        "item": "minecraft:planks"
       }
     },
-	"unlock": [
-      {
-        "item": "minecraft:iron_ingot"
-      }
-    ],
     "result": [
       { "item": "minecraft:smithing_table" }
-    ],
-    "priority": -1
+    ]
   }
 }

@@ -1,9 +1,8 @@
 {
-  "format_version": "1.16.0",
+  "format_version": "1.13.0",
   "minecraft:entity": {
     "description": {
       "identifier": "minecraft:enderman",
-      "spawn_category": "monster",
       "is_spawnable": true,
       "is_summonable": true,
       "is_experimental": false
@@ -30,15 +29,15 @@
         "minecraft:movement": {
           "value": 0.45
         },
-        "minecraft:behavior.melee_box_attack": {
-          "priority": 2
+        "minecraft:behavior.melee_attack": {
+          "priority": 2,
+          "speed_multiplier": 1.0,
+          "track_target": false
         }
       }
     },
 
     "components": {
-      "minecraft:is_hidden_when_invisible": {
-      },
       "minecraft:experience_reward": {
         "on_death": "query.last_hit_by_player ? 5 : 0"
       },
@@ -66,7 +65,7 @@
             "damage_per_tick": 4
           },
           {
-            "filters": { "test": "in_contact_with_water", "operator": "==", "value": true },
+            "filters": { "test": "in_water_or_rain", "operator": "==", "value": true },
             "cause": "drowning",
             "damage_per_tick": 1
           }
@@ -76,8 +75,8 @@
         "damage": 7
       },
       "minecraft:follow_range": {
-        "value": 64,
-        "max": 64
+        "value": 32,
+        "max": 32
       },
       "minecraft:collision_box": {
         "width": 0.6,
@@ -112,12 +111,8 @@
           ]
         }
       },
-      "minecraft:despawn": {
-        "despawn_from_distance": {}
-      },
       "minecraft:behavior.nearest_attackable_target": {
         "priority": 5,
-        "must_see": true,
         "attack_interval": 10,
         "entity_types": [
           {
@@ -128,7 +123,8 @@
             },
             "max_dist": 64
           }
-        ]
+        ],
+        "must_see": true
       },
       "minecraft:navigation.walk": {
         "can_path_over_water": false,
@@ -170,17 +166,6 @@
       "minecraft:pushable": {
         "is_pushable": true,
         "is_pushable_by_piston": true
-      },
-      "minecraft:conditional_bandwidth_optimization": {
-        "default_values": {
-          "max_optimized_distance": 80.0,
-          "max_dropped_ticks": 10,
-          "use_motion_prediction_hints": true
-        }
-      },
-      "minecraft:variable_max_auto_step": {
-        "base_value": 1.0625, // 1 block + 1 pixel
-        "jump_prevented_value": 0.5625 // 0.5 blocks + 1 pixel
       }
     },
 

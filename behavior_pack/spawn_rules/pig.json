@@ -18,22 +18,12 @@
           "default": 10
         },
         "minecraft:herd": {
-          "min_size": 1,
-          "max_size": 3
+          "min_size":1,
+          "max_size":3
         },
+    
         "minecraft:biome_filter": {
-          "any_of": [
-            {
-              "test": "has_biome_tag",
-              "operator": "==",
-              "value": "animal"
-            },
-            {
-              "test": "has_biome_tag",
-              "operator": "==",
-              "value": "cherry_grove"
-            }
-          ]
+          "test": "has_biome_tag", "operator":"==", "value": "animal"
         }
       }
     ]

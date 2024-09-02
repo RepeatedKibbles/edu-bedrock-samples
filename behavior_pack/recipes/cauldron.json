@@ -1,5 +1,5 @@
 {
-  "format_version": "1.20.10",
+  "format_version": "1.12",
   "minecraft:recipe_shaped": {
     "description": {
     "identifier": "minecraft:cauldron"
@@ -17,11 +17,6 @@
         "item": "minecraft:iron_ingot"
       }
     },
-	"unlock": [
-      {
-        "item": "minecraft:water_bucket"
-      }
-    ],
     "result": {
       "item": "minecraft:cauldron"
     }

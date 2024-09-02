@@ -1,5 +1,5 @@
 {
-  "format_version": "1.20.10",
+  "format_version": "1.12",
   "minecraft:recipe_shaped": {
     "description": {
     "identifier": "minecraft:anvil"
@@ -20,11 +20,6 @@
         "item": "minecraft:iron_ingot"
       }
     },
-	"unlock": [
-      {
-        "item": "minecraft:iron_block"
-      }
-    ],
     "result": {
       "item": "minecraft:anvil",
       "data": 0

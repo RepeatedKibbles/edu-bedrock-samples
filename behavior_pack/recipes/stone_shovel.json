@@ -1,9 +1,11 @@
 {
-  "format_version": "1.20.10",
+  "format_version": "1.12",
   "minecraft:recipe_shaped": {
     "description": {
-      "identifier": "minecraft:stone_shovel"
-    },    
+    "identifier": "minecraft:stone_shovel"
+    },
+
+    
     "tags": [ "crafting_table" ],
     "pattern": [
       "X",
@@ -15,17 +17,11 @@
         "item": "minecraft:stick"
       },
       "X": {
-        "tag": "minecraft:stone_tool_materials"
+        "item": "minecraft:cobblestone"
       }
     },
-	"unlock": [
-      {
-        "tag": "minecraft:stone_tool_materials"
-      }
-    ],
     "result": {
       "item": "minecraft:stone_shovel"
-    },
-    "priority": -1
+    }
   }
 }

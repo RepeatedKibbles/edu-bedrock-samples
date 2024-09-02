@@ -3,8 +3,7 @@
   "minecraft:entity": {
     "description": {
       "identifier": "minecraft:ender_dragon",
-      "spawn_category": "monster",
-      "is_spawnable": true,
+      "is_spawnable": false,
       "is_summonable": true,
       "is_experimental": false
     },
@@ -47,8 +46,6 @@
     },
 
     "components": {
-      "minecraft:is_hidden_when_invisible": {
-      },
       "minecraft:type_family": {
         "family": [ "dragon", "mob" ]
       },
@@ -101,9 +98,6 @@
       "minecraft:physics": {
         "has_gravity": false,
         "has_collision": false
-      },
-      "minecraft:game_event_movement_tracking": {
-        "emit_flap": true
       }
     },
 

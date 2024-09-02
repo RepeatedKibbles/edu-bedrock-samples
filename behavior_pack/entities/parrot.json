@@ -1,11 +1,11 @@
 {
-  "format_version": "1.21.0",
+  "format_version": "1.13.0",
   "minecraft:entity": {
     "description": {
       "identifier": "minecraft:parrot",
-      "spawn_category": "creature",
       "is_spawnable": true,
-      "is_summonable": true
+      "is_summonable": true,
+      "is_experimental": false
     },
 
     "component_groups": {
@@ -44,9 +44,7 @@
             "wheat_seeds",
             "pumpkin_seeds",
             "melon_seeds",
-            "beetroot_seeds",
-            "pitcher_pod",
-            "torchflower_seeds"
+            "beetroot_seeds"
           ],
           "tame_event": {
             "event": "minecraft:on_tame",
@@ -95,50 +93,10 @@
           "target_needed": false,
           "mount_distance": 2.0
         }
-      },
-      "minecraft:parrot_not_riding_player": {
-        "minecraft:entity_sensor": {
-          "relative_range": false,
-          "subsensors": [
-            {
-              "range": [ 2.0, 2.0 ],
-              "event_filters": {
-                "all_of": [
-                  { "test": "is_riding", "subject": "self", "operator": "equals", "value": true },
-                  { "test": "has_component", "subject": "self", "operator": "equals", "value": "minecraft:behavior.look_at_player" }
-                ]
-              },
-              "event": "minecraft:on_riding_player"
-            }
-          ]
-        },
-        "minecraft:behavior.look_at_player": {
-          "priority": 1,
-          "look_distance": 8.0
-        }
-      },
-      "minecraft:parrot_riding_player": {
-        "minecraft:entity_sensor": {
-          "relative_range": false,
-          "subsensors": [
-            {
-              "range": [ 2.0, 2.0 ],
-              "event_filters": {
-                "all_of": [
-                  { "test": "is_riding", "subject": "self", "operator": "equals", "value": false },
-                  { "test": "has_component", "subject": "self", "operator": "not", "value": "minecraft:behavior.look_at_player" }
-                ]
-              },
-              "event": "minecraft:on_not_riding_player"
-            }
-          ]
-        }
       }
     },
 
     "components": {
-      "minecraft:is_hidden_when_invisible": {
-      },
       "minecraft:breathable": {
         "total_supply": 15,
         "suffocate_time": 0
@@ -156,9 +114,7 @@
       "minecraft:hurt_on_condition": {
         "damage_conditions": [
           {
-            "filters": {
-              "test": "in_lava", "subject": "self", "operator": "==", "value": true
-            },
+            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
             "cause": "lava",
             "damage_per_tick": 4
           }
@@ -178,8 +134,7 @@
       "minecraft:can_fly": {
       },
       "minecraft:navigation.fly": {
-        "can_path_over_water": true,
-        "can_path_from_air": true
+        "can_path_over_water": true
       },
       "minecraft:movement.fly": {
       },
@@ -189,9 +144,6 @@
         "is_pushable": true,
         "is_pushable_by_piston": true
       },
-      "minecraft:despawn": {
-        "despawn_from_distance": {}
-      },
       "minecraft:behavior.float": {
         "priority": 0
       },
@@ -199,18 +151,13 @@
         "priority": 0,
         "speed_multiplier": 1.25
       },
-      "minecraft:conditional_bandwidth_optimization": {
-      },
-      "minecraft:game_event_movement_tracking": {
-        "emit_flap": true
+      "minecraft:behavior.look_at_player": {
+        "priority": 1,
+        "look_distance": 8.0
       },
       "minecraft:healable": {
         "force_use": true,
-        "filters": {
-          "test": "is_riding",
-          "operator": "!=",
-          "value": true
-        },
+        "filters": { "test": "is_riding", "operator": "!=", "value": true },
         "items": [
           {
             "item": "cookie",
@@ -225,13 +172,6 @@
             ]
           }
         ]
-      },
-      "minecraft:leashable": {
-        "soft_distance": 4.0,
-        "hard_distance": 6.0,
-        "max_distance": 10.0
-      },
-      "minecraft:balloonable": {
       }
     },
 
@@ -244,8 +184,7 @@
               "component_groups": [
                 "minecraft:parrot_red",
                 "minecraft:parrot_adult",
-                "minecraft:parrot_wild",
-                "minecraft:parrot_not_riding_player"
+                "minecraft:parrot_wild"
               ]
             }
           },
@@ -255,8 +194,7 @@
               "component_groups": [
                 "minecraft:parrot_blue",
                 "minecraft:parrot_adult",
-                "minecraft:parrot_wild",
-                "minecraft:parrot_not_riding_player"
+                "minecraft:parrot_wild"
               ]
             }
           },
@@ -266,8 +204,7 @@
               "component_groups": [
                 "minecraft:parrot_green",
                 "minecraft:parrot_adult",
-                "minecraft:parrot_wild",
-                "minecraft:parrot_not_riding_player"
+                "minecraft:parrot_wild"
               ]
             }
           },
@@ -277,8 +214,7 @@
               "component_groups": [
                 "minecraft:parrot_cyan",
                 "minecraft:parrot_adult",
-                "minecraft:parrot_wild",
-                "minecraft:parrot_not_riding_player"
+                "minecraft:parrot_wild"
               ]
             }
           },
@@ -288,8 +224,7 @@
               "component_groups": [
                 "minecraft:parrot_silver",
                 "minecraft:parrot_adult",
-                "minecraft:parrot_wild",
-                "minecraft:parrot_not_riding_player"
+                "minecraft:parrot_wild"
               ]
             }
           }
@@ -304,30 +239,6 @@
         "add": {
           "component_groups": [
             "minecraft:parrot_tame"
-          ]
-        }
-      },
-      "minecraft:on_riding_player": {
-        "remove": {
-          "component_groups": [
-            "minecraft:parrot_not_riding_player"
-          ]
-        },
-        "add": {
-          "component_groups": [
-            "minecraft:parrot_riding_player"
-          ]
-        }
-      },
-      "minecraft:on_not_riding_player": {
-        "remove": {
-          "component_groups": [
-            "minecraft:parrot_riding_player"
-          ]
-        },
-        "add": {
-          "component_groups": [
-            "minecraft:parrot_not_riding_player"
           ]
         }
       }

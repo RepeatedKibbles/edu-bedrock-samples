@@ -1,11 +1,11 @@
 {
-  "format_version": "1.21.10",
+  "format_version": "1.13.0",
   "minecraft:entity": {
     "description": {
       "identifier": "minecraft:donkey",
-      "spawn_category": "creature",
       "is_spawnable": true,
-      "is_summonable": true
+      "is_summonable": true,
+      "is_experimental": false
     },
     "component_groups": {
       "minecraft:donkey_baby": {
@@ -157,7 +157,7 @@
             {
               "slot": 0,
               "item": "saddle",
-              "accepted_items": [ "saddle" ],
+              "accepted_items": ["saddle"],
               "on_equip": {
                 "event": "minecraft:donkey_saddled"
               },
@@ -167,27 +167,8 @@
             }
           ]
         },
-        "minecraft:interact": {
-          "interactions": [
-            {
-              "play_sounds": "armor.equip_generic",
-              "on_interact": {
-                "filters": {
-                  "all_of": [
-                    { "test": "has_equipment", "subject": "self", "domain": "inventory", "operator": "not", "value": "saddle" },
-                    { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "saddle" },
-                    { "test": "is_family", "subject": "other", "value": "player" },
-                    { "test": "is_sneak_held", "subject": "other", "value": false }
-                  ]
-                },
-                "target": "self"
-              },
-              "equip_item_slot": "0",
-              "interact_text": "action.interact.equip"
-            }
-          ]
-        },
         "minecraft:rideable": {
+          "priority": 0,
           "seat_count": 1,
           "crouching_skip_interact": true,
           "family_types": [
@@ -206,9 +187,6 @@
           "container_type": "horse"
         },
         "minecraft:breedable": {
-          "parent_centric_attribute_blending": [
-            "minecraft:health"
-          ],
           "require_tame": true,
           "inherit_tamed": false,
           "breeds_with": [
@@ -234,8 +212,25 @@
             "golden_apple",
             "appleEnchanted"
           ]
+        },
+        "minecraft:behavior.tempt": {
+          "priority": 5,
+          "speed_multiplier": 1.2,
+          "items": [
+            "apple",
+            "carrot",
+            "golden_apple",
+            "appleEnchanted",
+            "golden_carrot",
+            "carrotOnAStick",
+            "hay_block",
+            "sugar",
+            "bread",
+            "wheat"
+          ]
         }
       },
+
       "minecraft:donkey_unchested": {
         "minecraft:interact": {
           "interactions": [
@@ -244,25 +239,8 @@
               "on_interact": {
                 "filters": {
                   "all_of": [
-                    { "test": "has_equipment", "subject": "self", "domain": "inventory", "operator": "not", "value": "saddle" },
-                    { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "saddle" },
-                    { "test": "is_family", "subject": "other", "value": "player" },
-                    { "test": "is_sneak_held", "subject": "other", "value": false }
-                  ]
-                },
-                "target": "self"
-              },
-              "equip_item_slot": "0",
-              "interact_text": "action.interact.saddle"
-            },
-            {
-              "play_sounds": "armor.equip_generic",
-              "on_interact": {
-                "filters": {
-                  "all_of": [
-                    { "test": "is_family", "subject": "other", "value": "player" },
-                    { "test": "is_sneaking", "subject": "other", "value": false },
-                    { "test": "has_equipment", "domain": "hand", "subject": "other", "value": "chest" }
+                    { "test" :  "is_family", "subject" : "other", "value" :  "player"},
+                    { "test" :  "has_equipment", "domain": "hand","subject" : "other", "value" :  "chest"}
                   ]
                 },
                 "event": "minecraft:on_chest",
@@ -277,26 +255,7 @@
 
       "minecraft:donkey_chested": {
         "minecraft:is_chested": {
-        },
-        "minecraft:interact": {
-          "interactions": [
-            {
-              "play_sounds": "armor.equip_generic",
-              "on_interact": {
-                "filters": {
-                  "all_of": [
-                    { "test": "has_equipment", "subject": "self", "domain": "inventory", "operator": "not", "value": "saddle" },
-                    { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "saddle" },
-                    { "test": "is_family", "subject": "other", "value": "player" },
-                    { "test": "is_sneaking", "subject": "other", "value": false }
-                  ]
-                },
-                "target": "self"
-              },
-              "equip_item_slot": "0",
-              "interact_text": "action.interact.saddle"
-            }
-          ]
+
         }
       },
 
@@ -311,8 +270,6 @@
     },
 
     "components": {
-      "minecraft:is_hidden_when_invisible": {
-      },
       "minecraft:type_family": {
         "family": [ "donkey", "mob" ]
       },
@@ -333,12 +290,7 @@
       "minecraft:hurt_on_condition": {
         "damage_conditions": [
           {
-            "filters": {
-              "test": "in_lava",
-              "subject": "self",
-              "operator": "==",
-              "value": true
-            },
+            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
             "cause": "lava",
             "damage_per_tick": 4
           }
@@ -353,6 +305,7 @@
         "avoid_damage_blocks": true
       },
       "minecraft:movement.basic": {
+        
       },
       "minecraft:jump.static": {
       },
@@ -400,24 +353,12 @@
           }
         ]
       },
-      "minecraft:despawn": {
-        "despawn_from_distance": {}
-      },
       "minecraft:behavior.float": {
         "priority": 0
       },
       "minecraft:behavior.panic": {
         "priority": 1,
         "speed_multiplier": 1.2
-      },
-      "minecraft:behavior.tempt": {
-        "priority": 5,
-        "speed_multiplier": 1.2,
-        "items": [
-          "golden_apple",
-          "appleEnchanted",
-          "golden_carrot"
-        ]
       },
       "minecraft:behavior.random_stroll": {
         "priority": 6,
@@ -431,13 +372,11 @@
       "minecraft:behavior.random_look_around": {
         "priority": 8
       },
-      "minecraft:physics": {
+	    "minecraft:physics": {
       },
       "minecraft:pushable": {
         "is_pushable": true,
         "is_pushable_by_piston": true
-      },
-      "minecraft:conditional_bandwidth_optimization": {
       }
     },
 

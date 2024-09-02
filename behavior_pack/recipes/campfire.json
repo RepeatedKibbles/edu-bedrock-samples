@@ -1,9 +1,11 @@
 {
-  "format_version": "1.20.10",
+  "format_version": "1.12",
   "minecraft:recipe_shaped": {
     "description": {
-      "identifier": "minecraft:campfire"
-    }, 
+    "identifier": "minecraft:campfire"
+    },
+
+    
     "tags": [ "crafting_table" ],
     "pattern": [
       " | ",
@@ -15,20 +17,14 @@
         "item": "minecraft:stick"
       },
       "#": {
-        "tag": "minecraft:logs"
+        "item": "minecraft:log"
       },
       "C": {
-        "tag": "minecraft:coals"
+        "item": "minecraft:coal"
       }
     },
-    "unlock": [
-      {
-        "item": "minecraft:stick"
-      }
-    ],
     "result": {
       "item": "minecraft:campfire"
-    },
-    "priority": -1
+    }
   }
 }
