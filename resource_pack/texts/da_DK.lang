@@ -6693,6 +6693,7 @@ options.vsync.adaptive=Adaptiv lodret synkronisering	#
 options.websocketEncryption=Kræv krypterede websockets	#
 options.websocketEncryptionWarningLabel=Deaktiver kun denne indstilling, hvis du aktivt opretter forbindelse til en kendt og sikker applikation.	#
 options.filelocation.title=Fillagerplads	#
+options.filelocation.title.edu=Lokal lagerplads	#
 options.filelocation.external=Ekstern	#
 options.filelocation.appdata=Applikation	#
 options.filelocation.external.warning.title=Advarsel	#

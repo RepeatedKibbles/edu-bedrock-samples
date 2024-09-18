@@ -6693,6 +6693,7 @@ options.vsync.adaptive=Adaptiv loddrett synkronisering	#
 options.websocketEncryption=Krev krypterte WebSocketer	#
 options.websocketEncryptionWarningLabel=Bare deaktiver dette alternativet hvis du aktivt kobler deg til en kjent og sikker app.	#
 options.filelocation.title=Lagringsplass for filer	#
+options.filelocation.title.edu=Lokal lagringsplass	#
 options.filelocation.external=Ekstern	#
 options.filelocation.appdata=App	#
 options.filelocation.external.warning.title=Advarsel	#

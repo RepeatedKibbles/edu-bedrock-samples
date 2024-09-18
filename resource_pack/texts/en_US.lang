@@ -2745,6 +2745,8 @@ disconnectionScreen.clientsideGenerationDesync=Server and Client have different 
 disconnectionScreen.editor.cannotUseRayTracing=Ray Tracing enabled resource packs are not yet compatible with Editor projects.
 disconnectionScreen.unexpectedPacket=Disconnected due to an unexpected type of packet received which cannot be processed.  This could be due to a version mismatch or corruption at the networking level.
 disconnectionScreen.connectionLost=The connection to the host was lost. If that world is still being hosted, please check your internet connection and try to connect again.
+disconnectionScreen.deepLink.TryingToOpenDemoWorldWhileSignedIn.title=Unable to load world.
+disconnectionScreen.deepLink.TryingToOpenDemoWorldWhileSignedIn.body=Try opening this world in demo mode.
 disconnectionScreen.errorCode=Error Code: 
 
 storageSpaceWarningScreen.frontend=You are almost out of data storage space! Minecraft has restricted access to this feature until you clear up additional storage space.
@@ -5867,7 +5869,6 @@ map.position=Position: %s, %s, %s
 
 mcoServer.title=Minecraft Online World
 
-menu.ai_lesson_crafter=Lesson Crafter
 menu.achievements=Achievements
 menu.convertingLevel=Expanding world
 menu.copyright=©Mojang AB
@@ -6693,6 +6694,7 @@ options.vsync.adaptive=Adaptive Vertical Sync
 options.websocketEncryption=Require Encrypted Websockets
 options.websocketEncryptionWarningLabel=Only disable this option if you are actively connecting to a known and safe application.
 options.filelocation.title=File Storage Location
+options.filelocation.title.edu=Local Storage Location
 options.filelocation.external=External
 options.filelocation.appdata=Application
 options.filelocation.external.warning.title=Warning

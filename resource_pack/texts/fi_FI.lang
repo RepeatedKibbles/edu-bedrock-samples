@@ -6693,6 +6693,7 @@ options.vsync.adaptive=Mukautuva vertikaalinen synkronointi	#
 options.websocketEncryption=Vaadi salatut websocket-palvelimet	#
 options.websocketEncryptionWarningLabel=Ota tämä asetus pois käytöstä vain, jos olet yhdistämässä tuttuun ja turvalliseen sovellukseen.	#
 options.filelocation.title=Tiedoston tallennuspaikka	#
+options.filelocation.title.edu=Paikallinen tallennuspaikka	#
 options.filelocation.external=Ulkoinen	#
 options.filelocation.appdata=Sovellus	#
 options.filelocation.external.warning.title=Varoitus	#

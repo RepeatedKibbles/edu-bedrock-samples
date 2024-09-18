@@ -6693,6 +6693,7 @@ options.vsync.adaptive=Adaptivní vertikální synchronizace	#
 options.websocketEncryption=Vyžaduje šifrované webové sokety	#
 options.websocketEncryptionWarningLabel=Tuto možnost vypněte pouze v případě, že se aktivně připojujete ke známé a bezpečné aplikaci.	#
 options.filelocation.title=Umístění úložiště souborů	#
+options.filelocation.title.edu=Lokace Místního úložiště	#
 options.filelocation.external=Externí	#
 options.filelocation.appdata=Aplikace	#
 options.filelocation.external.warning.title=Varování	#

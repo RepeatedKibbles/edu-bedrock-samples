@@ -6693,6 +6693,7 @@ options.vsync.adaptive=Sincronização vertical adaptável	#
 options.websocketEncryption=Requer Websockets Criptografados	#
 options.websocketEncryptionWarningLabel=Só desative esta opção se estiver se conectando ativamente a um aplicativo conhecido e seguro.	#
 options.filelocation.title=Local de armazenamento de arquivo	#
+options.filelocation.title.edu=Local de Armazenamento Local	#
 options.filelocation.external=Externo	#
 options.filelocation.appdata=Aplicação	#
 options.filelocation.external.warning.title=Aviso	#

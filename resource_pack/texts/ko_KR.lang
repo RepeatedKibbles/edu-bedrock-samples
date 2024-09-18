@@ -6693,6 +6693,7 @@ options.vsync.adaptive=수직 동기화 조정	#
 options.websocketEncryption=암호화된 Websocket이 필요합니다	#
 options.websocketEncryptionWarningLabel=이 옵션은 안전한 알려진 앱에 연결하는 경우에만 비활성화하시기 바랍니다.	#
 options.filelocation.title=파일 저장 위치	#
+options.filelocation.title.edu=로컬 저장 위치	#
 options.filelocation.external=외부	#
 options.filelocation.appdata=애플리케이션	#
 options.filelocation.external.warning.title=경고	#

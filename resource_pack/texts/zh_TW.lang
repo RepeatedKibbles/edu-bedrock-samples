@@ -6693,6 +6693,7 @@ options.vsync.adaptive=調適性垂直同步	#
 options.websocketEncryption=需要有加密的 WebSockets	#
 options.websocketEncryptionWarningLabel=應只在主動連接至已知並安全的應用程式時，才停用此選項	#
 options.filelocation.title=檔案存放位置	#
+options.filelocation.title.edu=本地儲存位置	#
 options.filelocation.external=外部	#
 options.filelocation.appdata=應用	#
 options.filelocation.external.warning.title=警告	#

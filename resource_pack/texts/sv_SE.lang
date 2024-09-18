@@ -6693,6 +6693,7 @@ options.vsync.adaptive=Adaptiv vertikal synk	#
 options.websocketEncryption=Kräv krypterade Websockets	#
 options.websocketEncryptionWarningLabel=Stäng bara av det här alternativet om du aktivt ansluter till ett känt och pålitligt program.	#
 options.filelocation.title=Fillagringsplats	#
+options.filelocation.title.edu=Lokal lagringsplats	#
 options.filelocation.external=Extern	#
 options.filelocation.appdata=Applikation	#
 options.filelocation.external.warning.title=Varning	#

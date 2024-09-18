@@ -6693,6 +6693,7 @@ options.vsync.adaptive=Adaptív vertikális szinkron	#
 options.websocketEncryption=Kötelező titkosított WebSocket-csatornák	#
 options.websocketEncryptionWarningLabel=Csak akkor kapcsolja ki ezt a lehetőséget, ha egy ismert és biztonságos alkalmazáshoz csatlakozik.	#
 options.filelocation.title=Fájl tárolási helye	#
+options.filelocation.title.edu=Helyi tárolási hely	#
 options.filelocation.external=Külső	#
 options.filelocation.appdata=Alkalmazás	#
 options.filelocation.external.warning.title=Figyelmeztetés	#

@@ -6693,6 +6693,7 @@ options.vsync.adaptive=Sinkronisasi Vertikal Adaptif	#
 options.websocketEncryption=Memerlukan Websocket Terenkripsi	#
 options.websocketEncryptionWarningLabel=Hanya nonaktifkan opsi ini jika kamu secara aktif tersambung ke aplikasi yang dikenal dan aman.	#
 options.filelocation.title=Lokasi Penyimpanan File	#
+options.filelocation.title.edu=Lokasi Penyimpanan Lokal	#
 options.filelocation.external=Eksternal	#
 options.filelocation.appdata=Aplikasi	#
 options.filelocation.external.warning.title=Peringatan	#

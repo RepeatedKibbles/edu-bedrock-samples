@@ -6693,6 +6693,7 @@ options.vsync.adaptive=Uyarlamalı Dikey Eşitleme	#
 options.websocketEncryption=Şifreli İnternet Yuvaları Gerekli	#
 options.websocketEncryptionWarningLabel=Yalnızca etkin şekilde bilinen ve güvenli bir uygulamaya bağlanıyorsanız bu seçeneği devre dışı bırakın.	#
 options.filelocation.title=Dosya Depolama Konumu	#
+options.filelocation.title.edu=Yerel Depolama Konumu	#
 options.filelocation.external=Harici	#
 options.filelocation.appdata=Uygulama	#
 options.filelocation.external.warning.title=Uyarı	#

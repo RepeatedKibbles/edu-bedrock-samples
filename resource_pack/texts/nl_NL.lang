@@ -6693,6 +6693,7 @@ options.vsync.adaptive=Adaptieve verticale synchronisatie	#
 options.websocketEncryption=Versleutelde websockets vereist	#
 options.websocketEncryptionWarningLabel=Schakel deze optie alleen uit als u actief verbinding maakt met een bekende en veilige toepassing.	#
 options.filelocation.title=Bestandsopslaglocatie	#
+options.filelocation.title.edu=Lokale opslaglocatie	#
 options.filelocation.external=Extern	#
 options.filelocation.appdata=Toepassing	#
 options.filelocation.external.warning.title=Waarschuwing	#

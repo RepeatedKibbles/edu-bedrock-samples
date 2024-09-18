@@ -6693,6 +6693,7 @@ options.vsync.adaptive=状況に応じた垂直同期	#
 options.websocketEncryption=暗号化された WebSocket の要求	#
 options.websocketEncryptionWarningLabel=既知の安全なアプリケーションにアクティブで接続している場合を除いて、このオプションを無効にすることは推奨されません。	#
 options.filelocation.title=ファイル ストレージの場所	#
+options.filelocation.title.edu=ローカル ストレージの場所	#
 options.filelocation.external=外部	#
 options.filelocation.appdata=アプリケーション	#
 options.filelocation.external.warning.title=警告	#
