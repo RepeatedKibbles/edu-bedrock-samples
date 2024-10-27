@@ -298,6 +298,43 @@
                "arguments" : [],
                "is_constructor" : false,
                "is_static" : false,
+               "name" : "getRedstonePower",
+               "privilege" : [
+                  {
+                     "name" : "read_only"
+                  }
+               ],
+               "return_type" : {
+                  "error_types" : [
+                     {
+                        "is_bind_type" : true,
+                        "is_errorable" : false,
+                        "name" : "LocationInUnloadedChunkError"
+                     },
+                     {
+                        "is_bind_type" : true,
+                        "is_errorable" : false,
+                        "name" : "LocationOutOfWorldBoundariesError"
+                     }
+                  ],
+                  "is_bind_type" : false,
+                  "is_errorable" : true,
+                  "name" : "optional",
+                  "optional_type" : {
+                     "is_bind_type" : false,
+                     "is_errorable" : false,
+                     "name" : "int32",
+                     "valid_range" : {
+                        "max" : 2147483647,
+                        "min" : -2147483648
+                     }
+                  }
+               }
+            },
+            {
+               "arguments" : [],
+               "is_constructor" : false,
+               "is_static" : false,
                "name" : "getTags",
                "privilege" : [
                   {
@@ -1617,6 +1654,35 @@
       {
          "base_types" : [],
          "constants" : [],
+         "functions" : [],
+         "iterator" : {
+            "error_types" : [
+               {
+                  "is_bind_type" : true,
+                  "is_errorable" : false,
+                  "name" : "InvalidIteratorError"
+               }
+            ],
+            "is_bind_type" : false,
+            "is_errorable" : true,
+            "name" : "optional",
+            "optional_type" : {
+               "is_bind_type" : true,
+               "is_errorable" : false,
+               "name" : "Vector3"
+            }
+         },
+         "name" : "BlockLocationIterator",
+         "properties" : [],
+         "type" : {
+            "is_bind_type" : true,
+            "is_errorable" : false,
+            "name" : "BlockLocationIterator"
+         }
+      },
+      {
+         "base_types" : [],
+         "constants" : [],
          "functions" : [
             {
                "arguments" : [],
@@ -2134,6 +2200,178 @@
                   "is_errorable" : false,
                   "name" : "string"
                },
+               "value" : "minecraft:record_player"
+            }
+         ],
+         "functions" : [
+            {
+               "arguments" : [],
+               "is_constructor" : false,
+               "is_static" : false,
+               "name" : "ejectRecord",
+               "privilege" : [
+                  {
+                     "name" : "none"
+                  }
+               ],
+               "return_type" : {
+                  "is_bind_type" : false,
+                  "is_errorable" : true,
+                  "name" : "undefined"
+               }
+            },
+            {
+               "arguments" : [],
+               "is_constructor" : false,
+               "is_static" : false,
+               "name" : "getRecord",
+               "privilege" : [
+                  {
+                     "name" : "read_only"
+                  }
+               ],
+               "return_type" : {
+                  "is_bind_type" : false,
+                  "is_errorable" : true,
+                  "name" : "optional",
+                  "optional_type" : {
+                     "is_bind_type" : true,
+                     "is_errorable" : false,
+                     "name" : "ItemStack"
+                  }
+               }
+            },
+            {
+               "arguments" : [],
+               "is_constructor" : false,
+               "is_static" : false,
+               "name" : "isPlaying",
+               "privilege" : [
+                  {
+                     "name" : "read_only"
+                  }
+               ],
+               "return_type" : {
+                  "is_bind_type" : false,
+                  "is_errorable" : true,
+                  "name" : "boolean"
+               }
+            },
+            {
+               "arguments" : [],
+               "is_constructor" : false,
+               "is_static" : false,
+               "name" : "pauseRecord",
+               "privilege" : [
+                  {
+                     "name" : "none"
+                  }
+               ],
+               "return_type" : {
+                  "is_bind_type" : false,
+                  "is_errorable" : true,
+                  "name" : "undefined"
+               }
+            },
+            {
+               "arguments" : [],
+               "is_constructor" : false,
+               "is_static" : false,
+               "name" : "playRecord",
+               "privilege" : [
+                  {
+                     "name" : "none"
+                  }
+               ],
+               "return_type" : {
+                  "is_bind_type" : false,
+                  "is_errorable" : true,
+                  "name" : "undefined"
+               }
+            },
+            {
+               "arguments" : [
+                  {
+                     "details" : {
+                        "default_value" : "null"
+                     },
+                     "name" : "recordItemType",
+                     "type" : {
+                        "is_bind_type" : false,
+                        "is_errorable" : false,
+                        "name" : "optional",
+                        "optional_type" : {
+                           "is_bind_type" : false,
+                           "is_errorable" : false,
+                           "name" : "variant",
+                           "variant_types" : [
+                              {
+                                 "is_bind_type" : true,
+                                 "is_errorable" : false,
+                                 "name" : "ItemType"
+                              },
+                              {
+                                 "is_bind_type" : false,
+                                 "is_errorable" : false,
+                                 "name" : "string"
+                              }
+                           ]
+                        }
+                     }
+                  },
+                  {
+                     "details" : {
+                        "default_value" : true
+                     },
+                     "name" : "startPlaying",
+                     "type" : {
+                        "is_bind_type" : false,
+                        "is_errorable" : false,
+                        "name" : "boolean"
+                     }
+                  }
+               ],
+               "is_constructor" : false,
+               "is_static" : false,
+               "name" : "setRecord",
+               "privilege" : [
+                  {
+                     "name" : "none"
+                  }
+               ],
+               "return_type" : {
+                  "is_bind_type" : false,
+                  "is_errorable" : true,
+                  "name" : "undefined"
+               }
+            }
+         ],
+         "name" : "BlockRecordPlayerComponent",
+         "properties" : [],
+         "type" : {
+            "is_bind_type" : true,
+            "is_errorable" : false,
+            "name" : "BlockRecordPlayerComponent"
+         }
+      },
+      {
+         "base_types" : [
+            {
+               "is_bind_type" : true,
+               "is_errorable" : false,
+               "name" : "BlockComponent"
+            }
+         ],
+         "constants" : [
+            {
+               "is_read_only" : true,
+               "is_static" : true,
+               "name" : "componentId",
+               "type" : {
+                  "is_bind_type" : false,
+                  "is_errorable" : false,
+                  "name" : "string"
+               },
                "value" : "minecraft:sign"
             }
          ],
@@ -2590,9 +2828,185 @@
          }
       },
       {
+         "base_types" : [
+            {
+               "is_bind_type" : true,
+               "is_errorable" : false,
+               "name" : "BlockVolumeBase"
+            }
+         ],
+         "constants" : [],
+         "functions" : [
+            {
+               "arguments" : [
+                  {
+                     "details" : null,
+                     "name" : "from",
+                     "type" : {
+                        "is_bind_type" : true,
+                        "is_errorable" : false,
+                        "name" : "Vector3"
+                     }
+                  },
+                  {
+                     "details" : null,
+                     "name" : "to",
+                     "type" : {
+                        "is_bind_type" : true,
+                        "is_errorable" : false,
+                        "name" : "Vector3"
+                     }
+                  }
+               ],
+               "is_constructor" : true,
+               "name" : "constructor",
+               "privilege" : [
+                  {
+                     "name" : "read_only"
+                  }
+               ],
+               "return_type" : {
+                  "is_bind_type" : true,
+                  "is_errorable" : false,
+                  "name" : "BlockVolume"
+               }
+            },
+            {
+               "arguments" : [
+                  {
+                     "details" : null,
+                     "name" : "pos",
+                     "type" : {
+                        "is_bind_type" : true,
+                        "is_errorable" : false,
+                        "name" : "Vector3"
+                     }
+                  }
+               ],
+               "is_constructor" : false,
+               "is_static" : false,
+               "name" : "doesLocationTouchFaces",
+               "privilege" : [
+                  {
+                     "name" : "none"
+                  }
+               ],
+               "return_type" : {
+                  "is_bind_type" : false,
+                  "is_errorable" : false,
+                  "name" : "boolean"
+               }
+            },
+            {
+               "arguments" : [
+                  {
+                     "details" : null,
+                     "name" : "other",
+                     "type" : {
+                        "is_bind_type" : true,
+                        "is_errorable" : false,
+                        "name" : "BlockVolume"
+                     }
+                  }
+               ],
+               "is_constructor" : false,
+               "is_static" : false,
+               "name" : "doesVolumeTouchFaces",
+               "privilege" : [
+                  {
+                     "name" : "none"
+                  }
+               ],
+               "return_type" : {
+                  "is_bind_type" : false,
+                  "is_errorable" : false,
+                  "name" : "boolean"
+               }
+            },
+            {
+               "arguments" : [
+                  {
+                     "details" : null,
+                     "name" : "other",
+                     "type" : {
+                        "is_bind_type" : true,
+                        "is_errorable" : false,
+                        "name" : "BlockVolume"
+                     }
+                  }
+               ],
+               "is_constructor" : false,
+               "is_static" : false,
+               "name" : "intersects",
+               "privilege" : [
+                  {
+                     "name" : "none"
+                  }
+               ],
+               "return_type" : {
+                  "is_bind_type" : true,
+                  "is_errorable" : false,
+                  "name" : "BlockVolumeIntersection"
+               }
+            }
+         ],
+         "name" : "BlockVolume",
+         "properties" : [
+            {
+               "is_read_only" : false,
+               "name" : "from",
+               "privilege" : [
+                  {
+                     "name" : "none"
+                  }
+               ],
+               "type" : {
+                  "is_bind_type" : true,
+                  "is_errorable" : false,
+                  "name" : "Vector3"
+               }
+            },
+            {
+               "is_read_only" : false,
+               "name" : "to",
+               "privilege" : [
+                  {
+                     "name" : "none"
+                  }
+               ],
+               "type" : {
+                  "is_bind_type" : true,
+                  "is_errorable" : false,
+                  "name" : "Vector3"
+               }
+            }
+         ],
+         "type" : {
+            "is_bind_type" : true,
+            "is_errorable" : false,
+            "name" : "BlockVolume"
+         }
+      },
+      {
          "base_types" : [],
          "constants" : [],
          "functions" : [
+            {
+               "arguments" : [],
+               "is_constructor" : false,
+               "is_static" : false,
+               "name" : "getBlockLocationIterator",
+               "privilege" : [
+                  {
+                     "name" : "none"
+                  }
+               ],
+               "return_type" : {
+                  "is_bind_type" : true,
+                  "is_errorable" : false,
+                  "name" : "BlockLocationIterator"
+               }
+            },
             {
                "arguments" : [],
                "is_constructor" : false,
@@ -7846,6 +8260,164 @@
             "is_bind_type" : true,
             "is_errorable" : false,
             "name" : "EntityBaseMovementComponent"
+         }
+      },
+      {
+         "base_types" : [
+            {
+               "is_bind_type" : true,
+               "is_errorable" : false,
+               "name" : "EntityComponent"
+            }
+         ],
+         "constants" : [
+            {
+               "is_read_only" : true,
+               "is_static" : true,
+               "name" : "componentId",
+               "type" : {
+                  "is_bind_type" : false,
+                  "is_errorable" : false,
+                  "name" : "string"
+               },
+               "value" : "minecraft:breathable"
+            }
+         ],
+         "functions" : [
+            {
+               "arguments" : [],
+               "is_constructor" : false,
+               "is_static" : false,
+               "name" : "getBreatheBlocks",
+               "privilege" : [
+                  {
+                     "name" : "read_only"
+                  }
+               ],
+               "return_type" : {
+                  "element_type" : {
+                     "is_bind_type" : true,
+                     "is_errorable" : false,
+                     "name" : "BlockPermutation"
+                  },
+                  "is_bind_type" : false,
+                  "is_errorable" : true,
+                  "name" : "array"
+               }
+            },
+            {
+               "arguments" : [],
+               "is_constructor" : false,
+               "is_static" : false,
+               "name" : "getNonBreatheBlocks",
+               "privilege" : [
+                  {
+                     "name" : "read_only"
+                  }
+               ],
+               "return_type" : {
+                  "element_type" : {
+                     "is_bind_type" : true,
+                     "is_errorable" : false,
+                     "name" : "BlockPermutation"
+                  },
+                  "is_bind_type" : false,
+                  "is_errorable" : true,
+                  "name" : "array"
+               }
+            }
+         ],
+         "name" : "EntityBreathableComponent",
+         "properties" : [
+            {
+               "is_read_only" : true,
+               "name" : "breathesAir",
+               "type" : {
+                  "is_bind_type" : false,
+                  "is_errorable" : true,
+                  "name" : "boolean"
+               }
+            },
+            {
+               "is_read_only" : true,
+               "name" : "breathesLava",
+               "type" : {
+                  "is_bind_type" : false,
+                  "is_errorable" : true,
+                  "name" : "boolean"
+               }
+            },
+            {
+               "is_read_only" : true,
+               "name" : "breathesSolids",
+               "type" : {
+                  "is_bind_type" : false,
+                  "is_errorable" : true,
+                  "name" : "boolean"
+               }
+            },
+            {
+               "is_read_only" : true,
+               "name" : "breathesWater",
+               "type" : {
+                  "is_bind_type" : false,
+                  "is_errorable" : true,
+                  "name" : "boolean"
+               }
+            },
+            {
+               "is_read_only" : true,
+               "name" : "generatesBubbles",
+               "type" : {
+                  "is_bind_type" : false,
+                  "is_errorable" : true,
+                  "name" : "boolean"
+               }
+            },
+            {
+               "is_read_only" : true,
+               "name" : "inhaleTime",
+               "type" : {
+                  "is_bind_type" : false,
+                  "is_errorable" : true,
+                  "name" : "float",
+                  "valid_range" : {
+                     "max" : 2147483647,
+                     "min" : -2147483648
+                  }
+               }
+            },
+            {
+               "is_read_only" : true,
+               "name" : "suffocateTime",
+               "type" : {
+                  "is_bind_type" : false,
+                  "is_errorable" : true,
+                  "name" : "int32",
+                  "valid_range" : {
+                     "max" : 2147483647,
+                     "min" : -2147483648
+                  }
+               }
+            },
+            {
+               "is_read_only" : true,
+               "name" : "totalSupply",
+               "type" : {
+                  "is_bind_type" : false,
+                  "is_errorable" : true,
+                  "name" : "int32",
+                  "valid_range" : {
+                     "max" : 2147483647,
+                     "min" : -2147483648
+                  }
+               }
+            }
+         ],
+         "type" : {
+            "is_bind_type" : true,
+            "is_errorable" : false,
+            "name" : "EntityBreathableComponent"
          }
       },
       {
@@ -19634,6 +20206,68 @@
          }
       },
       {
+         "base_types" : [
+            {
+               "is_bind_type" : true,
+               "is_errorable" : false,
+               "name" : "EntityComponent"
+            }
+         ],
+         "constants" : [
+            {
+               "is_read_only" : true,
+               "is_static" : true,
+               "name" : "componentId",
+               "type" : {
+                  "is_bind_type" : false,
+                  "is_errorable" : false,
+                  "name" : "string"
+               },
+               "value" : "minecraft:cursor_inventory"
+            }
+         ],
+         "functions" : [
+            {
+               "arguments" : [],
+               "is_constructor" : false,
+               "is_static" : false,
+               "name" : "clear",
+               "privilege" : [
+                  {
+                     "name" : "none"
+                  }
+               ],
+               "return_type" : {
+                  "is_bind_type" : false,
+                  "is_errorable" : true,
+                  "name" : "undefined"
+               }
+            }
+         ],
+         "name" : "PlayerCursorInventoryComponent",
+         "properties" : [
+            {
+               "is_read_only" : true,
+               "name" : "item",
+               "type" : {
+                  "is_bind_type" : false,
+                  "is_errorable" : true,
+                  "name" : "optional",
+                  "optional_type" : {
+                     "is_bind_type" : true,
+                     "is_errorable" : false,
+                     "name" : "ItemStack"
+                  }
+               }
+            }
+         ],
+         "type" : {
+            "is_bind_type" : true,
+            "is_errorable" : false,
+            "name" : "PlayerCursorInventoryComponent"
+         }
+      },
+      {
          "base_types" : [],
          "constants" : [],
          "functions" : [],
@@ -19796,6 +20430,144 @@
             "is_bind_type" : true,
             "is_errorable" : false,
             "name" : "PlayerDimensionChangeAfterEventSignal"
+         }
+      },
+      {
+         "base_types" : [],
+         "constants" : [],
+         "functions" : [],
+         "name" : "PlayerEmoteAfterEvent",
+         "properties" : [
+            {
+               "is_read_only" : true,
+               "name" : "personaPieceId",
+               "type" : {
+                  "is_bind_type" : false,
+                  "is_errorable" : false,
+                  "name" : "string"
+               }
+            },
+            {
+               "is_read_only" : true,
+               "name" : "player",
+               "type" : {
+                  "is_bind_type" : true,
+                  "is_errorable" : false,
+                  "name" : "Player"
+               }
+            }
+         ],
+         "type" : {
+            "is_bind_type" : true,
+            "is_errorable" : false,
+            "name" : "PlayerEmoteAfterEvent"
+         }
+      },
+      {
+         "base_types" : [],
+         "constants" : [],
+         "functions" : [
+            {
+               "arguments" : [
+                  {
+                     "details" : null,
+                     "name" : "callback",
+                     "type" : {
+                        "closure_type" : {
+                           "argument_types" : [
+                              {
+                                 "is_bind_type" : true,
+                                 "is_errorable" : false,
+                                 "name" : "PlayerEmoteAfterEvent"
+                              }
+                           ],
+                           "return_type" : {
+                              "is_bind_type" : false,
+                              "is_errorable" : true,
+                              "name" : "undefined"
+                           }
+                        },
+                        "is_bind_type" : false,
+                        "is_errorable" : false,
+                        "name" : "closure"
+                     }
+                  }
+               ],
+               "is_constructor" : false,
+               "is_static" : false,
+               "name" : "subscribe",
+               "privilege" : [
+                  {
+                     "name" : "early_execution"
+                  }
+               ],
+               "return_type" : {
+                  "closure_type" : {
+                     "argument_types" : [
+                        {
+                           "is_bind_type" : true,
+                           "is_errorable" : false,
+                           "name" : "PlayerEmoteAfterEvent"
+                        }
+                     ],
+                     "return_type" : {
+                        "is_bind_type" : false,
+                        "is_errorable" : true,
+                        "name" : "undefined"
+                     }
+                  },
+                  "is_bind_type" : false,
+                  "is_errorable" : false,
+                  "name" : "closure"
+               }
+            },
+            {
+               "arguments" : [
+                  {
+                     "details" : null,
+                     "name" : "callback",
+                     "type" : {
+                        "closure_type" : {
+                           "argument_types" : [
+                              {
+                                 "is_bind_type" : true,
+                                 "is_errorable" : false,
+                                 "name" : "PlayerEmoteAfterEvent"
+                              }
+                           ],
+                           "return_type" : {
+                              "is_bind_type" : false,
+                              "is_errorable" : true,
+                              "name" : "undefined"
+                           }
+                        },
+                        "is_bind_type" : false,
+                        "is_errorable" : false,
+                        "name" : "closure"
+                     }
+                  }
+               ],
+               "is_constructor" : false,
+               "is_static" : false,
+               "name" : "unsubscribe",
+               "privilege" : [
+                  {
+                     "name" : "early_execution"
+                  }
+               ],
+               "return_type" : {
+                  "is_bind_type" : false,
+                  "is_errorable" : false,
+                  "name" : "undefined"
+               }
+            }
+         ],
+         "name" : "PlayerEmoteAfterEventSignal",
+         "properties" : [],
+         "type" : {
+            "is_bind_type" : true,
+            "is_errorable" : false,
+            "name" : "PlayerEmoteAfterEventSignal"
          }
       },
       {
@@ -20307,6 +21079,20 @@
          "properties" : [
             {
                "is_read_only" : true,
+               "name" : "beforeItemStack",
+               "type" : {
+                  "is_bind_type" : false,
+                  "is_errorable" : false,
+                  "name" : "optional",
+                  "optional_type" : {
+                     "is_bind_type" : true,
+                     "is_errorable" : false,
+                     "name" : "ItemStack"
+                  }
+               }
+            },
+            {
+               "is_read_only" : true,
                "name" : "block",
                "type" : {
                   "is_bind_type" : true,
@@ -20330,6 +21116,15 @@
                   "is_bind_type" : true,
                   "is_errorable" : false,
                   "name" : "Vector3"
+               }
+            },
+            {
+               "is_read_only" : true,
+               "name" : "isFirstEvent",
+               "type" : {
+                  "is_bind_type" : false,
+                  "is_errorable" : false,
+                  "name" : "boolean"
                }
             },
             {
@@ -20518,6 +21313,15 @@
             },
             {
                "is_read_only" : true,
+               "name" : "isFirstEvent",
+               "type" : {
+                  "is_bind_type" : false,
+                  "is_errorable" : false,
+                  "name" : "boolean"
+               }
+            },
+            {
+               "is_read_only" : true,
                "name" : "itemStack",
                "type" : {
                   "is_bind_type" : false,
@@ -20659,6 +21463,20 @@
          "functions" : [],
          "name" : "PlayerInteractWithEntityAfterEvent",
          "properties" : [
+            {
+               "is_read_only" : true,
+               "name" : "beforeItemStack",
+               "type" : {
+                  "is_bind_type" : false,
+                  "is_errorable" : false,
+                  "name" : "optional",
+                  "optional_type" : {
+                     "is_bind_type" : true,
+                     "is_errorable" : false,
+                     "name" : "ItemStack"
+                  }
+               }
+            },
             {
                "is_read_only" : true,
                "name" : "itemStack",
@@ -25995,6 +26813,15 @@
             },
             {
                "is_read_only" : true,
+               "name" : "isHardcore",
+               "type" : {
+                  "is_bind_type" : false,
+                  "is_errorable" : false,
+                  "name" : "boolean"
+               }
+            },
+            {
+               "is_read_only" : true,
                "name" : "scoreboard",
                "type" : {
                   "is_bind_type" : true,
@@ -26260,6 +27087,15 @@
             },
             {
                "is_read_only" : true,
+               "name" : "playerEmote",
+               "type" : {
+                  "is_bind_type" : true,
+                  "is_errorable" : false,
+                  "name" : "PlayerEmoteAfterEventSignal"
+               }
+            },
+            {
+               "is_read_only" : true,
                "name" : "playerGameModeChange",
                "type" : {
                   "is_bind_type" : true,
@@ -26274,6 +27110,24 @@
                   "is_bind_type" : true,
                   "is_errorable" : false,
                   "name" : "PlayerInputPermissionCategoryChangeAfterEventSignal"
+               }
+            },
+            {
+               "is_read_only" : true,
+               "name" : "playerInteractWithBlock",
+               "type" : {
+                  "is_bind_type" : true,
+                  "is_errorable" : false,
+                  "name" : "PlayerInteractWithBlockAfterEventSignal"
+               }
+            },
+            {
+               "is_read_only" : true,
+               "name" : "playerInteractWithEntity",
+               "type" : {
+                  "is_bind_type" : true,
+                  "is_errorable" : false,
+                  "name" : "PlayerInteractWithEntityAfterEventSignal"
                }
             },
             {
@@ -26458,6 +27312,24 @@
                   "is_bind_type" : true,
                   "is_errorable" : false,
                   "name" : "PlayerGameModeChangeBeforeEventSignal"
+               }
+            },
+            {
+               "is_read_only" : true,
+               "name" : "playerInteractWithBlock",
+               "type" : {
+                  "is_bind_type" : true,
+                  "is_errorable" : false,
+                  "name" : "PlayerInteractWithBlockBeforeEventSignal"
+               }
+            },
+            {
+               "is_read_only" : true,
+               "name" : "playerInteractWithEntity",
+               "type" : {
+                  "is_bind_type" : true,
+                  "is_errorable" : false,
+                  "name" : "PlayerInteractWithEntityBeforeEventSignal"
                }
             },
             {
@@ -26849,6 +27721,17 @@
             {
                "is_read_only" : true,
                "is_static" : true,
+               "name" : "RecordPlayer",
+               "type" : {
+                  "is_bind_type" : false,
+                  "is_errorable" : false,
+                  "name" : "string"
+               },
+               "value" : "minecraft:record_player"
+            },
+            {
+               "is_read_only" : true,
+               "is_static" : true,
                "name" : "Sign",
                "type" : {
                   "is_bind_type" : false,
@@ -26908,6 +27791,44 @@
             }
          ],
          "name" : "BlockPistonState"
+      },
+      {
+         "constants" : [
+            {
+               "is_read_only" : true,
+               "is_static" : true,
+               "name" : "Contains",
+               "type" : {
+                  "is_bind_type" : true,
+                  "is_errorable" : false,
+                  "name" : "BlockVolumeIntersection"
+               },
+               "value" : 1
+            },
+            {
+               "is_read_only" : true,
+               "is_static" : true,
+               "name" : "Disjoint",
+               "type" : {
+                  "is_bind_type" : true,
+                  "is_errorable" : false,
+                  "name" : "BlockVolumeIntersection"
+               },
+               "value" : 0
+            },
+            {
+               "is_read_only" : true,
+               "is_static" : true,
+               "name" : "Intersects",
+               "type" : {
+                  "is_bind_type" : true,
+                  "is_errorable" : false,
+                  "name" : "BlockVolumeIntersection"
+               },
+               "value" : 2
+            }
+         ],
+         "name" : "BlockVolumeIntersection"
       },
       {
          "constants" : [
@@ -27824,6 +28745,17 @@
             {
                "is_read_only" : true,
                "is_static" : true,
+               "name" : "Breathable",
+               "type" : {
+                  "is_bind_type" : false,
+                  "is_errorable" : false,
+                  "name" : "string"
+               },
+               "value" : "minecraft:breathable"
+            },
+            {
+               "is_read_only" : true,
+               "is_static" : true,
                "name" : "CanClimb",
                "type" : {
                   "is_bind_type" : false,
@@ -27875,6 +28807,17 @@
                   "name" : "string"
                },
                "value" : "minecraft:color2"
+            },
+            {
+               "is_read_only" : true,
+               "is_static" : true,
+               "name" : "CursorInventory",
+               "type" : {
+                  "is_bind_type" : false,
+                  "is_errorable" : false,
+                  "name" : "string"
+               },
+               "value" : "minecraft:cursor_inventory"
             },
             {
                "is_read_only" : true,
@@ -30636,6 +31579,15 @@
          }
       },
       {
+         "name" : "InvalidIteratorError",
+         "properties" : [],
+         "type" : {
+            "is_bind_type" : true,
+            "is_errorable" : false,
+            "name" : "InvalidIteratorError"
+         }
+      },
+      {
          "name" : "InvalidStructureError",
          "properties" : [],
          "type" : {
@@ -32270,6 +33222,25 @@
             },
             {
                "is_read_only" : false,
+               "name" : "propertyOptions",
+               "type" : {
+                  "is_bind_type" : false,
+                  "is_errorable" : false,
+                  "name" : "optional",
+                  "optional_type" : {
+                     "element_type" : {
+                        "is_bind_type" : true,
+                        "is_errorable" : false,
+                        "name" : "EntityQueryPropertyOptions"
+                     },
+                     "is_bind_type" : false,
+                     "is_errorable" : false,
+                     "name" : "array"
+                  }
+               }
+            },
+            {
+               "is_read_only" : false,
                "name" : "scoreOptions",
                "type" : {
                   "is_bind_type" : false,
@@ -32471,6 +33442,108 @@
       },
       {
          "base_types" : [],
+         "name" : "EntityQueryPropertyOptions",
+         "properties" : [
+            {
+               "is_read_only" : false,
+               "name" : "exclude",
+               "type" : {
+                  "is_bind_type" : false,
+                  "is_errorable" : false,
+                  "name" : "optional",
+                  "optional_type" : {
+                     "is_bind_type" : false,
+                     "is_errorable" : false,
+                     "name" : "boolean"
+                  }
+               }
+            },
+            {
+               "is_read_only" : false,
+               "name" : "propertyId",
+               "type" : {
+                  "is_bind_type" : false,
+                  "is_errorable" : false,
+                  "name" : "string"
+               }
+            },
+            {
+               "is_read_only" : false,
+               "name" : "value",
+               "type" : {
+                  "is_bind_type" : false,
+                  "is_errorable" : false,
+                  "name" : "optional",
+                  "optional_type" : {
+                     "is_bind_type" : false,
+                     "is_errorable" : false,
+                     "name" : "variant",
+                     "variant_types" : [
+                        {
+                           "is_bind_type" : false,
+                           "is_errorable" : false,
+                           "name" : "boolean"
+                        },
+                        {
+                           "is_bind_type" : false,
+                           "is_errorable" : false,
+                           "name" : "string"
+                        },
+                        {
+                           "is_bind_type" : false,
+                           "is_errorable" : false,
+                           "name" : "variant",
+                           "variant_types" : [
+                              {
+                                 "is_bind_type" : true,
+                                 "is_errorable" : false,
+                                 "name" : "EqualsComparison"
+                              },
+                              {
+                                 "is_bind_type" : true,
+                                 "is_errorable" : false,
+                                 "name" : "GreaterThanComparison"
+                              },
+                              {
+                                 "is_bind_type" : true,
+                                 "is_errorable" : false,
+                                 "name" : "GreaterThanOrEqualsComparison"
+                              },
+                              {
+                                 "is_bind_type" : true,
+                                 "is_errorable" : false,
+                                 "name" : "LessThanComparison"
+                              },
+                              {
+                                 "is_bind_type" : true,
+                                 "is_errorable" : false,
+                                 "name" : "LessThanOrEqualsComparison"
+                              },
+                              {
+                                 "is_bind_type" : true,
+                                 "is_errorable" : false,
+                                 "name" : "NotEqualsComparison"
+                              },
+                              {
+                                 "is_bind_type" : true,
+                                 "is_errorable" : false,
+                                 "name" : "RangeComparison"
+                              }
+                           ]
+                        }
+                     ]
+                  }
+               }
+            }
+         ],
+         "type" : {
+            "is_bind_type" : true,
+            "is_errorable" : false,
+            "name" : "EntityQueryPropertyOptions"
+         }
+      },
+      {
+         "base_types" : [],
          "name" : "EntityQueryScoreOptions",
          "properties" : [
             {
@@ -32656,6 +33729,47 @@
       },
       {
          "base_types" : [],
+         "name" : "EqualsComparison",
+         "properties" : [
+            {
+               "is_read_only" : false,
+               "name" : "equals",
+               "type" : {
+                  "is_bind_type" : false,
+                  "is_errorable" : false,
+                  "name" : "variant",
+                  "variant_types" : [
+                     {
+                        "is_bind_type" : false,
+                        "is_errorable" : false,
+                        "name" : "boolean"
+                     },
+                     {
+                        "is_bind_type" : false,
+                        "is_errorable" : false,
+                        "name" : "float",
+                        "valid_range" : {
+                           "max" : 2147483647,
+                           "min" : -2147483648
+                        }
+                     },
+                     {
+                        "is_bind_type" : false,
+                        "is_errorable" : false,
+                        "name" : "string"
+                     }
+                  ]
+               }
+            }
+         ],
+         "type" : {
+            "is_bind_type" : true,
+            "is_errorable" : false,
+            "name" : "EqualsComparison"
+         }
+      },
+      {
+         "base_types" : [],
          "name" : "ExplosionOptions",
          "properties" : [
             {
@@ -32719,6 +33833,54 @@
             "is_bind_type" : true,
             "is_errorable" : false,
             "name" : "ExplosionOptions"
+         }
+      },
+      {
+         "base_types" : [],
+         "name" : "GreaterThanComparison",
+         "properties" : [
+            {
+               "is_read_only" : false,
+               "name" : "greaterThan",
+               "type" : {
+                  "is_bind_type" : false,
+                  "is_errorable" : false,
+                  "name" : "float",
+                  "valid_range" : {
+                     "max" : 2147483647,
+                     "min" : -2147483648
+                  }
+               }
+            }
+         ],
+         "type" : {
+            "is_bind_type" : true,
+            "is_errorable" : false,
+            "name" : "GreaterThanComparison"
+         }
+      },
+      {
+         "base_types" : [],
+         "name" : "GreaterThanOrEqualsComparison",
+         "properties" : [
+            {
+               "is_read_only" : false,
+               "name" : "greaterThanOrEquals",
+               "type" : {
+                  "is_bind_type" : false,
+                  "is_errorable" : false,
+                  "name" : "float",
+                  "valid_range" : {
+                     "max" : 2147483647,
+                     "min" : -2147483648
+                  }
+               }
+            }
+         ],
+         "type" : {
+            "is_bind_type" : true,
+            "is_errorable" : false,
+            "name" : "GreaterThanOrEqualsComparison"
          }
       },
       {
@@ -32930,6 +34092,54 @@
       },
       {
          "base_types" : [],
+         "name" : "LessThanComparison",
+         "properties" : [
+            {
+               "is_read_only" : false,
+               "name" : "lessThan",
+               "type" : {
+                  "is_bind_type" : false,
+                  "is_errorable" : false,
+                  "name" : "float",
+                  "valid_range" : {
+                     "max" : 2147483647,
+                     "min" : -2147483648
+                  }
+               }
+            }
+         ],
+         "type" : {
+            "is_bind_type" : true,
+            "is_errorable" : false,
+            "name" : "LessThanComparison"
+         }
+      },
+      {
+         "base_types" : [],
+         "name" : "LessThanOrEqualsComparison",
+         "properties" : [
+            {
+               "is_read_only" : false,
+               "name" : "lessThanOrEquals",
+               "type" : {
+                  "is_bind_type" : false,
+                  "is_errorable" : false,
+                  "name" : "float",
+                  "valid_range" : {
+                     "max" : 2147483647,
+                     "min" : -2147483648
+                  }
+               }
+            }
+         ],
+         "type" : {
+            "is_bind_type" : true,
+            "is_errorable" : false,
+            "name" : "LessThanOrEqualsComparison"
+         }
+      },
+      {
+         "base_types" : [],
          "name" : "MusicOptions",
          "properties" : [
             {
@@ -32987,6 +34197,47 @@
             "is_bind_type" : true,
             "is_errorable" : false,
             "name" : "MusicOptions"
+         }
+      },
+      {
+         "base_types" : [],
+         "name" : "NotEqualsComparison",
+         "properties" : [
+            {
+               "is_read_only" : false,
+               "name" : "notEquals",
+               "type" : {
+                  "is_bind_type" : false,
+                  "is_errorable" : false,
+                  "name" : "variant",
+                  "variant_types" : [
+                     {
+                        "is_bind_type" : false,
+                        "is_errorable" : false,
+                        "name" : "boolean"
+                     },
+                     {
+                        "is_bind_type" : false,
+                        "is_errorable" : false,
+                        "name" : "float",
+                        "valid_range" : {
+                           "max" : 2147483647,
+                           "min" : -2147483648
+                        }
+                     },
+                     {
+                        "is_bind_type" : false,
+                        "is_errorable" : false,
+                        "name" : "string"
+                     }
+                  ]
+               }
+            }
+         ],
+         "type" : {
+            "is_bind_type" : true,
+            "is_errorable" : false,
+            "name" : "NotEqualsComparison"
          }
       },
       {
@@ -33167,6 +34418,43 @@
             "is_bind_type" : true,
             "is_errorable" : false,
             "name" : "ProjectileShootOptions"
+         }
+      },
+      {
+         "base_types" : [],
+         "name" : "RangeComparison",
+         "properties" : [
+            {
+               "is_read_only" : false,
+               "name" : "lowerBound",
+               "type" : {
+                  "is_bind_type" : false,
+                  "is_errorable" : false,
+                  "name" : "float",
+                  "valid_range" : {
+                     "max" : 2147483647,
+                     "min" : -2147483648
+                  }
+               }
+            },
+            {
+               "is_read_only" : false,
+               "name" : "upperBound",
+               "type" : {
+                  "is_bind_type" : false,
+                  "is_errorable" : false,
+                  "name" : "float",
+                  "valid_range" : {
+                     "max" : 2147483647,
+                     "min" : -2147483648
+                  }
+               }
+            }
+         ],
+         "type" : {
+            "is_bind_type" : true,
+            "is_errorable" : false,
+            "name" : "RangeComparison"
          }
       },
       {
@@ -34056,5 +35344,5 @@
    ],
    "type_aliases" : [],
    "uuid" : "b26a4d4c-afdf-4690-88f8-931846312678",
-   "version" : "1.13.0"
+   "version" : "1.15.0"
 }
