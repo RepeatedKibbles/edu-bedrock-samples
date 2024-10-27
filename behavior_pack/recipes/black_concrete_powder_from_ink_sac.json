@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "format_version": "1.12",
   "minecraft:recipe_shapeless": {
@@ -50,3 +51,64 @@
     }
   }
 }
+=======
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "minecraft:black_concrete_powder_from_ink_sac"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "group": "concrete_powder",
+    "priority": 1,
+    "ingredients": [
+      {
+        "item": "minecraft:ink_sac"
+      },
+      {
+        "item": "minecraft:sand",
+        "data": 0
+      },
+      {
+        "item": "minecraft:sand",
+        "data": 0
+      },
+      {
+        "item": "minecraft:sand",
+        "data": 0
+      },
+      {
+        "item": "minecraft:sand",
+        "data": 0
+      },
+      {
+        "item": "minecraft:gravel"
+      },
+      {
+        "item": "minecraft:gravel"
+      },
+      {
+        "item": "minecraft:gravel"
+      },
+      {
+        "item": "minecraft:gravel"
+      }
+    ],
+	"unlock": [
+      {
+        "item": "minecraft:gravel"
+	  },
+	  {
+		"item": "minecraft:sand",
+        "data": 0
+      }
+    ],
+    "result": {
+      "item": "minecraft:black_concrete_powder",
+      "count": 8
+    }
+  }
+}
+>>>>>>> 6e0daa70a8c94130fd04f65295e672f99d7adc6d

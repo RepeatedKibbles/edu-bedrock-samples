@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "format_version": "1.12",
   "minecraft:recipe_shaped": {
@@ -24,3 +25,35 @@
     }
   }
 }
+=======
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "minecraft:prismarine_stairs_dark"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "#  ",
+      "## ",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:dark_prismarine"
+      }
+    },
+	"unlock": [
+      {
+        "item": "minecraft:dark_prismarine"
+      }
+    ],
+    "result": {
+      "item": "minecraft:dark_prismarine_stairs",
+      "count": 4
+    }
+  }
+}
+>>>>>>> 6e0daa70a8c94130fd04f65295e672f99d7adc6d
