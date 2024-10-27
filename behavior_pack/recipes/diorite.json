@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 {
   "format_version": "1.12",
   "minecraft:recipe_shaped": {
@@ -27,37 +26,3 @@
     }
   }
 }
-=======
-{
-  "format_version": "1.20.10",
-  "minecraft:recipe_shaped": {
-    "description": {
-    "identifier": "minecraft:diorite"
-    },
-
-    
-    "tags": [ "crafting_table" ],
-    "pattern": [
-      "CQ",
-      "QC"
-    ],
-    "key": {
-      "Q": {
-        "item": "minecraft:quartz"
-      },
-      "C": {
-        "item": "minecraft:cobblestone"
-      }
-    },
-	"unlock": [
-      {
-        "item": "minecraft:quartz"
-      }
-    ],
-    "result": {
-      "item": "minecraft:diorite",
-      "count": 2
-    }
-  }
-}
->>>>>>> 6e0daa70a8c94130fd04f65295e672f99d7adc6d

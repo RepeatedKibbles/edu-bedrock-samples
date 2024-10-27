@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 {
   "format_version": "1.12",
   "minecraft:recipe_shaped": {
@@ -27,37 +26,3 @@
     }
   }
 }
-=======
-{
-  "format_version": "1.20.10",
-  "minecraft:recipe_shaped": {
-    "description": {
-    "identifier": "minecraft:acacia_fence_gate"
-    },
-
-    
-    "tags": [ "crafting_table" ],
-    "group": "wooden_fence_gate",
-    "pattern": [
-      "#W#",
-      "#W#"
-    ],
-    "key": {
-      "#": {
-        "item": "minecraft:stick"
-      },
-      "W": {
-        "item": "minecraft:acacia_planks"
-      }
-    },
-	"unlock": [
-      {
-        "item": "minecraft:acacia_planks"
-      }
-    ],
-    "result": {
-      "item": "minecraft:acacia_fence_gate"
-    }
-  }
-}
->>>>>>> 6e0daa70a8c94130fd04f65295e672f99d7adc6d
