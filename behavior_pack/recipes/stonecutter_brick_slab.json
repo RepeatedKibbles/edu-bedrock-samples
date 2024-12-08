@@ -1,5 +1,5 @@
 {
-  "format_version": "1.20.10",
+  "format_version": "1.12",
   "minecraft:recipe_shapeless": {
     "description": {
     "identifier": "minecraft:stonecutter_brick_slab"
@@ -10,16 +10,13 @@
     "priority": 0,
     "ingredients": [
       {
-        "item": "minecraft:brick_block"
-      }
-    ],
-    "unlock": [
-      {
-        "item": "minecraft:brick_block"
+        "item": "minecraft:brick_block",
+        "data": 0
       }
     ],
     "result": {
-      "item": "minecraft:brick_slab",
+      "item": "minecraft:double_stone_slab",
+      "data": 4,
       "count": 2
     }
   }

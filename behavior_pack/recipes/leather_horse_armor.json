@@ -1,5 +1,5 @@
 {
-  "format_version": "1.20.10",
+  "format_version": "1.12",
   "minecraft:recipe_shaped": {
     "description": {
     "identifier": "minecraft:leather_horse_armor"
@@ -17,11 +17,6 @@
         "item": "minecraft:leather"
       }
     },
-	"unlock": [
-      {
-        "item": "minecraft:leather"
-      }
-    ],
     "result": {
       "item": "minecraft:horsearmorleather"
     }

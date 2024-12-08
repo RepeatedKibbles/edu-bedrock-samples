@@ -59,6 +59,7 @@
                     "type": "item",
                     "name": "minecraft:arrow",
                     "weight": 1,
+                    "auxVal": 19,
                     "functions": [
                         {
                             "function": "set_count",
@@ -76,8 +77,8 @@
                             "limit": 1
                         },
                         {
-                            "function": "minecraft:set_potion",
-                            "id": "slowness"
+                            "function": "minecraft:set_data",
+                            "data": 19
                         }
                     ]
                 }

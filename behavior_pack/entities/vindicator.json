@@ -1,11 +1,11 @@
 {
-  "format_version": "1.21.50",
+  "format_version": "1.13.0",
   "minecraft:entity": {
     "description": {
       "identifier": "minecraft:vindicator",
-      "spawn_category": "monster",
       "is_spawnable": true,
-      "is_summonable": true
+      "is_summonable": true,
+      "is_experimental": false
     },
 
     "component_groups": {
@@ -41,12 +41,21 @@
       "minecraft:vindicator_johnny": {
         "minecraft:behavior.nearest_attackable_target": {
           "priority": 2,
+          "within_radius": 12,
           "must_see": true,
-          "within_radius": 12.0,
           "must_see_forget_duration": 40.0,
           "entity_types": [
             {
-              "filters": { "test": "is_family", "subject": "other", "operator": "!=", "value": "illager" },
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "operator": "!=",
+                    "value": "illager"
+                  }
+                ]
+              },
               "max_dist": 12
             }
           ]
@@ -55,17 +64,33 @@
       "minecraft:default_targeting": {
         "minecraft:behavior.nearest_attackable_target": {
           "priority": 2,
+          "within_radius": 12,
           "must_see": true,
-          "within_radius": 12.0,
           "must_see_forget_duration": 40.0,
           "entity_types": [
             {
               "filters": {
                 "any_of": [
-                  { "test": "is_family", "subject": "other", "value": "player" },
-                  { "test": "is_family", "subject": "other", "value": "snowgolem" },
-                  { "test": "is_family", "subject": "other", "value": "irongolem" },
-                  { "test": "is_family", "subject": "other", "value": "wandering_trader" }
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "snowgolem"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "irongolem"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "wandering_trader"
+                  }
                 ]
               },
               "max_dist": 12
@@ -73,8 +98,17 @@
             {
               "filters": {
                 "all_of": [
-                  { "test": "is_family", "subject": "other", "value": "villager" },
-                  { "test": "has_component", "subject": "other", "operator": "!=", "value": "minecraft:is_baby" }
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "villager"
+                  },
+                  {
+                    "test": "has_component",
+                    "subject": "other",
+                    "operator": "!=",
+                    "value": "minecraft:is_baby"
+                  }
                 ]
               },
               "max_dist": 12
@@ -89,7 +123,7 @@
           "update_interval_base": 60,
           "update_interval_variant": 40,
           "can_find_poi": false,
-          "can_migrate": true,
+          "can_migrate": false,
           "first_founding_reward": 0
         },
         "minecraft:behavior.move_to_village": {
@@ -115,14 +149,6 @@
           "event_name": "ambient.in.raid"
         }
       },
-      "minecraft:raid_persistence": {
-        "minecraft:persistent": {}
-      },
-      "minecraft:raid_despawn": {
-        "minecraft:despawn": {
-          "despawn_from_distance": {}
-        }
-      },
       "minecraft:illager_squad_captain": {
         "minecraft:is_illager_captain": {
         },
@@ -138,8 +164,26 @@
             }
           ]
         },
-        "minecraft:loot": {
-          "table": "loot_tables/entities/pillager_captain.json"
+        "minecraft:damage_sensor": {
+          "triggers": {
+            "on_damage": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_damage",
+                    "value": "fatal"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  }
+                ]
+              },
+              "event": "minecraft:gain_bad_omen",
+              "target": "other"
+            }
+          }
         }
       },
       "minecraft:patrol_captain": {
@@ -157,8 +201,26 @@
             }
           ]
         },
-        "minecraft:loot": {
-          "table": "loot_tables/entities/pillager_captain.json"
+        "minecraft:damage_sensor": {
+          "triggers": {
+            "on_damage": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_damage",
+                    "value": "fatal"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  }
+                ]
+              },
+              "event": "minecraft:gain_bad_omen",
+              "target": "other"
+            }
+          }
         },
         "minecraft:behavior.move_to_random_block": {
           "priority": 5,
@@ -178,27 +240,8 @@
     },
 
     "components": {
-      // Components
-      "minecraft:equip_item": {
-      },
-      "minecraft:shareables": {
-        "items": [
-          {
-            "item": "minecraft:banner:15",
-            "want_amount": 1,
-            "surplus_amount": 1,
-            "priority": 0
-          }
-        ]
-      },
-      "minecraft:is_hidden_when_invisible": {
-      },
       "minecraft:experience_reward": {
         "on_death": "query.last_hit_by_player ? (query.is_baby ? 12 : 5) + (Math.die_roll(query.equipment_count,1,3)) : 0"
-      },
-      "minecraft:can_join_raid": {
-      },
-      "minecraft:conditional_bandwidth_optimization": {
       },
       "minecraft:nameable": {
         "default_trigger": {
@@ -215,6 +258,8 @@
           }
         ]
       },
+
+      // vindicator Components
       "minecraft:type_family": {
         "family": [ "vindicator", "monster", "illager", "mob" ]
       },
@@ -264,22 +309,15 @@
       "minecraft:equipment": {
         "table": "loot_tables/entities/vindicator_gear.json"
       },
-      // Behaviors
+
+      // vindicator Behaviors
       "minecraft:behavior.float": {
         "priority": 0
       },
-      "minecraft:behavior.avoid_mob_type": {
-        "priority": 2,
-        "entity_types": [
-          {
-            "filters": { "test": "is_family", "subject": "other", "value": "creaking" },
-            "max_dist": 8,
-            "sprint_speed_multiplier": 1.2
-          }
-        ]
-      },
-      "minecraft:behavior.melee_box_attack": {
-        "priority": 3
+      "minecraft:behavior.melee_attack": {
+        "priority": 3,
+        "speed_multiplier": 1,
+        "track_target": false
       },
       "minecraft:behavior.random_stroll": {
         "priority": 9,
@@ -291,22 +329,7 @@
         "probability": 0.02
       },
       "minecraft:behavior.hurt_by_target": {
-        "priority": 1,
-        "entity_types": {
-          "filters": {
-            "test": "is_family", "subject": "other", "operator": "!=", "value": "illager"
-          },
-          "max_dist": 64
-        }
-      },
-      "minecraft:behavior.equip_item": {
-        "priority": 3
-      },
-      "minecraft:behavior.pickup_items": {
-        "priority": 7,
-        "max_dist": 3,
-        "goal_radius": 2,
-        "speed_multiplier": 1.0
+        "priority": 1
       },
       "minecraft:on_target_acquired": {
         "event": "minecraft:become_aggro",
@@ -377,16 +400,13 @@
         "add": {
           "component_groups": [
             "minecraft:default_targeting",
-            "minecraft:raid_configuration",
-            "minecraft:raid_persistence",
-            "minecraft:raid_despawn"
+            "minecraft:raid_configuration"
           ]
         }
       },
       "minecraft:spawn_as_illager_captain": {
         "add": {
           "component_groups": [
-            "minecraft:default_targeting",
             "minecraft:illager_squad_captain"
           ]
         }
@@ -394,7 +414,6 @@
       "minecraft:promote_to_illager_captain": {
         "add": {
           "component_groups": [
-            "minecraft:default_targeting",
             "minecraft:illager_squad_captain"
           ]
         },
@@ -407,7 +426,6 @@
       "minecraft:promote_to_patrol_captain": {
         "add": {
           "component_groups": [
-            "minecraft:default_targeting",
             "minecraft:patrol_captain"
           ]
         },
@@ -418,26 +436,10 @@
         }
       },
       "minecraft:start_celebrating": { // Event must be called exactly this for village to fire it when a raid is lost
-        "sequence": [
-          {
-            "add": { "component_groups": [ "minecraft:celebrate" ] }
-          },
-          {
-            "filters": { "test": "has_nametag", "value": false },
-            "remove": { "component_groups": [ "minecraft:raid_persistence" ] }
-          }
-        ]
+        "add": { "component_groups": [ "minecraft:celebrate" ] }
       },
       "minecraft:stop_celebrating": {
         "remove": { "component_groups": [ "minecraft:celebrate" ] }
-      },
-      "minecraft:raid_expired": {
-        "sequence": [
-          {
-            "filters": { "test": "has_nametag", "value": false },
-            "remove": { "component_groups": [ "minecraft:raid_persistence" ] }
-          }
-        ]
       }
     }
   }

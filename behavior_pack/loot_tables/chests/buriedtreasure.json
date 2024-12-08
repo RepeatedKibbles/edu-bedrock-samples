@@ -149,8 +149,8 @@
           "name": "minecraft:potion",
           "functions": [
             {
-              "function": "set_potion",
-              "id": "water_breathing"
+              "function": "set_data",
+              "data": 19
             }
           ],
           "weight": 15
@@ -160,8 +160,8 @@
           "name": "minecraft:potion",
           "functions": [
             {
-              "function": "set_potion",
-              "id": "regeneration"
+              "function": "set_data",
+              "data": 28
             }
           ],
           "weight": 10

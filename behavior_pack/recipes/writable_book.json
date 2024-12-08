@@ -1,5 +1,5 @@
 {
-  "format_version": "1.20.10",
+  "format_version": "1.12",
   "minecraft:recipe_shapeless": {
     "description": {
     "identifier": "minecraft:writable_book"
@@ -17,11 +17,6 @@
       },
       {
         "item": "minecraft:feather"
-      }
-    ],
-	"unlock": [
-      {
-        "item": "minecraft:book"
       }
     ],
     "result": {

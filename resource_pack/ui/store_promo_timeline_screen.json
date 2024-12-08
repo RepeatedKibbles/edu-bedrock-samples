@@ -5,6 +5,7 @@
     "type": "stack_panel",
     "orientation": "vertical",
     "size": [ "100%", "100%c" ],
+    "$store_factory_collection_name": "factory_collection",
 
     "factory": {
       "name": "promo_banner_factory",
@@ -18,15 +19,11 @@
         "$store_factory_collection_name"
       ]
     },
+    "collection_name": "$store_factory_collection_name",
     "bindings": [
       {
         "binding_name": "#section_content",
         "binding_name_override": "#collection_length"
-      },
-      {
-        "binding_type": "$store_factory_collection_details",
-        "binding_collection_name": "$store_factory_collection_name",
-        "binding_collection_prefix": "$store_factory_collection_prefix"
       }
     ]
   },

@@ -1,5 +1,5 @@
 {
-  "format_version": "1.20.10",
+  "format_version": "1.12",
   "minecraft:recipe_shaped": {
     "description": {
     "identifier": "minecraft:nether_brick_wall"
@@ -16,13 +16,9 @@
         "item": "minecraft:nether_brick"
       }
     },
-    "unlock": [
-      {
-        "item": "minecraft:nether_brick"
-      }
-    ],
     "result": {
-      "item": "minecraft:nether_brick_wall",
+      "item": "minecraft:cobblestone_wall",
+      "data": 9,
       "count": 6
     }
   }

@@ -1,5 +1,5 @@
 {
-  "format_version": "1.20.10",
+  "format_version": "1.12",
   "minecraft:recipe_shaped": {
     "description": {
     "identifier": "minecraft:gray_carpet_from_white"
@@ -15,22 +15,17 @@
     ],
     "key": {
       "#": {
-        "item": "minecraft:white_carpet"
+        "item": "minecraft:carpet",
+        "data": 0
       },
       "X": {
-        "item": "minecraft:gray_dye"
+        "item": "minecraft:dye",
+        "data": 8
       }
     },
-    "unlock": [
-      {
-        "item": "minecraft:white_carpet"
-      },
-      {
-        "item": "minecraft:gray_dye"
-      }
-    ],
     "result": {
-      "item": "minecraft:gray_carpet",
+      "item": "minecraft:carpet",
+      "data": 7,
       "count": 8
     }
   }

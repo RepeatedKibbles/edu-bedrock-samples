@@ -16,12 +16,6 @@
                 "size": [ "100%", 15 ],
                 "$gradient_content": "csb_content.popular_packs_label"
               }
-            },
-            {
-              "tts_border@csb.tts_activate_sibling": {
-                "size": [ "100%sm", "100%sm + 2px" ],
-                "offset": [ 0, -2 ]
-              }
             }
           ]
         }
@@ -227,7 +221,7 @@
       {
         "description_nesting_panel": {
           "type": "panel",
-          "size": [ "fill", "100%cm - 2px" ],
+          "size": [ "fill", "100%c" ],
           "min_size": [ "fill", 14 ],
           "controls": [
             {
@@ -239,12 +233,6 @@
                 "font_scale_factor": 0.75,
                 "font_type": "smooth",
                 "layer": 2
-              }
-            },
-            {
-              "tts_border@csb.tts_activate_sibling": {
-                "size": [ "100%sm + 2px", "100%sm + 2px" ],
-                "offset": [ -1, -2 ]
               }
             }
           ]
@@ -452,7 +440,6 @@
           "layer": 7,
           "default_control": "",
           "$pressed_button_name": "button.select_offer",
-          "tts_control_header": "#title_label",
           "bindings": [
             {
               "binding_type": "collection_details",
@@ -464,11 +451,6 @@
               "binding_name": "#right_most_grid_item_focus_override_right",
               "binding_name_override": "#focus_change_right",
               "binding_condition": "visible"
-            },
-            {
-              "binding_type": "collection",
-              "binding_collection_name": "popular_packs_collection",
-              "binding_name": "#title_label"
             }
           ],
           "controls": [
@@ -498,13 +480,12 @@
 
   "content_description": {
     "type": "panel",
-    "size": [ "100%", "100%cm - 2px" ],
+    "size": [ "100%", "100%c" ],
     "controls": [
       {
         "content_description_label": {
           "type": "label",
-          "size": [ "100% - 1px", "default" ],
-          "offset": [ 1, 0 ],
+          "size": [ "100%", "default" ],
           "text": "#content_section_text",
           "color": "$body_text_color",
           "font_type": "smooth",
@@ -515,12 +496,6 @@
               "binding_collection_name": "content_sections"
             }
           ]
-        }
-      },
-      {
-        "tts_border@csb.tts_activate_sibling": {
-          "size": [ "100%sm", "100%sm + 2px" ],
-          "offset": [ 0, -2 ]
         }
       }
     ]

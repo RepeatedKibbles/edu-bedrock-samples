@@ -70,12 +70,12 @@
 
   "content_description": {
     "type": "panel",
-    "size": [ "100%", "100%cm" ],
+    "size": [ "100%", "100%c" ],
     "controls": [
       {
         "content_description_label": {
           "type": "label",
-          "size": [ "100% - 4px", "default" ],
+          "size": [ "100%", "default" ],
           "text": "#platform_terms_text",
           "color": "$body_text_color",
           "font_type": "smooth",
@@ -84,12 +84,6 @@
               "binding_name": "#platform_terms_text"
             }
           ]
-        }
-      },
-      {
-        "tts_hover@csb.tts_activate_sibling": {
-          "size": [ "100%", "100%sm" ],
-          "offset": [ 0, -2 ]
         }
       }
     ]
@@ -115,28 +109,14 @@
       },
       {
         "description_text": {
-          "type": "panel",
-          "size": [ "fill", "100%cm" ],
-          "controls": [
+          "type": "label",
+          "text": "#trial_desciption_text",
+          "color": "$store_white_text_color",
+          "size": [ "fill", "default" ],
+          "font_type": "smooth",
+          "bindings": [
             {
-              "descriptions_label": {
-                "type": "label",
-                "text": "#trial_desciption_text",
-                "color": "$store_white_text_color",
-                "size": [ "100% - 2px", "default" ],
-                "font_type": "smooth",
-                "bindings": [
-                  {
-                    "binding_name": "#trial_desciption_text"
-                  }
-                ]
-              }
-            },
-            {
-              "tts_hover@csb.tts_activate_sibling": {
-                "size": [ "100%", "100%sm" ],
-                "offset": [ 0, -2 ]
-              }
+              "binding_name": "#trial_desciption_text"
             }
           ]
         }
@@ -145,32 +125,15 @@
   },
 
   "title_text": {
-    "type": "panel",
-    "size": [ "100% - 4px", "100%" ],
-    "controls": [
+    "type": "label",
+    "size": [ "100% - 4px", "default" ],
+    "text": "#buy_now_banner_text",
+    "color": "$light_button_default_text_color",
+    "bindings": [
       {
-        "inner_text": {
-          "type": "label",
-          "size": [ "100%", "default" ],
-          "text": "#buy_now_banner_text",
-          "color": "$light_button_default_text_color",
-          "bindings": [
-            {
-              "binding_name": "#buy_now_banner_text"
-            }
-          ]
-        }
-      },
-      {
-        "tts_hover@csb.tts_activate_sibling": {
-          "size": [ "100% + 4px", "100%" ],
-          "anchor_from": "left_middle",
-          "anchor_to": "left_middle",
-          "offset": [ -2, -2 ]
-        }
+        "binding_name": "#buy_now_banner_text"
       }
     ]
-
   },
 
   "description_stack": {
@@ -273,8 +236,7 @@
                           "checkbox_control@settings_common.checkbox_with_highlight_and_label": {
                             "$toggle_name": "#agree_terms_and_conditions",
                             "$checkbox_label_text": "csbCreateScreen.termsAndConditionsAgree",
-                            "$checkbox_label_font_type": "smooth",
-                            "$tts_section_header": "csbCreateScreen.termsAndConditionsHeader"
+                            "$checkbox_label_font_type": "smooth"
                           }
                         }
                       ]
@@ -282,14 +244,12 @@
                   },
                   {
                     "view_terms_button@csb_buy.view_terms_button": {
-                      "size": [ "fill", "100%" ],
-                      "$tts_section_header": "csbCreateScreen.termsAndConditionsHeader"
+                      "size": [ "fill", "100%" ]
                     }
                   },
                   {
                     "privacy_policy_button@csb_buy.privacy_policy_button": {
-                      "size": [ "fill", "100%" ],
-                      "$tts_section_header": "csbCreateScreen.termsAndConditionsHeader"
+                      "size": [ "fill", "100%" ]
                     }
                   }
                 ]

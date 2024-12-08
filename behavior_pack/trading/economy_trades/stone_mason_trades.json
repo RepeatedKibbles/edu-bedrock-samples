@@ -17,8 +17,8 @@
               "quantity": 1
             }
           ],
-          "trader_exp": 2,
-          "max_uses": 16,
+          "trader_exp": 1,
+          "max_uses": 6,
           "reward_exp": true
         },
         {
@@ -32,11 +32,11 @@
           "gives": [
             {
               "item": "minecraft:brick",
-              "quantity": 10
+              "quantity": 16
             }
           ],
-          "trader_exp": 1,
-          "max_uses": 16,
+          "trader_exp": 2,
+          "max_uses": 5,
           "reward_exp": true
         }
       ]
@@ -47,7 +47,7 @@
         {
           "wants": [
             {
-              "item": "minecraft:stone",
+              "item": "minecraft:stone:0",
               "quantity": 20,
               "price_multiplier": 0.05
             }
@@ -58,8 +58,8 @@
               "quantity": 1
             }
           ],
-          "trader_exp": 10,
-          "max_uses": 16,
+          "trader_exp": 5,
+          "max_uses": 5,
           "reward_exp": true
         },
         {
@@ -72,35 +72,51 @@
           ],
           "gives": [
             {
-              "item": "minecraft:chiseled_stone_bricks",
-              "quantity": 4
+              "choice": [
+                {
+                  "item": "minecraft:stonebrick:3",
+                  "quantity": 4
+                },
+                {
+                  "item": "minecraft:stone:2",
+                  "quantity": 4
+                },
+                {
+                  "item": "minecraft:stone:4",
+                  "quantity": 4
+                },
+                {
+                  "item": "minecraft:stone:6",
+                  "quantity": 4
+                }
+              ]
             }
           ],
-          "trader_exp": 5,
-          "max_uses": 16,
+          "trader_exp": 10,
+          "max_uses": 5,
           "reward_exp": true
         }
       ]
-    },    
+    },
     {
-      "total_exp_required": 70,
+      "total_exp_required": 60,
       "trades": [
         {
           "wants": [
             {
               "choice": [
                 {
-                  "item": "minecraft:granite",
+                  "item": "minecraft:stone:1",
                   "quantity": 16,
                   "price_multiplier": 0.05
                 },
                 {
-                  "item": "minecraft:diorite",
+                  "item": "minecraft:stone:3",
                   "quantity": 16,
                   "price_multiplier": 0.05
                 },
                 {
-                  "item": "minecraft:andesite",
+                  "item": "minecraft:stone:5",
                   "quantity": 16,
                   "price_multiplier": 0.05
                 }
@@ -113,8 +129,8 @@
               "quantity": 1
             }
           ],
-          "trader_exp": 20,
-          "max_uses": 16,
+          "trader_exp": 10,
+          "max_uses": 5,
           "reward_exp": true
         },
         {
@@ -129,32 +145,80 @@
             {
               "choice": [
                 {
-                  "item": "minecraft:polished_granite",
+                  "item": "minecraft:stained_hardened_clay:0",
                   "quantity": 4
                 },
                 {
-                  "item": "minecraft:polished_diorite",
+                  "item": "minecraft:stained_hardened_clay:1",
                   "quantity": 4
                 },
                 {
-                  "item": "minecraft:polished_andesite",
+                  "item": "minecraft:stained_hardened_clay:2",
                   "quantity": 4
                 },
                 {
-                  "item": "minecraft:dripstone_block",
+                  "item": "minecraft:stained_hardened_clay:3",
+                  "quantity": 4
+                },
+                {
+                  "item": "minecraft:stained_hardened_clay:4",
+                  "quantity": 4
+                },
+                {
+                  "item": "minecraft:stained_hardened_clay:5",
+                  "quantity": 4
+                },
+                {
+                  "item": "minecraft:stained_hardened_clay:6",
+                  "quantity": 4
+                },
+                {
+                  "item": "minecraft:stained_hardened_clay:7",
+                  "quantity": 4
+                },
+                {
+                  "item": "minecraft:stained_hardened_clay:8",
+                  "quantity": 4
+                },
+                {
+                  "item": "minecraft:stained_hardened_clay:9",
+                  "quantity": 4
+                },
+                {
+                  "item": "minecraft:stained_hardened_clay:10",
+                  "quantity": 4
+                },
+                {
+                  "item": "minecraft:stained_hardened_clay:11",
+                  "quantity": 4
+                },
+                {
+                  "item": "minecraft:stained_hardened_clay:12",
+                  "quantity": 4
+                },
+                {
+                  "item": "minecraft:stained_hardened_clay:13",
+                  "quantity": 4
+                },
+                {
+                  "item": "minecraft:stained_hardened_clay:14",
+                  "quantity": 4
+                },
+                {
+                  "item": "minecraft:stained_hardened_clay:15",
                   "quantity": 4
                 }
               ]
             }
           ],
-          "trader_exp": 10,
-          "max_uses": 16,
+          "trader_exp": 20,
+          "max_uses": 5,
           "reward_exp": true
         }
       ]
     },
     {
-      "total_exp_required": 150,
+      "total_exp_required": 160,
       "trades": [
         {
           "wants": [
@@ -170,8 +234,8 @@
               "quantity": 1
             }
           ],
-          "trader_exp": 30,
-          "max_uses": 12,
+          "trader_exp": 15,
+          "max_uses": 5,
           "reward_exp": true
         },
         {
@@ -185,54 +249,6 @@
           "gives": [
             {
               "choice": [
-                {
-                  "item": "minecraft:white_terracotta"
-                },
-                {
-                  "item": "minecraft:orange_terracotta"
-                },
-                {
-                  "item": "minecraft:magenta_terracotta"
-                },
-                {
-                  "item": "minecraft:light_blue_terracotta"
-                },
-                {
-                  "item": "minecraft:yellow_terracotta"
-                },
-                {
-                  "item": "minecraft:lime_terracotta"
-                },
-                {
-                  "item": "minecraft:pink_terracotta"
-                },
-                {
-                  "item": "minecraft:gray_terracotta"
-                },
-                {
-                  "item": "minecraft:light_gray_terracotta"
-                },
-                {
-                  "item": "minecraft:cyan_terracotta"
-                },
-                {
-                  "item": "minecraft:purple_terracotta"
-                },
-                {
-                  "item": "minecraft:blue_terracotta"
-                },
-                {
-                  "item": "minecraft:brown_terracotta"
-                },
-                {
-                  "item": "minecraft:green_terracotta"
-                },
-                {
-                  "item": "minecraft:red_terracotta"
-                },
-                {
-                  "item": "minecraft:black_terracotta"
-                },
                 {
                   "item": "minecraft:black_glazed_terracotta"
                 },
@@ -284,14 +300,14 @@
               ]
             }
           ],
-          "trader_exp": 15,
-          "max_uses": 12,
+          "trader_exp": 30,
+          "max_uses": 5,
           "reward_exp": true
         }
       ]
     },
     {
-      "total_exp_required": 250,
+      "total_exp_required": 310,
       "trades": [
         {
           "wants": [
@@ -305,16 +321,16 @@
             {
               "choice": [
                 {
-                  "item": "minecraft:quartz_block"
+                  "item": "minecraft:quartz_block:0"
                 },
                 {
-                  "item": "minecraft:quartz_pillar"
+                  "item": "minecraft:quartz_block:2"
                 }
               ]
             }
           ],
-          "trader_exp": 30,
-          "max_uses": 12,
+          "trader_exp": 0,
+          "max_uses": 5,
           "reward_exp": true
         }
       ]

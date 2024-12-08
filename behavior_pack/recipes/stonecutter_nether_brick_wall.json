@@ -1,5 +1,5 @@
 {
-  "format_version": "1.20.10",
+  "format_version": "1.12",
   "minecraft:recipe_shapeless": {
     "description": {
     "identifier": "minecraft:stonecutter_nether_brick_wall"
@@ -10,16 +10,13 @@
     "priority": 2,
     "ingredients": [
       {
-        "item": "minecraft:nether_brick"
-      }
-    ],
-    "unlock": [
-      {
-        "item": "minecraft:nether_brick"
+        "item": "minecraft:nether_brick",
+        "data": 0
       }
     ],
     "result": {
-      "item": "minecraft:nether_brick_wall",
+      "item": "minecraft:cobblestone_wall",
+      "data": 9,
       "count": 1
     }
   }

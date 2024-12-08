@@ -1,5 +1,5 @@
 {
-    "format_version": "1.20.10",
+    "format_version": "1.12",
     "minecraft:recipe_shaped": {
         "description": {
             "identifier": "minecraft:Bowl_recipeId"
@@ -13,24 +13,12 @@
         ],
         "key": {
             "A": {
-                "tag": "minecraft:planks"
+                "item": "minecraft:planks"
             }
         },
-		"unlock": [
-          {
-            "item": "minecraft:brown_mushroom"
-          },
-		  {
-			"item": "minecraft:red_mushroom"
-          },
-		  {
-			"item": "minecraft:mushroom_stew"
-          }
-        ],
         "result": {
             "item": "bowl",
             "count": 4
-        },
-        "priority": -1
+        }
     }
 }

@@ -221,14 +221,18 @@
   },
 
   "gamerpic": {
-    "type": "custom",
-    "renderer": "profile_image_renderer",
+    "type": "image",
     "size": [ 16, 16 ],
     "layer": 2,
     "$gamerpic_visible|default": "#none",
     "bindings": [
       {
-        "binding_name": "#profile_image_options"
+        "binding_name": "#gamerpic_texture_path",
+        "binding_name_override": "#texture"
+      },
+      {
+        "binding_name": "#gamerpic_texture_location_type",
+        "binding_name_override": "#texture_file_system"
       },
       {
         "binding_name": "$gamerpic_visible",
@@ -340,34 +344,6 @@
     ]
   },
 
-  "trial_info": {
-    "type": "panel",
-    "controls": [
-        {
-          "trial_label": {
-            "type": "label",
-            "size": [ "150%", 20 ],
-            "offset": [ 4, 0 ],
-            "text": "menu.trialLabel",
-            "color": "$body_text_color",
-            "text_alignment": "center",
-            "layer": 2
-          }
-        },
-        {
-          "label_background": {
-            "type": "image",
-            "texture": "textures/ui/Black",
-            "anchor_from": "center",
-            "anchor_to": "center",
-            "alpha": 0.6,
-            "size": [ "100%sm + 10px", "100%sm + 10px" ],
-            "layer": 1
-        }
-      }
-    ]
-  },
-
   "text_panel": {
     "type": "panel",
     "size": [ "100%-2px", 10 ],
@@ -433,7 +409,7 @@
         "change_skin@start.change_skin_button": {
           "bindings": [
             {
-              "binding_name": "#edu_signed_in_only_ui_visible",
+              "binding_name": "#change_skin_visible",
               "binding_name_override": "#visible"
             }
           ]
@@ -443,7 +419,7 @@
         "change_skin_button_demo@start.change_skin_button_demo": {
           "bindings": [
             {
-              "binding_name": "#edu_demo_only_ui_visible",
+              "binding_name": "#change_skin_visible",
               "binding_name_override": "#visible"
             }
           ]
@@ -460,14 +436,7 @@
         }
       },
       {
-        "switch_accounts@start.switch_accounts_button": {
-          "bindings": [
-            {
-              "binding_name": "#edu_signed_in_only_ui_visible",
-              "binding_name_override": "#visible"
-            }
-          ]
-        }
+        "switch_accounts@start.switch_accounts_button": {}
       },
       {
         "profile_button@start.profile_button": {
@@ -490,7 +459,7 @@
   },
 
   "change_skin_button@common_buttons.light_glyph_button": {
-    "ignored": "(not $education_edition)",
+    "ignored": "((not $education_edition) or $is_edu_demo)",
     "$pressed_button_name": "button.menu_skins",
     "size": [ 25, 25 ],
     "anchor_from": "bottom_left",
@@ -503,7 +472,7 @@
   },
 
   "change_skin_button_demo@common_buttons.light_glyph_button": {
-    "ignored": "(not $education_edition)",
+    "ignored": "(not $is_edu_demo)",
     "$pressed_button_name": "button.menu_skins",
     "size": [ 25, 25 ],
     "anchor_from": "bottom_middle",
@@ -516,7 +485,7 @@
   },
 
   "switch_accounts_button@common_buttons.light_content_button": {
-    "ignored": "(not $education_edition)",
+    "ignored": "((not $education_edition) or $is_edu_demo)",
     "$pressed_button_name": "button.manage_account",
     "size": [ 25, 25 ],
     "anchor_from": "bottom_right",
@@ -758,7 +727,6 @@
     "type": "image",
     "size": [ "237%y", "100%" ],
     "layer": 20,
-    "allow_debug_missing_texture": false,
     "bindings": [
       {
         "binding_name": "#gathering_badge",
@@ -1302,6 +1270,32 @@
               }
             },
             {
+              "invite_padding": {
+                "type": "panel",
+                "size": [ 3, "100%" ],
+                "bindings": [
+                  {
+                    "binding_name": "#realms_notification_visible",
+                    "binding_name_override": "#visible"
+                  }
+                ]
+              }
+            },
+            {
+              "invite_btn_other@start.column_frame": {
+                "size": [ 28, 32 ],
+                "controls": [
+                  { "invite_button@start.realms_pending_invite_panel": {} }
+                ],
+                "bindings": [
+                  {
+                    "binding_name": "#realms_notification_visible",
+                    "binding_name_override": "#visible"
+                  }
+                ]
+              }
+            },
+            {
               "inbox_padding": {
                 "type": "panel",
                 "size": [ 3, "100%" ],
@@ -1383,9 +1377,7 @@
 
   "get_started_button@start.main_button": {
     "$pressed_button_name": "button.menu_get_started",
-    "$button_text": "#get_started_button_text",
-    "$button_text_binding_type": "global",
-    "$button_binding_condition": "once"
+    "$button_text": "menu.getStarted"
   },
 
   "main_menu_button@edu_common.underline_button": {
@@ -1402,6 +1394,7 @@
   },
 
   "unlock_full_game_button@start.main_button": {
+    "ignored": "(not $is_edu_demo)",
     "$pressed_button_name": "button.manage_account",
     "$button_text": "#unlock_full_game_button_text",
     "$button_text_binding_type": "global"
@@ -1446,13 +1439,7 @@
     "$button_binding_condition": "none",
     "$button_text_grid_collection_name": "",
     "tts_inherit_siblings": true,
-    "$focus_override_right": "profile_button",
-    "bindings": [
-      {
-        "binding_name": "(not #marketplace_disabled)",
-        "binding_name_override": "#visible"
-      }
-    ]
+    "$focus_override_right": "profile_button"
   },
 
   "error_store_button@common_buttons.light_content_button": {
@@ -1547,7 +1534,13 @@
     "controls": [
       {
         "store_button@start.store_button": {
-          "enabled": "(not $store_disabled and not ($is_ios and $pre_release)))"
+          "enabled": "(not $store_disabled and not ($is_ios and $pre_release)))",
+          "bindings": [
+            {
+              "binding_name": "(not #marketplace_disabled)",
+              "binding_name_override": "#visible"
+            }
+          ]
         }
       },
       {
@@ -1701,23 +1694,6 @@
           "anchor_to": "bottom_middle",
           "controls": [
             {
-              "test_label_row@start.stacked_row": {
-                "ignored": "(not $trial or not $is_new_trial_mode_enabled)",
-                "controls": [
-                  {
-                    "trial_info@start.trial_info": {}
-                  }
-                ]
-              }
-            },
-            {
-              "spacer": {
-                "type": "panel",
-                "ignored": "(not $trial or not $is_new_trial_mode_enabled)",
-                "size": [ 20, 20 ]
-              }
-            },
-            {
               "get_started_row@start.stacked_row": {
                 "controls": [
                   {
@@ -1795,7 +1771,13 @@
                             "controls": [
                               {
                                 "store_button@start.store_button": {
-                                  "enabled": "(not $store_disabled)"
+                                  "enabled": "(not $store_disabled)",
+                                  "bindings": [
+                                    {
+                                      "binding_name": "(not #marketplace_disabled)",
+                                      "binding_name_override": "#visible"
+                                    }
+                                  ]
                                 }
                               },
                               {
@@ -1849,13 +1831,7 @@
             },
             {
               "edu_featured_button@start.stacked_row": {
-                "ignored": "(not $education_edition)",
-                "bindings": [
-                  {
-                    "binding_name": "#edu_signed_in_only_ui_visible",
-                    "binding_name_override": "#visible"
-                  }
-                ],
+                "ignored": "(not $education_edition or $is_edu_demo)",
                 "controls": [
                   {
                     "new_and_featured_button@edu_featured.featured_button": {}
@@ -1864,80 +1840,8 @@
               }
             },
             {
-              "settings_and_editions_panel@start.stacked_row": {
-                "ignored": "($trial or not $supports_launching_legacy_version)",
-                "bindings": [
-                  {
-                    "binding_name": "#realms_promo_visible",
-                    "binding_name_override": "#visible"
-                  }
-                ],
-                "controls": [
-                  {
-                    "settings_and_editions": {
-                      "type": "stack_panel",
-                      "size": [ "100%", "100%" ],
-                      "orientation": "horizontal",
-                      "ignored": "($trial or not $supports_launching_legacy_version)",
-                      "bindings": [
-                        {
-                          "binding_name": "#editions_visible",
-                          "binding_name_override": "#visible"
-                        }
-                      ],
-                      "controls": [
-                        {
-                          "settings_panel": {
-                            "type": "panel",
-                            "size": [ "fill", "100%" ],
-                            "controls": [
-                              { "settings_button@start.settings_button": {} }
-                            ]
-                          }
-                        },
-                        {
-                          "editions_panel": {
-                            "type": "panel",
-                            "size": [ "fill", "100%" ],
-                            "controls": [
-                              {
-                                "launch_editions_button@start.launch_editions_button": {}
-                              }
-                            ]
-                          }
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "settings_panel@start.stacked_row": {
-                      "bindings": [
-                        {
-                          "binding_name": "(not #editions_visible)",
-                          "binding_name_override": "#visible"
-                        }
-                      ],
-                      "controls": [
-                        {
-                          "settings_button@start.settings_button": {
-                            "$focus_override_right": "profile_button"
-                          }
-                        }
-                      ]
-                    }
-                  }
-                ]
-              }
-            },
-            {
               "settings@start.stacked_row": {
                 "ignored": "($trial and not $use_single_column_for_buttons)",
-                "bindings": [
-                  {
-                    "binding_name": "#not_realms_promo_visible_and_supports_launching_legacy_version",
-                    "binding_name_override": "#visible"
-                  }
-                ],
                 "controls": [
                   {
                     "settings_button@start.settings_button": {
@@ -1948,32 +1852,8 @@
               }
             },
             {
-              "realms@start.stacked_row": {
-                "ignored": "($trial or $is_preview_app)",
-                "bindings": [
-                  {
-                    "binding_name": "#realms_promo_visible",
-                    "binding_name_override": "#visible"
-                  }
-                ],
-                "controls": [
-                  {
-                    "realms_button@start.realms_button": {
-                      "$button_text": "menu.realms"
-                    }
-                  }
-                ]
-              }
-            },
-            {
               "unlock_full_game_row@start.stacked_row": {
-                "ignored": "(not $education_edition)",
-                "bindings": [
-                  {
-                    "binding_name": "#edu_demo_only_ui_visible",
-                    "binding_name_override": "#visible"
-                  }
-                ],
+                "ignored": "(not $is_edu_demo)",
                 "controls": [
                   { "unlock_full_game@start.unlock_full_game_button": {} }
                 ]
@@ -2002,7 +1882,7 @@
                 ],
                 "bindings": [
                   {
-                    "binding_name": "#editions_visible_and_not_realms_promo_visible",
+                    "binding_name": "#editions_visible",
                     "binding_name_override": "#visible"
                   }
                 ]
@@ -2149,6 +2029,31 @@
             }
           ]
         }
+      }
+    ]
+  },
+
+  "realms_pending_invite_panel": {
+    "type": "panel",
+    "layer": 1,
+    "size": [ 24, 24 ],
+    "controls": [
+      {
+        "button@start.invite_notification_button": {
+          "$pressed_button_name": "button.menu_invite_notification",
+          "$button_tts_header": "realmsInvitationScreen.shareTitle"
+        }
+      },
+      {
+        "count@start.notification_button_text_panel": {
+          "offset": [ -2.5, 2 ]
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "binding_name": "#realms_notification_visible",
+        "binding_name_override": "#visible"
       }
     ]
   },

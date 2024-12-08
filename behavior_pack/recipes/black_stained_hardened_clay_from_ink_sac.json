@@ -1,5 +1,5 @@
 {
-  "format_version": "1.20.10",
+  "format_version": "1.12",
   "minecraft:recipe_shaped": {
     "description": {
     "identifier": "minecraft:black_stained_hardened_clay_from_ink_sac"
@@ -19,16 +19,13 @@
         "item": "minecraft:hardened_clay"
       },
       "X": {
-        "item": "minecraft:ink_sac"
+        "item": "minecraft:dye",
+        "data": 0
       }
     },
-	"unlock": [
-      {
-        "item": "minecraft:hardened_clay"
-      }
-    ],
     "result": {
-      "item": "minecraft:black_terracotta",
+      "item": "minecraft:stained_hardened_clay",
+      "data": 15,
       "count": 8
     }
   }

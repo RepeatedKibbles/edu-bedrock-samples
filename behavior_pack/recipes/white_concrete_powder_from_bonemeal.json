@@ -1,5 +1,5 @@
 {
-  "format_version": "1.20.10",
+  "format_version": "1.12",
   "minecraft:recipe_shapeless": {
     "description": {
     "identifier": "minecraft:white_concrete_powder_from_bonemeal"
@@ -11,7 +11,8 @@
     "priority": 1,
     "ingredients": [
       {
-        "item": "minecraft:bone_meal"
+        "item": "minecraft:dye",
+        "data": 15
       },
       {
         "item": "minecraft:sand",
@@ -40,19 +41,11 @@
       },
       {
         "item": "minecraft:gravel"
-      }
-    ],
-	"unlock": [
-      {
-        "item": "minecraft:gravel"
-	  },
-	  {
-		"item": "minecraft:sand",
-        "data": 0
       }
     ],
     "result": {
-      "item": "minecraft:white_concrete_powder",
+      "item": "minecraft:concrete_powder",
+      "data": 0,
       "count": 8
     }
   }

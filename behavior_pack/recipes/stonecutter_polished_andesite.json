@@ -1,5 +1,5 @@
 {
-  "format_version": "1.20.10",
+  "format_version": "1.12",
   "minecraft:recipe_shapeless": {
     "description": {
     "identifier": "minecraft:stonecutter_polished_andesite"
@@ -10,16 +10,13 @@
     "priority": 3,
     "ingredients": [
       {
-        "item": "minecraft:andesite"
-      }
-    ],
-    "unlock": [
-      {
-        "item": "minecraft:andesite"
+        "item": "minecraft:stone",
+        "data": 5
       }
     ],
     "result": {
-      "item": "minecraft:polished_andesite",
+      "item": "minecraft:stone",
+      "data": 6,
       "count": 1
     }
   }

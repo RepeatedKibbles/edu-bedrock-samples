@@ -19,17 +19,9 @@
         "look_at_target": "animation.common.look_at_target"
       },
       "animation_controllers": [
-        {
-          "move": "controller.animation.snowgolem.move"
-        }
+        { "move": "controller.animation.snowgolem.move" }
       ],
-      "render_controllers": [
-        "controller.render.snowgolem"
-      ],
-      "spawn_egg": {
-        "base_color": "#d9f2f2",
-        "overlay_color": "#81a4a4"
-      }
+      "render_controllers": [ "controller.render.snowgolem" ]
     }
   }
 }

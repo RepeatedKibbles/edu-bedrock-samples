@@ -1,11 +1,11 @@
 {
-  "format_version": "1.21.0",
+  "format_version": "1.13.0",
   "minecraft:entity": {
     "description": {
       "identifier": "minecraft:zombie_horse",
-      "spawn_category": "creature",
       "is_spawnable": true,
-      "is_summonable": true
+      "is_summonable": true,
+      "is_experimental": false
     },
     "component_groups": {
       "minecraft:horse_baby": {
@@ -35,6 +35,7 @@
           "table": "loot_tables/entities/zombie_horse.json"
         },
         "minecraft:rideable": {
+          "priority": 0,
           "seat_count": 1,
           "family_types": [
             "zombie"
@@ -51,13 +52,12 @@
           "track_target": true
         },
         "minecraft:behavior.player_ride_tamed": {
+  
         }
       }
     },
 
     "components": {
-      "minecraft:is_hidden_when_invisible": {
-      },
       "minecraft:type_family": {
         "family": [ "zombiehorse", "undead", "mob" ]
       },
@@ -111,9 +111,6 @@
       },
       "minecraft:balloonable": {
       },
-      "minecraft:despawn": {
-        "despawn_from_distance": {}
-      },
       "minecraft:behavior.panic": {
         "priority": 1,
         "speed_multiplier": 1.2
@@ -135,8 +132,6 @@
       "minecraft:pushable": {
         "is_pushable": true,
         "is_pushable_by_piston": true
-      },
-      "minecraft:conditional_bandwidth_optimization": {
       }
     },
 

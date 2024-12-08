@@ -77,8 +77,20 @@
 
   "csb_background": {
     "type": "image",
-    "texture": "textures/ui/White",
-    "color": "$csb_panel_background"
+    "texture": "textures/ui/csb_background",
+    "tiled": "x",
+    "controls": [
+      {
+        "bottom_left_particles": {
+          "type": "image",
+          "size": [ "40%", "133.33%x" ],
+          "texture": "textures/ui/csb_sparkles",
+          "anchor_from": "bottom_left",
+          "anchor_to": "bottom_left",
+          "layer": 1
+        }
+      }
+    ]
   },
 
   "gradient_image_stack": {
@@ -148,6 +160,14 @@
               }
             }
           ]
+        }
+      },
+      {
+        "popup_dialog_factory": {
+          "type": "factory",
+          "control_ids": {
+            "play_on_realm": "@realms_common.popup_dialog__play_on_realm"
+          }
         }
       }
     ]
@@ -624,46 +644,6 @@
 
   "full_width_section_divider@common.section_divider": {
     "$divider_size": [ "100%", 1 ]
-  },
-
-  "tts_activate_sibling@common.button": {
-    "sound_volume": 1.0,
-    "size": [ "100%sm", "100%sm" ],
-    "$pressed_button_name": "button.focus_filler",
-    "$button_tts_name": "",
-    "focus_enabled": true,
-    "tts_inherit_siblings": true,
-    "controls": [
-      {
-        "default@csb.label_hover": {
-          "$visible_hover": false
-        }
-      },
-      {
-        "pressed@csb.label_hover": {
-          "$visible_hover": true
-        }
-      },
-      {
-        "hover@csb.label_hover": {
-          "$visible_hover": true
-        }
-      }
-    ]
-  },
-
-  "label_hover": {
-    "type": "panel",
-    "size": [ "100%", "100%" ],
-    "$visible_hover|default": true,
-    "controls": [
-      {
-        "hover@common.focus_border_white": {
-          "size": [ "100%", "100%" ],
-          "offset": [ 0, 2 ],
-          "visible": "$visible_hover"
-        }
-      }
-    ]
   }
+
 }

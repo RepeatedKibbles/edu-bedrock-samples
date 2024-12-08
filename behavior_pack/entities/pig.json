@@ -1,11 +1,11 @@
 {
-  "format_version": "1.21.0",
+  "format_version": "1.13.0",
   "minecraft:entity": {
     "description": {
       "identifier": "minecraft:pig",
-      "spawn_category": "creature",
       "is_spawnable": true,
-      "is_summonable": true
+      "is_summonable": true,
+      "is_experimental": false
     },
     "component_groups": {
       "minecraft:pig_baby": {
@@ -32,7 +32,6 @@
       "minecraft:pig_transform": {
         "minecraft:transformation": {
           "into": "minecraft:pig_zombie",
-          "transformation_sound": "mob.pig.death",
           "delay": 0.5
         }
       },
@@ -95,7 +94,7 @@
           "table": "loot_tables/entities/pig_saddled.json"
         },
         "minecraft:boostable": {
-          "speed_multiplier": 1.35,
+          "speed_multiplier": 2.0,
           "duration": 3.0,
           "boost_items": [
             {
@@ -107,7 +106,7 @@
         },
         "minecraft:rideable": {
           "seat_count": 1,
-          "interact_text": "action.interact.ride.horse",
+          "interact_text": "action.interact.mount",
           "family_types": [
             "player"
           ],
@@ -124,24 +123,12 @@
       }
     },
 
+
     "components": {
-      "minecraft:is_hidden_when_invisible": {
-      },
       "minecraft:damage_sensor": {
         "triggers": {
           "on_damage": {
-            "filters": [
-              {
-                "test": "is_family",
-                "subject": "other",
-                "value": "lightning"
-              },
-              {
-                "test": "is_difficulty",
-                "operator": "!=",
-                "value": "peaceful"
-              }
-            ],
+            "filters": { "test" :  "is_family", "subject" : "other", "value" :  "lightning"},
             "event": "become_zombie"
           },
           "deals_damage": false
@@ -194,10 +181,7 @@
         "max_distance": 10.0
       },
       "minecraft:balloonable": {
-        "mass": 0.9
-      },
-      "minecraft:despawn": {
-        "despawn_from_distance": {}
+        "mass": 0.75
       },
       "minecraft:behavior.mount_pathing": {
         "priority": 1,
@@ -239,10 +223,9 @@
       "minecraft:pushable": {
         "is_pushable": true,
         "is_pushable_by_piston": true
-      },
-      "minecraft:conditional_bandwidth_optimization": {
       }
     },
+
 
     "events": {
       "become_zombie": {
@@ -258,7 +241,14 @@
         "randomize": [
           {
             "weight": 95,
-            "trigger": "minecraft:spawn_adult"
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+                "minecraft:pig_adult",
+                "minecraft:pig_unsaddled"
+              ]
+            }
           },
           {
             "weight": 5,
@@ -273,6 +263,7 @@
           }
         ]
       },
+
       "minecraft:entity_born": {
         "remove": {
         },
@@ -282,6 +273,7 @@
           ]
         }
       },
+
       "minecraft:ageable_grow_up": {
         "remove": {
           "component_groups": [
@@ -295,6 +287,7 @@
           ]
         }
       },
+
       "minecraft:on_saddled": {
         "remove": {
           "component_groups": [
@@ -304,14 +297,6 @@
         "add": {
           "component_groups": [
             "minecraft:pig_saddled"
-          ]
-        }
-      },
-      "minecraft:spawn_adult": {
-        "add": {
-          "component_groups": [
-            "minecraft:pig_adult",
-            "minecraft:pig_unsaddled"
           ]
         }
       }

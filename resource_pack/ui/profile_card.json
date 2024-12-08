@@ -56,13 +56,17 @@
   },
 
   "player_gamer_pic": {
-    "type": "custom",
-    "renderer": "profile_image_renderer",
+    "type": "image",
     "size": [ 32, 32 ],
     "layer": 1,
     "bindings": [
       {
-        "binding_name": "#profile_image_options"
+        "binding_name": "#texture_path",
+        "binding_name_override": "#texture"
+      },
+      {
+        "binding_name": "#texture_location_type",
+        "binding_name_override": "#texture_file_system"
       }
     ],
     "controls": [
@@ -88,7 +92,7 @@
         "binding_name_override": "#texture"
       },
       {
-        "binding_name": "#platform_picture_file_system",
+        "binding_name": "#texture_location_type",
         "binding_name_override": "#texture_file_system"
       }
     ],

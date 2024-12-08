@@ -1,5 +1,5 @@
 {
-  "format_version": "1.20.10",
+  "format_version": "1.12",
   "minecraft:recipe_shapeless": {
     "description": {
     "identifier": "minecraft:stonecutter_andesite_wall"
@@ -10,16 +10,13 @@
     "priority": 2,
     "ingredients": [
       {
-        "item": "minecraft:andesite"
-      }
-    ],
-    "unlock": [
-      {
-        "item": "minecraft:andesite"
+        "item": "minecraft:stone",
+        "data": 5
       }
     ],
     "result": {
-      "item": "minecraft:andesite_wall",
+      "item": "minecraft:cobblestone_wall",
+      "data": 4,
       "count": 1
     }
   }

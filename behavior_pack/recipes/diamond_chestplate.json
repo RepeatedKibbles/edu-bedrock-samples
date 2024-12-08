@@ -1,5 +1,5 @@
 {
-  "format_version": "1.20.10",
+  "format_version": "1.12",
   "minecraft:recipe_shaped": {
     "description": {
     "identifier": "minecraft:diamond_chestplate"
@@ -17,11 +17,6 @@
         "item": "minecraft:diamond"
       }
     },
-	"unlock": [
-      {
-        "item": "minecraft:diamond"
-      }
-    ],
     "result": {
       "item": "minecraft:diamond_chestplate"
     }

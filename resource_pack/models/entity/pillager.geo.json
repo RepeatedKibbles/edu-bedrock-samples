@@ -112,12 +112,6 @@
             "uv": [ 40, 46 ]
           }
         ]
-      },
-      {
-        "name": "leftItem",
-        "pivot": [ 6.0, 15.0, 1.0 ],
-        "neverRender": true,
-        "parent": "leftArm"
       }
     ]
   }
