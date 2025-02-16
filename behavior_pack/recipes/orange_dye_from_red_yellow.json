@@ -1,5 +1,5 @@
 {
-  "format_version": "1.20.10",
+  "format_version": "1.12",
   "minecraft:recipe_shapeless": {
     "description": {
     "identifier": "minecraft:orange_dye_from_red_yellow"
@@ -14,16 +14,6 @@
         "data": 1
       },
       {
-        "item": "minecraft:dye",
-        "data": 11
-      }
-    ],
-	"unlock": [
-      {
-        "item": "minecraft:dye",
-        "data": 1
-      },
-	  {
         "item": "minecraft:dye",
         "data": 11
       }

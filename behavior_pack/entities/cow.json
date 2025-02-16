@@ -1,13 +1,12 @@
 {
-  "format_version": "1.21.0",
+  "format_version": "1.13.0",
   "minecraft:entity": {
     "description": {
       "identifier": "minecraft:cow",
-      "spawn_category": "creature",
       "is_spawnable": true,
-      "is_summonable": true
+      "is_summonable": true,
+      "is_experimental": false
     },
-
     "component_groups": {
       "minecraft:cow_baby": {
         "minecraft:is_baby": {
@@ -23,11 +22,13 @@
             "target": "self"
           }
         },
+
         "minecraft:behavior.follow_parent": {
           "priority": 6,
           "speed_multiplier": 1.1
         }
       },
+
       "minecraft:cow_adult": {
         "minecraft:experience_reward": {
           "on_bred": "Math.Random(1,7)",
@@ -74,8 +75,6 @@
     },
 
     "components": {
-      "minecraft:is_hidden_when_invisible": {
-      },
       "minecraft:type_family": {
         "family": [ "cow", "mob" ]
       },
@@ -89,6 +88,7 @@
         "avoid_damage_blocks": true
       },
       "minecraft:movement.basic": {
+
       },
       "minecraft:jump.static": {
       },
@@ -107,12 +107,7 @@
       "minecraft:hurt_on_condition": {
         "damage_conditions": [
           {
-            "filters": {
-              "test": "in_lava",
-              "subject": "self",
-              "operator": "==",
-              "value": true
-            },
+            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
             "cause": "lava",
             "damage_per_tick": 4
           }
@@ -120,9 +115,6 @@
       },
       "minecraft:movement": {
         "value": 0.25
-      },
-      "minecraft:despawn": {
-        "despawn_from_distance": {}
       },
       "minecraft:behavior.float": {
         "priority": 0
@@ -185,8 +177,6 @@
       "minecraft:pushable": {
         "is_pushable": true,
         "is_pushable_by_piston": true
-      },
-      "minecraft:conditional_bandwidth_optimization": {
       }
     },
 
@@ -195,7 +185,11 @@
         "randomize": [
           {
             "weight": 95,
-            "trigger": "minecraft:spawn_adult"
+            "add": {
+              "component_groups": [
+                "minecraft:cow_adult"
+              ]
+            }
           },
           {
             "weight": 5,
@@ -232,14 +226,6 @@
             "minecraft:cow_baby"
           ]
         },
-        "add": {
-          "component_groups": [
-            "minecraft:cow_adult"
-          ]
-        }
-      },
-
-      "minecraft:spawn_adult": {
         "add": {
           "component_groups": [
             "minecraft:cow_adult"

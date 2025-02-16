@@ -1,5 +1,5 @@
 {
-  "format_version": "1.20.10",
+  "format_version": "1.12",
   "minecraft:recipe_shaped": {
     "description": {
     "identifier": "minecraft:polished_andesite_stairs"
@@ -14,14 +14,10 @@
     ],
     "key": {
       "#": {
-        "item": "minecraft:polished_andesite"
+        "item": "minecraft:stone",
+        "data": 6
       }
     },
-    "unlock": [
-      {
-        "item": "minecraft:polished_andesite"
-      }
-    ],
     "result": {
       "item": "minecraft:polished_andesite_stairs",
       "count": 4

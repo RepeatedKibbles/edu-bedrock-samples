@@ -152,8 +152,8 @@
         }
       },
       {
-        "edu_cloud_button@world_section.edu_cloud_button": {
-          "ignored": "(not $education_edition or not $edu_save_to_cloud_on or not $edu_save_to_cloud_general_toggle_on or $is_multiplayer_client)",
+        "cloud_button@world_section.cloud_button": {
+          "visible": "($education_edition and $edu_save_to_cloud_on and $edu_save_to_cloud_general_toggle_on)",
           "$toggle_group_forced_index": "$edu_cloud_level_forced_index"
         }
       },
@@ -202,14 +202,17 @@
           "$button_text": "menu.playOnRealms",
           "$pressed_button_name": "play_world_on_realm_button",
           "$focus_override_up": "FOCUS_OVERRIDE_STOP",
-          "$default_button_texture": "textures/ui/realmsContent",
-          "$hover_button_texture": "textures/ui/realmsContentHover",
-          "$pressed_button_texture": "textures/ui/realmsContentPressed",
           "variables": [
             {
               "requires": "(not $is_world_edit)",
               "$button_text": "createWorldScreen.createOnRealms",
               "$pressed_button_name": "create_world_on_realm_button"
+            },
+            {
+              "requires": "$realms_plus_on",
+              "$default_button_texture": "textures/ui/realmsContent",
+              "$hover_button_texture": "textures/ui/realmsContentHover",
+              "$pressed_button_texture": "textures/ui/realmsContentPressed"
             }
           ],
           "bindings": [
@@ -735,7 +738,13 @@
           "$option_binding_name": "#is_hardcore",
           "$option_enabled_binding_name": "#is_hardcore_enabled",
           "$toggle_name": "is_hardcore",
-          "$focus_override_right": "FOCUS_OVERRIDE_STOP"
+          "$focus_override_right": "FOCUS_OVERRIDE_STOP",
+          "bindings": [
+            {
+              "binding_name": "#hardcore_toggle_visible",
+              "binding_name_override": "#visible"
+            }
+          ]
         }
       },
       {
@@ -995,35 +1004,6 @@
           "$toggle_name": "tile_drops",
           "$focus_override_right": "FOCUS_OVERRIDE_STOP",
           "$toggle_binding_condition": "always_when_visible"
-        }
-      },
-      {
-        "player_sleep_toggle@settings_common.option_toggle": {
-          "$tts_section_header": "createWorldScreen.worldSettings",
-          "$option_label": "createWorldScreen.playerSleep",
-          "$option_binding_name": "#player_sleep",
-          "$option_enabled_binding_name": "#player_sleep_enabled",
-          "$toggle_name": "player_sleep",
-          "$focus_override_right": "FOCUS_OVERRIDE_STOP",
-          "$toggle_binding_condition": "always_when_visible"
-        }
-      },
-      {
-        "player_sleep_percentage_slider@settings_common.option_slider": {
-          "$tts_section_header": "createWorldScreen.worldPreferences",
-          "$option_label": "#player_sleep_percentage_slider_label",
-          "$slider_name": "player_sleep_percentage",
-          "$has_option_description": true,
-          "$option_description": "createWorldScreen.playerSleepPercentageDescription",
-          "$slider_value_binding_name": "#player_sleep_percentage",
-          "$option_enabled_binding_name": "#player_sleep_percentage_enabled",
-          "$slider_tts_text_value": "#player_sleep_percentage_text_value",
-          "$slider_steps_binding_name": "#player_sleep_percentage_steps",
-          "$label_bindings": [
-            {
-              "binding_name": "$option_label"
-            }
-          ]
         }
       },
       {
@@ -1508,7 +1488,6 @@
     "$no_realms_packs_visibility_binding": "#no_realms_packs_visibility_level",
     "$no_unowned_packs_visibility_binding": "#no_unowned_packs_visibility_level",
     "$view_more_unowned_content_button_visibility_binding": "#suggested_content_visible_level",
-    "$addon_stacking_warning_visibility_binding": "#addon_stacking_warning_visible_level",
     "$force_pack_download_binding_type": "global",
     "bindings": [
       {
@@ -1603,7 +1582,6 @@
     "$no_realms_packs_visibility_binding": "#no_realms_packs_visibility_addon",
     "$no_unowned_packs_visibility_binding": "#no_unowned_packs_visibility_addon",
     "$view_more_unowned_content_button_visibility_binding": "#suggested_content_visible_addon",
-    "$addon_stacking_warning_visibility_binding": "#addon_stacking_warning_visible_addon",
     "bindings": [
       {
         "binding_type": "view",
@@ -1738,6 +1716,7 @@
       },
       {
         "player_spectator_mode_toggle@settings_common.radio_with_label": {
+          "ignored": "($is_publish and $education_edition)",
           "$toggle_state_binding_name": "#player_game_mode_radio_spectator",
           "$radio_label_text": "createWorldScreen.gameMode.spectator"
         }
@@ -2048,7 +2027,7 @@
     }
   },
 
-  "edu_cloud_button@settings_common.section_toggle_base": {
+  "cloud_button@settings_common.section_toggle_base": {
     "$toggle_view_binding_name": "cloud_button_toggle",
     "$glyph_texture": "textures/ui/onedrive_pixel_logo_stroke",
     "$glyph_color_texture": "textures/ui/onedrive_pixel_logo",
@@ -2059,7 +2038,7 @@
     }
   },
 
-  "edu_cloud_section": {
+  "cloud_section": {
     "type": "stack_panel",
     "size": [ "100%", "100%c" ],
     "anchor_from": "top_left",
@@ -2104,8 +2083,8 @@
       {
         "cloud_upload_toggle@settings_common.option_toggle": {
           "$option_label": "options.cloudToggleCloudSave",
-          "$option_binding_name": "#edu_cloud_upload",
-          "$option_enabled_binding_name": "#edu_cloud_upload_enabled",
+          "$option_binding_name": "#cloud_upload",
+          "$option_enabled_binding_name": "#cloud_upload_enabled",
           "$toggle_name": "cloud_upload"
         }
       },

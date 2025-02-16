@@ -17,9 +17,13 @@
                 "min": 1,
                 "max": 8
               }
+            },
+            {
+              "function": "set_data",
+              "data": 0
             }
           ],
-          "name": "minecraft:white_wool"
+          "name": "minecraft:wool"
         },
         {
           "type": "item",
@@ -31,9 +35,13 @@
                 "min": 1,
                 "max": 3
               }
+            },
+            {
+              "function": "set_data",
+              "data": 15
             }
           ],
-          "name": "minecraft:black_wool"
+          "name": "minecraft:wool"
         },
         {
           "type": "item",
@@ -45,9 +53,13 @@
                 "min": 1,
                 "max": 3
               }
+            },
+            {
+              "function": "set_data",
+              "data": 7
             }
           ],
-          "name": "minecraft:gray_wool"
+          "name": "minecraft:wool"
         },
         {
           "type": "item",
@@ -59,9 +71,13 @@
                 "min": 1,
                 "max": 3
               }
+            },
+            {
+              "function": "set_data",
+              "data": 12
             }
           ],
-          "name": "minecraft:brown_wool"
+          "name": "minecraft:wool"
         },
         {
           "type": "item",
@@ -73,9 +89,13 @@
                 "min": 1,
                 "max": 3
               }
+            },
+            {
+              "function": "set_data",
+              "data": 8
             }
           ],
-          "name": "minecraft:light_gray_wool"
+          "name": "minecraft:wool"
         },
         {
           "type": "item",

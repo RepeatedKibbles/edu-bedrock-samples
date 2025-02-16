@@ -1,5 +1,5 @@
 {
-  "format_version": "1.20.10",
+  "format_version": "1.12",
   "minecraft:recipe_shaped": {
     "description": {
     "identifier": "minecraft:string_to_wool"
@@ -16,13 +16,9 @@
         "item": "minecraft:string"
       }
     },
-	"unlock": [
-      {
-        "item": "minecraft:string"
-      }
-    ],
     "result": {
-      "item": "minecraft:white_wool"
+      "item": "minecraft:wool",
+      "data": 0
     }
   }
 }

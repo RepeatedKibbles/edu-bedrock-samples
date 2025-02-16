@@ -1,5 +1,5 @@
 {
-  "format_version": "1.20.10",
+  "format_version": "1.12",
   "minecraft:recipe_shaped": {
     "description": {
     "identifier": "minecraft:end_brick_stairs"
@@ -17,11 +17,6 @@
         "item": "minecraft:end_bricks"
       }
     },
-	"unlock": [
-      {
-        "item": "minecraft:end_bricks"
-      }
-    ],
     "result": {
       "item": "minecraft:end_brick_stairs",
       "count": 4

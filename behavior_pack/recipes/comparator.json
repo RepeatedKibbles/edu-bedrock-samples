@@ -1,5 +1,5 @@
 {
-  "format_version": "1.20.10",
+  "format_version": "1.12",
   "minecraft:recipe_shaped": {
     "description": {
     "identifier": "minecraft:comparator"
@@ -24,11 +24,6 @@
         "data": 0
       }
     },
-    "unlock": [
-      {
-        "item": "minecraft:quartz"
-      }
-    ],
     "result": {
       "item": "minecraft:comparator"
     }

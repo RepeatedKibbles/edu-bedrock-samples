@@ -1,9 +1,11 @@
 {
-  "format_version": "1.20.10",
+  "format_version": "1.12",
   "minecraft:recipe_shaped": {
     "description": {
     "identifier": "minecraft:smoker"
     },
+
+    
     "tags": [ "crafting_table" ],
     "pattern": [
       " # ",
@@ -15,17 +17,11 @@
         "item": "minecraft:furnace"
       },
       "#": {
-        "tag": "minecraft:logs"
+        "item": "minecraft:log"
       }
     },
-    "unlock": [
-      {
-        "item": "minecraft:furnace"
-      }
-    ],
     "result": {
       "item": "minecraft:smoker"
-    },
-    "priority": -1
+    }
   }
 }

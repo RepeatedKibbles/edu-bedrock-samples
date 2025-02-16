@@ -1,17 +1,13 @@
 {
-  "format_version": "1.20.10",
+  "format_version": "1.12",
   "minecraft:recipe_furnace": {
     "description": {
     "identifier": "minecraft:furnace_stained_hardened_clay6"
     },
 
-    "unlock": [
-      {
-        "item": "minecraft:pink_terracotta"
-      }
-    ],
+    
     "tags": ["furnace"],
-    "input": "minecraft:pink_terracotta",
+    "input": "minecraft:stained_hardened_clay:6",
     "output": "minecraft:pink_glazed_terracotta"
   }
   

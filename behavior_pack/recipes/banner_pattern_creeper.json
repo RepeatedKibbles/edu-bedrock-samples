@@ -1,5 +1,5 @@
 {
-  "format_version": "1.20.10",
+  "format_version": "1.12",
   "minecraft:recipe_shapeless": {
     "description": {
     "identifier": "minecraft:banner_pattern_creeper"
@@ -15,12 +15,6 @@
       {
         "item": "minecraft:skull",
         "data": 4
-      }
-    ],
-	"unlock": [
-      {
-         "item": "minecraft:skull",
-         "data": 4
       }
     ],
     "result": {

@@ -1,5 +1,5 @@
 {
-  "format_version": "1.20.10",
+  "format_version": "1.12",
   "minecraft:recipe_shaped": {
     "description": {
     "identifier": "minecraft:red_carpet_from_white"
@@ -15,22 +15,17 @@
     ],
     "key": {
       "#": {
-        "item": "minecraft:white_carpet"
+        "item": "minecraft:carpet",
+        "data": 0
       },
       "X": {
-        "item": "minecraft:red_dye"
+        "item": "minecraft:dye",
+        "data": 1
       }
     },
-	"unlock": [
-      {
-        "item": "minecraft:white_carpet"
-	  },
-	  {
-		"item": "minecraft:red_dye"
-      }
-    ],
     "result": {
-      "item": "minecraft:red_carpet",
+      "item": "minecraft:carpet",
+      "data": 14,
       "count": 8
     }
   }

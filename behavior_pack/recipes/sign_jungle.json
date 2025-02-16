@@ -1,5 +1,5 @@
 {
-  "format_version": "1.20.10",
+  "format_version": "1.12",
   "minecraft:recipe_shaped": {
     "description": {
     "identifier": "minecraft:sign_jungle"
@@ -15,17 +15,13 @@
     ],
     "key": {
       "#": {
-        "item": "minecraft:jungle_planks"
+        "item": "minecraft:planks",
+  	  "data": 3
       },
       "|": {
         "item": "minecraft:stick"
       }
     },
-    "unlock": [
-      {
-        "item": "minecraft:jungle_planks"
-      }
-    ],
     "result": {
       "item": "minecraft:jungle_sign",
       "count": 3

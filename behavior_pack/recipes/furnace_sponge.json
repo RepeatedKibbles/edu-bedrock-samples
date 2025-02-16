@@ -1,18 +1,14 @@
 {
-  "format_version": "1.20.10",
+  "format_version": "1.12",
   "minecraft:recipe_furnace": {
     "description": {
     "identifier": "minecraft:furnace_sponge"
     },
 
-    "unlock": [
-      {
-        "item": "minecraft:sponge"
-      }
-    ],
+    
     "tags": ["furnace"],
-    "input": "minecraft:wet_sponge",
-    "output": "minecraft:sponge"
+    "input": "minecraft:sponge:1",
+    "output": "minecraft:sponge:0"
   }
   
 }

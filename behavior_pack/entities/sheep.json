@@ -1,11 +1,11 @@
 {
-  "format_version": "1.21.0",
+  "format_version": "1.13.0",
   "minecraft:entity": {
     "description": {
       "identifier": "minecraft:sheep",
-      "spawn_category": "creature",
       "is_spawnable": true,
-      "is_summonable": true
+      "is_summonable": true,
+      "is_experimental": false
     },
     "component_groups": {
       "minecraft:loot_sheared": {
@@ -71,7 +71,6 @@
         },
         "minecraft:breedable": {
           "require_tame": false,
-          "combine_parent_colors": true,
           "breeds_with": {
             "mate_type": "minecraft:sheep",
             "baby_type": "minecraft:sheep"
@@ -127,8 +126,6 @@
 
 
     "components": {
-      "minecraft:is_hidden_when_invisible": {
-      },
       "minecraft:type_family": {
         "family": [ "sheep", "mob" ]
       },
@@ -149,12 +146,7 @@
       "minecraft:hurt_on_condition": {
         "damage_conditions": [
           {
-            "filters": {
-              "test": "in_lava",
-              "subject": "self",
-              "operator": "==",
-              "value": true
-            },
+            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
             "cause": "lava",
             "damage_per_tick": 4
           }
@@ -168,7 +160,7 @@
         "avoid_water": true
       },
       "minecraft:movement.basic": {
-
+        
       },
       "minecraft:jump.static": {
       },
@@ -183,14 +175,13 @@
             "spawn_items": { "table": "loot_tables/entities/sheep_shear.json" },
             "play_sounds": "shear",
             "interact_text": "action.interact.shear",
-            "vibration": "shear",
             "on_interact": {
               "filters": {
                 "all_of": [
-                  { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "shears" },
-                  { "test": "is_family", "subject": "other", "value": "player" },
-                  { "test": "has_component", "operator": "!=", "value": "minecraft:is_baby" },
-                  { "test": "has_component", "value": "minecraft:is_dyeable" }
+                  { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "shears"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "player"},
+                  { "test" :  "has_component", "operator": "!=", "value" :  "minecraft:is_baby"},
+                  { "test" :  "has_component", "value" :  "minecraft:is_dyeable"}
                 ]
               },
               "event": "minecraft:on_sheared",
@@ -206,9 +197,6 @@
       },
       "minecraft:balloonable": {
         "mass": 0.75
-      },
-      "minecraft:despawn": {
-        "despawn_from_distance": {}
       },
       "minecraft:behavior.float": {
         "priority": 0
@@ -236,18 +224,6 @@
       },
       "minecraft:behavior.eat_block": {
         "priority": 6,
-        "success_chance": "query.is_baby ? 0.02 : 0.001",
-        "time_until_eat": 1.8,
-        "eat_and_replace_block_pairs": [
-          {
-            "eat_block": "grass",
-            "replace_block": "dirt"
-          },
-          {
-            "eat_block": "tallgrass",
-            "replace_block": "air"
-          }
-        ],
         "on_eat": {
           "event": "minecraft:on_eat_block",
           "target": "self"
@@ -270,8 +246,6 @@
       "minecraft:pushable": {
         "is_pushable": true,
         "is_pushable_by_piston": true
-      },
-      "minecraft:conditional_bandwidth_optimization": {
       }
     },
     "events": {
@@ -283,13 +257,27 @@
                 "weight": 95,
                 "remove": {
                 },
-                "trigger": "spawn_adult"
+                "add": {
+                  "component_groups": [
+                    "minecraft:sheep_adult",
+                    "minecraft:sheep_dyeable",
+                    "minecraft:rideable_wooly",
+                    "minecraft:loot_wooly"
+                  ]
+                }
               },
               {
                 "weight": 5,
                 "remove": {
                 },
-                "trigger": "spawn_baby"
+                "add": {
+                  "component_groups": [
+                    "minecraft:sheep_baby",
+                    "minecraft:sheep_dyeable",
+                    "minecraft:rideable_sheared"
+                  ]
+
+                }
               }
             ]
           },
@@ -347,25 +335,7 @@
           }
         ]
       },
-      "spawn_adult": {
-        "add": {
-          "component_groups": [
-            "minecraft:sheep_adult",
-            "minecraft:sheep_dyeable",
-            "minecraft:rideable_wooly",
-            "minecraft:loot_wooly"
-          ]
-        }
-      },
-      "spawn_baby": {
-        "add": {
-          "component_groups": [
-            "minecraft:sheep_baby",
-            "minecraft:sheep_dyeable",
-            "minecraft:rideable_sheared"
-          ]
-        }
-      },
+
       "minecraft:entity_born": {
         "remove": {
         },
@@ -408,7 +378,7 @@
         }
       },
       "minecraft:on_eat_block": {
-        "sequence": [
+        "sequence":[
           {
             "remove": {
               "component_groups": [
@@ -422,10 +392,7 @@
             }
           },
           {
-            "filters": {
-              "subject": "self",
-              "test": "has_component", "operator": "!=", "value": "minecraft:is_baby"
-            },
+            "filters": { "test" :  "has_component","subject" : "other", "operator": "!=", "value" :  "minecraft:is_baby"},
             "add": {
               "component_groups": [
                 "minecraft:rideable_wooly",

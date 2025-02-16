@@ -18,13 +18,17 @@
   },
 
   "profile_pic": {
-    "type": "custom",
-    "renderer": "profile_image_renderer",
+    "type": "image",
     "size": [ 64, 64 ],
     "layer": 2,
     "bindings": [
       {
-        "binding_name": "#profile_image_options"
+        "binding_name": "#texture_name",
+        "binding_name_override": "#texture"
+      },
+      {
+        "binding_name": "#texture_location_type",
+        "binding_name_override": "#texture_file_system"
       }
     ]
   },

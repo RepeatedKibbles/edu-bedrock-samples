@@ -78,9 +78,9 @@
           "size": [ "100%", "100%c" ],
           "controls": [
             {
-              "label_with_gradient_wrapper@common.tts_label_focus_wrapper": {
+              "label_with_gradient@realmsPlus.gradient_content_panel": {
                 "size": [ "100% - 6px", 15 ],
-                "$tts_label_panel": "realmsPlus_landing.label_with_gradient"
+                "$gradient_content": "realmsPlus_landing.free_trial_text"
               }
             }
           ],
@@ -140,10 +140,6 @@
         }
       }
     ]
-  },
-
-  "label_with_gradient@realmsPlus.gradient_content_panel": {
-    "$gradient_content": "realmsPlus_landing.free_trial_text"
   },
 
   "free_trial_text": {
@@ -243,9 +239,7 @@
               "horizontal_small_spacer@realmsPlus_landing.horizontal_small_spacer": {}
             },
             {
-              "info_section_text_1_wrapper@common.tts_label_focus_wrapper": {
-                "$tts_label_panel": "realmsPlus_landing.info_section_text_1"
-              }
+              "info_section_text_1@realmsPlus_landing.info_section_text_1": {}
             }
           ]
         }
@@ -277,9 +271,7 @@
               "horizontal_small_spacer@realmsPlus_landing.horizontal_small_spacer": {}
             },
             {
-              "info_section_text_recently_added_wrapper@common.tts_label_focus_wrapper": {
-                "$tts_label_panel": "realmsPlus_landing.info_section_text_recently_added"
-              }
+              "info_section_text_recently_added@realmsPlus_landing.info_section_text_recently_added": {}
             }
           ]
         }
@@ -311,9 +303,7 @@
               "horizontal_small_spacer@realmsPlus_landing.horizontal_small_spacer": {}
             },
             {
-              "info_section_text_2_wrapper@common.tts_label_focus_wrapper": {
-                "$tts_label_panel": "realmsPlus_landing.info_section_text_2"
-              }
+              "info_section_text_2@realmsPlus_landing.info_section_text_2": {}
             }
           ]
         }
@@ -334,9 +324,7 @@
               }
             },
             {
-              "info_section_text_3_wrapper@common.tts_label_focus_wrapper": {
-                "$tts_label_panel": "realmsPlus_landing.info_section_text_3"
-              }
+              "info_section_text_3@realmsPlus_landing.info_section_text_3": {}
             }
           ]
         }
@@ -398,6 +386,12 @@
                 "$info_text_line": "store.realmsPlus.landing.info2.contentSub"
               }
             }
+          ],
+          "bindings": [
+            {
+              "binding_name": "#realms_contentSub_enabled",
+              "binding_name_override": "#visible"
+            }
           ]
         }
       },
@@ -410,11 +404,24 @@
         }
       },
       {
-        "vertical_small_spacer_2@realmsPlus_landing.vertical_small_spacer": {}
+        "vertical_small_spacer_2@realmsPlus_landing.vertical_small_spacer": {
+          "bindings": [
+            {
+              "binding_name": "#realms_stories_enabled",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
       },
       {
         "info_text_bullet_2@realmsPlus_landing.info_text_bullet": {
-          "$info_text_line": "store.realmsPlus.landing.info2.social"
+          "$info_text_line": "store.realmsPlus.landing.info2.social",
+          "bindings": [
+            {
+              "binding_name": "#realms_stories_enabled",
+              "binding_name_override": "#visible"
+            }
+          ]
         }
       }
     ]
@@ -422,6 +429,26 @@
 
   "info_section_text_2@realmsPlus_landing.info_section_text": {
     "controls": [
+      {
+        "info_text_bullet_notContentSub@realmsPlus_landing.info_section_text": {
+          "controls": [
+            {
+              "info_text_bullet_1@realmsPlus_landing.info_text_bullet": {
+                "$info_text_line": "store.realmsPlus.landing.info2.catalog"
+              }
+            },
+            {
+              "vertical_small_spacer@realmsPlus_landing.vertical_small_spacer": {}
+            }
+          ],
+          "bindings": [
+            {
+              "binding_name": "(not #realms_contentSub_enabled)",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
       {
         "info_text_bullet_2@realmsPlus_landing.info_text_bullet": {
           "$info_text_line": "store.realmsPlus.landing.info2.backups"

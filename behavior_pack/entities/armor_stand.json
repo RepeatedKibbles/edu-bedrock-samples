@@ -1,5 +1,5 @@
 {
-  "format_version": "1.16.210",
+  "format_version": "1.13.0",
   "minecraft:entity": {
     "description": {
       "identifier": "minecraft:armor_stand",
@@ -28,9 +28,6 @@
           }
         ]
       },
-      "minecraft:knockback_resistance": {
-        "value": 1.0
-      },
       "minecraft:loot": {
         "table": "loot_tables/entities/armor_stand.json"
       },
@@ -43,8 +40,6 @@
       "minecraft:pushable": {
         "is_pushable": false,
         "is_pushable_by_piston": true
-      },
-      "minecraft:conditional_bandwidth_optimization": {
       }
     },
 

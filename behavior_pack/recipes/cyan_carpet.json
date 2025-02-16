@@ -1,5 +1,5 @@
 {
-  "format_version": "1.20.10",
+  "format_version": "1.12",
   "minecraft:recipe_shaped": {
     "description": {
     "identifier": "minecraft:cyan_carpet"
@@ -13,16 +13,13 @@
     ],
     "key": {
       "#": {
-        "item": "minecraft:cyan_wool"
+        "item": "minecraft:wool",
+        "data": 9
       }
     },
-	"unlock": [
-      {
-        "item": "minecraft:cyan_wool"
-      }
-    ],
     "result": {
-      "item": "minecraft:cyan_carpet",
+      "item": "minecraft:carpet",
+      "data": 9,
       "count": 3
     }
   }

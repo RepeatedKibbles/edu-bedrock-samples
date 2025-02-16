@@ -477,7 +477,14 @@
           "inherit_max_sibling_height": true,
           "controls": [
             {
-              "arrow_icon@stonecutter.arrow_icon": {}
+              "arrow_icon@stonecutter.arrow_icon": {
+                "bindings": [
+                  {
+                    "binding_name": "#has_input_item",
+                    "binding_name_override": "#visible"
+                  }
+                ]
+              }
             }
           ]
         }
@@ -577,6 +584,12 @@
                     "close_button_panel": {
                       "type": "panel",
                       "size": [ "100%c", "100%" ],
+                      "bindings": [
+                        {
+                          "binding_name": "#close_button_visible",
+                          "binding_name_override": "#visible"
+                        }
+                      ],
                       "controls": [
                         {
                           "close_button@common.light_close_button": {
@@ -594,12 +607,6 @@
                       "type": "panel",
                       "size": [ 6, 0 ]
                     }
-                  }
-                ],
-                "bindings": [
-                  {
-                    "binding_name": "#close_button_visible",
-                    "binding_name_override": "#visible"
                   }
                 ]
               }
@@ -665,7 +672,7 @@
       { "item_lock_notification_factory@common.item_lock_notification_factory": {} },
       { "inventory_selected_icon_button@common.inventory_selected_icon_button": {} },
       { "inventory_take_progress_icon_button@common.inventory_take_progress_icon_button": {} },
-      { "flying_item_renderer@common.flying_item_renderer": { "layer": 15 } }
+      { "flying_item_renderer@common.flying_item_renderer": {} }
     ]
   },
 
