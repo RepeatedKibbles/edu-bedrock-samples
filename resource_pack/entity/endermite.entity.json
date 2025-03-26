@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 {
   "format_version": "1.8.0",
   "minecraft:client_entity": {
@@ -25,36 +24,3 @@
     }
   }
 }
-=======
-{
-  "format_version": "1.8.0",
-  "minecraft:client_entity": {
-    "description": {
-      "identifier": "minecraft:endermite",
-      "materials": {
-        "default": "endermite"
-      },
-      "textures": {
-        "default": "textures/entity/endermite"
-      },
-      "geometry": {
-        "default": "geometry.endermite"
-      },
-      "animations": {
-        "move": "animation.endermite.move"
-      },
-      "animation_controllers": [
-        {
-          "move": "controller.animation.endermite.move"
-        }
-      ],
-      "render_controllers": [
-        "controller.render.endermite"
-      ],
-      "spawn_egg": {
-        "texture": "spawn_egg_endermite"
-      }
-    }
-  }
-}
->>>>>>> 8cb28e3b1e7972ac8126cee3f19201109faecf50
