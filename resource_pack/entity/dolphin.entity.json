@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "format_version": "1.8.0",
   "minecraft:client_entity": {
@@ -23,4 +24,36 @@
       }
     }
   }
+=======
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "minecraft:dolphin",
+      "materials": {
+        "default": "dolphin"
+      },
+      "textures": {
+        "default": "textures/entity/dolphin"
+      },
+      "geometry": {
+        "default": "geometry.dolphin"
+      },
+      "animations": {
+        "move": "animation.dolphin.move"
+      },
+      "animation_controllers": [
+        {
+          "general": "controller.animation.dolphin.general"
+        }
+      ],
+      "render_controllers": [
+        "controller.render.dolphin"
+      ],
+      "spawn_egg": {
+        "texture": "spawn_egg_dolphin"
+      }
+    }
+  }
+>>>>>>> 8cb28e3b1e7972ac8126cee3f19201109faecf50
 }
