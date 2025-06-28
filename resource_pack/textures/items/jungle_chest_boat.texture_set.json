@@ -1,7 +1,0 @@
-{
-    "format_version": "1.21.30",
-    "minecraft:texture_set": {
-        "color": "jungle_chest_boat",
-        "metalness_emissive_roughness_subsurface": "jungle_chest_boat_mers"
-    }
-}
