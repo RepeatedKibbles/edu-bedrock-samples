@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
 	"format_version" : "1.10.0",
 	"animation_controllers" : {
@@ -19,3 +20,18 @@
 		}
 	}
 }
+=======
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.ghast.move" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ "move" ]
+				}
+			}
+		}
+	}
+}
+>>>>>>> d2c831e6028b60bb6bf19bc45de10b77df6eb8f0

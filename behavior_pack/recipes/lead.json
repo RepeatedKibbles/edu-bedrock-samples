@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "format_version": "1.12",
   "minecraft:recipe_shaped": {
@@ -26,3 +27,33 @@
     }
   }
 }
+=======
+{
+  "format_version": "1.21.90",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "minecraft:lead"
+    },
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "~~ ",
+      "~~ ",
+      "  ~"
+    ],
+    "key": {
+      "~": {
+        "item": "minecraft:string"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:string"
+      }
+    ],
+    "result": {
+      "item": "minecraft:lead",
+      "count": 2
+    }
+  }
+}
+>>>>>>> d2c831e6028b60bb6bf19bc45de10b77df6eb8f0
