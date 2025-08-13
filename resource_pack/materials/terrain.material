@@ -91,11 +91,11 @@
         "DisableCulling"
       ]
     },
-    
-    "terrain_doubleside:terrain_base": { },
+
+    "terrain_doubleside:terrain_base": {},
     "terrain_alpha_single_side:terrain_base": {
       "+defines": [ "ALPHA_TEST" ],
-      "+states": [ "EnableAlphaToCoverage" ]
+      "+states": [ "DisableCulling", "EnableAlphaToCoverage" ]
     },
     "terrain_alpha_seasons:terrain_base": {
       "+defines": [ "ALPHA_TEST", "SEASONS" ],
@@ -117,8 +117,6 @@
 
     },
     "terrain_alpha:terrain_alpha_single_side": {
-      "+states": [ "DisableCulling" ],
-
       // z-fighting fix
       "depthBias": 0.0,
       "slopeScaledDepthBias": 0.1,
@@ -126,6 +124,12 @@
       "slopeScaledDepthBiasOGL": 0.5
     },
     "terrain_far:terrain_base": {
+      "+defines": [
+        "FOG",
+        "LOW_PRECISION"
+      ]
+    },
+    "terrain_far_alpha_single_side:terrain_base": {
       "+defines": [
         "FOG",
         "LOW_PRECISION"

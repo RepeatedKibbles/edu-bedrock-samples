@@ -28,9 +28,6 @@
             "path": "splashes.json"
         },
         {
-            "path": "test_make_tables.py"
-        },
-        {
             "path": "animations/actor.animation.json"
         },
         {
@@ -433,10 +430,40 @@
             "path": "animation_controllers/zombie.animation_controllers.json"
         },
         {
+            "path": "biomes/mesa.client_biome.json"
+        },
+        {
+            "path": "biomes/mesa_bryce.client_biome.json"
+        },
+        {
+            "path": "biomes/mesa_plateau_mutated.client_biome.json"
+        },
+        {
+            "path": "biomes/mesa_plateau_stone.client_biome.json"
+        },
+        {
+            "path": "biomes/mesa_plateau_stone_mutated.client_biome.json"
+        },
+        {
+            "path": "biomes/swampland.client_biome.json"
+        },
+        {
+            "path": "biomes/swampland_mutated.client_biome.json"
+        },
+        {
+            "path": "biomes/the_end.client_biome.json"
+        },
+        {
             "path": "cameras/death.json"
         },
         {
             "path": "cameras/first_person.json"
+        },
+        {
+            "path": "cameras/fixed_boom.json"
+        },
+        {
+            "path": "cameras/follow_orbit.json"
         },
         {
             "path": "cameras/free.json"
@@ -3151,6 +3178,9 @@
             "path": "particles/silverfish_grief.json"
         },
         {
+            "path": "particles/sneeze.json"
+        },
+        {
             "path": "particles/sparkler.json"
         },
         {
@@ -3206,6 +3236,9 @@
         },
         {
             "path": "particles/water_wake.json"
+        },
+        {
+            "path": "particles/witchspell.json"
         },
         {
             "path": "particles/wither_boss_invulnerable.json"
@@ -3580,6 +3613,30 @@
             "path": "sounds/ambient/underwater/exit3.fsb"
         },
         {
+            "path": "sounds/ambient/weather/end_flash1.fsb"
+        },
+        {
+            "path": "sounds/ambient/weather/end_flash2.fsb"
+        },
+        {
+            "path": "sounds/ambient/weather/end_flash3.fsb"
+        },
+        {
+            "path": "sounds/ambient/weather/end_flash4.fsb"
+        },
+        {
+            "path": "sounds/ambient/weather/end_flash5.fsb"
+        },
+        {
+            "path": "sounds/ambient/weather/end_flash6.fsb"
+        },
+        {
+            "path": "sounds/ambient/weather/end_flash7.fsb"
+        },
+        {
+            "path": "sounds/ambient/weather/end_flash8.fsb"
+        },
+        {
             "path": "sounds/ambient/weather/rain1.fsb"
         },
         {
@@ -3770,6 +3827,9 @@
         },
         {
             "path": "sounds/armor/unequip_wolf2.fsb"
+        },
+        {
+            "path": "sounds/armor/unsaddle.fsb"
         },
         {
             "path": "sounds/block/amethyst/break1.fsb"
@@ -4232,6 +4292,33 @@
         },
         {
             "path": "sounds/block/brewing_stand/brew2.fsb"
+        },
+        {
+            "path": "sounds/block/cactus_flower/break1.fsb"
+        },
+        {
+            "path": "sounds/block/cactus_flower/break2.fsb"
+        },
+        {
+            "path": "sounds/block/cactus_flower/break3.fsb"
+        },
+        {
+            "path": "sounds/block/cactus_flower/break4.fsb"
+        },
+        {
+            "path": "sounds/block/cactus_flower/break5.fsb"
+        },
+        {
+            "path": "sounds/block/cactus_flower/place1.fsb"
+        },
+        {
+            "path": "sounds/block/cactus_flower/place2.fsb"
+        },
+        {
+            "path": "sounds/block/cactus_flower/place3.fsb"
+        },
+        {
+            "path": "sounds/block/cactus_flower/place4.fsb"
         },
         {
             "path": "sounds/block/cake/add_candle1.fsb"
@@ -4804,6 +4891,126 @@
             "path": "sounds/block/crafter/fail.fsb"
         },
         {
+            "path": "sounds/block/creaking_heart/ambient1.fsb"
+        },
+        {
+            "path": "sounds/block/creaking_heart/ambient2.fsb"
+        },
+        {
+            "path": "sounds/block/creaking_heart/ambient3.fsb"
+        },
+        {
+            "path": "sounds/block/creaking_heart/ambient4.fsb"
+        },
+        {
+            "path": "sounds/block/creaking_heart/break.fsb"
+        },
+        {
+            "path": "sounds/block/creaking_heart/fall.fsb"
+        },
+        {
+            "path": "sounds/block/creaking_heart/hit1.fsb"
+        },
+        {
+            "path": "sounds/block/creaking_heart/hit2.fsb"
+        },
+        {
+            "path": "sounds/block/creaking_heart/hit3.fsb"
+        },
+        {
+            "path": "sounds/block/creaking_heart/hit4.fsb"
+        },
+        {
+            "path": "sounds/block/creaking_heart/hit5.fsb"
+        },
+        {
+            "path": "sounds/block/creaking_heart/place1.fsb"
+        },
+        {
+            "path": "sounds/block/creaking_heart/place2.fsb"
+        },
+        {
+            "path": "sounds/block/creaking_heart/place3.fsb"
+        },
+        {
+            "path": "sounds/block/creaking_heart/place4.fsb"
+        },
+        {
+            "path": "sounds/block/creaking_heart/spawn_mob.fsb"
+        },
+        {
+            "path": "sounds/block/creaking_heart/step1.fsb"
+        },
+        {
+            "path": "sounds/block/creaking_heart/step2.fsb"
+        },
+        {
+            "path": "sounds/block/creaking_heart/step3.fsb"
+        },
+        {
+            "path": "sounds/block/creaking_heart/step4.fsb"
+        },
+        {
+            "path": "sounds/block/creaking_heart/step5.fsb"
+        },
+        {
+            "path": "sounds/block/creaking_heart/step6.fsb"
+        },
+        {
+            "path": "sounds/block/creaking_heart/trail1.fsb"
+        },
+        {
+            "path": "sounds/block/creaking_heart/trail2.fsb"
+        },
+        {
+            "path": "sounds/block/creaking_heart/trail3.fsb"
+        },
+        {
+            "path": "sounds/block/creaking_heart/trail4.fsb"
+        },
+        {
+            "path": "sounds/block/creaking_heart/trail5.fsb"
+        },
+        {
+            "path": "sounds/block/creaking_heart/trail6.fsb"
+        },
+        {
+            "path": "sounds/block/creaking_heart/trail7.fsb"
+        },
+        {
+            "path": "sounds/block/deadbush/bushrustle1.fsb"
+        },
+        {
+            "path": "sounds/block/deadbush/bushrustle2.fsb"
+        },
+        {
+            "path": "sounds/block/deadbush/bushrustle3.fsb"
+        },
+        {
+            "path": "sounds/block/deadbush/creakysand1.fsb"
+        },
+        {
+            "path": "sounds/block/deadbush/crickets.fsb"
+        },
+        {
+            "path": "sounds/block/deadbush/howlingwind1.fsb"
+        },
+        {
+            "path": "sounds/block/deadbush/insect1.fsb"
+        },
+        {
+            "path": "sounds/block/deadbush/leaves.fsb"
+        },
+        {
+            "path": "sounds/block/deadbush/movingsand1.fsb"
+        },
+        {
+            "path": "sounds/block/deadbush/movingsand2.fsb"
+        },
+        {
+            "path": "sounds/block/deadbush/movingsand3.fsb"
+        },
+        {
             "path": "sounds/block/decorated_pot/break1.fsb"
         },
         {
@@ -4957,6 +5164,69 @@
             "path": "sounds/block/deepslate_bricks/step5.fsb"
         },
         {
+            "path": "sounds/block/dried_ghast/ambient1.fsb"
+        },
+        {
+            "path": "sounds/block/dried_ghast/ambient2.fsb"
+        },
+        {
+            "path": "sounds/block/dried_ghast/ambient3.fsb"
+        },
+        {
+            "path": "sounds/block/dried_ghast/ambient4.fsb"
+        },
+        {
+            "path": "sounds/block/dried_ghast/ambient_water1.fsb"
+        },
+        {
+            "path": "sounds/block/dried_ghast/ambient_water2.fsb"
+        },
+        {
+            "path": "sounds/block/dried_ghast/break.fsb"
+        },
+        {
+            "path": "sounds/block/dried_ghast/placeinwater.fsb"
+        },
+        {
+            "path": "sounds/block/dried_ghast/transition.fsb"
+        },
+        {
+            "path": "sounds/block/dried_ghast/place/place1.fsb"
+        },
+        {
+            "path": "sounds/block/dried_ghast/place/place2.fsb"
+        },
+        {
+            "path": "sounds/block/dried_ghast/place/place3.fsb"
+        },
+        {
+            "path": "sounds/block/dried_ghast/place/place4.fsb"
+        },
+        {
+            "path": "sounds/block/dried_ghast/place/place5.fsb"
+        },
+        {
+            "path": "sounds/block/dried_ghast/place/place6.fsb"
+        },
+        {
+            "path": "sounds/block/dried_ghast/step/step1.fsb"
+        },
+        {
+            "path": "sounds/block/dried_ghast/step/step2.fsb"
+        },
+        {
+            "path": "sounds/block/dried_ghast/step/step3.fsb"
+        },
+        {
+            "path": "sounds/block/dried_ghast/step/step4.fsb"
+        },
+        {
+            "path": "sounds/block/dried_ghast/step/step5.fsb"
+        },
+        {
+            "path": "sounds/block/dried_ghast/step/step6.fsb"
+        },
+        {
             "path": "sounds/block/dripstone/break1.fsb"
         },
         {
@@ -5017,6 +5287,51 @@
             "path": "sounds/block/end_portal/eyeplace3.fsb"
         },
         {
+            "path": "sounds/block/eyeblossom/close1.fsb"
+        },
+        {
+            "path": "sounds/block/eyeblossom/close2.fsb"
+        },
+        {
+            "path": "sounds/block/eyeblossom/close3.fsb"
+        },
+        {
+            "path": "sounds/block/eyeblossom/close_long.fsb"
+        },
+        {
+            "path": "sounds/block/eyeblossom/idle1.fsb"
+        },
+        {
+            "path": "sounds/block/eyeblossom/idle2.fsb"
+        },
+        {
+            "path": "sounds/block/eyeblossom/idle3.fsb"
+        },
+        {
+            "path": "sounds/block/eyeblossom/idle4.fsb"
+        },
+        {
+            "path": "sounds/block/eyeblossom/idle5.fsb"
+        },
+        {
+            "path": "sounds/block/eyeblossom/idle6.fsb"
+        },
+        {
+            "path": "sounds/block/eyeblossom/open1.fsb"
+        },
+        {
+            "path": "sounds/block/eyeblossom/open2.fsb"
+        },
+        {
+            "path": "sounds/block/eyeblossom/open3.fsb"
+        },
+        {
+            "path": "sounds/block/eyeblossom/open4.fsb"
+        },
+        {
+            "path": "sounds/block/eyeblossom/open_long.fsb"
+        },
+        {
             "path": "sounds/block/fence_gate/close1.fsb"
         },
         {
@@ -5027,6 +5342,39 @@
         },
         {
             "path": "sounds/block/fence_gate/open2.fsb"
+        },
+        {
+            "path": "sounds/block/firefly_bush/ambient1.fsb"
+        },
+        {
+            "path": "sounds/block/firefly_bush/ambient10.fsb"
+        },
+        {
+            "path": "sounds/block/firefly_bush/ambient11.fsb"
+        },
+        {
+            "path": "sounds/block/firefly_bush/ambient2.fsb"
+        },
+        {
+            "path": "sounds/block/firefly_bush/ambient3.fsb"
+        },
+        {
+            "path": "sounds/block/firefly_bush/ambient4.fsb"
+        },
+        {
+            "path": "sounds/block/firefly_bush/ambient5.fsb"
+        },
+        {
+            "path": "sounds/block/firefly_bush/ambient6.fsb"
+        },
+        {
+            "path": "sounds/block/firefly_bush/ambient7.fsb"
+        },
+        {
+            "path": "sounds/block/firefly_bush/ambient8.fsb"
+        },
+        {
+            "path": "sounds/block/firefly_bush/ambient9.fsb"
         },
         {
             "path": "sounds/block/froglight/break1.fsb"
@@ -5119,6 +5467,18 @@
             "path": "sounds/block/furnace/fire_crackle5.fsb"
         },
         {
+            "path": "sounds/block/grass/flatten1.fsb"
+        },
+        {
+            "path": "sounds/block/grass/flatten2.fsb"
+        },
+        {
+            "path": "sounds/block/grass/flatten3.fsb"
+        },
+        {
+            "path": "sounds/block/grass/flatten4.fsb"
+        },
+        {
             "path": "sounds/block/grindstone/grindstone1.fsb"
         },
         {
@@ -5204,6 +5564,42 @@
         },
         {
             "path": "sounds/block/heavy_core/step4.fsb"
+        },
+        {
+            "path": "sounds/block/iron/break1.fsb"
+        },
+        {
+            "path": "sounds/block/iron/break2.fsb"
+        },
+        {
+            "path": "sounds/block/iron/break3.fsb"
+        },
+        {
+            "path": "sounds/block/iron/break4.fsb"
+        },
+        {
+            "path": "sounds/block/iron/break5.fsb"
+        },
+        {
+            "path": "sounds/block/iron/break6.fsb"
+        },
+        {
+            "path": "sounds/block/iron/break7.fsb"
+        },
+        {
+            "path": "sounds/block/iron/break8.fsb"
+        },
+        {
+            "path": "sounds/block/iron/step1.fsb"
+        },
+        {
+            "path": "sounds/block/iron/step2.fsb"
+        },
+        {
+            "path": "sounds/block/iron/step3.fsb"
+        },
+        {
+            "path": "sounds/block/iron/step4.fsb"
         },
         {
             "path": "sounds/block/iron_door/close1.fsb"
@@ -5347,6 +5743,54 @@
             "path": "sounds/block/lantern/place6.fsb"
         },
         {
+            "path": "sounds/block/leaf_litter/break1.fsb"
+        },
+        {
+            "path": "sounds/block/leaf_litter/break2.fsb"
+        },
+        {
+            "path": "sounds/block/leaf_litter/break3.fsb"
+        },
+        {
+            "path": "sounds/block/leaf_litter/break4.fsb"
+        },
+        {
+            "path": "sounds/block/leaf_litter/break5.fsb"
+        },
+        {
+            "path": "sounds/block/leaf_litter/place1.fsb"
+        },
+        {
+            "path": "sounds/block/leaf_litter/place2.fsb"
+        },
+        {
+            "path": "sounds/block/leaf_litter/place3.fsb"
+        },
+        {
+            "path": "sounds/block/leaf_litter/place4.fsb"
+        },
+        {
+            "path": "sounds/block/leaf_litter/place5.fsb"
+        },
+        {
+            "path": "sounds/block/leaf_litter/step1.fsb"
+        },
+        {
+            "path": "sounds/block/leaf_litter/step2.fsb"
+        },
+        {
+            "path": "sounds/block/leaf_litter/step3.fsb"
+        },
+        {
+            "path": "sounds/block/leaf_litter/step4.fsb"
+        },
+        {
+            "path": "sounds/block/leaf_litter/step5.fsb"
+        },
+        {
+            "path": "sounds/block/leaf_litter/step6.fsb"
+        },
+        {
             "path": "sounds/block/loom/take_result1.fsb"
         },
         {
@@ -5387,6 +5831,33 @@
         },
         {
             "path": "sounds/block/mangrove_roots/step6.fsb"
+        },
+        {
+            "path": "sounds/block/mob_spawner/break1.fsb"
+        },
+        {
+            "path": "sounds/block/mob_spawner/break2.fsb"
+        },
+        {
+            "path": "sounds/block/mob_spawner/break3.fsb"
+        },
+        {
+            "path": "sounds/block/mob_spawner/break4.fsb"
+        },
+        {
+            "path": "sounds/block/mob_spawner/step1.fsb"
+        },
+        {
+            "path": "sounds/block/mob_spawner/step2.fsb"
+        },
+        {
+            "path": "sounds/block/mob_spawner/step3.fsb"
+        },
+        {
+            "path": "sounds/block/mob_spawner/step4.fsb"
+        },
+        {
+            "path": "sounds/block/mob_spawner/step5.fsb"
         },
         {
             "path": "sounds/block/moss/break1.fsb"
@@ -5656,6 +6127,51 @@
             "path": "sounds/block/packed_mud/step6.fsb"
         },
         {
+            "path": "sounds/block/pale_hanging_moss/ambient1.fsb"
+        },
+        {
+            "path": "sounds/block/pale_hanging_moss/ambient10.fsb"
+        },
+        {
+            "path": "sounds/block/pale_hanging_moss/ambient11.fsb"
+        },
+        {
+            "path": "sounds/block/pale_hanging_moss/ambient12.fsb"
+        },
+        {
+            "path": "sounds/block/pale_hanging_moss/ambient13.fsb"
+        },
+        {
+            "path": "sounds/block/pale_hanging_moss/ambient14.fsb"
+        },
+        {
+            "path": "sounds/block/pale_hanging_moss/ambient15.fsb"
+        },
+        {
+            "path": "sounds/block/pale_hanging_moss/ambient2.fsb"
+        },
+        {
+            "path": "sounds/block/pale_hanging_moss/ambient3.fsb"
+        },
+        {
+            "path": "sounds/block/pale_hanging_moss/ambient4.fsb"
+        },
+        {
+            "path": "sounds/block/pale_hanging_moss/ambient5.fsb"
+        },
+        {
+            "path": "sounds/block/pale_hanging_moss/ambient6.fsb"
+        },
+        {
+            "path": "sounds/block/pale_hanging_moss/ambient7.fsb"
+        },
+        {
+            "path": "sounds/block/pale_hanging_moss/ambient8.fsb"
+        },
+        {
+            "path": "sounds/block/pale_hanging_moss/ambient9.fsb"
+        },
+        {
             "path": "sounds/block/permissions/shimmer/shimmerblock.fsb"
         },
         {
@@ -5830,6 +6346,120 @@
             "path": "sounds/block/pumpkin/carve2.fsb"
         },
         {
+            "path": "sounds/block/resin/break.fsb"
+        },
+        {
+            "path": "sounds/block/resin/break1.fsb"
+        },
+        {
+            "path": "sounds/block/resin/break2.fsb"
+        },
+        {
+            "path": "sounds/block/resin/break3.fsb"
+        },
+        {
+            "path": "sounds/block/resin/break4.fsb"
+        },
+        {
+            "path": "sounds/block/resin/break5.fsb"
+        },
+        {
+            "path": "sounds/block/resin/fall.fsb"
+        },
+        {
+            "path": "sounds/block/resin/hit1.fsb"
+        },
+        {
+            "path": "sounds/block/resin/hit2.fsb"
+        },
+        {
+            "path": "sounds/block/resin/hit3.fsb"
+        },
+        {
+            "path": "sounds/block/resin/hit4.fsb"
+        },
+        {
+            "path": "sounds/block/resin/hit5.fsb"
+        },
+        {
+            "path": "sounds/block/resin/place1.fsb"
+        },
+        {
+            "path": "sounds/block/resin/place2.fsb"
+        },
+        {
+            "path": "sounds/block/resin/place3.fsb"
+        },
+        {
+            "path": "sounds/block/resin/place4.fsb"
+        },
+        {
+            "path": "sounds/block/resin/step1.fsb"
+        },
+        {
+            "path": "sounds/block/resin/step2.fsb"
+        },
+        {
+            "path": "sounds/block/resin/step3.fsb"
+        },
+        {
+            "path": "sounds/block/resin/step4.fsb"
+        },
+        {
+            "path": "sounds/block/resin/step5.fsb"
+        },
+        {
+            "path": "sounds/block/resin_brick/break.fsb"
+        },
+        {
+            "path": "sounds/block/resin_brick/fall.fsb"
+        },
+        {
+            "path": "sounds/block/resin_brick/hit1.fsb"
+        },
+        {
+            "path": "sounds/block/resin_brick/hit2.fsb"
+        },
+        {
+            "path": "sounds/block/resin_brick/hit3.fsb"
+        },
+        {
+            "path": "sounds/block/resin_brick/hit4.fsb"
+        },
+        {
+            "path": "sounds/block/resin_brick/hit5.fsb"
+        },
+        {
+            "path": "sounds/block/resin_brick/place1.fsb"
+        },
+        {
+            "path": "sounds/block/resin_brick/place2.fsb"
+        },
+        {
+            "path": "sounds/block/resin_brick/place3.fsb"
+        },
+        {
+            "path": "sounds/block/resin_brick/place4.fsb"
+        },
+        {
+            "path": "sounds/block/resin_brick/place5.fsb"
+        },
+        {
+            "path": "sounds/block/resin_brick/step1.fsb"
+        },
+        {
+            "path": "sounds/block/resin_brick/step2.fsb"
+        },
+        {
+            "path": "sounds/block/resin_brick/step3.fsb"
+        },
+        {
+            "path": "sounds/block/resin_brick/step4.fsb"
+        },
+        {
+            "path": "sounds/block/resin_brick/step5.fsb"
+        },
+        {
             "path": "sounds/block/respawn_anchor/ambient1.fsb"
         },
         {
@@ -5891,6 +6521,138 @@
         },
         {
             "path": "sounds/block/rooted_dirt/step6.fsb"
+        },
+        {
+            "path": "sounds/block/roots/break1.fsb"
+        },
+        {
+            "path": "sounds/block/roots/break2.fsb"
+        },
+        {
+            "path": "sounds/block/roots/break3.fsb"
+        },
+        {
+            "path": "sounds/block/roots/break4.fsb"
+        },
+        {
+            "path": "sounds/block/roots/break5.fsb"
+        },
+        {
+            "path": "sounds/block/roots/break6.fsb"
+        },
+        {
+            "path": "sounds/block/roots/step1.fsb"
+        },
+        {
+            "path": "sounds/block/roots/step2.fsb"
+        },
+        {
+            "path": "sounds/block/roots/step3.fsb"
+        },
+        {
+            "path": "sounds/block/roots/step4.fsb"
+        },
+        {
+            "path": "sounds/block/roots/step5.fsb"
+        },
+        {
+            "path": "sounds/block/sand/sand1.fsb"
+        },
+        {
+            "path": "sounds/block/sand/sand10.fsb"
+        },
+        {
+            "path": "sounds/block/sand/sand11.fsb"
+        },
+        {
+            "path": "sounds/block/sand/sand12.fsb"
+        },
+        {
+            "path": "sounds/block/sand/sand13.fsb"
+        },
+        {
+            "path": "sounds/block/sand/sand14.fsb"
+        },
+        {
+            "path": "sounds/block/sand/sand15.fsb"
+        },
+        {
+            "path": "sounds/block/sand/sand16.fsb"
+        },
+        {
+            "path": "sounds/block/sand/sand17.fsb"
+        },
+        {
+            "path": "sounds/block/sand/sand18.fsb"
+        },
+        {
+            "path": "sounds/block/sand/sand19.fsb"
+        },
+        {
+            "path": "sounds/block/sand/sand2.fsb"
+        },
+        {
+            "path": "sounds/block/sand/sand20.fsb"
+        },
+        {
+            "path": "sounds/block/sand/sand21.fsb"
+        },
+        {
+            "path": "sounds/block/sand/sand3.fsb"
+        },
+        {
+            "path": "sounds/block/sand/sand4.fsb"
+        },
+        {
+            "path": "sounds/block/sand/sand5.fsb"
+        },
+        {
+            "path": "sounds/block/sand/sand6.fsb"
+        },
+        {
+            "path": "sounds/block/sand/sand7.fsb"
+        },
+        {
+            "path": "sounds/block/sand/sand8.fsb"
+        },
+        {
+            "path": "sounds/block/sand/sand9.fsb"
+        },
+        {
+            "path": "sounds/block/sand/wind1.fsb"
+        },
+        {
+            "path": "sounds/block/sand/wind10.fsb"
+        },
+        {
+            "path": "sounds/block/sand/wind11.fsb"
+        },
+        {
+            "path": "sounds/block/sand/wind12.fsb"
+        },
+        {
+            "path": "sounds/block/sand/wind2.fsb"
+        },
+        {
+            "path": "sounds/block/sand/wind3.fsb"
+        },
+        {
+            "path": "sounds/block/sand/wind4.fsb"
+        },
+        {
+            "path": "sounds/block/sand/wind5.fsb"
+        },
+        {
+            "path": "sounds/block/sand/wind6.fsb"
+        },
+        {
+            "path": "sounds/block/sand/wind7.fsb"
+        },
+        {
+            "path": "sounds/block/sand/wind8.fsb"
+        },
+        {
+            "path": "sounds/block/sand/wind9.fsb"
         },
         {
             "path": "sounds/block/scaffold/place1.fsb"
@@ -6251,6 +7013,69 @@
         },
         {
             "path": "sounds/block/smoker/smoke2.fsb"
+        },
+        {
+            "path": "sounds/block/sponge/absorb1.fsb"
+        },
+        {
+            "path": "sounds/block/sponge/absorb2.fsb"
+        },
+        {
+            "path": "sounds/block/sponge/absorb3.fsb"
+        },
+        {
+            "path": "sounds/block/sponge/break1.fsb"
+        },
+        {
+            "path": "sounds/block/sponge/break2.fsb"
+        },
+        {
+            "path": "sounds/block/sponge/break3.fsb"
+        },
+        {
+            "path": "sounds/block/sponge/break4.fsb"
+        },
+        {
+            "path": "sounds/block/sponge/step1.fsb"
+        },
+        {
+            "path": "sounds/block/sponge/step2.fsb"
+        },
+        {
+            "path": "sounds/block/sponge/step3.fsb"
+        },
+        {
+            "path": "sounds/block/sponge/step4.fsb"
+        },
+        {
+            "path": "sounds/block/sponge/step5.fsb"
+        },
+        {
+            "path": "sounds/block/sponge/step6.fsb"
+        },
+        {
+            "path": "sounds/block/sponge/wet_sponge/break1.fsb"
+        },
+        {
+            "path": "sounds/block/sponge/wet_sponge/break2.fsb"
+        },
+        {
+            "path": "sounds/block/sponge/wet_sponge/break3.fsb"
+        },
+        {
+            "path": "sounds/block/sponge/wet_sponge/break4.fsb"
+        },
+        {
+            "path": "sounds/block/sponge/wet_sponge/step1.fsb"
+        },
+        {
+            "path": "sounds/block/sponge/wet_sponge/step2.fsb"
+        },
+        {
+            "path": "sounds/block/sponge/wet_sponge/step3.fsb"
+        },
+        {
+            "path": "sounds/block/sponge/wet_sponge/step4.fsb"
         },
         {
             "path": "sounds/block/spore_blossom/break1.fsb"
@@ -6703,6 +7528,9 @@
             "path": "sounds/block/vault/place4.fsb"
         },
         {
+            "path": "sounds/block/vault/reject_rewarded_player.fsb"
+        },
+        {
             "path": "sounds/block/vault/step1.fsb"
         },
         {
@@ -6725,6 +7553,33 @@
         },
         {
             "path": "sounds/block/vault/step8.fsb"
+        },
+        {
+            "path": "sounds/block/vine/break1.fsb"
+        },
+        {
+            "path": "sounds/block/vine/break2.fsb"
+        },
+        {
+            "path": "sounds/block/vine/break3.fsb"
+        },
+        {
+            "path": "sounds/block/vine/break4.fsb"
+        },
+        {
+            "path": "sounds/block/vine/climb1.fsb"
+        },
+        {
+            "path": "sounds/block/vine/climb2.fsb"
+        },
+        {
+            "path": "sounds/block/vine/climb3.fsb"
+        },
+        {
+            "path": "sounds/block/vine/climb4.fsb"
+        },
+        {
+            "path": "sounds/block/vine/climb5.fsb"
         },
         {
             "path": "sounds/block/web/break1.fsb"
@@ -7507,9 +8362,6 @@
             "path": "sounds/dig/vines5.fsb"
         },
         {
-            "path": "sounds/dig/vines6.fsb"
-        },
-        {
             "path": "sounds/dig/wood1.fsb"
         },
         {
@@ -7589,6 +8441,18 @@
         },
         {
             "path": "sounds/item/axe/scrape3.fsb"
+        },
+        {
+            "path": "sounds/item/axe/strip1.fsb"
+        },
+        {
+            "path": "sounds/item/axe/strip2.fsb"
+        },
+        {
+            "path": "sounds/item/axe/strip3.fsb"
+        },
+        {
+            "path": "sounds/item/axe/strip4.fsb"
         },
         {
             "path": "sounds/item/axe/wax_off1.fsb"
@@ -7691,6 +8555,36 @@
         },
         {
             "path": "sounds/item/brush/brushing_sand_complete5.fsb"
+        },
+        {
+            "path": "sounds/item/bundle/drop_contents1.fsb"
+        },
+        {
+            "path": "sounds/item/bundle/drop_contents2.fsb"
+        },
+        {
+            "path": "sounds/item/bundle/drop_contents3.fsb"
+        },
+        {
+            "path": "sounds/item/bundle/insert1.fsb"
+        },
+        {
+            "path": "sounds/item/bundle/insert2.fsb"
+        },
+        {
+            "path": "sounds/item/bundle/insert3.fsb"
+        },
+        {
+            "path": "sounds/item/bundle/insert_fail.fsb"
+        },
+        {
+            "path": "sounds/item/bundle/remove_one1.fsb"
+        },
+        {
+            "path": "sounds/item/bundle/remove_one2.fsb"
+        },
+        {
+            "path": "sounds/item/bundle/remove_one3.fsb"
         },
         {
             "path": "sounds/item/dye/dye.fsb"
@@ -7937,6 +8831,9 @@
         },
         {
             "path": "sounds/jump/wood4.fsb"
+        },
+        {
+            "path": "sounds/lead/break.fsb"
         },
         {
             "path": "sounds/leashknot/break1.fsb"
@@ -8854,6 +9751,102 @@
             "path": "sounds/mob/cow/step4.fsb"
         },
         {
+            "path": "sounds/mob/creaking/activate.fsb"
+        },
+        {
+            "path": "sounds/mob/creaking/attack1.fsb"
+        },
+        {
+            "path": "sounds/mob/creaking/attack2.fsb"
+        },
+        {
+            "path": "sounds/mob/creaking/attack3.fsb"
+        },
+        {
+            "path": "sounds/mob/creaking/attack4.fsb"
+        },
+        {
+            "path": "sounds/mob/creaking/deactivate.fsb"
+        },
+        {
+            "path": "sounds/mob/creaking/death.fsb"
+        },
+        {
+            "path": "sounds/mob/creaking/freeze1.fsb"
+        },
+        {
+            "path": "sounds/mob/creaking/freeze2.fsb"
+        },
+        {
+            "path": "sounds/mob/creaking/freeze3.fsb"
+        },
+        {
+            "path": "sounds/mob/creaking/freeze4.fsb"
+        },
+        {
+            "path": "sounds/mob/creaking/idle1.fsb"
+        },
+        {
+            "path": "sounds/mob/creaking/idle2.fsb"
+        },
+        {
+            "path": "sounds/mob/creaking/idle3.fsb"
+        },
+        {
+            "path": "sounds/mob/creaking/idle4.fsb"
+        },
+        {
+            "path": "sounds/mob/creaking/idle5.fsb"
+        },
+        {
+            "path": "sounds/mob/creaking/idle6.fsb"
+        },
+        {
+            "path": "sounds/mob/creaking/spawn.fsb"
+        },
+        {
+            "path": "sounds/mob/creaking/step1.fsb"
+        },
+        {
+            "path": "sounds/mob/creaking/step2.fsb"
+        },
+        {
+            "path": "sounds/mob/creaking/step3.fsb"
+        },
+        {
+            "path": "sounds/mob/creaking/step4.fsb"
+        },
+        {
+            "path": "sounds/mob/creaking/step5.fsb"
+        },
+        {
+            "path": "sounds/mob/creaking/sway.fsb"
+        },
+        {
+            "path": "sounds/mob/creaking/sway1.fsb"
+        },
+        {
+            "path": "sounds/mob/creaking/sway2.fsb"
+        },
+        {
+            "path": "sounds/mob/creaking/sway3.fsb"
+        },
+        {
+            "path": "sounds/mob/creaking/sway4.fsb"
+        },
+        {
+            "path": "sounds/mob/creaking/twitch.fsb"
+        },
+        {
+            "path": "sounds/mob/creaking/unfreeze1.fsb"
+        },
+        {
+            "path": "sounds/mob/creaking/unfreeze2.fsb"
+        },
+        {
+            "path": "sounds/mob/creaking/unfreeze3.fsb"
+        },
+        {
             "path": "sounds/mob/creeper/death.fsb"
         },
         {
@@ -9535,6 +10528,48 @@
             "path": "sounds/mob/ghast/scream5.fsb"
         },
         {
+            "path": "sounds/mob/ghastling/ambient1.fsb"
+        },
+        {
+            "path": "sounds/mob/ghastling/ambient2.fsb"
+        },
+        {
+            "path": "sounds/mob/ghastling/ambient3.fsb"
+        },
+        {
+            "path": "sounds/mob/ghastling/ambient4.fsb"
+        },
+        {
+            "path": "sounds/mob/ghastling/ambient5.fsb"
+        },
+        {
+            "path": "sounds/mob/ghastling/ambient6.fsb"
+        },
+        {
+            "path": "sounds/mob/ghastling/ambient7.fsb"
+        },
+        {
+            "path": "sounds/mob/ghastling/death.fsb"
+        },
+        {
+            "path": "sounds/mob/ghastling/hurt1.fsb"
+        },
+        {
+            "path": "sounds/mob/ghastling/hurt2.fsb"
+        },
+        {
+            "path": "sounds/mob/ghastling/hurt3.fsb"
+        },
+        {
+            "path": "sounds/mob/ghastling/hurt4.fsb"
+        },
+        {
+            "path": "sounds/mob/ghastling/hurt5.fsb"
+        },
+        {
+            "path": "sounds/mob/ghastling/spawn.fsb"
+        },
+        {
             "path": "sounds/mob/glow_squid/ambient1.fsb"
         },
         {
@@ -9868,6 +10903,84 @@
             "path": "sounds/mob/guardian/land_idle4.fsb"
         },
         {
+            "path": "sounds/mob/happy_ghast/ambient1.fsb"
+        },
+        {
+            "path": "sounds/mob/happy_ghast/ambient10.fsb"
+        },
+        {
+            "path": "sounds/mob/happy_ghast/ambient11.fsb"
+        },
+        {
+            "path": "sounds/mob/happy_ghast/ambient12.fsb"
+        },
+        {
+            "path": "sounds/mob/happy_ghast/ambient13.fsb"
+        },
+        {
+            "path": "sounds/mob/happy_ghast/ambient14.fsb"
+        },
+        {
+            "path": "sounds/mob/happy_ghast/ambient2.fsb"
+        },
+        {
+            "path": "sounds/mob/happy_ghast/ambient3.fsb"
+        },
+        {
+            "path": "sounds/mob/happy_ghast/ambient4.fsb"
+        },
+        {
+            "path": "sounds/mob/happy_ghast/ambient5.fsb"
+        },
+        {
+            "path": "sounds/mob/happy_ghast/ambient6.fsb"
+        },
+        {
+            "path": "sounds/mob/happy_ghast/ambient7.fsb"
+        },
+        {
+            "path": "sounds/mob/happy_ghast/ambient8.fsb"
+        },
+        {
+            "path": "sounds/mob/happy_ghast/ambient9.fsb"
+        },
+        {
+            "path": "sounds/mob/happy_ghast/death.fsb"
+        },
+        {
+            "path": "sounds/mob/happy_ghast/ghast_ride.fsb"
+        },
+        {
+            "path": "sounds/mob/happy_ghast/goggles_down.fsb"
+        },
+        {
+            "path": "sounds/mob/happy_ghast/goggles_up.fsb"
+        },
+        {
+            "path": "sounds/mob/happy_ghast/harness_equip.fsb"
+        },
+        {
+            "path": "sounds/mob/happy_ghast/harness_unequip.fsb"
+        },
+        {
+            "path": "sounds/mob/happy_ghast/hurt1.fsb"
+        },
+        {
+            "path": "sounds/mob/happy_ghast/hurt2.fsb"
+        },
+        {
+            "path": "sounds/mob/happy_ghast/hurt3.fsb"
+        },
+        {
+            "path": "sounds/mob/happy_ghast/hurt4.fsb"
+        },
+        {
+            "path": "sounds/mob/happy_ghast/hurt5.fsb"
+        },
+        {
+            "path": "sounds/mob/happy_ghast/hurt6.fsb"
+        },
+        {
             "path": "sounds/mob/hoglin/angry1.fsb"
         },
         {
@@ -10049,6 +11162,9 @@
         },
         {
             "path": "sounds/mob/horse/hit4.fsb"
+        },
+        {
+            "path": "sounds/mob/horse/horse_armor_unequip.fsb"
         },
         {
             "path": "sounds/mob/horse/idle1.fsb"
@@ -10262,6 +11378,9 @@
         },
         {
             "path": "sounds/mob/llama/angry1.fsb"
+        },
+        {
+            "path": "sounds/mob/llama/carpet_unequip.fsb"
         },
         {
             "path": "sounds/mob/llama/death1.fsb"
@@ -10619,6 +11738,9 @@
         },
         {
             "path": "sounds/mob/parrot/idle6.fsb"
+        },
+        {
+            "path": "sounds/mob/parrot/imitate_creaking.fsb"
         },
         {
             "path": "sounds/mob/parrot/step1.fsb"
@@ -12652,6 +13774,222 @@
             "path": "sounds/mob/wolf/whine.fsb"
         },
         {
+            "path": "sounds/mob/wolf/big/bark1.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/big/bark2.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/big/bark3.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/big/death.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/big/growl1.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/big/growl2.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/big/growl3.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/big/hurt1.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/big/hurt2.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/big/hurt3.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/big/panting.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/big/whine.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/cute/bark1.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/cute/bark2.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/cute/bark3.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/cute/death.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/cute/growl1.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/cute/growl2.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/cute/growl3.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/cute/hurt1.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/cute/hurt2.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/cute/hurt3.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/cute/panting.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/cute/whine.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/grumpy/bark1.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/grumpy/bark2.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/grumpy/bark3.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/grumpy/death.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/grumpy/growl1.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/grumpy/growl2.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/grumpy/growl3.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/grumpy/hurt1.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/grumpy/hurt2.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/grumpy/hurt3.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/grumpy/panting.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/grumpy/whine.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/mad/bark1.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/mad/bark2.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/mad/bark3.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/mad/death.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/mad/growl1.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/mad/growl2.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/mad/growl3.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/mad/hurt1.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/mad/hurt2.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/mad/hurt3.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/mad/panting.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/mad/whine.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/puglin/bark1.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/puglin/bark2.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/puglin/bark3.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/puglin/death.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/puglin/growl1.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/puglin/growl2.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/puglin/growl3.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/puglin/hurt1.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/puglin/hurt2.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/puglin/hurt3.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/puglin/panting.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/puglin/whine.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/sad/bark1.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/sad/bark2.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/sad/bark3.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/sad/death.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/sad/growl1.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/sad/growl2.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/sad/growl3.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/sad/hurt1.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/sad/hurt2.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/sad/hurt3.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/sad/panting.fsb"
+        },
+        {
+            "path": "sounds/mob/wolf/sad/whine.fsb"
+        },
+        {
             "path": "sounds/mob/zoglin/angry1.fsb"
         },
         {
@@ -13565,6 +14903,12 @@
         },
         {
             "path": "sounds/ui/drawer/drawer_open.fsb"
+        },
+        {
+            "path": "sounds/ui/hardcore/hardcore_disable.fsb"
+        },
+        {
+            "path": "sounds/ui/hardcore/hardcore_enable.fsb"
         },
         {
             "path": "sounds/ui/loom/select_pattern1.fsb"
@@ -16546,6 +17890,9 @@
             "path": "textures/colormap/birch.png"
         },
         {
+            "path": "textures/colormap/dry_foliage.png"
+        },
+        {
             "path": "textures/colormap/evergreen.png"
         },
         {
@@ -16553,6 +17900,9 @@
         },
         {
             "path": "textures/colormap/grass.png"
+        },
+        {
+            "path": "textures/colormap/mangrove_swamp_foliage.png"
         },
         {
             "path": "textures/colormap/swamp_foliage.png"
@@ -17803,6 +19153,9 @@
             "path": "textures/environment/sun.png"
         },
         {
+            "path": "textures/environment/sun_vv.png"
+        },
+        {
             "path": "textures/environment/weather.png"
         },
         {
@@ -17839,7 +19192,19 @@
             "path": "textures/gui/controls/down.png"
         },
         {
+            "path": "textures/gui/controls/down_left.png"
+        },
+        {
+            "path": "textures/gui/controls/down_left_pressed.png"
+        },
+        {
             "path": "textures/gui/controls/down_pressed.png"
+        },
+        {
+            "path": "textures/gui/controls/down_right.png"
+        },
+        {
+            "path": "textures/gui/controls/down_right_pressed.png"
         },
         {
             "path": "textures/gui/controls/flyingascend.png"
@@ -17879,6 +19244,12 @@
         },
         {
             "path": "textures/gui/controls/sneak.png"
+        },
+        {
+            "path": "textures/gui/controls/sneak_dpad.png"
+        },
+        {
+            "path": "textures/gui/controls/sneak_dpad_pressed.png"
         },
         {
             "path": "textures/gui/controls/sneak_pressed.png"
@@ -19918,7 +21289,31 @@
             "path": "textures/ui/achievement_locked_icon.png"
         },
         {
+            "path": "textures/ui/Add-Ons_12x12.png"
+        },
+        {
+            "path": "textures/ui/Add-Ons_8x8.png"
+        },
+        {
+            "path": "textures/ui/Add-Ons_Nav_Icon36x36.png"
+        },
+        {
+            "path": "textures/ui/Add-Ons_Side-Nav_Icon_24x24.png"
+        },
+        {
             "path": "textures/ui/addServer.png"
+        },
+        {
+            "path": "textures/ui/advanced_glyph.png"
+        },
+        {
+            "path": "textures/ui/advanced_glyph_color.png"
+        },
+        {
+            "path": "textures/ui/aimassist_block_highlight.png"
+        },
+        {
+            "path": "textures/ui/aimassist_entity_highlight.png"
         },
         {
             "path": "textures/ui/anvil-plus.png"
@@ -20239,6 +21634,9 @@
             "path": "textures/ui/book_arrowright_pressed.png"
         },
         {
+            "path": "textures/ui/book_arrowright_pressed_transparent.png"
+        },
+        {
             "path": "textures/ui/book_back.json"
         },
         {
@@ -20362,10 +21760,22 @@
             "path": "textures/ui/bottle_empty_pocket.png"
         },
         {
+            "path": "textures/ui/box_exit.png"
+        },
+        {
+            "path": "textures/ui/box_exit_pressed.png"
+        },
+        {
             "path": "textures/ui/box_number_grey.json"
         },
         {
             "path": "textures/ui/box_number_grey.png"
+        },
+        {
+            "path": "textures/ui/box_ride.png"
+        },
+        {
+            "path": "textures/ui/box_ride_pressed.png"
         },
         {
             "path": "textures/ui/break.json"
@@ -20435,6 +21845,12 @@
         },
         {
             "path": "textures/ui/building_a_shelter.png"
+        },
+        {
+            "path": "textures/ui/bundle_item_background.json"
+        },
+        {
+            "path": "textures/ui/bundle_item_background.png"
         },
         {
             "path": "textures/ui/bundle_wide_tile.png"
@@ -20857,6 +22273,18 @@
             "path": "textures/ui/confirm.png"
         },
         {
+            "path": "textures/ui/container_weight_bar_fill.json"
+        },
+        {
+            "path": "textures/ui/container_weight_bar_fill.png"
+        },
+        {
+            "path": "textures/ui/container_weight_bar_full.json"
+        },
+        {
+            "path": "textures/ui/container_weight_bar_full.png"
+        },
+        {
             "path": "textures/ui/control.json"
         },
         {
@@ -20908,6 +22336,12 @@
             "path": "textures/ui/craft_toggle_on_hover.png"
         },
         {
+            "path": "textures/ui/CreateNewProject-Flat.png"
+        },
+        {
+            "path": "textures/ui/CreateNewProject-Void.png"
+        },
+        {
             "path": "textures/ui/CreateNewProject.png"
         },
         {
@@ -20950,7 +22384,10 @@
             "path": "textures/ui/csbChevronArrowLarge.png"
         },
         {
-            "path": "textures/ui/csb_background.png"
+            "path": "textures/ui/csb_animated_banner_default.png"
+        },
+        {
+            "path": "textures/ui/csb_animated_banner_hover.png"
         },
         {
             "path": "textures/ui/csb_button_borderless_default.json"
@@ -21011,9 +22448,6 @@
         },
         {
             "path": "textures/ui/csb_sparkles.png"
-        },
-        {
-            "path": "textures/ui/csb_subscribe_banner.png"
         },
         {
             "path": "textures/ui/csb_title.png"
@@ -21388,6 +22822,9 @@
             "path": "textures/ui/empty_progress_bar.png"
         },
         {
+            "path": "textures/ui/empty_stack_progress_bar.json"
+        },
+        {
             "path": "textures/ui/empty_stack_progress_bar.png"
         },
         {
@@ -21410,6 +22847,9 @@
         },
         {
             "path": "textures/ui/enchanting_dark_background.png"
+        },
+        {
+            "path": "textures/ui/Envelope.png"
         },
         {
             "path": "textures/ui/equipped_item_border.json"
@@ -21461,6 +22901,9 @@
         },
         {
             "path": "textures/ui/experience_bar_nub_blue.png"
+        },
+        {
+            "path": "textures/ui/external_link.png"
         },
         {
             "path": "textures/ui/Feedback.png"
@@ -21691,6 +23134,18 @@
             "path": "textures/ui/generic_face_button_up.png"
         },
         {
+            "path": "textures/ui/generic_left_stick_down.png"
+        },
+        {
+            "path": "textures/ui/generic_left_stick_left.png"
+        },
+        {
+            "path": "textures/ui/generic_left_stick_right.png"
+        },
+        {
+            "path": "textures/ui/generic_left_stick_up.png"
+        },
+        {
             "path": "textures/ui/generic_left_trigger.png"
         },
         {
@@ -21838,6 +23293,9 @@
             "path": "textures/ui/hanging_sign_mangrove.png"
         },
         {
+            "path": "textures/ui/hanging_sign_pale_oak.png"
+        },
+        {
             "path": "textures/ui/hanging_sign_spruce.png"
         },
         {
@@ -21910,6 +23368,12 @@
             "path": "textures/ui/horizontal_divider.png"
         },
         {
+            "path": "textures/ui/horse_exit.png"
+        },
+        {
+            "path": "textures/ui/horse_exit_pressed.png"
+        },
+        {
             "path": "textures/ui/horse_heart.png"
         },
         {
@@ -21926,6 +23390,12 @@
         },
         {
             "path": "textures/ui/horse_jump_full.png"
+        },
+        {
+            "path": "textures/ui/horse_ride.png"
+        },
+        {
+            "path": "textures/ui/horse_ride_pressed.png"
         },
         {
             "path": "textures/ui/hotbar_0.png"
@@ -22351,9 +23821,6 @@
             "path": "textures/ui/large_fish_bevel.png"
         },
         {
-            "path": "textures/ui/lava.jpg"
-        },
-        {
             "path": "textures/ui/legacybanner.json"
         },
         {
@@ -22429,6 +23896,30 @@
             "path": "textures/ui/local_only_storage.png"
         },
         {
+            "path": "textures/ui/locator_arrow_down.png"
+        },
+        {
+            "path": "textures/ui/locator_arrow_up.png"
+        },
+        {
+            "path": "textures/ui/locator_bar_dot_0.png"
+        },
+        {
+            "path": "textures/ui/locator_bar_dot_1.png"
+        },
+        {
+            "path": "textures/ui/locator_bar_dot_2.png"
+        },
+        {
+            "path": "textures/ui/locator_bar_dot_3.png"
+        },
+        {
+            "path": "textures/ui/locator_bg.json"
+        },
+        {
+            "path": "textures/ui/locator_bg.png"
+        },
+        {
             "path": "textures/ui/lock.png"
         },
         {
@@ -22498,9 +23989,6 @@
             "path": "textures/ui/mashup_world.png"
         },
         {
-            "path": "textures/ui/massive_servers.png"
-        },
-        {
             "path": "textures/ui/MCoin.png"
         },
         {
@@ -22517,6 +24005,9 @@
         },
         {
             "path": "textures/ui/middle_strip.png"
+        },
+        {
+            "path": "textures/ui/minecraft_marketplace_title.png"
         },
         {
             "path": "textures/ui/mine_chop_dig_animation.png"
@@ -22705,6 +24196,9 @@
             "path": "textures/ui/packs_middle.png"
         },
         {
+            "path": "textures/ui/pale_oak_sign.png"
+        },
+        {
             "path": "textures/ui/panel_outline.json"
         },
         {
@@ -22739,6 +24233,12 @@
         },
         {
             "path": "textures/ui/particles3.png"
+        },
+        {
+            "path": "textures/ui/party_glyph.png"
+        },
+        {
+            "path": "textures/ui/party_glyph_color.png"
         },
         {
             "path": "textures/ui/paste.png"
@@ -22786,6 +24286,9 @@
             "path": "textures/ui/persona_key_comp.png"
         },
         {
+            "path": "textures/ui/perspective.png"
+        },
+        {
             "path": "textures/ui/photo_corner_bl.png"
         },
         {
@@ -22798,10 +24301,28 @@
             "path": "textures/ui/photo_corner_tr.png"
         },
         {
+            "path": "textures/ui/pick_block.png"
+        },
+        {
+            "path": "textures/ui/pick_block_pressed.png"
+        },
+        {
             "path": "textures/ui/Ping_Green.png"
         },
         {
             "path": "textures/ui/Ping_Green_Dark.png"
+        },
+        {
+            "path": "textures/ui/ping_high.png"
+        },
+        {
+            "path": "textures/ui/ping_low.png"
+        },
+        {
+            "path": "textures/ui/ping_medium.png"
+        },
+        {
+            "path": "textures/ui/ping_none.png"
         },
         {
             "path": "textures/ui/Ping_Offline_Red.png"
@@ -22936,6 +24457,18 @@
             "path": "textures/ui/profile_new_look_small.png"
         },
         {
+            "path": "textures/ui/progress_bar_beveled_empty.json"
+        },
+        {
+            "path": "textures/ui/progress_bar_beveled_empty.png"
+        },
+        {
+            "path": "textures/ui/progress_bar_beveled_overlay.json"
+        },
+        {
+            "path": "textures/ui/progress_bar_beveled_overlay.png"
+        },
+        {
             "path": "textures/ui/progress_bar_simple.json"
         },
         {
@@ -22946,6 +24479,9 @@
         },
         {
             "path": "textures/ui/promotion_slot.png"
+        },
+        {
+            "path": "textures/ui/promo_axolotl.png"
         },
         {
             "path": "textures/ui/promo_background.json"
@@ -23029,6 +24565,18 @@
             "path": "textures/ui/ps4_face_button_up.png"
         },
         {
+            "path": "textures/ui/ps4_left_stick_down.png"
+        },
+        {
+            "path": "textures/ui/ps4_left_stick_left.png"
+        },
+        {
+            "path": "textures/ui/ps4_left_stick_right.png"
+        },
+        {
+            "path": "textures/ui/ps4_left_stick_up.png"
+        },
+        {
             "path": "textures/ui/ps4_left_trigger.png"
         },
         {
@@ -23075,6 +24623,18 @@
         },
         {
             "path": "textures/ui/ps5_face_button_up.png"
+        },
+        {
+            "path": "textures/ui/ps5_left_stick_down.png"
+        },
+        {
+            "path": "textures/ui/ps5_left_stick_left.png"
+        },
+        {
+            "path": "textures/ui/ps5_left_stick_right.png"
+        },
+        {
+            "path": "textures/ui/ps5_left_stick_up.png"
         },
         {
             "path": "textures/ui/ps5_left_trigger.png"
@@ -23743,6 +25303,12 @@
             "path": "textures/ui/share_google.png"
         },
         {
+            "path": "textures/ui/share_google_glyph.png"
+        },
+        {
+            "path": "textures/ui/share_google_glyph_color.png"
+        },
+        {
             "path": "textures/ui/share_microsoft.png"
         },
         {
@@ -23920,9 +25486,6 @@
             "path": "textures/ui/sneak_pressed.png"
         },
         {
-            "path": "textures/ui/snowy.jpg"
-        },
-        {
             "path": "textures/ui/sound_glyph.png"
         },
         {
@@ -24019,6 +25582,9 @@
             "path": "textures/ui/store_play_button_mask.png"
         },
         {
+            "path": "textures/ui/store_progress_screen_background.png"
+        },
+        {
             "path": "textures/ui/store_sort_icon.png"
         },
         {
@@ -24050,6 +25616,12 @@
         },
         {
             "path": "textures/ui/subscription_glyph_color.png"
+        },
+        {
+            "path": "textures/ui/subscription_MarketplacePass.png"
+        },
+        {
+            "path": "textures/ui/subscription_Realms.png"
         },
         {
             "path": "textures/ui/sunset_keyart.png"
@@ -24095,6 +25667,18 @@
         },
         {
             "path": "textures/ui/switch_home_button.png"
+        },
+        {
+            "path": "textures/ui/switch_left_stick_down.png"
+        },
+        {
+            "path": "textures/ui/switch_left_stick_left.png"
+        },
+        {
+            "path": "textures/ui/switch_left_stick_right.png"
+        },
+        {
+            "path": "textures/ui/switch_left_stick_up.png"
         },
         {
             "path": "textures/ui/switch_left_trigger.png"
@@ -24544,9 +26128,6 @@
             "path": "textures/ui/trade_icon.png"
         },
         {
-            "path": "textures/ui/train.jpg"
-        },
-        {
             "path": "textures/ui/trash.png"
         },
         {
@@ -24850,9 +26431,6 @@
             "path": "textures/ui/xbox4.png"
         },
         {
-            "path": "textures/ui/xboxconversionkeyart.png"
-        },
-        {
             "path": "textures/ui/xbox_bumper_left.png"
         },
         {
@@ -24884,6 +26462,18 @@
         },
         {
             "path": "textures/ui/xbox_face_button_up.png"
+        },
+        {
+            "path": "textures/ui/xbox_left_stick_down.png"
+        },
+        {
+            "path": "textures/ui/xbox_left_stick_left.png"
+        },
+        {
+            "path": "textures/ui/xbox_left_stick_right.png"
+        },
+        {
+            "path": "textures/ui/xbox_left_stick_up.png"
         },
         {
             "path": "textures/ui/xbox_left_trigger.png"
@@ -24940,6 +26530,9 @@
             "path": "textures/ui/yellow_banner.png"
         },
         {
+            "path": "textures/ui/friendsbutton/navbar-friends-icon.png"
+        },
+        {
             "path": "textures/ui/game_tip_animations/break-block-mouse.json"
         },
         {
@@ -24964,6 +26557,18 @@
             "path": "textures/ui/game_tip_animations/camera-touch.png"
         },
         {
+            "path": "textures/ui/game_tip_animations/chat-open-mouse.json"
+        },
+        {
+            "path": "textures/ui/game_tip_animations/chat-open-mouse.png"
+        },
+        {
+            "path": "textures/ui/game_tip_animations/chat-open-touch.json"
+        },
+        {
+            "path": "textures/ui/game_tip_animations/chat-open-touch.png"
+        },
+        {
             "path": "textures/ui/game_tip_animations/crafting-table-place-mouse.json"
         },
         {
@@ -24980,6 +26585,18 @@
         },
         {
             "path": "textures/ui/game_tip_animations/crafting-table-use-mouse.png"
+        },
+        {
+            "path": "textures/ui/game_tip_animations/emote-mouse.json"
+        },
+        {
+            "path": "textures/ui/game_tip_animations/emote-mouse.png"
+        },
+        {
+            "path": "textures/ui/game_tip_animations/emote-touch.json"
+        },
+        {
+            "path": "textures/ui/game_tip_animations/emote-touch.png"
         },
         {
             "path": "textures/ui/game_tip_animations/fly-down-mouse.json"
@@ -25102,10 +26719,22 @@
             "path": "textures/ui/game_tip_animations/stop-fly-touch.png"
         },
         {
+            "path": "textures/ui/game_tip_animations/stop-sneaking-touch.json"
+        },
+        {
+            "path": "textures/ui/game_tip_animations/stop-sneaking-touch.png"
+        },
+        {
             "path": "textures/ui/game_tip_animations/swim-mouse.json"
         },
         {
             "path": "textures/ui/game_tip_animations/swim-mouse.png"
+        },
+        {
+            "path": "textures/ui/game_tip_animations/swim-touch.json"
+        },
+        {
+            "path": "textures/ui/game_tip_animations/swim-touch.png"
         },
         {
             "path": "textures/ui/hardcore/absorption_heart.png"
@@ -25456,22 +27085,13 @@
             "path": "ui/command_block_screen.json"
         },
         {
-            "path": "ui/comment_screen.json"
-        },
-        {
             "path": "ui/confirm_delete_account_screen.json"
-        },
-        {
-            "path": "ui/confirm_msa_unlink_screen.json"
         },
         {
             "path": "ui/content_log.json"
         },
         {
             "path": "ui/content_log_history_screen.json"
-        },
-        {
-            "path": "ui/convert_purchases_to_xbl_screen.json"
         },
         {
             "path": "ui/crafter_screen_pocket.json"
@@ -25540,9 +27160,6 @@
             "path": "ui/feed_common.json"
         },
         {
-            "path": "ui/feed_screen.json"
-        },
-        {
             "path": "ui/file_upload_screen.json"
         },
         {
@@ -25558,7 +27175,13 @@
             "path": "ui/gamepad_layout_screen.json"
         },
         {
+            "path": "ui/gameplay_common.json"
+        },
+        {
             "path": "ui/game_tip_screen.json"
+        },
+        {
+            "path": "ui/gamma_calibration_screen.json"
         },
         {
             "path": "ui/gathering_info_screen.json"
@@ -25571,9 +27194,6 @@
         },
         {
             "path": "ui/grindstone_screen_pocket.json"
-        },
-        {
-            "path": "ui/hdr_calibration_screen.json"
         },
         {
             "path": "ui/holographic_postrender_screen.json"
@@ -25681,7 +27301,7 @@
             "path": "ui/persona_common.json"
         },
         {
-            "path": "ui/persona_screen.json"
+            "path": "ui/persona_popups.json"
         },
         {
             "path": "ui/persona_sdl.json"
@@ -25700,12 +27320,6 @@
         },
         {
             "path": "ui/post_rating_screen.json"
-        },
-        {
-            "path": "ui/profile_card.json"
-        },
-        {
-            "path": "ui/profile_screen.json"
         },
         {
             "path": "ui/progress_screen.json"
@@ -25729,6 +27343,9 @@
             "path": "ui/realms_create.json"
         },
         {
+            "path": "ui/realms_invite_link_settings_screen.json"
+        },
+        {
             "path": "ui/realms_pending_invitations.json"
         },
         {
@@ -25739,6 +27356,9 @@
         },
         {
             "path": "ui/realms_slots_screen.json"
+        },
+        {
+            "path": "ui/realms_stories_transition_screen.json"
         },
         {
             "path": "ui/redstone_screen.json"
@@ -25753,10 +27373,10 @@
             "path": "ui/scoreboards.json"
         },
         {
-            "path": "ui/screenshot_picker_screen.json"
+            "path": "ui/screenshot_screen.json"
         },
         {
-            "path": "ui/screenshot_screen.json"
+            "path": "ui/select_world_screen.json"
         },
         {
             "path": "ui/server_form.json"
@@ -25831,6 +27451,9 @@
             "path": "ui/store_item_list_screen.json"
         },
         {
+            "path": "ui/store_progress_screen.json"
+        },
+        {
             "path": "ui/store_promo_timeline_screen.json"
         },
         {
@@ -25847,9 +27470,6 @@
         },
         {
             "path": "ui/submit_feedback_screen.json"
-        },
-        {
-            "path": "ui/sync_iaps_to_xbl_screen.json"
         },
         {
             "path": "ui/tabbed_upsell_screen.json"
@@ -25900,7 +27520,13 @@
             "path": "ui/ui_edu_common.json"
         },
         {
+            "path": "ui/ui_friendsbutton.json"
+        },
+        {
             "path": "ui/ui_holo_cursor.json"
+        },
+        {
+            "path": "ui/ui_iconbutton.json"
         },
         {
             "path": "ui/ui_purchase_common.json"
@@ -25945,13 +27571,7 @@
             "path": "ui/xbl_console_signin_succeeded.json"
         },
         {
-            "path": "ui/xbl_friend_finder.json"
-        },
-        {
             "path": "ui/xbl_immediate_signin.json"
-        },
-        {
-            "path": "ui/xbl_optional_signin.json"
         },
         {
             "path": "ui/_global_variables.json"
@@ -25996,6 +27616,18 @@
             "path": "ui/csb_sections/landing_section.json"
         },
         {
+            "path": "ui/marketplace_sdl/sdl_dropdowns.json"
+        },
+        {
+            "path": "ui/marketplace_sdl/sdl_image_row.json"
+        },
+        {
+            "path": "ui/marketplace_sdl/sdl_label.json"
+        },
+        {
+            "path": "ui/marketplace_sdl/sdl_text_row.json"
+        },
+        {
             "path": "ui/realmsPlus_sections/content_section.json"
         },
         {
@@ -26024,6 +27656,9 @@
         },
         {
             "path": "ui/settings_sections/settings_common.json"
+        },
+        {
+            "path": "ui/settings_sections/social_section.json"
         },
         {
             "path": "ui/settings_sections/world_section.json"

@@ -10,6 +10,12 @@
             "path": "pack_icon.png"
         },
         {
+            "path": "aim_assist/categories/categories.json"
+        },
+        {
+            "path": "aim_assist/presets/aim_assist_preset.json"
+        },
+        {
             "path": "behavior_trees/attack.json"
         },
         {
@@ -76,7 +82,226 @@
             "path": "behavior_trees/walk_forward.json"
         },
         {
+            "path": "biomes/bamboo_jungle.biome.json"
+        },
+        {
+            "path": "biomes/bamboo_jungle_hills.biome.json"
+        },
+        {
+            "path": "biomes/beach.biome.json"
+        },
+        {
+            "path": "biomes/birch_forest.biome.json"
+        },
+        {
+            "path": "biomes/birch_forest_hills.biome.json"
+        },
+        {
+            "path": "biomes/birch_forest_hills_mutated.biome.json"
+        },
+        {
+            "path": "biomes/birch_forest_mutated.biome.json"
+        },
+        {
+            "path": "biomes/cold_beach.biome.json"
+        },
+        {
+            "path": "biomes/cold_ocean.biome.json"
+        },
+        {
+            "path": "biomes/cold_taiga.biome.json"
+        },
+        {
+            "path": "biomes/cold_taiga_hills.biome.json"
+        },
+        {
+            "path": "biomes/cold_taiga_mutated.biome.json"
+        },
+        {
+            "path": "biomes/deep_cold_ocean.biome.json"
+        },
+        {
+            "path": "biomes/deep_frozen_ocean.biome.json"
+        },
+        {
+            "path": "biomes/deep_lukewarm_ocean.biome.json"
+        },
+        {
+            "path": "biomes/deep_ocean.biome.json"
+        },
+        {
+            "path": "biomes/deep_warm_ocean.biome.json"
+        },
+        {
+            "path": "biomes/desert.biome.json"
+        },
+        {
+            "path": "biomes/desert_hills.biome.json"
+        },
+        {
+            "path": "biomes/desert_mutated.biome.json"
+        },
+        {
+            "path": "biomes/extreme_hills.biome.json"
+        },
+        {
+            "path": "biomes/extreme_hills_edge.biome.json"
+        },
+        {
+            "path": "biomes/extreme_hills_mutated.biome.json"
+        },
+        {
+            "path": "biomes/extreme_hills_plus_trees.biome.json"
+        },
+        {
+            "path": "biomes/extreme_hills_plus_trees_mutated.biome.json"
+        },
+        {
+            "path": "biomes/flower_forest.biome.json"
+        },
+        {
+            "path": "biomes/forest.biome.json"
+        },
+        {
+            "path": "biomes/forest_hills.biome.json"
+        },
+        {
+            "path": "biomes/frozen_ocean.biome.json"
+        },
+        {
+            "path": "biomes/frozen_river.biome.json"
+        },
+        {
+            "path": "biomes/hell.biome.json"
+        },
+        {
+            "path": "biomes/ice_mountains.biome.json"
+        },
+        {
+            "path": "biomes/ice_plains.biome.json"
+        },
+        {
+            "path": "biomes/ice_plains_spikes.biome.json"
+        },
+        {
+            "path": "biomes/jungle.biome.json"
+        },
+        {
+            "path": "biomes/jungle_edge.biome.json"
+        },
+        {
+            "path": "biomes/jungle_edge_mutated.biome.json"
+        },
+        {
+            "path": "biomes/jungle_hills.biome.json"
+        },
+        {
+            "path": "biomes/jungle_mutated.biome.json"
+        },
+        {
+            "path": "biomes/legacy_frozen_ocean.biome.json"
+        },
+        {
+            "path": "biomes/lukewarm_ocean.biome.json"
+        },
+        {
+            "path": "biomes/mega_taiga.biome.json"
+        },
+        {
+            "path": "biomes/mega_taiga_hills.biome.json"
+        },
+        {
+            "path": "biomes/mesa.biome.json"
+        },
+        {
+            "path": "biomes/mesa_bryce.biome.json"
+        },
+        {
+            "path": "biomes/mesa_plateau.biome.json"
+        },
+        {
+            "path": "biomes/mesa_plateau_mutated.biome.json"
+        },
+        {
+            "path": "biomes/mesa_plateau_stone.biome.json"
+        },
+        {
+            "path": "biomes/mesa_plateau_stone_mutated.biome.json"
+        },
+        {
+            "path": "biomes/mushroom_island.biome.json"
+        },
+        {
+            "path": "biomes/mushroom_island_shore.biome.json"
+        },
+        {
+            "path": "biomes/ocean.biome.json"
+        },
+        {
+            "path": "biomes/plains.biome.json"
+        },
+        {
+            "path": "biomes/redwood_taiga_hills_mutated.biome.json"
+        },
+        {
+            "path": "biomes/redwood_taiga_mutated.biome.json"
+        },
+        {
+            "path": "biomes/river.biome.json"
+        },
+        {
+            "path": "biomes/roofed_forest.biome.json"
+        },
+        {
+            "path": "biomes/roofed_forest_mutated.biome.json"
+        },
+        {
+            "path": "biomes/savanna.biome.json"
+        },
+        {
+            "path": "biomes/savanna_mutated.biome.json"
+        },
+        {
+            "path": "biomes/savanna_plateau.biome.json"
+        },
+        {
+            "path": "biomes/savanna_plateau_mutated.biome.json"
+        },
+        {
+            "path": "biomes/stone_beach.biome.json"
+        },
+        {
+            "path": "biomes/sunflower_plains.biome.json"
+        },
+        {
+            "path": "biomes/swampland.biome.json"
+        },
+        {
+            "path": "biomes/swampland_mutated.biome.json"
+        },
+        {
+            "path": "biomes/taiga.biome.json"
+        },
+        {
+            "path": "biomes/taiga_hills.biome.json"
+        },
+        {
+            "path": "biomes/taiga_mutated.biome.json"
+        },
+        {
+            "path": "biomes/the_end.biome.json"
+        },
+        {
+            "path": "biomes/warm_ocean.biome.json"
+        },
+        {
             "path": "cameras/presets/first_person.json"
+        },
+        {
+            "path": "cameras/presets/fixed_boom.json"
+        },
+        {
+            "path": "cameras/presets/follow_orbit.json"
         },
         {
             "path": "cameras/presets/free.json"
@@ -506,6 +731,9 @@
         },
         {
             "path": "items/wheat_seeds.json"
+        },
+        {
+            "path": "item_catalog/crafting_item_catalog.json"
         },
         {
             "path": "loot_tables/empty.json"
@@ -4000,9 +4228,6 @@
             "path": "structures/bastion/treasure/ramparts/bottom_wall_0.nbt"
         },
         {
-            "path": "structures/bastion/treasure/ramparts/lava_basin.nbt"
-        },
-        {
             "path": "structures/bastion/treasure/ramparts/lava_basin_main.nbt"
         },
         {
@@ -4169,9 +4394,6 @@
         },
         {
             "path": "structures/bastion/units/walls/wall_base.nbt"
-        },
-        {
-            "path": "structures/bastion/units/wall_units/edge_0.nbt"
         },
         {
             "path": "structures/bastion/units/wall_units/edge_0_large.nbt"

@@ -12,8 +12,10 @@
       },
       "minecraft:camera_first_person": {},
       "minecraft:camera_render_first_person_objects": {},
-      "minecraft:camera_attach_to_player": {
-        "offset": [ 0.0, 0.0, 0.0 ]
+      "minecraft:camera_attach_to_player": {},
+      "minecraft:camera_offset": {
+         "view": [ 0.0, 0.0 ],
+         "entity": [ 0.0, 0.0, 0.0 ]
       },
       "minecraft:camera_direct_look": {
         "pitch_min": -89.9,

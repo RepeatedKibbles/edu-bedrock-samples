@@ -79,7 +79,7 @@
   "sand": {
     "isotropic": true,
     "textures": "sand",
-    "brightness_gamma": 0.55,
+    "ambient_occlusion_exponent": 0.55,
     "sound": "sand"
   },
   "gravel": {
@@ -161,7 +161,7 @@
     },
     "textures": "leaves",
     "carried_textures": "leaves_carried",
-    "brightness_gamma": 0.80,
+    "ambient_occlusion_exponent": 0.8,
     "sound": "grass"
   },
   "sponge": {
@@ -210,7 +210,7 @@
       "down": "sandstone_bottom",
       "side": "sandstone_side"
     },
-    "brightness_gamma": 0.70,
+    "ambient_occlusion_exponent": 1.0,
     "sound": "stone"
   },
   "noteblock": {
@@ -425,7 +425,7 @@
   "obsidian": {
     "isotropic": true,
     "textures": "obsidian",
-    "brightness_gamma": 2.00,
+    "ambient_occlusion_exponent": 2.0,
     "sound": "stone"
   },
   "torch": {
@@ -612,7 +612,7 @@
   "snow_layer": {
     "isotropic": true,
     "textures": "snow",
-    "brightness_gamma": 0.45,
+    "ambient_occlusion_exponent": 1.0,
     "sound": "snow"
   },
   "ice": {
@@ -622,7 +622,7 @@
   "snow": {
     "isotropic": true,
     "textures": "snow",
-    "brightness_gamma": 0.45,
+    "ambient_occlusion_exponent": 1.0,
     "sound": "snow"
   },
   "cactus": {
@@ -1010,7 +1010,7 @@
   },
   "nether_brick": {
     "textures": "nether_brick",
-    "brightness_gamma": 0.80,
+    "ambient_occlusion_exponent": 1.0,
     "sound": "stone"
   },
   "nether_brick_stairs": {
@@ -1018,7 +1018,7 @@
   },
   "red_nether_brick": {
     "textures": "red_nether_brick",
-    "brightness_gamma": 0.80,
+    "ambient_occlusion_exponent": 1.0,
     "sound": "stone"
   },
   "nether_wart": {
@@ -1252,7 +1252,7 @@
     },
     "textures": "leaves2",
     "carried_textures": "leaves_carried2",
-    "brightness_gamma": 0.80,
+    "ambient_occlusion_exponent": 0.8,
     "sound": "grass"
   },
   "log2": {
@@ -1339,7 +1339,7 @@
       "down": "redsandstone_bottom",
       "side": "redsandstone_side"
     },
-    "brightness_gamma": 0.70,
+    "ambient_occlusion_exponent": 1.0,
     "sound": "stone"
   },
   "red_sandstone_stairs": {
@@ -1517,7 +1517,7 @@
   },
   "glowingobsidian": {
     "textures": "glowing_obsidian",
-    "brightness_gamma": 0.80,
+    "ambient_occlusion_exponent": 1.0,
     "sound": "stone"
   },
   "netherreactor": {
@@ -1827,7 +1827,7 @@
   },
   "red_nether_brick_stairs": {
     "textures": "red_nether_brick",
-    "brightness_gamma": 0.80,
+    "ambient_occlusion_exponent": 1.0,
     "sound": "stone"
   },
   "smooth_quartz_stairs": {

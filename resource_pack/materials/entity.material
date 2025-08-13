@@ -920,8 +920,18 @@
     "chalkboard:entity": {},
     "chest:entity": {},
     "chicken:entity": {},
+    "chicken_cold:entity_alphatest": {},
     "chicken_legs:entity_alphatest": {},
     "cow:entity": {},
+    "cow_cold:entity_alphatest": {},
+    "creaking:entity_alphatest": {},
+    "creaking_eyes:entity_alphatest": {
+      "+defines": [ "USE_COLOR_MASK" ],
+      "+states": [ "Blending" ],
+      "depthFunc": "Equal",
+      "blendSrc": "SourceAlpha",
+      "blendDst": "OneMinusSrcAlpha"
+    },
     "creeper:entity": {},
     "dragon_head:entity_alphatest": {},
     "dragon_head_glint:entity_glint": {},
@@ -955,6 +965,7 @@
     "tropicalfish:entity_multitexture_multiplicative_blend": {},
     "ghast:entity_emissive_alpha": {},
     "guardian:entity_alphatest": {},
+    "harness:entity_alphatest": {},
     "horse:entity_alphatest": {},
     "horse_leather_armor:entity_multitexture_alpha_test_color_mask": {},
     "husk:entity_alphatest": {},
@@ -977,6 +988,7 @@
     "ocelot:entity_alphatest": {},
     "parrot:entity_alphatest": {},
     "pig:entity": {},
+    "pig_v3:entity_alphatest": {},
     "hoglin:entity_alphatest": {},
     "zoglin:entity_alphatest": {},
     "shield:entity": {},
@@ -1153,6 +1165,7 @@
       ]
     },
     "bogged:entity_alphatest": {},
-    "bogged_clothes:entity_alphatest": {}
+    "bogged_clothes:entity_alphatest": {},
+    "saddle:entity_alphatest": {}
   }
 }
