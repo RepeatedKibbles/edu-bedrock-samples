@@ -11,9 +11,6 @@
 							"wield_first_person_raise": "query.main_hand_item_use_duration > 0.0f"
 						},
 						{
-							"wield_first_person_raise_shake": "query.main_hand_item_use_duration > 0.0f"
-						},
-						{
 							"wield_first_person_riptide": "query.can_damage_nearby_mobs > 0.0"
 						}
 					],
@@ -27,7 +24,7 @@
 					"animations": [
 						"wield_third_person",
 						{
-							"wield_third_person_raise": "query.main_hand_item_use_duration > 0.0f || query.has_target"
+							"wield_third_person_raise": "query.main_hand_item_use_duration > 0.0f"
 						}
 					],
 					"transitions": [

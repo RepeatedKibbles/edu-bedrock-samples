@@ -1,5 +1,5 @@
 {
-  "format_version": "1.20.10",
+  "format_version": "1.12",
   "minecraft:recipe_shaped": {
     "description": {
     "identifier": "minecraft:polished_diorite_stairs"
@@ -14,14 +14,10 @@
     ],
     "key": {
       "#": {
-        "item": "minecraft:polished_diorite"
+        "item": "minecraft:stone",
+        "data": 4
       }
     },
-	"unlock": [
-      {
-        "item": "minecraft:polished_diorite"
-      }
-    ],
     "result": {
       "item": "minecraft:polished_diorite_stairs",
       "count": 4

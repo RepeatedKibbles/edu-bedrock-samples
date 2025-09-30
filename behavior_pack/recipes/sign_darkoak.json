@@ -1,5 +1,5 @@
 {
-  "format_version": "1.20.10",
+  "format_version": "1.12",
   "minecraft:recipe_shaped": {
     "description": {
     "identifier": "minecraft:sign_darkoak"
@@ -15,17 +15,13 @@
     ],
     "key": {
       "#": {
-        "item": "minecraft:dark_oak_planks"
+        "item": "minecraft:planks",
+  	  "data": 5
       },
       "|": {
         "item": "minecraft:stick"
       }
     },
-    "unlock": [
-      {
-        "item": "minecraft:dark_oak_planks"
-      }
-    ],
     "result": {
       "item": "minecraft:darkoak_sign",
       "count": 3

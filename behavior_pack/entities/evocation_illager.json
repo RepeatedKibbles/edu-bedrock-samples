@@ -1,13 +1,12 @@
 {
-  "format_version": "1.21.50",
+  "format_version": "1.13.0",
   "minecraft:entity": {
     "description": {
       "identifier": "minecraft:evocation_illager",
-      "spawn_category": "monster",
       "is_spawnable": true,
-      "is_summonable": true
+      "is_summonable": true,
+      "is_experimental": false
     },
-
     "component_groups": {
       "minecraft:celebrate": {
         "minecraft:behavior.celebrate": {
@@ -35,7 +34,7 @@
           "update_interval_base": 60,
           "update_interval_variant": 40,
           "can_find_poi": false,
-          "can_migrate": true,
+          "can_migrate": false,
           "first_founding_reward": 0
         },
         "minecraft:behavior.move_to_village": {
@@ -47,32 +46,9 @@
           "range": 4.0,
           "event_name": "ambient.in.raid"
         }
-      },
-      "minecraft:raid_persistence": {
-        "minecraft:persistent": {}
-      },
-      "minecraft:raid_despawn": {
-        "minecraft:despawn": {
-          "despawn_from_distance": {}
-        }
       }
     },
-
     "components": {
-      "minecraft:equip_item": {
-      },
-      "minecraft:shareables": {
-        "items": [
-          {
-            "item": "minecraft:banner:15",
-            "want_amount": 1,
-            "surplus_amount": 1,
-            "priority": 0
-          }
-        ]
-      },
-      "minecraft:is_hidden_when_invisible": {
-      },
       "minecraft:experience_reward": {
         "on_death": "10"
       },
@@ -125,6 +101,7 @@
       },
       "minecraft:behavior.summon_entity": {
         "priority": 2,
+
         "summon_choices": [
           {
             "min_activation_range": 0.0,
@@ -193,8 +170,7 @@
                 "summon_cap": 8,
                 "summon_cap_radius": 16.0,
                 "size": 1.0,
-                "sound_event": "prepare.summon",
-                "summon_event": "minecraft:add_damage_timer"
+                "sound_event": "prepare.summon"
               }
             ]
           }
@@ -210,11 +186,11 @@
             "cast_duration": 3.0,
             "particle_color": "#FFB38033",
             "weight": 3,
-            "filters": {
-              "all_of": [
-                { "test": "is_family", "subject": "other", "value": "sheep" },
-                { "test": "is_color", "subject": "other", "value": "blue" }
-              ]
+            "filters": { 
+                "all_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "sheep"},
+                  { "test" :  "is_color", "subject" : "other", "value" :  "blue"}
+                ] 
             },
             "start_sound_event": "cast.spell",
             "sequence": [
@@ -231,15 +207,10 @@
         "priority": 5,
         "entity_types": [
           {
-            "filters": { "test": "is_family", "subject": "other", "value": "player" },
+            "filters": { "test" :  "is_family", "subject" : "other", "value" :  "player"},
             "max_dist": 8,
             "walk_speed_multiplier": 0.6,
             "sprint_speed_multiplier": 1.0
-          },
-          {
-            "filters": { "test": "is_family", "subject": "other", "value": "creaking" },
-            "max_dist": 8,
-            "sprint_speed_multiplier": 1.2
           }
         ]
       },
@@ -251,13 +222,13 @@
         "priority": 2,
         "entity_types": [
           {
-            "filters": {
-              "any_of": [
-                { "test": "is_family", "subject": "other", "value": "player" },
-                { "test": "is_family", "subject": "other", "value": "snowgolem" },
-                { "test": "is_family", "subject": "other", "value": "irongolem" },
-                { "test": "is_family", "subject": "other", "value": "wandering_trader" }
-              ]
+            "filters": {  
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "player"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "snowgolem"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "irongolem"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "wandering_trader"}
+                ] 
             },
             "max_dist": 20
           },
@@ -273,6 +244,7 @@
         ],
         "must_see": true
       },
+
       "minecraft:behavior.look_at_player": {
         "priority": 9,
         "look_distance": 3.0,
@@ -281,25 +253,10 @@
       "minecraft:behavior.look_at_entity": {
         "priority": 10,
         "look_distance": 8.0,
-        "filters": { "test": "is_family", "subject": "other", "value": "mob" }
+        "filters": { "test" :  "is_family", "subject" : "other", "value" :  "mob" }
       },
       "minecraft:behavior.hurt_by_target": {
-        "priority": 1,
-        "entity_types": {
-          "filters": {
-            "test": "is_family", "subject": "other", "operator": "!=", "value": "illager"
-          },
-          "max_dist": 64
-        }
-      },
-      "minecraft:behavior.equip_item": {
-        "priority": 3
-      },
-      "minecraft:behavior.pickup_items": {
-        "priority": 7,
-        "max_dist": 3,
-        "goal_radius": 2,
-        "speed_multiplier": 1.0
+        "priority": 1
       },
       "minecraft:persistent": {
       },
@@ -311,44 +268,21 @@
       },
       "minecraft:follow_range": {
         "value": 64
-      },
-      "minecraft:can_join_raid": {
-      },
-      "minecraft:conditional_bandwidth_optimization": {
       }
     },
-
     "events": {
       "minecraft:spawn_for_raid": {
         "add": {
           "component_groups": [
-            "minecraft:raid_configuration",
-            "minecraft:raid_despawn",
-            "minecraft:raid_persistence"
+            "minecraft:raid_configuration"
           ]
         }
       },
       "minecraft:start_celebrating": { // Event must be called exactly this for village to fire it when a raid is lost
-        "sequence": [
-          {
-            "add": { "component_groups": [ "minecraft:celebrate" ] }
-          },
-          {
-            "filters": { "test": "has_nametag", "value": false },
-            "remove": { "component_groups": [ "minecraft:raid_persistence" ] }
-          }
-        ]
+        "add": { "component_groups": [ "minecraft:celebrate" ] }
       },
       "minecraft:stop_celebrating": {
         "remove": { "component_groups": [ "minecraft:celebrate" ] }
-      },
-      "minecraft:raid_expired": {
-        "sequence": [
-          {
-            "filters": { "test": "has_nametag", "value": false },
-            "remove": { "component_groups": [ "minecraft:raid_persistence" ] }
-          }
-        ]
       }
     }
   }

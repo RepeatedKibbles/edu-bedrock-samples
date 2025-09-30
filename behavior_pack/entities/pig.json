@@ -1,21 +1,12 @@
 {
-  "format_version": "1.21.90",
+  "format_version": "1.13.0",
   "minecraft:entity": {
     "description": {
       "identifier": "minecraft:pig",
-      "spawn_category": "creature",
       "is_spawnable": true,
       "is_summonable": true,
-      "properties": {
-        "minecraft:climate_variant": {
-          "type": "enum",
-          "values": [ "temperate", "warm", "cold" ],
-          "default": "temperate",
-          "client_sync": true
-        }
-      }
+      "is_experimental": false
     },
-
     "component_groups": {
       "minecraft:pig_baby": {
         "minecraft:is_baby": {
@@ -31,18 +22,20 @@
             "target": "self"
           }
         },
+
         "minecraft:behavior.follow_parent": {
           "priority": 6,
           "speed_multiplier": 1.1
         }
       },
+
       "minecraft:pig_transform": {
         "minecraft:transformation": {
           "into": "minecraft:pig_zombie",
-          "transformation_sound": "mob.pig.death",
           "delay": 0.5
         }
       },
+
       "minecraft:pig_adult": {
         "minecraft:experience_reward": {
           "on_bred": "Math.Random(1,7)",
@@ -50,8 +43,6 @@
         },
         "minecraft:loot": {
           "table": "loot_tables/entities/pig.json"
-        },
-        "minecraft:leashable_to": {
         },
         "minecraft:behavior.breed": {
           "priority": 4,
@@ -67,12 +58,10 @@
               "target": "baby"
             }
           },
-          "breed_items": [ "carrot", "beetroot", "potato" ],
-          "property_inheritance": {
-            "minecraft:climate_variant": {}
-          }
+          "breed_items": [ "carrot", "beetroot", "potato" ]
         }
       },
+
       "minecraft:pig_unsaddled": {
         "minecraft:interact": {
           "interactions": [
@@ -93,39 +82,19 @@
             "zombie"
           ],
           "seats": {
-            "position": [ 0.0, 0.7, 0.0 ]
+            "position": [ 0.0, 0.63, 0.0 ]
           }
         }
       },
+
       "minecraft:pig_saddled": {
         "minecraft:is_saddled": {
         },
         "minecraft:loot": {
           "table": "loot_tables/entities/pig_saddled.json"
         },
-        "minecraft:interact": {
-          "interactions": [
-            {
-              "on_interact": {
-                "filters": {
-                  "all_of": [
-                    { "test": "is_sneak_held", "subject": "other", "value": false },
-                    { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "shears" },
-                    { "test": "rider_count", "subject": "self", "operator": "equals", "value": 0 }
-                  ]
-                },
-                "event": "minecraft:on_unsaddled"
-              },
-              "hurt_item": 1,
-              "spawn_items": { "table": "loot_tables/entities/saddle.json" },
-              "interact_text": "action.interact.removesaddle",
-              "play_sounds": "unsaddle",
-              "vibration": "shear"
-            }
-          ]
-        },
         "minecraft:boostable": {
-          "speed_multiplier": 1.35,
+          "speed_multiplier": 2.0,
           "duration": 3.0,
           "boost_items": [
             {
@@ -137,7 +106,7 @@
         },
         "minecraft:rideable": {
           "seat_count": 1,
-          "interact_text": "action.interact.ride.horse",
+          "interact_text": "action.interact.mount",
           "family_types": [
             "player"
           ],
@@ -154,19 +123,15 @@
       }
     },
 
+
     "components": {
-      "minecraft:is_hidden_when_invisible": {
-      },
       "minecraft:damage_sensor": {
         "triggers": {
           "on_damage": {
-            "filters": [
-              { "test": "is_family", "subject": "other", "value": "lightning" },
-              { "test": "is_difficulty", "operator": "!=", "value": "peaceful" }
-            ],
+            "filters": { "test" :  "is_family", "subject" : "other", "value" :  "lightning"},
             "event": "become_zombie"
           },
-          "deals_damage": "no"
+          "deals_damage": false
         }
       },
       "minecraft:type_family": {
@@ -185,7 +150,7 @@
       "minecraft:hurt_on_condition": {
         "damage_conditions": [
           {
-            "filters": { "test": "in_lava", "subject": "self" },
+            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
             "cause": "lava",
             "damage_per_tick": 4
           }
@@ -211,12 +176,12 @@
         "height": 0.9
       },
       "minecraft:leashable": {
+        "soft_distance": 4.0,
+        "hard_distance": 6.0,
+        "max_distance": 10.0
       },
       "minecraft:balloonable": {
-        "mass": 0.9
-      },
-      "minecraft:despawn": {
-        "despawn_from_distance": {}
+        "mass": 0.75
       },
       "minecraft:behavior.mount_pathing": {
         "priority": 1,
@@ -258,13 +223,14 @@
       "minecraft:pushable": {
         "is_pushable": true,
         "is_pushable_by_piston": true
-      },
-      "minecraft:conditional_bandwidth_optimization": {
       }
     },
 
+
     "events": {
       "become_zombie": {
+        "remove": {
+        },
         "add": {
           "component_groups": [
             "minecraft:pig_transform"
@@ -272,47 +238,32 @@
         }
       },
       "minecraft:entity_spawned": {
-        "sequence": [
+        "randomize": [
           {
-            "randomize": [
-              {
-                "weight": 95,
-                "trigger": "minecraft:spawn_adult"
-              },
-              {
-                "weight": 5,
-                "add": {
-                  "component_groups": [
-                    "minecraft:pig_baby"
-                  ]
-                }
-              }
-            ]
+            "weight": 95,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+                "minecraft:pig_adult",
+                "minecraft:pig_unsaddled"
+              ]
+            }
           },
           {
-            "first_valid": [
-              {
-                "filters": {
-                  "test": "has_biome_tag",
-                  "value": "spawns_warm_variant_farm_animals"
-                },
-                "set_property": {
-                  "minecraft:climate_variant": "warm"
-                }
-              },
-              {
-                "filters": {
-                  "test": "has_biome_tag",
-                  "value": "spawns_cold_variant_farm_animals"
-                },
-                "set_property": {
-                  "minecraft:climate_variant": "cold"
-                }
-              }
-            ]
+            "weight": 5,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+                "minecraft:pig_baby"
+              ]
+
+            }
           }
         ]
       },
+
       "minecraft:entity_born": {
         "remove": {
         },
@@ -322,6 +273,7 @@
           ]
         }
       },
+
       "minecraft:ageable_grow_up": {
         "remove": {
           "component_groups": [
@@ -335,6 +287,7 @@
           ]
         }
       },
+
       "minecraft:on_saddled": {
         "remove": {
           "component_groups": [
@@ -344,26 +297,6 @@
         "add": {
           "component_groups": [
             "minecraft:pig_saddled"
-          ]
-        }
-      },
-      "minecraft:on_unsaddled": {
-        "remove": {
-          "component_groups": [
-            "minecraft:pig_saddled"
-          ]
-        },
-        "add": {
-          "component_groups": [
-            "minecraft:pig_unsaddled"
-          ]
-        }
-      },
-      "minecraft:spawn_adult": {
-        "add": {
-          "component_groups": [
-            "minecraft:pig_adult",
-            "minecraft:pig_unsaddled"
           ]
         }
       }

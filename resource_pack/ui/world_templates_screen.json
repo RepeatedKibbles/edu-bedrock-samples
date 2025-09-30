@@ -135,6 +135,10 @@
       {
         "binding_name": "#generate_random_button_enabled",
         "binding_name_override": "#enabled"
+      },
+      {
+        "binding_name": "#generate_random_button_visible",
+        "binding_name_override": "#visible"
       }
     ]
   },
@@ -466,9 +470,9 @@
       {
         "banner": {
           "type": "image",
-          "$banner_size|default": [ 16, 12 ],
+          "$banner_size|default": [ "139%y", 12 ],
           "size": "$banner_size",
-          "texture": "textures/ui/csbChevronArrowSmall",
+          "texture": "textures/ui/csbChevronArrowLarge",
           "layer": 9
         }
       }
@@ -1106,6 +1110,7 @@
             {
               "open_uri_button@disconnect.open_account_setting_button": {
                 "size": [ "100%", 26 ],
+                "ignored": "$is_holographic",
                 "visible": false,
                 "bindings": [
                   {

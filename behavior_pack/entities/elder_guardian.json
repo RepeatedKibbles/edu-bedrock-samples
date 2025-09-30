@@ -1,16 +1,13 @@
 {
-  "format_version": "1.21.70",
+  "format_version": "1.13.0",
   "minecraft:entity": {
     "description": {
       "identifier": "minecraft:elder_guardian",
-      "spawn_category": "monster",
       "is_spawnable": true,
       "is_summonable": true,
       "is_experimental": false
     },
     "components": {
-      "minecraft:is_hidden_when_invisible": {
-      },
       "minecraft:experience_reward": {
         "on_death": "query.last_hit_by_player ? 10 : 0"
       },
@@ -63,10 +60,6 @@
       "minecraft:breathable": {
         "breathes_water": true
       },
-      "minecraft:home": {
-        "restriction_type": "random_movement",
-        "restriction_radius": 16
-      },
       "minecraft:behavior.nearest_attackable_target": {
         "priority": 1,
         "entity_types": [
@@ -74,8 +67,7 @@
             "filters": {  
                 "any_of": [
                   { "test" :  "is_family", "subject" : "other", "value" :  "player"},
-                  { "test" :  "is_family", "subject" : "other", "value" :  "squid"},
-                  { "test" :  "is_family", "subject" : "other", "value" :  "axolotl"}
+                  { "test" :  "is_family", "subject" : "other", "value" :  "squid"}
                 ] 
             },
             "max_dist": 16
@@ -87,14 +79,14 @@
       "minecraft:behavior.guardian_attack": {
         "priority": 4
       },
-      "minecraft:behavior.move_towards_home_restriction": {
+      "minecraft:behavior.move_towards_restriction": {
         "priority": 5,
-        "speed_multiplier": 1.0
+        "speed_multiplier": 1.0,
+        "control_flags": [ "move", "look" ]
       },
-      "minecraft:behavior.random_swim": {
+      "minecraft:behavior.random_stroll": {
         "priority": 7,
-        "speed_multiplier": 0.5,
-        "avoid_surface": false
+        "speed_multiplier": 0.5
       },
       "minecraft:behavior.look_at_player": {
         "priority": 8,
@@ -105,15 +97,13 @@
         "priority": 9
       },
       "minecraft:type_family": {
-        "family": [ "aquatic", "guardian_elder", "monster", "mob" ]
+        "family": [ "guardian_elder", "monster", "mob" ]
       },
 	    "minecraft:physics": {
       },
       "minecraft:pushable": {
         "is_pushable": true,
         "is_pushable_by_piston": true
-      },
-      "minecraft:conditional_bandwidth_optimization": {
       }
     }
   }

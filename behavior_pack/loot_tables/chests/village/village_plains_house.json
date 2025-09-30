@@ -23,11 +23,17 @@
         {
           "type": "item",
           "weight": 2,
-          "name": "minecraft:dandelion"
+          "name": "minecraft:yellow_flower"
         },
         {
           "type": "item",
-          "name": "minecraft:poppy"
+          "functions": [
+            {
+              "function": "minecraft:set_data",
+              "data": 0
+            }
+          ],
+          "name": "minecraft:red_flower"
         },
         {
           "type": "item",
@@ -103,18 +109,13 @@
                 "min": 1,
                 "max": 2
               }
+            },
+            {
+              "function": "minecraft:set_data",
+              "data": 0
             }
           ],
-          "name": "minecraft:oak_sapling"
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "loot_table",
-          "name": "loot_tables/chests/village/village_bundle.json"
+          "name": "minecraft:sapling"
         }
       ]
     }

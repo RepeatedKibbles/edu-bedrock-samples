@@ -1,5 +1,5 @@
 {
-  "format_version": "1.20.10",
+  "format_version": "1.12",
   "minecraft:recipe_shaped": {
     "description": {
     "identifier": "minecraft:jungle_wood_stripped"
@@ -17,13 +17,9 @@
         "item": "minecraft:stripped_jungle_log"
       }
     },
-	"unlock": [
-      {
-        "item": "minecraft:stripped_jungle_log"
-      }
-    ],
     "result": {
-      "item": "minecraft:stripped_jungle_wood",
+      "item": "minecraft:wood",
+      "data": 11,
       "count": 3
     }
   }

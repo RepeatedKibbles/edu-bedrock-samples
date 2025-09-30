@@ -1,5 +1,5 @@
 {
-  "format_version": "1.20.10",
+  "format_version": "1.12",
   "minecraft:recipe_shaped": {
     "description": {
     "identifier": "minecraft:oak_wood"
@@ -14,16 +14,13 @@
     ],
     "key": {
       "#": {
-        "item": "minecraft:oak_log"
+        "item": "minecraft:log",
+        "data": 0
       }
     },
-	"unlock": [
-        {
-          "item": "minecraft:oak_log"
-        }
-    ],
     "result": {
-      "item": "minecraft:oak_wood",
+      "item": "minecraft:wood",
+      "data": 0,
       "count": 3
     }
   }

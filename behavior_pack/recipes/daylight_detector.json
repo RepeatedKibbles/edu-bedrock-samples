@@ -1,5 +1,5 @@
 {
-    "format_version": "1.20.10",
+    "format_version": "1.12",
     "minecraft:recipe_shaped": {
         "description": {
             "identifier": "minecraft:DaylightDetector_recipeId"
@@ -20,18 +20,12 @@
                 "item": "quartz"
             },
             "C": {
-                "tag": "minecraft:wooden_slabs"
+                "item": "minecraft:wooden_slab"
             }
         },
-        "unlock": [
-          {
-            "item": "quartz"
-          }
-        ],
         "result": {
             "item": "daylight_detector",
             "count": 1
-        },
-        "priority": -1
+        }
     }
 }

@@ -3,9 +3,7 @@
   "minecraft:client_entity": {
     "description": {
       "identifier": "minecraft:squid",
-      "materials": {
-        "default": "squid"
-      },
+      "materials": { "default": "squid" },
       "textures": {
         "default": "textures/entity/squid"
       },
@@ -22,11 +20,10 @@
           "squid_rotate"
         ]
       },
-      "render_controllers": [
-        "controller.render.squid"
-      ],
+      "render_controllers": [ "controller.render.squid" ],
       "spawn_egg": {
-        "texture": "spawn_egg_squid"
+        "texture": "spawn_egg",
+        "texture_index": 15
       }
     }
   }

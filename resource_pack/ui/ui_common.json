@@ -486,14 +486,14 @@
         "from_button_id": "button.menu_left",
         "to_button_id": "$toggle_off_button",
         "mapping_type": "pressed",
-        "input_mode_condition": "gamepad"
+        "input_mode_condition": "gamepad_and_not_gaze"
       },
       {
         "ignored": "(not $enable_directional_toggling)",
         "from_button_id": "button.menu_right",
         "to_button_id": "$toggle_on_button",
         "mapping_type": "pressed",
-        "input_mode_condition": "gamepad"
+        "input_mode_condition": "gamepad_and_not_gaze"
       }
     ],
 
@@ -753,6 +753,7 @@
             {
               "transparent_grey": {
                 "type": "image",
+                "ignored": "$is_holographic",
                 "texture": "textures/ui/slider_locked_transparent_fade",
                 "alpha": 0.5,
                 "layer": 5,
@@ -831,6 +832,7 @@
       {
         "transparent_grey": {
           "type": "image",
+          "ignored": "$is_holographic",
           "texture": "textures/ui/slider_locked_transparent_fade",
           "alpha": 0.5,
           "layer": 4,
@@ -1004,6 +1006,7 @@
         "from_button_id": "button.menu_left",
         "to_button_id": "$slider_small_decrease_button",
         "mapping_type": "pressed",
+        "input_mode_condition": "not_gaze",
         "ignore_input_scope": true
       },
       {
@@ -1011,6 +1014,7 @@
         "from_button_id": "button.menu_up",
         "to_button_id": "$slider_small_decrease_button",
         "mapping_type": "pressed",
+        "input_mode_condition": "not_gaze",
         "ignore_input_scope": true
       },
       {
@@ -1018,6 +1022,7 @@
         "from_button_id": "button.menu_right",
         "to_button_id": "$slider_small_increase_button",
         "mapping_type": "pressed",
+        "input_mode_condition": "not_gaze",
         "ignore_input_scope": true
       },
       {
@@ -1025,6 +1030,7 @@
         "from_button_id": "button.menu_down",
         "to_button_id": "$slider_small_increase_button",
         "mapping_type": "pressed",
+        "input_mode_condition": "not_gaze",
         "ignore_input_scope": true
       }
     ],
@@ -1552,16 +1558,7 @@
     "$tts_override_control_value|default": " ",
     "tts_override_control_value": "$tts_override_control_value",
 
-    "$text_edit_box_collection_details_binding_type|default": "none",
-    "$text_edit_box_collection_details_binding_name|default": "",
-    "$text_edit_box_collection_details_binding_prefix|default": "",
-
     "bindings": [
-      {
-        "binding_type": "$text_edit_box_collection_details_binding_type",
-        "binding_collection_name": "$text_edit_box_collection_details_binding_name",
-        "binding_collection_prefix": "$text_edit_box_collection_details_binding_prefix"
-      },
       {
         "binding_type": "$text_edit_box_enabled_binding_type",
         "binding_collection_name": "$text_edit_box_grid_collection_name",
@@ -2179,6 +2176,7 @@
   },
 
   "dirt_background": {
+    "ignored": "($is_holographic and not $is_living_room_mode)",
     "type": "image",
     "texture": "textures/ui/bg32",
     "layer": 1,
@@ -2186,6 +2184,7 @@
   },
 
   "portal_background": {
+    "ignored": "$is_holographic",
     "type": "image",
     "texture": "textures/ui/portalBg",
     "layer": 1,
@@ -2220,7 +2219,6 @@
   "progress_bar_beveled_overlay": {
     "type": "image",
     "texture": "textures/ui/progress_bar_beveled_overlay",
-    "fill": true,
     "clip_direction": "left",
     "color": "#color",
     "bindings": [
@@ -2898,6 +2896,12 @@
     "layer": 2,
     "$fill_alpha|default": 0.8,
     "$dialog_background_texture|default": "textures/ui/control",
+    "variables": [
+      {
+        "requires": "$is_holographic",
+        "$fill_alpha": 1.0
+      }
+    ],
     "controls": [
       {
         "control": {
@@ -3599,6 +3603,7 @@
     "type": "image",
     "texture": "textures/ui/screen_background",
     "layer": -10,
+    "ignored": "$is_holographic",
     "$screen_background_alpha|default": 0.75,
     "alpha": "$screen_background_alpha"
   },
@@ -3845,11 +3850,6 @@
       },
       {
         "binding_name": "#decorated_pot_sherds",
-        "binding_type": "collection",
-        "binding_collection_name": "$item_collection_name"
-      },
-      {
-        "binding_name": "#serialized_actor_pose",
         "binding_type": "collection",
         "binding_collection_name": "$item_collection_name"
       },
@@ -5281,11 +5281,6 @@
         "binding_name": "#inventory_selected_decorated_pot_sherds",
         "binding_name_override": "#decorated_pot_sherds",
         "binding_condition": "always_when_visible"
-      },
-      {
-        "binding_name": "#inventory_selected_serialized_actor_pose",
-        "binding_name_override": "#serialized_actor_pose",
-        "binding_condition": "always_when_visible"
       }
     ]
   },
@@ -5985,6 +5980,7 @@
 
   "base_screen": {
     "type": "screen",
+    "vr_mode": "$is_holographic",
     "$screen_content|default": "common.base_screen_empty_panel",
     "$additional_screen_content|default": "common.base_screen_empty_panel",
     "$screen_bg_content|default": "common.base_screen_empty_panel",
@@ -6066,10 +6062,10 @@
               "$store_modal_screen_size": [ "80%", "80%" ],
               "$csb_upsell_screen_size": [ "90%", "60%x" ]
             },
-            // PE edition
+            // PE edition and VR
             {
               //Pocket Texel Size:  [320, 210]
-              "requires": "($pocket_screen)",
+              "requires": "($pocket_screen or $is_holographic)",
               "$narrow_screen_size": [ "90.3225%", "100% - 4px" ], // Realms Pending Invitations, Add Players
               "$play_screen_size": [ "83.4375%", "100% - 4px" ], // Play Screen
               "$tabbed_upsell_screen_size": [ 310, 173 ], // Trial Tabbed Upsell Screen
@@ -6682,8 +6678,6 @@
           "type": "stack_panel",
           "orientation": "horizontal",
           "size": [ "100% - 10px", "100%cm" ],
-          "$tooltip_image_text_panel_offset|default": [ 0, 0 ],
-          "offset": "$tooltip_image_text_panel_offset",
           "layer": 2,
           "controls": [
             {
@@ -6738,19 +6732,13 @@
             {
               "tooltip_text": {
                 "type": "label",
-                "size": [ "default", "default" ],
-                "$tool_tip_text_max_size|default": [ "default", "default" ],
-                "max_size": "$tool_tip_text_max_size",
+                "size": [ "fill", "default" ],
                 "$tooltip_text_binding_name|default": "#tooltip_text",
                 "text": "$tooltip_text_binding_name",
                 "$tooltip_text_color|default": "$f_color_format",
                 "color": "$tooltip_text_color",
                 "$tooltip_text_font_type|default": "default",
-                "$tooltip_text_font_size|default": "normal",
-                "$tooltip_text_line_padding|default": 1,
                 "font_type": "$tooltip_text_font_type",
-                "font_size": "$tooltip_text_font_size",
-                "line_padding": "$tooltip_text_line_padding",
                 "$tooltip_text_binding_type|default": "$tooltip_button_binding_type",
                 "$tooltip_text_bindings|default": [
                   {
@@ -6806,15 +6794,6 @@
     "layer": 200, // always on top
     "anchor_from": "top_middle",
     "anchor_to": "bottom_middle",
-    "$dynamic_tooltip_popup_with_custom_content_bindings|default": [
-      {
-        "binding_name": "$tooltip_popup_visible_binding",
-        "binding_name_override": "#visible",
-        "binding_collection_name": "$tooltip_button_collection_name",
-        "binding_type": "$tooltip_button_binding_type"
-      }
-    ],
-    "bindings": "$dynamic_tooltip_popup_with_custom_content_bindings",
     "controls": [
       {
         "tooltip_content@$tooltip_content": {}
@@ -6835,6 +6814,14 @@
           "texture": "$tooltip_popup_chevron_texture"
         }
       }
+    ],
+    "bindings": [
+      {
+        "binding_name": "$tooltip_popup_visible_binding",
+        "binding_name_override": "#visible",
+        "binding_collection_name": "$tooltip_button_collection_name",
+        "binding_type": "$tooltip_button_binding_type"
+      }
     ]
   },
 
@@ -6854,15 +6841,6 @@
     "layer": 200, // always on top
     "anchor_from": "top_middle",
     "anchor_to": "bottom_middle",
-    "$dynamic_tooltip_popup_with_image_and_text_bindings|default": [
-      {
-        "binding_name": "$tooltip_popup_visible_binding",
-        "binding_name_override": "#visible",
-        "binding_collection_name": "$tooltip_button_collection_name",
-        "binding_type": "$tooltip_button_binding_type"
-      }
-    ],
-    "bindings": "$dynamic_tooltip_popup_with_image_and_text_bindings",
     "controls": [
       {
         "image_and_text_stack_panel": {
@@ -6965,6 +6943,14 @@
           "$tooltip_popup_chevron_texture|default": "textures/ui/tooltip_default_chevron",
           "texture": "$tooltip_popup_chevron_texture"
         }
+      }
+    ],
+    "bindings": [
+      {
+        "binding_name": "$tooltip_popup_visible_binding",
+        "binding_name_override": "#visible",
+        "binding_collection_name": "$tooltip_button_collection_name",
+        "binding_type": "$tooltip_button_binding_type"
       }
     ]
   },

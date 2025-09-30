@@ -1,5 +1,5 @@
 {
-  "format_version": "1.20.10",
+  "format_version": "1.12",
   "minecraft:recipe_shapeless": {
     "description": {
     "identifier": "minecraft:suspicious_stew_from_lily_of_the_valley"
@@ -18,12 +18,10 @@
         "item": "minecraft:bowl"
       },
       {
-        "item": "minecraft:lily_of_the_valley"
+        "item": "minecraft:red_flower",
+        "data": 10
       }
     ],
-    "unlock": {
-        "context": "None"
-    },
     "result": {
       "item": "minecraft:suspicious_stew",
       "data": 4

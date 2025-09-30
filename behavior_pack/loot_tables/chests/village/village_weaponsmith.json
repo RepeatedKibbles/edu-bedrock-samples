@@ -130,9 +130,13 @@
                 "min": 3,
                 "max": 7
               }
+            },
+            {
+              "function": "set_data",
+              "data": 0
             }
           ],
-          "name": "minecraft:oak_sapling"
+          "name": "minecraft:sapling"
         },
         {
           "type": "item",
@@ -145,24 +149,11 @@
         },
         {
           "type": "item",
-          "name": "minecraft:copper_horse_armor"
-        },
-        {
-          "type": "item",
           "name": "minecraft:horsearmorgold"
         },
         {
           "type": "item",
           "name": "minecraft:horsearmordiamond"
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "loot_table",
-          "name": "loot_tables/chests/village/village_bundle.json"
         }
       ]
     }

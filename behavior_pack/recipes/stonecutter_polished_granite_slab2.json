@@ -1,5 +1,5 @@
 {
-  "format_version": "1.20.10",
+  "format_version": "1.12",
   "minecraft:recipe_shapeless": {
     "description": {
     "identifier": "minecraft:stonecutter_polished_granite_slab2"
@@ -10,16 +10,13 @@
     "priority": 0,
     "ingredients": [
       {
-        "item": "minecraft:polished_granite"
-      }
-    ],
-    "unlock": [
-      {
-        "item": "minecraft:polished_granite"
+        "item": "minecraft:stone",
+        "data": 2
       }
     ],
     "result": {
-      "item": "minecraft:polished_granite_slab",
+      "item": "minecraft:double_stone_slab3",
+      "data": 7,
       "count": 2
     }
   }

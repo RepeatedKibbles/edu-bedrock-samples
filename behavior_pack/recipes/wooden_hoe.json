@@ -1,5 +1,5 @@
 {
-  "format_version": "1.20.10",
+  "format_version": "1.12",
   "minecraft:recipe_shaped": {
     "description": {
     "identifier": "minecraft:wooden_hoe"
@@ -16,14 +16,9 @@
         "item": "minecraft:stick"
       },
       "X": {
-        "tag": "minecraft:planks"
+        "item": "minecraft:planks"
       }
     },
-    "unlock": [
-      {
-        "item": "minecraft:stick"
-      }
-    ],
     "result": {
       "item": "minecraft:wooden_hoe"
     }

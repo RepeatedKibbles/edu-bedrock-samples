@@ -23,12 +23,24 @@
         {
           "type": "item",
           "weight": 5,
-          "name": "minecraft:short_grass"
+          "functions": [
+            {
+              "function": "minecraft:set_data",
+              "data": 1
+            }
+          ],
+          "name": "minecraft:tallgrass"
         },
         {
           "type": "item",
           "weight": 5,
-          "name": "minecraft:tall_grass"
+          "functions": [
+            {
+              "function": "minecraft:set_data",
+              "data": 2
+            }
+          ],
+          "name": "minecraft:double_plant"
         },
         {
           "type": "item",
@@ -82,9 +94,13 @@
                 "min": 1,
                 "max": 2
               }
+            },
+            {
+              "function": "minecraft:set_data",
+              "data": 4
             }
           ],
-          "name": "minecraft:acacia_sapling"
+          "name": "minecraft:sapling"
         },
         {
           "type": "item",
@@ -106,15 +122,6 @@
         {
           "type": "item",
           "name": "minecraft:bucket"
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "loot_table",
-          "name": "loot_tables/chests/village/village_bundle.json"
         }
       ]
     }

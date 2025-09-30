@@ -1,5 +1,5 @@
 {
-    "format_version": "1.20.10",
+    "format_version": "1.16",
     "minecraft:recipe_shaped": {
         "description": {
             "identifier": "minecraft:Chest_recipeId"
@@ -14,11 +14,8 @@
         ],
         "key": {
             "A": {
-                "tag": "minecraft:planks"
+                "item": "minecraft:planks"
             }
-        },
-        "unlock": {
-                "context": "PlayerHasManyItems"
         },
         "result": {
             "item": "chest",

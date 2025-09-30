@@ -379,10 +379,9 @@
     "$pressed_no_hover_texture": "textures/ui/csb_button_borderless_pressed",
 
     "$default_checked_text_color": "$dark_toggle_hover_text_color",
-
     "bindings": [
       {
-        "binding_name": "#buy_now_tab_visible",
+        "binding_name": "#buy_visible",
         "binding_name_override": "#visible"
       }
     ]
@@ -520,7 +519,7 @@
         "csb_chevron": {
           "type": "image",
           "texture": "textures/ui/csbChevronArrowLarge",
-          "size": [ 25, 19 ],
+          "size": [ "138.89%y", "100%" ],
           "anchor_from": "bottom_left",
           "anchor_to": "bottom_left",
           "layer": 15

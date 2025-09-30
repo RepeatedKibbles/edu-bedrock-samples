@@ -16,7 +16,8 @@
         "controller.render.ravager"
       ],
       "spawn_egg": {
-        "texture": "spawn_egg_ravager"
+        "texture": "spawn_egg",
+        "texture_index": 57
       },
       "animations": {
         "walk": "animation.ravager.walk",
@@ -30,8 +31,8 @@
       },
       "scripts": {
         "pre_animation": [
-          "variable.roar_length = 1.0;",
-          "variable.bite_anim_duration = 0.75f;",
+          "variable.roar_length = 1.0;", // in seconds
+          "variable.bite_anim_duration = 0.75f;", // in seconds
           "variable.bite_neck_length = 10;"
         ],
         "animate": [

@@ -153,13 +153,12 @@
 
   "brewing_label": {
     "type": "label",
-    "layer": 2,
     "offset": [ 0, -3 ],
     "anchor_from": "top_middle",
     "anchor_to": "top_middle",
     "text": "$container_title",
     "color": "$title_text_color",
-    "localize": "$localize_title"
+    "layer": 2
   },
 
   "brewingstand_output_item@common.container_item": {

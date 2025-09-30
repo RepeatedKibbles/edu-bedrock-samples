@@ -3,9 +3,7 @@
   "minecraft:client_entity": {
     "description": {
       "identifier": "minecraft:agent",
-      "materials": {
-        "default": "agent"
-      },
+      "materials": { "default": "agent" },
       "textures": {
         "default": "textures/entity/agent"
       },
@@ -30,11 +28,10 @@
         "shrug": "animation.agent.shrug",
         "move_controller": "controller.animation.agent.move"
       },
-      "render_controllers": [
-        "controller.render.agent"
-      ],
+      "render_controllers": [ "controller.render.agent" ],
       "spawn_egg": {
-        "texture": "spawn_egg_agent"
+        "texture": "spawn_egg",
+        "texture_index": 52
       }
     }
   }

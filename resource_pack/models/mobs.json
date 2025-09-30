@@ -719,12 +719,12 @@
 
       {
         "name": "rightLeg",
-        "inflate": 0.49
+        "inflate": 0.5
       },
 
       {
         "name": "leftLeg",
-        "inflate": 0.49
+        "inflate": 0.5
       }
     ]
   },

@@ -1,9 +1,11 @@
 {
-  "format_version": "1.20.10",
+  "format_version": "1.12",
   "minecraft:recipe_shaped": {
     "description": {
-    "identifier": "minecraft:barrel_with_planks"
+    "identifier": "minecraft:barrel"
     },
+
+    
     "tags": [ "crafting_table" ],
     "pattern": [
       "#-#",
@@ -12,23 +14,14 @@
     ],
     "key": {
       "#": {
-        "tag": "minecraft:planks"
+          "item": "minecraft:stick"
       },
       "-": {
-        "tag": "minecraft:wooden_slabs"
+        "item": "minecraft:wooden_slab"
       }
     },
-    "unlock": [
-      {
-        "tag": "minecraft:planks"
-      },
-      {
-        "tag": "minecraft:wooden_slabs"
-      }
-    ],
     "result": {
       "item": "minecraft:barrel"
-    },
-    "priority": -1
+    }
   }
 }

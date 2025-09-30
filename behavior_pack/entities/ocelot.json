@@ -1,11 +1,11 @@
 {
-  "format_version": "1.21.90",
+  "format_version": "1.13.0",
   "minecraft:entity": {
     "description": {
       "identifier": "minecraft:ocelot",
-      "spawn_category": "creature",
       "is_spawnable": true,
-      "is_summonable": true
+      "is_summonable": true,
+      "is_experimental": false
     },
 
     "component_groups": {
@@ -24,6 +24,7 @@
           }
         }
       },
+
       "minecraft:ocelot_adult": {
         "minecraft:experience_reward": {
           "on_bred": "Math.Random(1,7)",
@@ -32,30 +33,8 @@
         "minecraft:loot": {
           "table": "loot_tables/entities/ocelot.json"
         },
-        "minecraft:leashable_to": {
-        },
         "minecraft:scale": {
           "value": 1
-        }
-      },
-      "minecraft:wild_child_ocelot_spawn": {
-        "minecraft:spawn_entity": {
-          "entities": {
-            "filters": [
-              {
-                "test": "random_chance",
-                "value": 7
-              }
-            ],
-            "min_wait_time": 0,
-            "max_wait_time": 0,
-            "num_to_spawn": 2,
-            "single_use": true,
-            "spawn_entity": "minecraft:ocelot",
-            "spawn_event": "minecraft:entity_born",
-            "spawn_method": "born",
-            "spawn_sound": ""
-          }
         }
       },
       "minecraft:ocelot_wild": {
@@ -103,18 +82,6 @@
         }
       },
       "minecraft:ocelot_trusting": {
-        "minecraft:breedable": {
-          "require_tame": false,
-          "breeds_with": {
-            "mate_type": "minecraft:ocelot",
-            "baby_type": "minecraft:ocelot",
-            "breed_event": {
-              "event": "minecraft:entity_born",
-              "target": "baby"
-            }
-          },
-          "breed_items": [ "fish", "salmon" ]
-        },
         "minecraft:behavior.breed": {
           "priority": 3,
           "speed_multiplier": 1.0
@@ -127,9 +94,21 @@
             "fish",
             "salmon"
           ]
+        },
+        "minecraft:breedable": {
+          "require_tame": false,
+          "breeds_with": {
+            "mate_type": "minecraft:ocelot",
+            "baby_type": "minecraft:ocelot",
+            "breed_event": {
+              "event": "minecraft:entity_born",
+              "target": "baby"
+            }
+          },
+          "breed_items": [ "fish", "salmon" ]
         }
       },
-      // Taming is only here for backwards compatibility purposes, ocelots are no longer tameable in Vanilla Minecraft
+      // minecraft:ocelot_tame is only here for backwards compatibility purposes, ocelots are no longer tameable in Vanilla Minecraft
       "minecraft:ocelot_tame": {
         "minecraft:is_tamed": {
         },
@@ -139,23 +118,27 @@
         },
         "minecraft:sittable": {
         },
-        "minecraft:behavior.teleport_to_owner": {
-          "priority": 0,
-          "filters": {
-            "all_of": [
-              { "test": "owner_distance", "operator": ">", "value": 12 },
-              { "test": "is_panicking" }
-            ]
+        "minecraft:leashable": {
+          "soft_distance": 4.0,
+          "hard_distance": 6.0,
+          "max_distance": 10.0,
+          "on_leash": {
+            "event": "minecraft:on_leash",
+            "target": "self"
+          },
+          "on_unleash": {
+            "event": "minecraft:on_unleash",
+            "target": "self"
           }
-        },
-        "minecraft:behavior.stay_while_sitting": {
-          "priority": 3
         },
         "minecraft:behavior.follow_owner": {
           "priority": 4,
           "speed_multiplier": 1.0,
           "start_distance": 10,
           "stop_distance": 2
+        },
+        "minecraft:behavior.stay_while_sitting": {
+          "priority": 3
         },
         "minecraft:behavior.ocelot_sit_on_block": {
           "priority": 6,
@@ -165,8 +148,6 @@
     },
 
     "components": {
-      "minecraft:is_hidden_when_invisible": {
-      },
       "minecraft:health": {
         "value": 10,
         "max": 10
@@ -214,32 +195,8 @@
       "minecraft:damage_sensor": {
         "triggers": {
           "cause": "fall",
-          "deals_damage": "no"
+          "deals_damage": false
         }
-      },
-      "minecraft:despawn": {
-        "despawn_from_distance": {}
-      },
-      "minecraft:leashable": {
-        "on_leash": {
-          "event": "minecraft:on_leash",
-          "target": "self"
-        },
-        "on_unleash": {
-          "event": "minecraft:on_unleash",
-          "target": "self"
-        }
-      },
-      "minecraft:balloonable": {
-        "mass": 0.7
-      },
-      "minecraft:physics": {
-      },
-      "minecraft:pushable": {
-        "is_pushable": true,
-        "is_pushable_by_piston": true
-      },
-      "minecraft:conditional_bandwidth_optimization": {
       },
       "minecraft:behavior.float": {
         "priority": 0
@@ -250,19 +207,31 @@
       },
       "minecraft:behavior.nearest_attackable_target": {
         "priority": 1,
+        "attack_interval": 10,
         "reselect_targets": true,
         "entity_types": [
           {
             "filters": {
-              "test": "is_family", "subject": "other", "value": "chicken"
+              "test": "is_family",
+              "subject": "other",
+              "value": "chicken"
             },
             "max_dist": 8
           },
           {
             "filters": {
               "all_of": [
-                { "test": "is_family", "subject": "other", "value": "baby_turtle" },
-                { "test": "in_water", "subject": "other", "operator": "!=", "value": true }
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "baby_turtle"
+                },
+                {
+                  "test": "in_water",
+                  "subject": "other",
+                  "operator": "!=",
+                  "value": true
+                }
               ]
             },
             "max_dist": 8
@@ -281,16 +250,9 @@
       },
       "minecraft:behavior.ocelotattack": {
         "priority": 4,
-        "cooldown_time": 1.0,
-        "x_max_rotation": 30.0,
-        "y_max_head_rotation": 30.0,
-        "max_distance": 15.0,
-        "max_sneak_range": 15.0,
-        "max_sprint_range": 4.0,
-        "reach_multiplier": 2.0,
-        "sneak_speed_multiplier": 0.6,
+        "walk_speed_multiplier": 0.8,
         "sprint_speed_multiplier": 1.33,
-        "walk_speed_multiplier": 0.8
+        "sneak_speed_multiplier": 0.6
       },
       "minecraft:behavior.random_stroll": {
         "priority": 8,
@@ -298,6 +260,12 @@
       },
       "minecraft:behavior.look_at_player": {
         "priority": 9
+      },
+      "minecraft:physics": {
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
       }
     },
 
@@ -313,8 +281,7 @@
                 "add": {
                   "component_groups": [
                     "minecraft:ocelot_adult",
-                    "minecraft:ocelot_wild",
-                    "minecraft:wild_child_ocelot_spawn"
+                    "minecraft:ocelot_wild"
                   ]
                 }
               },
@@ -333,6 +300,7 @@
           }
         ]
       },
+
       "minecraft:entity_born": {
         "sequence": [
           {
@@ -347,6 +315,7 @@
           }
         ]
       },
+
       "minecraft:entity_born_wild": {
         "remove": {
           "component_groups": [
@@ -360,6 +329,7 @@
           ]
         }
       },
+
       "minecraft:ageable_grow_up": {
         "remove": {
           "component_groups": [

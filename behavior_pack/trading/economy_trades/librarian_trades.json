@@ -20,8 +20,8 @@
                   "quantity": 1
                 }
               ],
-              "trader_exp": 2,
-              "max_uses": 16,
+              "trader_exp": 1,
+              "max_uses": 6,
               "reward_exp": true
             }
           ]
@@ -33,7 +33,7 @@
               "wants": [
                 {
                   "item": "minecraft:emerald",
-                  "quantity": 9,
+                  "quantity": 6,
                   "price_multiplier": 0.05
                 }
               ],
@@ -43,20 +43,20 @@
                   "quantity": 1
                 }
               ],
-              "trader_exp": 1,
-              "max_uses": 12,
+              "trader_exp": 2,
+              "max_uses": 5,
               "reward_exp": true
             },
             {
               "wants": [
                 {
                   "item": "minecraft:emerald",
-                  "price_multiplier": 0.2
+                  "quantity": 15,
+                  "price_multiplier": 0.1
                 },
                 {
                   "item": "minecraft:book",
-                  "quantity": 1,
-                  "price_multiplier": 0.2
+                  "quantity": 1
                 }
               ],
               "gives": [
@@ -74,8 +74,8 @@
                   ]
                 }
               ],
-              "trader_exp": 1,
-              "max_uses": 12,
+              "trader_exp": 2,
+              "max_uses": 2,
               "reward_exp": true
             }
           ]
@@ -102,8 +102,8 @@
                   "quantity": 1
                 }
               ],
-              "trader_exp": 10,
-              "max_uses": 12,
+              "trader_exp": 5,
+              "max_uses": 5,
               "reward_exp": true
             }
           ]
@@ -125,20 +125,20 @@
                   "quantity": 1
                 }
               ],
-              "trader_exp": 5,
-              "max_uses": 12,
+              "trader_exp": 10,
+              "max_uses": 5,
               "reward_exp": true
             },
             {
               "wants": [
                 {
                   "item": "minecraft:emerald",
-                  "price_multiplier": 0.2
+                  "quantity": 15,
+                  "price_multiplier": 0.1
                 },
                 {
                   "item": "minecraft:book",
-                  "quantity": 1,
-                  "price_multiplier": 0.2
+                  "quantity": 1
                 }
               ],
               "gives": [
@@ -156,8 +156,8 @@
                   ]
                 }
               ],
-              "trader_exp": 5,
-              "max_uses": 12,
+              "trader_exp": 10,
+              "max_uses": 2,
               "reward_exp": true
             }
           ]
@@ -165,7 +165,7 @@
       ]
     },
     {
-      "total_exp_required": 70,
+      "total_exp_required": 60,
       "groups": [
         {
           "num_to_select": 1,
@@ -184,8 +184,8 @@
                   "quantity": 1
                 }
               ],
-              "trader_exp": 20,
-              "max_uses": 12,
+              "trader_exp": 10,
+              "max_uses": 5,
               "reward_exp": true
             }
           ]
@@ -207,20 +207,20 @@
                   "quantity": 4
                 }
               ],
-              "trader_exp": 10,
-              "max_uses": 12,
+              "trader_exp": 20,
+              "max_uses": 5,
               "reward_exp": true
             },
             {
               "wants": [
                 {
                   "item": "minecraft:emerald",
-                  "price_multiplier": 0.2
+                  "quantity": 15,
+                  "price_multiplier": 0.1
                 },
                 {
                   "item": "minecraft:book",
-                  "quantity": 1,
-                  "price_multiplier": 0.2
+                  "quantity": 1
                 }
               ],
               "gives": [
@@ -238,8 +238,8 @@
                   ]
                 }
               ],
-              "trader_exp": 10,
-              "max_uses": 12,
+              "trader_exp": 20,
+              "max_uses": 2,
               "reward_exp": true
             }
           ]
@@ -248,23 +248,16 @@
     },
 
     {
-      "total_exp_required": 150,
+      "total_exp_required": 160,
       "groups": [
         {
           "num_to_select": 1,
           "trades": [
             {
-              // Book and quill can only have a single item per stack
               "wants": [
                 {
                   "item": "minecraft:writable_book",
-                  "quantity": 1,
-                  "price_multiplier": 0.05
-                },
-                {
-                  "item": "minecraft:writable_book",
-                  "quantity": 1,
-                  "price_multiplier": 0.05
+                  "quantity": 1
                 }
               ],
               "gives": [
@@ -273,8 +266,8 @@
                   "quantity": 1
                 }
               ],
-              "trader_exp": 30,
-              "max_uses": 12,
+              "trader_exp": 15,
+              "max_uses": 2,
               "reward_exp": true
             }
           ]
@@ -296,8 +289,8 @@
                   "quantity": 1
                 }
               ],
-              "trader_exp": 15,
-              "max_uses": 12,
+              "trader_exp": 30,
+              "max_uses": 5,
               "reward_exp": true
             },
             {
@@ -314,20 +307,20 @@
                   "quantity": 1
                 }
               ],
-              "trader_exp": 15,
-              "max_uses": 12,
+              "trader_exp": 30,
+              "max_uses": 5,
               "reward_exp": true
             },
             {
               "wants": [
                 {
                   "item": "minecraft:emerald",
-                  "price_multiplier": 0.2
+                  "quantity": 15,
+                  "price_multiplier": 0.1
                 },
                 {
                   "item": "minecraft:book",
-                  "quantity": 1,
-                  "price_multiplier": 0.2
+                  "quantity": 1
                 }
               ],
               "gives": [
@@ -345,8 +338,8 @@
                   ]
                 }
               ],
-              "trader_exp": 15,
-              "max_uses": 12,
+              "trader_exp": 30,
+              "max_uses": 2,
               "reward_exp": true
             }
           ]
@@ -354,7 +347,7 @@
       ]
     },
     {
-      "total_exp_required": 250,
+      "total_exp_required": 310,
       "groups": [
         {
           "num_to_select": 1,
@@ -373,8 +366,8 @@
                   "quantity": 1
                 }
               ],
-              "trader_exp": 30,
-              "max_uses": 12,
+              "trader_exp": 0,
+              "max_uses": 5,
               "reward_exp": true
             }
           ]

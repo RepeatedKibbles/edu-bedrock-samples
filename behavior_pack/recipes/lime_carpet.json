@@ -1,5 +1,5 @@
 {
-  "format_version": "1.20.10",
+  "format_version": "1.12",
   "minecraft:recipe_shaped": {
     "description": {
     "identifier": "minecraft:lime_carpet"
@@ -13,16 +13,13 @@
     ],
     "key": {
       "#": {
-        "item": "minecraft:lime_wool"
+        "item": "minecraft:wool",
+        "data": 5
       }
     },
-	"unlock": [
-      {
-        "item": "minecraft:lime_wool"
-      }
-    ],
     "result": {
-      "item": "minecraft:lime_carpet",
+      "item": "minecraft:carpet",
+      "data": 5,
       "count": 3
     }
   }

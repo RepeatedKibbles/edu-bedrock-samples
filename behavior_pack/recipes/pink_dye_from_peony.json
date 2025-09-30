@@ -1,5 +1,5 @@
 {
-  "format_version": "1.20.10",
+  "format_version": "1.12",
   "minecraft:recipe_shapeless": {
     "description": {
     "identifier": "minecraft:pink_dye_from_peony"
@@ -10,16 +10,13 @@
     "group": "pink_dye",
     "ingredients": [
       {
-        "item": "minecraft:peony"
+        "item": "minecraft:double_plant",
+        "data": 5
       }
     ],
-	"unlock": [
-      {
-        "item": "minecraft:peony"
-	  }
-    ],
     "result": {
-      "item": "minecraft:pink_dye",
+      "item": "minecraft:dye",
+      "data": 9,
       "count": 2
     }
   }

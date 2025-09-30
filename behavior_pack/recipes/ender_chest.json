@@ -1,5 +1,5 @@
 {
-  "format_version": "1.20.10",
+  "format_version": "1.12",
   "minecraft:recipe_shaped": {
     "description": {
     "identifier": "minecraft:ender_chest"
@@ -20,11 +20,6 @@
         "item": "minecraft:ender_eye"
       }
     },
-	"unlock": [
-      {
-        "item": "minecraft:ender_eye"
-      }
-    ],
     "result": {
       "item": "minecraft:ender_chest"
     }

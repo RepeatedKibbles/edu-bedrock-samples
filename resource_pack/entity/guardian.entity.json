@@ -39,18 +39,12 @@
           "swim",
           "look_at_target",
           "move_eye"
-        ],
-        "initialize": [
-          "variable.spike_animation_speed = 0.0;",
-          "variable.tail_animation_speed = 0.0;",
-          "variable.tail_swim = 0.0;"
         ]
       },
-      "render_controllers": [
-        "controller.render.guardian"
-      ],
+      "render_controllers": [ "controller.render.guardian" ],
       "spawn_egg": {
-        "texture": "spawn_egg_guardian"
+        "texture": "spawn_egg",
+        "texture_index": 26
       }
     }
   }

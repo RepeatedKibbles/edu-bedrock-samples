@@ -1,5 +1,5 @@
 {
-    "format_version": "1.20.10",
+    "format_version": "1.12",
     "minecraft:recipe_shaped": {
         "description": {
             "identifier": "minecraft:tripwire_hook"
@@ -20,18 +20,12 @@
                 "item": "stick"
             },
             "C": {
-                "tag": "minecraft:planks"
+                "item": "minecraft:planks"
             }
         },
-		"unlock": [
-          {
-            "item": "minecraft:string"
-          }
-        ],
         "result": {
             "item": "tripwire_hook",
             "count": 2
-        },
-        "priority": -1
+        }
     }
 }

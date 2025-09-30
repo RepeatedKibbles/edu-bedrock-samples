@@ -10,8 +10,7 @@
         "wither": "textures/entity/skulls/wither_skeleton",
         "zombie": "textures/entity/skulls/zombie",
         "creeper": "textures/entity/skulls/creeper",
-        "dragon": "textures/entity/dragon/dragon",
-        "piglin": "textures/entity/piglin/piglin"
+        "dragon": "textures/entity/dragon/dragon"
       },
       "geometry": {
         "default": "geometry.player_head",
@@ -20,8 +19,7 @@
         "wither": "geometry.mob_head",
         "zombie": "geometry.mob_head",
         "creeper": "geometry.mob_head",
-        "dragon": "geometry.dragon_head",
-        "piglin": "geometry.piglin"
+        "dragon": "geometry.dragon_head"
       }
     }
   }

@@ -1,5 +1,5 @@
 {
-  "format_version": "1.20.10",
+  "format_version": "1.12",
   "minecraft:recipe_shaped": {
     "description": {
     "identifier": "minecraft:yellow_stained_glass"
@@ -18,16 +18,13 @@
         "item": "minecraft:glass"
       },
       "X": {
-        "item": "minecraft:yellow_dye"
+        "item": "minecraft:dye",
+        "data": 11
       }
     },
-	"unlock": [
-      {
-        "item": "minecraft:glass"
-      }
-    ],
     "result": {
-      "item": "minecraft:yellow_stained_glass",
+      "item": "minecraft:stained_glass",
+      "data": 4,
       "count": 8
     }
   }

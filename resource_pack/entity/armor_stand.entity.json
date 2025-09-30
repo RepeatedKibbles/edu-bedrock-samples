@@ -26,9 +26,7 @@
         "hero_pose": "animation.armor_stand.hero_pose",
         "wiggle": "animation.armor_stand.wiggle",
         "controller.pose": "controller.animation.armor_stand.pose",
-        "controller.wiggling": "controller.animation.armor_stand.wiggle",
-        "holding_heavy_core": "animation.armor_stand.holding_heavy_core",
-        "controller.holding_heavy_core": "controller.animation.armor_stand.holding_heavy_core"
+        "controller.wiggling": "controller.animation.armor_stand.wiggle"
       },
       "scripts": {
         "initialize": [
@@ -37,16 +35,13 @@
         ],
         "animate": [
           "controller.pose",
-          "controller.wiggling",
-          "controller.holding_heavy_core"
+          "controller.wiggling"
         ]
       },
       "geometry": {
         "default": "geometry.armor_stand"
       },
-      "render_controllers": [
-        "controller.render.armor_stand"
-      ],
+      "render_controllers": [ "controller.render.armor_stand" ],
       "enable_attachables": true
     }
   }

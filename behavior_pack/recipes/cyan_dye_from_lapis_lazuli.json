@@ -1,5 +1,5 @@
 {
-  "format_version": "1.20.10",
+  "format_version": "1.12",
   "minecraft:recipe_shapeless": {
     "description": {
     "identifier": "minecraft:cyan_dye_from_lapis_lazuli"
@@ -15,16 +15,6 @@
       },
       {
         "item": "minecraft:dye",
-        "data": 2
-      }
-    ],
-	"unlock": [
-      {
-        "item": "minecraft:dye",
-        "data": 4
-	  },
-	  {
-		"item": "minecraft:dye",
         "data": 2
       }
     ],

@@ -210,7 +210,6 @@
   "$realms_plus_border_color": [ 0.4, 0.118, 0.459 ],
   "$csb_border_color": [ 1.0, 0.769, 0.169 ],
   "$csub_text_color": [ 1.0, 0.77, 0.17 ],
-  "$toast_subtitle_message": [ 0.694, 0.698, 0.710 ],
 
   //////// Border colors ////////
   "$slider_default_border_color": [ 0.0, 0.0, 0.0 ],
@@ -228,8 +227,6 @@
   "$servers_screenshot": [ 0.208, 0.208, 0.208 ],
   "$servers_current_screenshot": [ 0.118, 0.561, 0.263 ],
   "$realms_storage_bar_fill": [ 0.424, 0.765, 0.286 ],
-  "$toast_message_progress_bar_empty": [ 0.180, 0.420, 0.898 ],
-  "$toast_message_progress_bar_fill": [ 0.192, 0.196, 0.200 ],
 
   //////// Jukebox Popup Text /////////
   "$jukebox_text_color": [ 1.0, 0.4, 0.7 ],
@@ -435,9 +432,6 @@
   "$realmsplus_exclamation_mark_color": [ 1, 1, 1 ],
 
   //////// Bundle Tooltip colors ////////
-  "$bundle_info_description_color": [ 0.46, 0.46, 0.46 ],
-
-  //////// Vibrant Visuals colors ////////
-  "$vibrant_visuals_supported_color": [ 0.235, 0.522, 0.153 ]
+  "$bundle_info_description_color": [ 0.46, 0.46, 0.46 ]
 }
 

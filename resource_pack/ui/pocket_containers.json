@@ -27,10 +27,7 @@
         }
       },
       {
-        "title_label@generic_label": {
-          "text": "$header_label",
-          "localize": "$localize_title"
-        }
+        "title_label@generic_label": { "text": "$header_label" }
       }
     ]
   },

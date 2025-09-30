@@ -229,9 +229,8 @@
           "controls": [
             {
               "title_label@furnace_pocket.generic_label": {
-                "layer": 1,
                 "text": "$container_title",
-                "localize": "$localize_title"
+                "layer": 1
               }
             }
           ]

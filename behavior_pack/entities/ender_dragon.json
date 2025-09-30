@@ -1,11 +1,11 @@
 {
-  "format_version": "1.21.40",
+  "format_version": "1.13.0",
   "minecraft:entity": {
     "description": {
       "identifier": "minecraft:ender_dragon",
-      "spawn_category": "monster",
-      "is_spawnable": true,
-      "is_summonable": true
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
     },
 
     "component_groups": {
@@ -34,6 +34,7 @@
           "priority": 3
         },
         "minecraft:shooter": {
+          "type": "dragonfireball",
           "def": "minecraft:dragon_fireball"
         }
       },
@@ -45,10 +46,6 @@
     },
 
     "components": {
-      "minecraft:is_hidden_when_invisible": {
-      },
-      "minecraft:dimension_bound": {
-      },
       "minecraft:type_family": {
         "family": [ "dragon", "mob" ]
       },
@@ -81,7 +78,7 @@
       "minecraft:damage_sensor": {
         "triggers": {
           "cause": "fall",
-          "deals_damage": "no"
+          "deals_damage": false
         }
       },
       "minecraft:on_start_landing": {
@@ -101,9 +98,6 @@
       "minecraft:physics": {
         "has_gravity": false,
         "has_collision": false
-      },
-      "minecraft:game_event_movement_tracking": {
-        "emit_flap": true
       }
     },
 

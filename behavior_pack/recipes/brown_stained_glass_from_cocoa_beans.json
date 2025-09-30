@@ -1,5 +1,5 @@
 {
-  "format_version": "1.20.10",
+  "format_version": "1.12",
   "minecraft:recipe_shaped": {
     "description": {
     "identifier": "minecraft:brown_stained_glass_from_cocoa_beans"
@@ -19,16 +19,13 @@
         "item": "minecraft:glass"
       },
       "X": {
-        "item": "minecraft:cocoa_beans"
+        "item": "minecraft:dye",
+        "data": 3
       }
     },
-	"unlock": [
-      {
-        "item": "minecraft:glass"
-      }
-    ],
     "result": {
-      "item": "minecraft:brown_stained_glass",
+      "item": "minecraft:stained_glass",
+      "data": 12,
       "count": 8
     }
   }

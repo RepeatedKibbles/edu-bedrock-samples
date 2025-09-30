@@ -111,7 +111,7 @@
       "entries": [
         {
           "type": "item",
-          "name": "minecraft:oak_planks",
+          "name": "minecraft:planks",
           "weight": 1,
           "functions": [
             {
@@ -130,7 +130,7 @@
       "entries": [
         {
           "type": "item",
-          "name": "minecraft:acacia_log",
+          "name": "minecraft:log2",
           "weight": 1,
           "functions": [
             {
@@ -144,23 +144,13 @@
         },
         {
           "type": "item",
-          "name": "minecraft:dark_oak_log",
+          "name": "minecraft:log2",
           "weight": 1,
           "functions": [
             {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 1,
-                "max": 3
-              }
-            }
-          ]
-        },
-        {
-          "type": "item",
-          "name": "minecraft:mangrove_log",
-          "weight": 1,
-          "functions": [
+              "function": "minecraft:set_data",
+              "data": 1
+            },
             {
               "function": "minecraft:set_count",
               "count": {
@@ -177,7 +167,7 @@
       "entries": [
         {
           "type": "item",
-          "name": "minecraft:oak_log",
+          "name": "minecraft:log",
           "weight": 1,
           "functions": [
             {
@@ -191,9 +181,13 @@
         },
         {
           "type": "item",
-          "name": "minecraft:spruce_log",
+          "name": "minecraft:log",
           "weight": 1,
           "functions": [
+            {
+              "function": "minecraft:set_data",
+              "data": 1
+            },
             {
               "function": "minecraft:set_count",
               "count": {
@@ -205,9 +199,13 @@
         },
         {
           "type": "item",
-          "name": "minecraft:birch_log",
+          "name": "minecraft:log",
           "weight": 1,
           "functions": [
+            {
+              "function": "minecraft:set_data",
+              "data": 2
+            },
             {
               "function": "minecraft:set_count",
               "count": {
@@ -219,9 +217,13 @@
         },
         {
           "type": "item",
-          "name": "minecraft:jungle_log",
+          "name": "minecraft:log",
           "weight": 1,
           "functions": [
+            {
+              "function": "minecraft:set_data",
+              "data": 3
+            },
             {
               "function": "minecraft:set_count",
               "count": {
@@ -271,7 +273,7 @@
       "entries": [
         {
           "type": "item",
-          "name": "minecraft:oak_sapling",
+          "name": "minecraft:sapling",
           "weight": 2,
           "functions": [
             {
@@ -285,9 +287,13 @@
         },
         {
           "type": "item",
-          "name": "minecraft:spruce_sapling",
+          "name": "minecraft:sapling",
           "weight": 2,
           "functions": [
+            {
+              "function": "minecraft:set_data",
+              "data": 1
+            },
             {
               "function": "minecraft:set_count",
               "count": {
@@ -299,9 +305,13 @@
         },
         {
           "type": "item",
-          "name": "minecraft:birch_sapling",
+          "name": "minecraft:sapling",
           "weight": 2,
           "functions": [
+            {
+              "function": "minecraft:set_data",
+              "data": 2
+            },
             {
               "function": "minecraft:set_count",
               "count": {
@@ -313,23 +323,13 @@
         },
         {
           "type": "item",
-          "name": "minecraft:jungle_sapling",
+          "name": "minecraft:sapling",
           "weight": 4,
           "functions": [
             {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 4,
-                "max": 4
-              }
-            }
-          ]
-        },
-        {
-          "type": "item",
-          "name": "minecraft:acacia_sapling",
-          "weight": 2,
-          "functions": [
+              "function": "minecraft:set_data",
+              "data": 3
+            },
             {
               "function": "minecraft:set_count",
               "count": {
@@ -341,9 +341,31 @@
         },
         {
           "type": "item",
-          "name": "minecraft:dark_oak_sapling",
+          "name": "minecraft:sapling",
           "weight": 2,
           "functions": [
+            {
+              "function": "minecraft:set_data",
+              "data": 4
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 4,
+                "max": 4
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:sapling",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_data",
+              "data": 5
+            },
             {
               "function": "minecraft:set_count",
               "count": {
@@ -421,9 +443,13 @@
         },
         {
           "type": "item",
-          "name": "minecraft:cocoa_beans",
+          "name": "minecraft:dye",
           "weight": 2,
           "functions": [
+            {
+              "function": "set_data",
+              "data": 3
+            },
             {
               "function": "minecraft:set_count",
               "count": {

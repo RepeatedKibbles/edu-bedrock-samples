@@ -5,7 +5,7 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "minecraft:poppy",
+                    "name": "minecraft:red_flower",
                     "weight": 1,
                     "functions": [
                         {

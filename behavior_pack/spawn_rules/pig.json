@@ -8,7 +8,7 @@
     "conditions": [
       {
         "minecraft:spawns_on_surface": {},
-        "minecraft:spawns_on_block_filter": "minecraft:grass_block",
+        "minecraft:spawns_on_block_filter": "minecraft:grass",
         "minecraft:brightness_filter": {
           "min": 7,
           "max": 15,
@@ -18,22 +18,12 @@
           "default": 10
         },
         "minecraft:herd": {
-          "min_size": 1,
-          "max_size": 3
+          "min_size":1,
+          "max_size":3
         },
+    
         "minecraft:biome_filter": {
-          "any_of": [
-            {
-              "test": "has_biome_tag",
-              "operator": "==",
-              "value": "animal"
-            },
-            {
-              "test": "has_biome_tag",
-              "operator": "==",
-              "value": "cherry_grove"
-            }
-          ]
+          "test": "has_biome_tag", "operator":"==", "value": "animal"
         }
       }
     ]

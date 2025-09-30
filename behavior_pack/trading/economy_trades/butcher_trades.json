@@ -20,8 +20,8 @@
                   "quantity": 1
                 }
               ],
-              "trader_exp": 2,
-              "max_uses": 16,
+              "trader_exp": 1,
+              "max_uses": 6,
               "reward_exp": true
             },
             {
@@ -38,8 +38,8 @@
                   "quantity": 1
                 }
               ],
-              "trader_exp": 2,
-              "max_uses": 16,
+              "trader_exp": 1,
+              "max_uses": 6,
               "reward_exp": true
             },
             {
@@ -56,8 +56,8 @@
                   "quantity": 1
                 }
               ],
-              "trader_exp": 2,
-              "max_uses": 16,
+              "trader_exp": 1,
+              "max_uses": 6,
               "reward_exp": true
             }
           ]
@@ -79,8 +79,8 @@
                   "quantity": 1
                 }
               ],
-              "trader_exp": 1,
-              "max_uses": 12,
+              "trader_exp": 2,
+              "max_uses": 5,
               "reward_exp": true
             }
           ]
@@ -107,8 +107,8 @@
                   "quantity": 1
                 }
               ],
-              "trader_exp": 10,
-              "max_uses": 16,
+              "trader_exp": 5,
+              "max_uses": 5,
               "reward_exp": true
             }
           ]
@@ -120,6 +120,23 @@
               "wants": [
                 {
                   "item": "minecraft:emerald",
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:cooked_rabbit",
+                  "quantity": 5
+                }
+              ],
+              "trader_exp": 10,
+              "max_uses": 5,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
                   "quantity": 1,
                   "price_multiplier": 0.05
                 }
@@ -127,11 +144,11 @@
               "gives": [
                 {
                   "item": "minecraft:cooked_chicken",
-                  "quantity": 8
+                  "quantity": 4
                 }
               ],
-              "trader_exp": 5,
-              "max_uses": 16,
+              "trader_exp": 10,
+              "max_uses": 5,
               "reward_exp": true
             },
             {
@@ -145,11 +162,29 @@
               "gives": [
                 {
                   "item": "minecraft:cooked_porkchop",
-                  "quantity": 5
+                  "quantity": 3
                 }
               ],
-              "trader_exp": 5,
-              "max_uses": 16,
+              "trader_exp": 10,
+              "max_uses": 5,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 1,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:muttoncooked",
+                  "quantity": 4
+                }
+              ],
+              "trader_exp": 10,
+              "max_uses": 5,
               "reward_exp": true
             }
           ]
@@ -157,10 +192,10 @@
       ]
     },
     {
-      "total_exp_required": 70,
+      "total_exp_required": 60,
       "groups": [
         {
-        "num_to_select": 1,
+          "num_to_select": 1,
           "trades": [
             {
               "wants": [
@@ -176,15 +211,15 @@
                   "quantity": 1
                 }
               ],
-              "trader_exp": 20,
-              "max_uses": 16,
+              "trader_exp": 10,
+              "max_uses": 5,
               "reward_exp": true
             },
             {
               "wants": [
                 {
                   "item": "minecraft:muttonraw",
-                  "quantity": 7,
+                  "quantity": 8,
                   "price_multiplier": 0.05
                 }
               ],
@@ -194,8 +229,31 @@
                   "quantity": 1
                 }
               ],
+              "trader_exp": 10,
+              "max_uses": 5,
+              "reward_exp": true
+            }
+          ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 1,
+                  "price_multiplier": 0.5
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:cooked_beef",
+                  "quantity": 3
+                }
+              ],
               "trader_exp": 20,
-              "max_uses": 16,
+              "max_uses": 5,
               "reward_exp": true
             }
           ]
@@ -203,7 +261,7 @@
       ]
     },
     {
-      "total_exp_required": 150,
+      "total_exp_required": 160,
       "groups": [
         {
           "num_to_select": 1,
@@ -212,7 +270,7 @@
               "wants": [
                 {
                   "item": "minecraft:dried_kelp_block",
-                  "quantity": 10,
+                  "quantity": 18,
                   "price_multiplier": 0.05
                 }
               ],
@@ -222,8 +280,8 @@
                   "quantity": 1
                 }
               ],
-              "trader_exp": 30,
-              "max_uses": 12,
+              "trader_exp": 15,
+              "max_uses": 5,
               "reward_exp": true
             }
           ]
@@ -231,7 +289,7 @@
       ]
     },
     {
-      "total_exp_required": 250,
+      "total_exp_required": 310,
       "groups": [
         {
           "num_to_select": 1,
@@ -250,8 +308,8 @@
                   "quantity": 1
                 }
               ],
-              "trader_exp": 30,
-              "max_uses": 12,
+              "trader_exp": 0,
+              "max_uses": 5,
               "reward_exp": true
             }
           ]

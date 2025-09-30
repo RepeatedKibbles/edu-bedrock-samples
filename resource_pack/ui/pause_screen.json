@@ -796,6 +796,12 @@
         "mapping_type": "global"
       },
       {
+        "from_button_id": "button.menu_vr_realign",
+        "to_button_id": "button.menu_vr_realign",
+        "mapping_type": "global",
+        "scope": "controller"
+      },
+      {
         "from_button_id": "button.menu_tab_left",
         "to_button_id": "button.menu_tab_left",
         "mapping_type": "global",
@@ -860,29 +866,27 @@
   "social_buttons_panel": {
     "type": "stack_panel",
     "orientation": "vertical",
-    "anchor_from": "top_right",
-    "anchor_to": "top_right",
     "size": [ "100%", "100%c" ],
     "controls": [
       {
         "friendsbutton_panel": {
-          "type": "panel",
-          "size": [ "100%", 40 ],
-          "anchor_from": "top_right",
-          "anchor_to": "top_right",
+          "type": "stack_panel",
+          "orientation": "vertical",
+          "size": [ "100%", "100%c" ],
           "controls": [
             {
-              "friendsdrawer_button@friendsbutton.button": {
-                "$context": "ingame"
+              "friendsdrawer_button@iconbutton.button": {
+                "$pressed_button_name": "button.friends_drawer",
+                "$button_text": "#friends_with_count",
+                "$icon_texture": "textures/ui/friendsbutton/navbar-friends-icon",
+                "$textbutton_binding_type": "global"
               }
             },
-           { 
-              "friends_drawer__ftue_popup@friendsbutton.friends_drawer_popup": {
-                "anchor_from": "top_right",
-                "anchor_to": "top_right",
-                "offset": [ -35, 35 ]
-              }   
-           }
+            {
+              "vertical_padding_1@pause.vertical_padding": {
+                "size": [ 0, 3 ]
+              }
+            }
           ],
           "bindings": [
             {
@@ -1281,7 +1285,14 @@
             { "store_button_panel@pause.store_button_panel": {} },
             {
               "server@pause.vertical_padding": {
-                "ignored": "$is_secondary_client"
+                "ignored": "$is_secondary_client",
+                "bindings": [
+                  {
+                    "binding_name": "#store_button_visible",
+                    "binding_name_override": "#visible",
+                    "binding_type": "global"
+                  }
+                ]
               }
             },
             { "quit_button@pause.quit_button": {} }
@@ -1318,7 +1329,7 @@
     "size": [ 150, "100%" ],
     "anchor_from": "right_middle",
     "anchor_to": "right_middle",
-    "ignored": "($trial)",
+    "ignored": "($trial and $is_new_trial_mode_enabled)",
     "controls": [
       { "info_panel_background@pause.info_panel_background": {} },
       { "info_panel_list@pause.info_panel_content_list": {} }
@@ -1532,10 +1543,6 @@
       {
         "binding_name": "#players_list_title",
         "binding_type": "global"
-      },
-      {
-        "binding_name": "#players_in_my_world_visible",
-        "binding_name_override": "#visible"
       }
     ]
   },
@@ -1553,10 +1560,6 @@
         "binding_name": "#players_grid_dimension",
         // Necessary do to a bug with grid item bindings not refreshing when the grid is inside a stack panel
         "binding_condition": "always"
-      },
-      {
-        "binding_name": "#players_in_my_world_visible",
-        "binding_name_override": "#visible"
       }
     ]
   },

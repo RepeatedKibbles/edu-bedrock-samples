@@ -10,11 +10,7 @@
         "darkoak": "textures/entity/boat/boat_darkoak",
         "jungle": "textures/entity/boat/boat_jungle",
         "oak": "textures/entity/boat/boat_oak",
-        "spruce": "textures/entity/boat/boat_spruce",
-        "mangrove": "textures/entity/boat/mangrove_boat",
-        "bamboo": "textures/entity/boat/bamboo_raft",
-        "cherry": "textures/entity/boat/cherry_boat",
-        "paleoak": "textures/entity/boat/pale_oak_boat"
+        "spruce": "textures/entity/boat/boat_spruce"
       },
       "geometry": {
         "default": "geometry.boat"

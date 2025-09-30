@@ -3,9 +3,7 @@
   "minecraft:client_entity": {
     "description": {
       "identifier": "minecraft:ghast",
-      "materials": {
-        "default": "ghast"
-      },
+      "materials": { "default": "ghast" },
       "textures": {
         "default": "textures/entity/ghast/ghast",
         "shooting": "textures/entity/ghast/ghast_shooting"
@@ -14,20 +12,18 @@
         "default": "geometry.ghast"
       },
       "spawn_egg": {
-        "texture": "spawn_egg_ghast"
+        "texture": "spawn_egg",
+        "texture_index": 19
       },
       "animations": {
         "move": "animation.ghast.move",
         "scale": "animation.ghast.scale"
       },
       "animation_controllers": [
-        {
-          "move": "controller.animation.ghast.move"
-        }
+        { "move": "controller.animation.ghast.move" },
+        { "scale": "controller.animation.ghast.scale" }
       ],
-      "render_controllers": [
-        "controller.render.ghast"
-      ]
+      "render_controllers": [ "controller.render.ghast" ]
     }
   }
 }

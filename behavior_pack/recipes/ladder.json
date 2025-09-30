@@ -1,5 +1,5 @@
 {
-  "format_version": "1.20.10",
+  "format_version": "1.12",
   "minecraft:recipe_shaped": {
     "description": {
     "identifier": "minecraft:ladder"
@@ -17,11 +17,6 @@
         "item": "minecraft:stick"
       }
     },
-    "unlock": [
-      {
-        "item": "minecraft:stick"
-      }
-    ],
     "result": {
       "item": "minecraft:ladder",
       "count": 3

@@ -1,5 +1,5 @@
 {
-  "format_version": "1.20.10",
+  "format_version": "1.12",
   "minecraft:recipe_shaped": {
     "description": {
     "identifier": "minecraft:jungle_planks_from_stripped_wood"
@@ -13,16 +13,13 @@
     ],
     "key": {
       "#": {
-        "item": "minecraft:stripped_jungle_wood"
+        "item": "minecraft:wood",
+        "data": 11
       }
     },
-	"unlock": [
-      {
-        "item": "minecraft:stripped_jungle_wood"
-      }
-    ],
     "result": {
-      "item": "minecraft:jungle_planks",
+      "item": "minecraft:planks",
+      "data": 3,
       "count": 4
     }
   }

@@ -20,8 +20,8 @@
                   "quantity": 1
                 }
               ],
-              "trader_exp": 2,
-              "max_uses": 16,
+              "trader_exp": 1,
+              "max_uses": 6,
               "reward_exp": true
             },
             {
@@ -38,8 +38,8 @@
                   "quantity": 1
                 }
               ],
-              "trader_exp": 2,
-              "max_uses": 16,
+              "trader_exp": 1,
+              "max_uses": 6,
               "reward_exp": true
             },
             {
@@ -56,8 +56,8 @@
                   "quantity": 1
                 }
               ],
-              "trader_exp": 2,
-              "max_uses": 16,
+              "trader_exp": 1,
+              "max_uses": 6,
               "reward_exp": true
             },
             {
@@ -74,8 +74,8 @@
                   "quantity": 1
                 }
               ],
-              "trader_exp": 2,
-              "max_uses": 16,
+              "trader_exp": 1,
+              "max_uses": 6,
               "reward_exp": true
             }
           ]
@@ -97,8 +97,8 @@
                   "quantity": 6
                 }
               ],
-              "trader_exp": 1,
-              "max_uses": 16,
+              "trader_exp": 2,
+              "max_uses": 5,
               "reward_exp": true
             }
           ]
@@ -125,8 +125,8 @@
                   "quantity": 1
                 }
               ],
-              "trader_exp": 10,
-              "max_uses": 12,
+              "trader_exp": 5,
+              "max_uses": 5,
               "reward_exp": true
             }
           ]
@@ -148,8 +148,8 @@
                   "quantity": 4
                 }
               ],
-              "trader_exp": 5,
-              "max_uses": 12,
+              "trader_exp": 10,
+              "max_uses": 5,
               "reward_exp": true
             },
             {
@@ -166,8 +166,8 @@
                   "quantity": 4
                 }
               ],
-              "trader_exp": 5,
-              "max_uses": 16,
+              "trader_exp": 10,
+              "max_uses": 5,
               "reward_exp": true
             }
           ]
@@ -175,7 +175,7 @@
       ]
     },
     {
-      "total_exp_required": 70,
+      "total_exp_required": 60,
       "groups": [
         {
           "num_to_select": 1,
@@ -183,7 +183,7 @@
             {
               "wants": [
                 {
-                  "item": "minecraft:melon_block",
+                  "item": "minecraft:melon",
                   "quantity": 4,
                   "price_multiplier": 0.05
                 }
@@ -194,8 +194,8 @@
                   "quantity": 1
                 }
               ],
-              "trader_exp": 20,
-              "max_uses": 12,
+              "trader_exp": 10,
+              "max_uses": 5,
               "reward_exp": true
             }
           ]
@@ -217,8 +217,8 @@
                   "quantity": 18
                 }
               ],
-              "trader_exp": 10,
-              "max_uses": 12,
+              "trader_exp": 20,
+              "max_uses": 5,
               "reward_exp": true
             }
           ]
@@ -226,7 +226,7 @@
       ]
     },
     {
-      "total_exp_required": 150,
+      "total_exp_required": 160,
       "groups": [
         {
           "num_to_select": 1,
@@ -234,28 +234,18 @@
             {
               "wants": [
                 {
-                  "item": "minecraft:emerald",
-                  "quantity": 1,
-                  "price_multiplier": 0.05
+                  "item": "minecraft:egg",
+                  "quantity": 16
                 }
               ],
               "gives": [
                 {
-                  "item": "minecraft:suspicious_stew:0",
-                  "quantity": 1,
-                  "functions": [
-                    {
-                      "function": "random_aux_value",
-                      "values": {
-                        "min": 0,
-                        "max": 5
-                      }
-                    }
-                  ]
+                  "item": "minecraft:emerald",
+                  "quantity": 1
                 }
               ],
               "trader_exp": 15,
-              "max_uses": 12,
+              "max_uses": 5,
               "reward_exp": true
             }
           ]
@@ -277,8 +267,8 @@
                   "quantity": 1
                 }
               ],
-              "trader_exp": 15,
-              "max_uses": 12,
+              "trader_exp": 30,
+              "max_uses": 5,
               "reward_exp": true
             }
           ]
@@ -286,11 +276,29 @@
       ]
     },
     {
-      "total_exp_required": 250,
+      "total_exp_required": 310,
       "groups": [
         {
           "num_to_select": 1,
           "trades": [
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 1,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:suspicious_stew",
+                  "quantity": 1
+                }
+              ],
+              "trader_exp": 30,
+              "max_uses": 5,
+              "reward_exp": true
+            },
             {
               "wants": [
                 {
@@ -306,7 +314,7 @@
                 }
               ],
               "trader_exp": 30,
-              "max_uses": 12,
+              "max_uses": 5,
               "reward_exp": true
             },
             {
@@ -324,7 +332,7 @@
                 }
               ],
               "trader_exp": 30,
-              "max_uses": 12,
+              "max_uses": 5,
               "reward_exp": true
             }
           ]

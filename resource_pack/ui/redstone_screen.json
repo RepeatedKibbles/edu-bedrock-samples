@@ -6,13 +6,12 @@
 
   "item_dropper_label": {
     "type": "label",
-    "layer": 2,
     "offset": [ 0, 5 ],
     "anchor_from": "top_middle",
     "anchor_to": "top_middle",
-    "text": "$container_title",
     "color": "$title_text_color",
-    "localize": "$localize_title"
+    "text": "$container_title",
+    "layer": 2
   },
 
   "dispenser_label@item_dropper_label": {

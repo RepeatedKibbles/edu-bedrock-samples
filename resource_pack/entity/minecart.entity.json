@@ -11,7 +11,7 @@
         "default": "textures/entity/minecart"
       },
       "geometry": {
-        "default": "geometry.minecart"
+        "default": "geometry.minecart.v1.8"
       },
       "scripts": {
         "pre_animation": [
@@ -20,15 +20,12 @@
         "animate": [
           "move"
         ],
-        "should_update_effects_offscreen": "1.0",
-        "should_update_bones_and_effects_offscreen": "1.0"
+        "should_update_effects_offscreen": "1.0"
       },
       "animations": {
-        "move": "animation.minecart.move.v1.0"
+        "move": "animation.minecart.move"
       },
-      "render_controllers": [
-        "controller.render.minecart"
-      ]
+      "render_controllers": [ "controller.render.minecart" ]
     }
   }
 }

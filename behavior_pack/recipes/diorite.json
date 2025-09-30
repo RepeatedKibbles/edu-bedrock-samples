@@ -1,5 +1,5 @@
 {
-  "format_version": "1.20.10",
+  "format_version": "1.12",
   "minecraft:recipe_shaped": {
     "description": {
     "identifier": "minecraft:diorite"
@@ -19,13 +19,9 @@
         "item": "minecraft:cobblestone"
       }
     },
-	"unlock": [
-      {
-        "item": "minecraft:quartz"
-      }
-    ],
     "result": {
-      "item": "minecraft:diorite",
+      "item": "minecraft:stone",
+      "data": 3,
       "count": 2
     }
   }

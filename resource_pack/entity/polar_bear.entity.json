@@ -33,7 +33,8 @@
         "controller.render.polarbear"
       ],
       "spawn_egg": {
-        "texture": "spawn_egg_polar_bear"
+        "texture": "spawn_egg",
+        "texture_index": 37
       }
     }
   }

@@ -1,8 +1,8 @@
 {
-  "format_version": "1.21.110",
+  "format_version": "1.20.60",
   "minecraft:biome": {
     "description": {
-      "identifier": "minecraft:desert_mutated"
+      "identifier": "desert_mutated"
     },
     "components": {
       "minecraft:climate": {
@@ -13,16 +13,13 @@
       "minecraft:overworld_height": {
         "noise_params": [ 0.225, 0.25 ]
       },
-      "minecraft:surface_builder": {
-        "builder": {
-          "type": "minecraft:overworld",
-          "sea_floor_depth": 7,
-          "sea_floor_material": "minecraft:gravel",
-          "foundation_material": "minecraft:stone",
-          "mid_material": "minecraft:sand",
-          "top_material": "minecraft:sand",
-          "sea_material": "minecraft:water"
-        }
+      "minecraft:surface_parameters": {
+        "sea_floor_depth": 7,
+        "sea_floor_material": "minecraft:gravel",
+        "foundation_material": "minecraft:stone",
+        "mid_material": "minecraft:sand",
+        "top_material": "minecraft:sand",
+        "sea_material": "minecraft:water"
       },
 
       "minecraft:tags": {
@@ -32,7 +29,7 @@
           "mutated",
           "overworld_generation",
           "spawns_gold_rabbits",
-          "spawns_warm_variant_farm_animals"
+	        "spawns_warm_variant_farm_animals"
         ]
       }
     }

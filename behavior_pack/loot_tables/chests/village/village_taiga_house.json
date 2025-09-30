@@ -22,12 +22,24 @@
         {
           "type": "item",
           "weight": 2,
-          "name": "minecraft:fern"
+          "functions": [
+            {
+              "function": "set_data",
+              "data": 2
+            }
+          ],
+          "name": "minecraft:tallgrass"
         },
         {
           "type": "item",
           "weight": 2,
-          "name": "minecraft:large_fern"
+          "functions": [
+            {
+              "function": "set_data",
+              "data": 3
+            }
+          ],
+          "name": "minecraft:double_plant"
         },
         {
           "type": "item",
@@ -99,9 +111,13 @@
                 "min": 1,
                 "max": 5
               }
+            },
+            {
+              "function": "set_data",
+              "data": 1
             }
           ],
-          "name": "minecraft:spruce_sapling"
+          "name": "minecraft:sapling"
         },
         {
           "type": "item",
@@ -123,18 +139,13 @@
                 "min": 1,
                 "max": 5
               }
+            },
+            {
+              "function": "set_data",
+              "data": 1
             }
           ],
-          "name": "minecraft:spruce_log"
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "loot_table",
-          "name": "loot_tables/chests/village/village_bundle.json"
+          "name": "minecraft:log"
         }
       ]
     }

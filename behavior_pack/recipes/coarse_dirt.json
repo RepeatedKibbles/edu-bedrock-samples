@@ -1,5 +1,5 @@
 {
-  "format_version": "1.20.10",
+  "format_version": "1.12",
   "minecraft:recipe_shaped": {
     "description": {
     "identifier": "minecraft:coarse_dirt"
@@ -20,13 +20,9 @@
         "item": "minecraft:gravel"
       }
     },
-	"unlock": [
-      {
-        "item": "minecraft:gravel"
-      }
-    ],
     "result": {
-      "item": "minecraft:coarse_dirt",
+      "item": "minecraft:dirt",
+      "data": 1,
       "count": 4
     }
   }

@@ -33,8 +33,6 @@
         "height": 1.8
       },
 	    "minecraft:physics": {
-      },
-      "minecraft:conditional_bandwidth_optimization": {
       }
     }
   }

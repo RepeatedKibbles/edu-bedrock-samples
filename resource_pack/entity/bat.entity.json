@@ -3,32 +3,27 @@
   "minecraft:client_entity": {
     "description": {
       "identifier": "minecraft:bat",
-      "materials": {
-        "default": "bat_v2"
-      },
+      "materials": { "default": "bat" },
       "textures": {
-        "default": "textures/entity/bat_v2"
+        "default": "textures/entity/bat"
       },
       "geometry": {
-        "default": "geometry.bat_v2"
+        "default": "geometry.bat"
       },
       "scripts": {
-        "scale": "1.0"
+        "scale": "0.35"
       },
       "animations": {
         "resting": "animation.bat.resting",
         "flying": "animation.bat.flying"
       },
       "animation_controllers": [
-        {
-          "move": "controller.animation.bat.move"
-        }
+        { "move": "controller.animation.bat.move" }
       ],
-      "render_controllers": [
-        "controller.render.bat"
-      ],
+      "render_controllers": [ "controller.render.bat" ],
       "spawn_egg": {
-        "texture": "spawn_egg_bat"
+        "texture": "spawn_egg",
+        "texture_index": 18
       }
     }
   }
