@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "format_version": "1.20.60",
   "minecraft:biome": {
@@ -26,3 +27,35 @@
     }
   }
 }
+=======
+{
+  "format_version": "1.26.0",
+  "minecraft:biome": {
+    "description": {
+      "identifier": "minecraft:legacy_frozen_ocean"
+    },
+    "components": {
+      "minecraft:climate": {
+        "downfall": 0.5,
+        "snow_accumulation": [ 0.125, 0.25 ],
+        "temperature": 0.0
+      },
+      "minecraft:overworld_height": {
+        "noise_type": "ocean"
+      },
+      "minecraft:tags": {
+        "tags": [
+          "legacy",
+          "frozen",
+          "ocean",
+          "overworld",
+          "spawns_cold_variant_farm_animals",
+          "spawns_polar_bears_on_alternate_blocks",
+          "fast_fishing",
+          "high_seas"
+        ]
+      }
+    }
+  }
+}
+>>>>>>> 40a78cc41243e81f67eadc5f56ced9f231563662

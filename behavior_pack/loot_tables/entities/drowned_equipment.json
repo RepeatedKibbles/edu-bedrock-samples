@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "pools": [
     {
@@ -34,3 +35,41 @@
     }
   ]
 }
+=======
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "random_chance",
+          "chance": 0.0375
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:fishing_rod",
+          "weight": 5
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "random_chance",
+          "chance": 0.08
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:nautilus_shell",
+          "weight": 5
+        }
+      ]
+    }
+  ]
+}
+>>>>>>> 40a78cc41243e81f67eadc5f56ced9f231563662
