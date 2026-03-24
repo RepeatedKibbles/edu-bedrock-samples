@@ -424,10 +424,7 @@
         {
           "arguments": [
             {
-              "details": {
-                "max_value": 4294967295,
-                "min_value": 0
-              },
+              "details": null,
               "name": "timeout",
               "type": {
                 "is_bind_type": false,
@@ -1218,6 +1215,17 @@
         {
           "is_read_only": true,
           "is_static": true,
+          "name": "Patch",
+          "type": {
+            "is_bind_type": false,
+            "is_errorable": false,
+            "name": "string"
+          },
+          "value": "Patch"
+        },
+        {
+          "is_read_only": true,
+          "is_static": true,
           "name": "Post",
           "type": {
             "is_bind_type": false,
@@ -1619,6 +1627,17 @@
         {
           "is_read_only": true,
           "is_static": true,
+          "name": "ClientboundAttributeLayerSyncPacket",
+          "type": {
+            "is_bind_type": false,
+            "is_errorable": false,
+            "name": "string"
+          },
+          "value": "ClientboundAttributeLayerSyncPacket"
+        },
+        {
+          "is_read_only": true,
+          "is_static": true,
           "name": "ClientboundCloseFormPacket",
           "type": {
             "is_bind_type": false,
@@ -1641,13 +1660,13 @@
         {
           "is_read_only": true,
           "is_static": true,
-          "name": "ClientboundDataDrivenUICloseAllScreensPacket",
+          "name": "ClientboundDataDrivenUICloseScreenPacket",
           "type": {
             "is_bind_type": false,
             "is_errorable": false,
             "name": "string"
           },
-          "value": "ClientboundDataDrivenUICloseAllScreensPacket"
+          "value": "ClientboundDataDrivenUICloseScreenPacket"
         },
         {
           "is_read_only": true,
@@ -2312,6 +2331,17 @@
         {
           "is_read_only": true,
           "is_static": true,
+          "name": "LocatorBarPacket",
+          "type": {
+            "is_bind_type": false,
+            "is_errorable": false,
+            "name": "string"
+          },
+          "value": "LocatorBarPacket"
+        },
+        {
+          "is_read_only": true,
+          "is_static": true,
           "name": "LoginPacket",
           "type": {
             "is_bind_type": false,
@@ -2550,6 +2580,17 @@
             "name": "string"
           },
           "value": "PacketViolationWarningPacket"
+        },
+        {
+          "is_read_only": true,
+          "is_static": true,
+          "name": "PartyChangedPacket",
+          "type": {
+            "is_bind_type": false,
+            "is_errorable": false,
+            "name": "string"
+          },
+          "value": "PartyChangedPacket"
         },
         {
           "is_read_only": true,
@@ -2895,6 +2936,17 @@
         {
           "is_read_only": true,
           "is_static": true,
+          "name": "ResourcePacksReadyForValidationPacket",
+          "type": {
+            "is_bind_type": false,
+            "is_errorable": false,
+            "name": "string"
+          },
+          "value": "ResourcePacksReadyForValidationPacket"
+        },
+        {
+          "is_read_only": true,
+          "is_static": true,
           "name": "ResourcePackStackPacket",
           "type": {
             "is_bind_type": false,
@@ -2924,6 +2976,17 @@
             "name": "string"
           },
           "value": "ScriptMessagePacket"
+        },
+        {
+          "is_read_only": true,
+          "is_static": true,
+          "name": "ServerboundDataDrivenScreenClosedPacket",
+          "type": {
+            "is_bind_type": false,
+            "is_errorable": false,
+            "name": "string"
+          },
+          "value": "ServerboundDataDrivenScreenClosedPacket"
         },
         {
           "is_read_only": true,
@@ -3412,6 +3475,17 @@
         {
           "is_read_only": true,
           "is_static": true,
+          "name": "SyncWorldClocksPacket",
+          "type": {
+            "is_bind_type": false,
+            "is_errorable": false,
+            "name": "string"
+          },
+          "value": "SyncWorldClocksPacket"
+        },
+        {
+          "is_read_only": true,
+          "is_static": true,
           "name": "TakeItemActorPacket",
           "type": {
             "is_bind_type": false,
@@ -3634,6 +3708,170 @@
     }
   ],
   "errors": [
+    {
+      "name": "HttpRequestBodyTooLargeError",
+      "properties": [
+        {
+          "get_privilege": [
+            {
+              "name": "restricted_execution"
+            },
+            {
+              "name": "early_execution"
+            }
+          ],
+          "is_baked": false,
+          "is_read_only": true,
+          "name": "maxBytes",
+          "type": {
+            "is_bind_type": false,
+            "is_errorable": false,
+            "name": "uint32",
+            "valid_range": {
+              "max": 2147483647,
+              "min": -2147483648
+            }
+          }
+        },
+        {
+          "get_privilege": [
+            {
+              "name": "restricted_execution"
+            },
+            {
+              "name": "early_execution"
+            }
+          ],
+          "is_baked": false,
+          "is_read_only": true,
+          "name": "providedBytes",
+          "type": {
+            "is_bind_type": false,
+            "is_errorable": false,
+            "name": "uint32",
+            "valid_range": {
+              "max": 2147483647,
+              "min": -2147483648
+            }
+          }
+        }
+      ],
+      "type": {
+        "is_bind_type": true,
+        "is_errorable": false,
+        "name": "HttpRequestBodyTooLargeError"
+      }
+    },
+    {
+      "name": "HttpRequestLimitExceededError",
+      "properties": [
+        {
+          "get_privilege": [
+            {
+              "name": "restricted_execution"
+            },
+            {
+              "name": "early_execution"
+            }
+          ],
+          "is_baked": false,
+          "is_read_only": true,
+          "name": "inFlightRequests",
+          "type": {
+            "is_bind_type": false,
+            "is_errorable": false,
+            "name": "uint64",
+            "valid_range": {
+              "max": 2147483647,
+              "min": -2147483648
+            }
+          }
+        },
+        {
+          "get_privilege": [
+            {
+              "name": "restricted_execution"
+            },
+            {
+              "name": "early_execution"
+            }
+          ],
+          "is_baked": false,
+          "is_read_only": true,
+          "name": "maxConcurrentRequests",
+          "type": {
+            "is_bind_type": false,
+            "is_errorable": false,
+            "name": "uint64",
+            "valid_range": {
+              "max": 2147483647,
+              "min": -2147483648
+            }
+          }
+        }
+      ],
+      "type": {
+        "is_bind_type": true,
+        "is_errorable": false,
+        "name": "HttpRequestLimitExceededError"
+      }
+    },
+    {
+      "name": "HttpRequestNotAllowedError",
+      "properties": [
+        {
+          "get_privilege": [
+            {
+              "name": "restricted_execution"
+            },
+            {
+              "name": "early_execution"
+            }
+          ],
+          "is_baked": false,
+          "is_read_only": true,
+          "name": "uri",
+          "type": {
+            "is_bind_type": false,
+            "is_errorable": false,
+            "name": "string"
+          }
+        }
+      ],
+      "type": {
+        "is_bind_type": true,
+        "is_errorable": false,
+        "name": "HttpRequestNotAllowedError"
+      }
+    },
+    {
+      "name": "HttpsOnlyError",
+      "properties": [
+        {
+          "get_privilege": [
+            {
+              "name": "restricted_execution"
+            },
+            {
+              "name": "early_execution"
+            }
+          ],
+          "is_baked": false,
+          "is_read_only": true,
+          "name": "uri",
+          "type": {
+            "is_bind_type": false,
+            "is_errorable": false,
+            "name": "string"
+          }
+        }
+      ],
+      "type": {
+        "is_bind_type": true,
+        "is_errorable": false,
+        "name": "HttpsOnlyError"
+      }
+    },
     {
       "name": "InternalHttpRequestError",
       "properties": [

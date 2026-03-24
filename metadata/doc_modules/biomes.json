@@ -112,7 +112,7 @@
               "header_level": 3,
               "name": "minecraft:climate",
               "show_in_index": true,
-              "type": "Object"
+              "type": "Object of type minecraft:climate"
             },
             {
               "default": "Optional",
@@ -122,7 +122,7 @@
               "header_level": 3,
               "name": "minecraft:creature_spawn_probability",
               "show_in_index": true,
-              "type": "Object"
+              "type": "Object of type minecraft:creature_spawn_probability"
             },
             {
               "default": "Optional",
@@ -132,7 +132,7 @@
               "header_level": 3,
               "name": "minecraft:humidity",
               "show_in_index": true,
-              "type": "Object"
+              "type": "Object of type minecraft:humidity"
             },
             {
               "default": "Optional",
@@ -142,7 +142,7 @@
               "header_level": 3,
               "name": "minecraft:map_tints",
               "show_in_index": true,
-              "type": "Object"
+              "type": "Object of type minecraft:map_tints"
             },
             {
               "default": "Optional",
@@ -152,7 +152,7 @@
               "header_level": 3,
               "name": "minecraft:mountain_parameters",
               "show_in_index": true,
-              "type": "Object"
+              "type": "Object of type minecraft:mountain_parameters"
             },
             {
               "default": "Optional",
@@ -162,7 +162,7 @@
               "header_level": 3,
               "name": "minecraft:multinoise_generation_rules",
               "show_in_index": true,
-              "type": "Object"
+              "type": "Object of type minecraft:multinoise_generation_rules"
             },
             {
               "default": "Optional",
@@ -172,7 +172,7 @@
               "header_level": 3,
               "name": "minecraft:overworld_generation_rules",
               "show_in_index": true,
-              "type": "Object"
+              "type": "Object of type minecraft:overworld_generation_rules"
             },
             {
               "default": "Optional",
@@ -182,7 +182,7 @@
               "header_level": 3,
               "name": "minecraft:overworld_height",
               "show_in_index": true,
-              "type": "Object"
+              "type": "Object of type minecraft:overworld_height"
             },
             {
               "default": "Optional",
@@ -192,7 +192,7 @@
               "header_level": 3,
               "name": "minecraft:partially_frozen",
               "show_in_index": true,
-              "type": "Object"
+              "type": "Object of type minecraft:partially_frozen"
             },
             {
               "default": "Optional",
@@ -202,7 +202,7 @@
               "header_level": 3,
               "name": "minecraft:replace_biomes",
               "show_in_index": true,
-              "type": "Object"
+              "type": "Object of type minecraft:replace_biomes"
             },
             {
               "default": "Optional",
@@ -212,7 +212,7 @@
               "header_level": 3,
               "name": "minecraft:surface_builder",
               "show_in_index": true,
-              "type": "Object"
+              "type": "Object of type minecraft:surface_builder"
             },
             {
               "default": "Optional",
@@ -222,7 +222,7 @@
               "header_level": 3,
               "name": "minecraft:surface_material_adjustments",
               "show_in_index": true,
-              "type": "Object"
+              "type": "Object of type minecraft:surface_material_adjustments"
             },
             {
               "default": "Optional",
@@ -258,7 +258,7 @@
               "header_level": 3,
               "name": "minecraft:tags",
               "show_in_index": true,
-              "type": "Object"
+              "type": "Object of type minecraft:tags"
             },
             {
               "default": "Optional",
@@ -268,7 +268,7 @@
               "header_level": 3,
               "name": "minecraft:village_type",
               "show_in_index": true,
-              "type": "Object"
+              "type": "Object of type minecraft:village_type"
             }
           ],
           "nodes_as_table": true,

@@ -19,6 +19,32 @@
               "type": "String"
             },
             {
+              "description": [
+                "The description identifier of the chest obstruction component",
+                "Experimental toggles required: Upcoming Creator Features"
+              ],
+              "header_level": 3,
+              "name": "minecraft:chest_obstruction",
+              "nodes": [
+                {
+                  "default": "shape",
+                  "description": [
+                    "[optional] How the block should be evaluated by a chest during chest opening. Must be one of the following options:",
+                    "\"always\" - Will always obstruct a chest from opening when directly above it.",
+                    "\"never\" - Will never obstruct a chest from opening when directly above it.",
+                    "\"shape\" - Will use the Blocks AABB shape to determine if the chest is obstructed from opening when directly above it; this is the default value if no rule is provided."
+                  ],
+                  "header_level": 4,
+                  "name": "obstruction_rule",
+                  "show_in_index": true,
+                  "type": "String"
+                }
+              ],
+              "nodes_as_table": false,
+              "show_in_index": true,
+              "type": "JSON Object"
+            },
+            {
               "default": "true",
               "description": [
                 "Defines the area of the block that collides with entities. If set to true, default values are used. If set to false, the block's collision with entities is disabled. If this component is omitted, default values are used."
@@ -401,6 +427,16 @@
                       ],
                       "header_level": 5,
                       "name": "culling_layer",
+                      "show_in_index": true,
+                      "type": "String"
+                    },
+                    {
+                      "default": "minecraft:empty",
+                      "description": [
+                        "Currently only available with the VoxelShape experiment on. The voxel shape used for culling adjacent block faces. Voxel shapes work together with culling rules and will not function if there is no culling rule defined for the block. Only adjacent blocks with voxel shapes will occlude using this shape. Blocks using \"minecraft:geometry.full_block\" always use the unit cube shape and will ignore custom shapes if specified. When using the minecraft namespace, the only currently available culling shape identifiers are : \"minecraft:empty\" or \"minecraft:unit_cube\". When using no namespaces or a custom one, the names must start and end with an alpha-numeric character."
+                      ],
+                      "header_level": 5,
+                      "name": "culling_shape",
                       "show_in_index": true,
                       "type": "String"
                     },
@@ -832,7 +868,7 @@
                     },
                     {
                       "description": [
-                        "List of blocks that this block can be placed against in the \"allowed_faces\" direction. Limited to 64 blocks. Each block in this list can either be specified as a String (block name) or as a BlockDescriptor. A BlockDescriptor is an object that allows you to reference a block (or multiple blocks) based on its tags, or based on its name and states. The fields of a BlockDescriptor are described below."
+                        "List of blocks that this block can be placed against in the \"allowed_faces\" direction. Limited to 64 blocks. Each block in this list can either be specified as a String (block name) or as a BlockDescriptor. A BlockDescriptor is an object that allows you to reference a block (or multiple blocks) based on its tags, or based on its name and states. The fields of a BlockDescriptor are described below. If the blocks in the filter are liquid blocks, ensure that an item block is created with a 'liquid_clipped' component set to 'true' and a 'block_placer' component with 'replace_block_item' set to 'true'."
                       ],
                       "header_level": 5,
                       "name": "block_filter",
@@ -1093,6 +1129,55 @@
             },
             {
               "description": [
+                "A component describing how a block can consume and potentially propogate a redstone signal. This component is not available for block permutations.",
+                "Experimental toggles required: Upcoming Creator Features (in format versions before 1.26.0)"
+              ],
+              "examples": [
+                {
+                  "name": "",
+                  "text": [
+                    "\"minecraft:redstone_consumer\": {",
+                    "\t\t\t\t\t\"min_power\": 8,",
+                    "\t\t\t\t\t\"propagates_power\": true",
+                    "\t\t\t}"
+                  ]
+                }
+              ],
+              "examples_print_mode": "code",
+              "header_level": 3,
+              "name": "minecraft:redstone_consumer",
+              "nodes": [
+                {
+                  "default": "0",
+                  "description": [
+                    "Optional minimum value for incoming signal strength. If signal strength is greater than or equal to this value then the 'onRedstoneUpdate' event is sent to Scripts. Defaults to 0 meaning event is always emitted."
+                  ],
+                  "header_level": 4,
+                  "name": "min_power",
+                  "show_in_index": true,
+                  "type": "Integer"
+                },
+                {
+                  "default": "false",
+                  "description": [
+                    "Optional Boolean to control whether a signal can pass through this block or not, defaults to false."
+                  ],
+                  "header_level": 4,
+                  "name": "propagates_power",
+                  "show_in_index": true,
+                  "type": "Boolean"
+                }
+              ],
+              "nodes_as_table": true,
+              "show_in_index": true,
+              "table_default_title": "Default Value",
+              "table_description_title": "Description",
+              "table_name_title": "Name",
+              "table_type_title": "Type",
+              "type": "JSON Object"
+            },
+            {
+              "description": [
                 "A block with this component can be replaced when another block is placed in the same block position.",
                 "Experimental toggles required: Upcoming Creator Features (in format versions before 1.21.60)"
               ],
@@ -1266,7 +1351,7 @@
               "name": "Example",
               "text": [
                 "{",
-                "  \"format_version\": \"1.26.0\",",
+                "  \"format_version\": \"1.26.10\",",
                 "  \"minecraft:block\": {",
                 "    \"description\": {",
                 "      \"identifier\": \"design:lavenderstone\"",
