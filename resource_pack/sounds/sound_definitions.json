@@ -1249,6 +1249,23 @@
       }
     ]
   },
+  "game.player.attack.critical": {
+    "sounds": [
+      {
+        "name": "sounds/mob/player/attack/crit1",
+        "volume": 0.2,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/player/attack/crit2",
+        "volume": 0.2
+      },
+      {
+        "name": "sounds/mob/player/attack/crit3",
+        "volume": 0.2
+      }
+    ]
+  },
   "game.player.hurt": {
     "category": "player",
     "sounds": [
@@ -6314,7 +6331,128 @@
         "load_on_low_memory": true
       }
     ]
+  },
+  "ambient.underwater.loop": {
+    "category": "ambient",
+    "sounds": [
+      {
+        "name": "sounds/ambient/underwater/loop/underwater_ambience",
+        "stream": true,
+        "is3D": false
+      }
+    ]
+  },
+  "ambient.underwater.additions": {
+    "category": "ambient",
+    "sounds": [
+      {
+        "name": "sounds/ambient/underwater/additions/bubbles1",
+        "is3D": false,
+        "weight": 90
+      },
+      {
+        "name": "sounds/ambient/underwater/additions/bubbles2",
+        "is3D": false,
+        "weight": 90
+      },
+      {
+        "name": "sounds/ambient/underwater/additions/bubbles3",
+        "is3D": false,
+        "weight": 90
+      },
+      {
+        "name": "sounds/ambient/underwater/additions/bubbles4",
+        "is3D": false,
+        "weight": 90
+      },
+      {
+        "name": "sounds/ambient/underwater/additions/bubbles5",
+        "is3D": false,
+        "weight": 90
+      },
+      {
+        "name": "sounds/ambient/underwater/additions/bubbles6",
+        "is3D": false,
+        "weight": 90
+      },
+      {
+        "name": "sounds/ambient/underwater/additions/water1",
+        "is3D": false,
+        "weight": 90
+      },
+      {
+        "name": "sounds/ambient/underwater/additions/water2",
+        "is3D": false,
+        "weight": 90
+      },
+      {
+        "name": "sounds/ambient/underwater/additions_rare/animal1",
+        "is3D": false,
+        "weight": 9
+      },
+      {
+        "name": "sounds/ambient/underwater/additions_rare/bass_whale1",
+        "is3D": false,
+        "weight": 9
+      },
+      {
+        "name": "sounds/ambient/underwater/additions_rare/bass_whale2",
+        "is3D": false,
+        "weight": 9
+      },
+      {
+        "name": "sounds/ambient/underwater/additions_rare/crackles1",
+        "is3D": false,
+        "weight": 9
+      },
+      {
+        "name": "sounds/ambient/underwater/additions_rare/crackles2",
+        "is3D": false,
+        "weight": 9
+      },
+      {
+        "name": "sounds/ambient/underwater/additions_rare/driplets1",
+        "is3D": false,
+        "weight": 9
+      },
+      {
+        "name": "sounds/ambient/underwater/additions_rare/driplets2",
+        "is3D": false,
+        "weight": 9
+      },
+      {
+        "name": "sounds/ambient/underwater/additions_rare/earth_crack",
+        "is3D": false,
+        "weight": 9
+      },
+      {
+        "name": "sounds/ambient/underwater/additions_ultrarare/animal2",
+        "is3D": false,
+        "weight": 1
+      },
+      {
+        "name": "sounds/ambient/underwater/additions_ultrarare/dark1",
+        "is3D": false,
+        "weight": 1
+      },
+      {
+        "name": "sounds/ambient/underwater/additions_ultrarare/dark2",
+        "is3D": false,
+        "weight": 1
+      },
+      {
+        "name": "sounds/ambient/underwater/additions_ultrarare/dark3",
+        "is3D": false,
+        "weight": 1
+      },
+      {
+        "name": "sounds/ambient/underwater/additions_ultrarare/dark4",
+        "is3D": false,
+        "weight": 1
+      }
+    ]
   }
+<<<<<<< Updated upstream
 }
 =======
 {
@@ -35670,3 +35808,6 @@
    }
 }
 >>>>>>> f5b651000f52b66334c968f3ccf1aca7950cd6ee
+=======
+}
+>>>>>>> Stashed changes

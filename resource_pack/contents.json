@@ -2977,7 +2977,7 @@
             "path": "particles/critical_hit.json"
         },
         {
-            "path": "particles/dolphin_move.json"
+            "path": "particles/dolphin_move_particle.json"
         },
         {
             "path": "particles/dragon_breath_fire.json"
@@ -3613,6 +3613,72 @@
             "path": "sounds/ambient/underwater/exit3.fsb"
         },
         {
+            "path": "sounds/ambient/underwater/additions/bubbles1.fsb"
+        },
+        {
+            "path": "sounds/ambient/underwater/additions/bubbles2.fsb"
+        },
+        {
+            "path": "sounds/ambient/underwater/additions/bubbles3.fsb"
+        },
+        {
+            "path": "sounds/ambient/underwater/additions/bubbles4.fsb"
+        },
+        {
+            "path": "sounds/ambient/underwater/additions/bubbles5.fsb"
+        },
+        {
+            "path": "sounds/ambient/underwater/additions/bubbles6.fsb"
+        },
+        {
+            "path": "sounds/ambient/underwater/additions/water1.fsb"
+        },
+        {
+            "path": "sounds/ambient/underwater/additions/water2.fsb"
+        },
+        {
+            "path": "sounds/ambient/underwater/additions_rare/animal1.fsb"
+        },
+        {
+            "path": "sounds/ambient/underwater/additions_rare/bass_whale1.fsb"
+        },
+        {
+            "path": "sounds/ambient/underwater/additions_rare/bass_whale2.fsb"
+        },
+        {
+            "path": "sounds/ambient/underwater/additions_rare/crackles1.fsb"
+        },
+        {
+            "path": "sounds/ambient/underwater/additions_rare/crackles2.fsb"
+        },
+        {
+            "path": "sounds/ambient/underwater/additions_rare/driplets1.fsb"
+        },
+        {
+            "path": "sounds/ambient/underwater/additions_rare/driplets2.fsb"
+        },
+        {
+            "path": "sounds/ambient/underwater/additions_rare/earth_crack.fsb"
+        },
+        {
+            "path": "sounds/ambient/underwater/additions_ultrarare/animal2.fsb"
+        },
+        {
+            "path": "sounds/ambient/underwater/additions_ultrarare/dark1.fsb"
+        },
+        {
+            "path": "sounds/ambient/underwater/additions_ultrarare/dark2.fsb"
+        },
+        {
+            "path": "sounds/ambient/underwater/additions_ultrarare/dark3.fsb"
+        },
+        {
+            "path": "sounds/ambient/underwater/additions_ultrarare/dark4.fsb"
+        },
+        {
+            "path": "sounds/ambient/underwater/loop/underwater_ambience.fsb"
+        },
+        {
             "path": "sounds/ambient/weather/end_flash1.fsb"
         },
         {
@@ -3701,6 +3767,24 @@
         },
         {
             "path": "sounds/armor/equip_chain6.fsb"
+        },
+        {
+            "path": "sounds/armor/equip_copper1.fsb"
+        },
+        {
+            "path": "sounds/armor/equip_copper2.fsb"
+        },
+        {
+            "path": "sounds/armor/equip_copper3.fsb"
+        },
+        {
+            "path": "sounds/armor/equip_copper4.fsb"
+        },
+        {
+            "path": "sounds/armor/equip_copper5.fsb"
+        },
+        {
+            "path": "sounds/armor/equip_copper6.fsb"
         },
         {
             "path": "sounds/armor/equip_diamond1.fsb"
@@ -4834,6 +4918,60 @@
             "path": "sounds/block/copper_bulb/turn_on.fsb"
         },
         {
+            "path": "sounds/block/copper_chest/close1.fsb"
+        },
+        {
+            "path": "sounds/block/copper_chest/close2.fsb"
+        },
+        {
+            "path": "sounds/block/copper_chest/close3.fsb"
+        },
+        {
+            "path": "sounds/block/copper_chest/open1.fsb"
+        },
+        {
+            "path": "sounds/block/copper_chest/open2.fsb"
+        },
+        {
+            "path": "sounds/block/copper_chest/open3.fsb"
+        },
+        {
+            "path": "sounds/block/copper_chest/oxidized_close1.fsb"
+        },
+        {
+            "path": "sounds/block/copper_chest/oxidized_close2.fsb"
+        },
+        {
+            "path": "sounds/block/copper_chest/oxidized_close3.fsb"
+        },
+        {
+            "path": "sounds/block/copper_chest/oxidized_open1.fsb"
+        },
+        {
+            "path": "sounds/block/copper_chest/oxidized_open2.fsb"
+        },
+        {
+            "path": "sounds/block/copper_chest/oxidized_open3.fsb"
+        },
+        {
+            "path": "sounds/block/copper_chest/weathered_close1.fsb"
+        },
+        {
+            "path": "sounds/block/copper_chest/weathered_close2.fsb"
+        },
+        {
+            "path": "sounds/block/copper_chest/weathered_close3.fsb"
+        },
+        {
+            "path": "sounds/block/copper_chest/weathered_open1.fsb"
+        },
+        {
+            "path": "sounds/block/copper_chest/weathered_open2.fsb"
+        },
+        {
+            "path": "sounds/block/copper_chest/weathered_open3.fsb"
+        },
+        {
             "path": "sounds/block/copper_door/toggle1.fsb"
         },
         {
@@ -4841,6 +4979,39 @@
         },
         {
             "path": "sounds/block/copper_door/toggle3.fsb"
+        },
+        {
+            "path": "sounds/block/copper_golem_statue/break1.fsb"
+        },
+        {
+            "path": "sounds/block/copper_golem_statue/break2.fsb"
+        },
+        {
+            "path": "sounds/block/copper_golem_statue/break3.fsb"
+        },
+        {
+            "path": "sounds/block/copper_golem_statue/hit1.fsb"
+        },
+        {
+            "path": "sounds/block/copper_golem_statue/hit2.fsb"
+        },
+        {
+            "path": "sounds/block/copper_golem_statue/hit3.fsb"
+        },
+        {
+            "path": "sounds/block/copper_golem_statue/hit4.fsb"
+        },
+        {
+            "path": "sounds/block/copper_golem_statue/place1.fsb"
+        },
+        {
+            "path": "sounds/block/copper_golem_statue/place2.fsb"
+        },
+        {
+            "path": "sounds/block/copper_golem_statue/place3.fsb"
+        },
+        {
+            "path": "sounds/block/copper_golem_statue/place4.fsb"
         },
         {
             "path": "sounds/block/copper_grate/break1.fsb"
@@ -6994,6 +7165,75 @@
             "path": "sounds/block/sculk_vein/break5.fsb"
         },
         {
+            "path": "sounds/block/shelf/activate/activate1.fsb"
+        },
+        {
+            "path": "sounds/block/shelf/activate/activate2.fsb"
+        },
+        {
+            "path": "sounds/block/shelf/activate/activate3.fsb"
+        },
+        {
+            "path": "sounds/block/shelf/break/break1.fsb"
+        },
+        {
+            "path": "sounds/block/shelf/break/break2.fsb"
+        },
+        {
+            "path": "sounds/block/shelf/break/break3.fsb"
+        },
+        {
+            "path": "sounds/block/shelf/break/break4.fsb"
+        },
+        {
+            "path": "sounds/block/shelf/break/break5.fsb"
+        },
+        {
+            "path": "sounds/block/shelf/break/break6.fsb"
+        },
+        {
+            "path": "sounds/block/shelf/deactivate/deactivate1.fsb"
+        },
+        {
+            "path": "sounds/block/shelf/deactivate/deactivate2.fsb"
+        },
+        {
+            "path": "sounds/block/shelf/deactivate/deactivate3.fsb"
+        },
+        {
+            "path": "sounds/block/shelf/multi_swap/multi_swap1.fsb"
+        },
+        {
+            "path": "sounds/block/shelf/multi_swap/multi_swap2.fsb"
+        },
+        {
+            "path": "sounds/block/shelf/multi_swap/multi_swap3.fsb"
+        },
+        {
+            "path": "sounds/block/shelf/place_item/place_item1.fsb"
+        },
+        {
+            "path": "sounds/block/shelf/place_item/place_item2.fsb"
+        },
+        {
+            "path": "sounds/block/shelf/place_item/place_item3.fsb"
+        },
+        {
+            "path": "sounds/block/shelf/place_item/place_item4.fsb"
+        },
+        {
+            "path": "sounds/block/shelf/single_swap/single_swap1.fsb"
+        },
+        {
+            "path": "sounds/block/shelf/single_swap/single_swap2.fsb"
+        },
+        {
+            "path": "sounds/block/shelf/single_swap/single_swap3.fsb"
+        },
+        {
+            "path": "sounds/block/shelf/single_swap/single_swap4.fsb"
+        },
+        {
             "path": "sounds/block/shulker_box/close.fsb"
         },
         {
@@ -8377,6 +8617,15 @@
             "path": "sounds/elytra/elytra_loop.fsb"
         },
         {
+            "path": "sounds/enchant/lunge/lunge1.fsb"
+        },
+        {
+            "path": "sounds/enchant/lunge/lunge2.fsb"
+        },
+        {
+            "path": "sounds/enchant/lunge/lunge3.fsb"
+        },
+        {
             "path": "sounds/enchant/thorns/hit1.fsb"
         },
         {
@@ -8674,6 +8923,36 @@
             "path": "sounds/item/shield/block5.fsb"
         },
         {
+            "path": "sounds/item/spear/attackhit1.fsb"
+        },
+        {
+            "path": "sounds/item/spear/attackhit2.fsb"
+        },
+        {
+            "path": "sounds/item/spear/attackhit3.fsb"
+        },
+        {
+            "path": "sounds/item/spear/attackmiss1.fsb"
+        },
+        {
+            "path": "sounds/item/spear/attackmiss2.fsb"
+        },
+        {
+            "path": "sounds/item/spear/attackmiss3.fsb"
+        },
+        {
+            "path": "sounds/item/spear/hit1.fsb"
+        },
+        {
+            "path": "sounds/item/spear/hit2.fsb"
+        },
+        {
+            "path": "sounds/item/spear/hit3.fsb"
+        },
+        {
+            "path": "sounds/item/spear/use.fsb"
+        },
+        {
             "path": "sounds/item/spyglass/stop.fsb"
         },
         {
@@ -8747,6 +9026,36 @@
         },
         {
             "path": "sounds/item/wind_charge/wind_burst3.fsb"
+        },
+        {
+            "path": "sounds/item/wooden_spear/attackhit1.fsb"
+        },
+        {
+            "path": "sounds/item/wooden_spear/attackhit2.fsb"
+        },
+        {
+            "path": "sounds/item/wooden_spear/attackhit3.fsb"
+        },
+        {
+            "path": "sounds/item/wooden_spear/attackmiss1.fsb"
+        },
+        {
+            "path": "sounds/item/wooden_spear/attackmiss2.fsb"
+        },
+        {
+            "path": "sounds/item/wooden_spear/attackmiss3.fsb"
+        },
+        {
+            "path": "sounds/item/wooden_spear/hit1.fsb"
+        },
+        {
+            "path": "sounds/item/wooden_spear/hit2.fsb"
+        },
+        {
+            "path": "sounds/item/wooden_spear/hit3.fsb"
+        },
+        {
+            "path": "sounds/item/wooden_spear/use.fsb"
         },
         {
             "path": "sounds/jump/cloth1.fsb"
@@ -9187,6 +9496,45 @@
             "path": "sounds/mob/axolotl/swim7.fsb"
         },
         {
+            "path": "sounds/mob/baby_nautilus/ambient1.fsb"
+        },
+        {
+            "path": "sounds/mob/baby_nautilus/ambient2.fsb"
+        },
+        {
+            "path": "sounds/mob/baby_nautilus/ambient3.fsb"
+        },
+        {
+            "path": "sounds/mob/baby_nautilus/ambient4.fsb"
+        },
+        {
+            "path": "sounds/mob/baby_nautilus/ambient5.fsb"
+        },
+        {
+            "path": "sounds/mob/baby_nautilus/ambient6.fsb"
+        },
+        {
+            "path": "sounds/mob/baby_nautilus/death.fsb"
+        },
+        {
+            "path": "sounds/mob/baby_nautilus/eat1.fsb"
+        },
+        {
+            "path": "sounds/mob/baby_nautilus/eat2.fsb"
+        },
+        {
+            "path": "sounds/mob/baby_nautilus/hurt1.fsb"
+        },
+        {
+            "path": "sounds/mob/baby_nautilus/hurt2.fsb"
+        },
+        {
+            "path": "sounds/mob/baby_nautilus/hurt3.fsb"
+        },
+        {
+            "path": "sounds/mob/baby_nautilus/hurt4.fsb"
+        },
+        {
             "path": "sounds/mob/bat/death.fsb"
         },
         {
@@ -9592,6 +9940,147 @@
             "path": "sounds/mob/camel/step_sand6.fsb"
         },
         {
+            "path": "sounds/mob/camel_husk/ambient1.fsb"
+        },
+        {
+            "path": "sounds/mob/camel_husk/ambient2.fsb"
+        },
+        {
+            "path": "sounds/mob/camel_husk/ambient3.fsb"
+        },
+        {
+            "path": "sounds/mob/camel_husk/ambient4.fsb"
+        },
+        {
+            "path": "sounds/mob/camel_husk/ambient5.fsb"
+        },
+        {
+            "path": "sounds/mob/camel_husk/ambient6.fsb"
+        },
+        {
+            "path": "sounds/mob/camel_husk/ambient7.fsb"
+        },
+        {
+            "path": "sounds/mob/camel_husk/ambient8.fsb"
+        },
+        {
+            "path": "sounds/mob/camel_husk/dash1.fsb"
+        },
+        {
+            "path": "sounds/mob/camel_husk/dash2.fsb"
+        },
+        {
+            "path": "sounds/mob/camel_husk/dash3.fsb"
+        },
+        {
+            "path": "sounds/mob/camel_husk/dash4.fsb"
+        },
+        {
+            "path": "sounds/mob/camel_husk/dash5.fsb"
+        },
+        {
+            "path": "sounds/mob/camel_husk/dash6.fsb"
+        },
+        {
+            "path": "sounds/mob/camel_husk/dash_ready.fsb"
+        },
+        {
+            "path": "sounds/mob/camel_husk/death1.fsb"
+        },
+        {
+            "path": "sounds/mob/camel_husk/death2.fsb"
+        },
+        {
+            "path": "sounds/mob/camel_husk/eat1.fsb"
+        },
+        {
+            "path": "sounds/mob/camel_husk/eat2.fsb"
+        },
+        {
+            "path": "sounds/mob/camel_husk/eat3.fsb"
+        },
+        {
+            "path": "sounds/mob/camel_husk/eat4.fsb"
+        },
+        {
+            "path": "sounds/mob/camel_husk/eat5.fsb"
+        },
+        {
+            "path": "sounds/mob/camel_husk/hurt1.fsb"
+        },
+        {
+            "path": "sounds/mob/camel_husk/hurt2.fsb"
+        },
+        {
+            "path": "sounds/mob/camel_husk/hurt3.fsb"
+        },
+        {
+            "path": "sounds/mob/camel_husk/hurt4.fsb"
+        },
+        {
+            "path": "sounds/mob/camel_husk/sit1.fsb"
+        },
+        {
+            "path": "sounds/mob/camel_husk/sit2.fsb"
+        },
+        {
+            "path": "sounds/mob/camel_husk/sit3.fsb"
+        },
+        {
+            "path": "sounds/mob/camel_husk/sit4.fsb"
+        },
+        {
+            "path": "sounds/mob/camel_husk/stand1.fsb"
+        },
+        {
+            "path": "sounds/mob/camel_husk/stand2.fsb"
+        },
+        {
+            "path": "sounds/mob/camel_husk/stand3.fsb"
+        },
+        {
+            "path": "sounds/mob/camel_husk/stand4.fsb"
+        },
+        {
+            "path": "sounds/mob/camel_husk/stand5.fsb"
+        },
+        {
+            "path": "sounds/mob/camel_husk/step1.fsb"
+        },
+        {
+            "path": "sounds/mob/camel_husk/step2.fsb"
+        },
+        {
+            "path": "sounds/mob/camel_husk/step3.fsb"
+        },
+        {
+            "path": "sounds/mob/camel_husk/step4.fsb"
+        },
+        {
+            "path": "sounds/mob/camel_husk/step5.fsb"
+        },
+        {
+            "path": "sounds/mob/camel_husk/step6.fsb"
+        },
+        {
+            "path": "sounds/mob/camel_husk/step_sand1.fsb"
+        },
+        {
+            "path": "sounds/mob/camel_husk/step_sand2.fsb"
+        },
+        {
+            "path": "sounds/mob/camel_husk/step_sand3.fsb"
+        },
+        {
+            "path": "sounds/mob/camel_husk/step_sand4.fsb"
+        },
+        {
+            "path": "sounds/mob/camel_husk/step_sand5.fsb"
+        },
+        {
+            "path": "sounds/mob/camel_husk/step_sand6.fsb"
+        },
+        {
             "path": "sounds/mob/cat/beg1.fsb"
         },
         {
@@ -9707,6 +10196,285 @@
         },
         {
             "path": "sounds/mob/chicken/step2.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/chest_interaction/put_item.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/chest_interaction/put_item_fail.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/chest_interaction/take_item.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/chest_interaction/take_item_fail.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/oxidized/death.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/oxidized/hurt1.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/oxidized/hurt2.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/oxidized/hurt3.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/oxidized/hurt4.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/oxidized/look1.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/oxidized/look2.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/oxidized/look3.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/oxidized/look4.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/oxidized/look5.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/oxidized/look6.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/oxidized/look7.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/oxidized/spin1.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/oxidized/spin2.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/oxidized/spin3.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/oxidized/spin4.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/oxidized/spin5.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/oxidized/spin6.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/oxidized/spin7.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/oxidized/step1.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/oxidized/step2.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/oxidized/step3.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/oxidized/step4.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/oxidized/step5.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/oxidized/step6.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/oxidized/step7.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/oxidized/step8.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/oxidized/step9.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/regular/become_statue1.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/regular/become_statue2.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/regular/become_statue3.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/regular/become_statue4.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/regular/death.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/regular/hurt1.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/regular/hurt2.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/regular/hurt3.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/regular/hurt4.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/regular/look1.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/regular/look2.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/regular/look3.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/regular/look4.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/regular/look5.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/regular/look6.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/regular/look7.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/regular/spawn.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/regular/spin1.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/regular/spin2.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/regular/spin3.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/regular/spin4.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/regular/spin5.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/regular/spin6.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/regular/spin7.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/regular/step1.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/regular/step2.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/regular/step3.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/regular/step4.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/regular/step5.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/regular/step6.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/regular/step7.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/regular/step8.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/regular/step9.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/weathered/death.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/weathered/hurt1.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/weathered/hurt2.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/weathered/hurt3.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/weathered/hurt4.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/weathered/look1.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/weathered/look2.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/weathered/look3.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/weathered/look4.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/weathered/look5.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/weathered/look6.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/weathered/look7.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/weathered/spin1.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/weathered/spin2.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/weathered/spin3.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/weathered/spin4.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/weathered/spin5.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/weathered/spin6.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/weathered/spin7.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/weathered/step1.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/weathered/step2.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/weathered/step3.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/weathered/step4.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/weathered/step5.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/weathered/step6.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/weathered/step7.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/weathered/step8.fsb"
+        },
+        {
+            "path": "sounds/mob/copper_golem/weathered/step9.fsb"
         },
         {
             "path": "sounds/mob/cow/hurt1.fsb"
@@ -11272,6 +12040,9 @@
             "path": "sounds/mob/horse/skeleton/idle3.fsb"
         },
         {
+            "path": "sounds/mob/horse/zombie/angry.fsb"
+        },
+        {
             "path": "sounds/mob/horse/zombie/death.fsb"
         },
         {
@@ -11512,6 +12283,78 @@
             "path": "sounds/mob/mooshroom/milk3.fsb"
         },
         {
+            "path": "sounds/mob/nautilus/ambient1.fsb"
+        },
+        {
+            "path": "sounds/mob/nautilus/ambient2.fsb"
+        },
+        {
+            "path": "sounds/mob/nautilus/ambient3.fsb"
+        },
+        {
+            "path": "sounds/mob/nautilus/ambient4.fsb"
+        },
+        {
+            "path": "sounds/mob/nautilus/ambient5.fsb"
+        },
+        {
+            "path": "sounds/mob/nautilus/ambient6.fsb"
+        },
+        {
+            "path": "sounds/mob/nautilus/ambient7.fsb"
+        },
+        {
+            "path": "sounds/mob/nautilus/ambient8.fsb"
+        },
+        {
+            "path": "sounds/mob/nautilus/dash1.fsb"
+        },
+        {
+            "path": "sounds/mob/nautilus/dash2.fsb"
+        },
+        {
+            "path": "sounds/mob/nautilus/dash3.fsb"
+        },
+        {
+            "path": "sounds/mob/nautilus/dash4.fsb"
+        },
+        {
+            "path": "sounds/mob/nautilus/dash_ready1.fsb"
+        },
+        {
+            "path": "sounds/mob/nautilus/dash_ready2.fsb"
+        },
+        {
+            "path": "sounds/mob/nautilus/dash_ready3.fsb"
+        },
+        {
+            "path": "sounds/mob/nautilus/death.fsb"
+        },
+        {
+            "path": "sounds/mob/nautilus/eat1.fsb"
+        },
+        {
+            "path": "sounds/mob/nautilus/eat2.fsb"
+        },
+        {
+            "path": "sounds/mob/nautilus/hurt1.fsb"
+        },
+        {
+            "path": "sounds/mob/nautilus/hurt2.fsb"
+        },
+        {
+            "path": "sounds/mob/nautilus/hurt3.fsb"
+        },
+        {
+            "path": "sounds/mob/nautilus/hurt4.fsb"
+        },
+        {
+            "path": "sounds/mob/nautilus/nautilus_saddle_equip.fsb"
+        },
+        {
+            "path": "sounds/mob/nautilus/ride.fsb"
+        },
+        {
             "path": "sounds/mob/panda/aggressive1.fsb"
         },
         {
@@ -11669,6 +12512,45 @@
         },
         {
             "path": "sounds/mob/panda/worried6.fsb"
+        },
+        {
+            "path": "sounds/mob/parched/ambient1.fsb"
+        },
+        {
+            "path": "sounds/mob/parched/ambient2.fsb"
+        },
+        {
+            "path": "sounds/mob/parched/ambient3.fsb"
+        },
+        {
+            "path": "sounds/mob/parched/ambient4.fsb"
+        },
+        {
+            "path": "sounds/mob/parched/death.fsb"
+        },
+        {
+            "path": "sounds/mob/parched/hurt1.fsb"
+        },
+        {
+            "path": "sounds/mob/parched/hurt2.fsb"
+        },
+        {
+            "path": "sounds/mob/parched/hurt3.fsb"
+        },
+        {
+            "path": "sounds/mob/parched/hurt4.fsb"
+        },
+        {
+            "path": "sounds/mob/parched/step1.fsb"
+        },
+        {
+            "path": "sounds/mob/parched/step2.fsb"
+        },
+        {
+            "path": "sounds/mob/parched/step3.fsb"
+        },
+        {
+            "path": "sounds/mob/parched/step4.fsb"
         },
         {
             "path": "sounds/mob/parrot/death1.fsb"
@@ -12101,6 +12983,15 @@
         },
         {
             "path": "sounds/mob/pillager/idle4.fsb"
+        },
+        {
+            "path": "sounds/mob/player/attack/crit1.ogg"
+        },
+        {
+            "path": "sounds/mob/player/attack/crit2.ogg"
+        },
+        {
+            "path": "sounds/mob/player/attack/crit3.ogg"
         },
         {
             "path": "sounds/mob/player/attack/strong1.fsb"
@@ -14141,6 +15032,57 @@
         },
         {
             "path": "sounds/mob/zombiepig/zpighurt2.fsb"
+        },
+        {
+            "path": "sounds/mob/zombie_nautilus/ambient1.fsb"
+        },
+        {
+            "path": "sounds/mob/zombie_nautilus/ambient2.fsb"
+        },
+        {
+            "path": "sounds/mob/zombie_nautilus/ambient3.fsb"
+        },
+        {
+            "path": "sounds/mob/zombie_nautilus/ambient4.fsb"
+        },
+        {
+            "path": "sounds/mob/zombie_nautilus/ambient5.fsb"
+        },
+        {
+            "path": "sounds/mob/zombie_nautilus/dash1.fsb"
+        },
+        {
+            "path": "sounds/mob/zombie_nautilus/dash2.fsb"
+        },
+        {
+            "path": "sounds/mob/zombie_nautilus/dash3.fsb"
+        },
+        {
+            "path": "sounds/mob/zombie_nautilus/dash4.fsb"
+        },
+        {
+            "path": "sounds/mob/zombie_nautilus/dash_ready1.fsb"
+        },
+        {
+            "path": "sounds/mob/zombie_nautilus/dash_ready2.fsb"
+        },
+        {
+            "path": "sounds/mob/zombie_nautilus/dash_ready3.fsb"
+        },
+        {
+            "path": "sounds/mob/zombie_nautilus/death.fsb"
+        },
+        {
+            "path": "sounds/mob/zombie_nautilus/hurt1.fsb"
+        },
+        {
+            "path": "sounds/mob/zombie_nautilus/hurt2.fsb"
+        },
+        {
+            "path": "sounds/mob/zombie_nautilus/hurt3.fsb"
+        },
+        {
+            "path": "sounds/mob/zombie_nautilus/hurt4.fsb"
         },
         {
             "path": "sounds/mob/zombie_villager/death.fsb"
@@ -19222,6 +20164,12 @@
             "path": "textures/gui/controls/jump.png"
         },
         {
+            "path": "textures/gui/controls/jump_dpad.png"
+        },
+        {
+            "path": "textures/gui/controls/jump_dpad_pressed.png"
+        },
+        {
             "path": "textures/gui/controls/jump_pressed.png"
         },
         {
@@ -21286,6 +22234,9 @@
             "path": "textures/ui/achievements_g.png"
         },
         {
+            "path": "textures/ui/achievements_pause_menu_icon.png"
+        },
+        {
             "path": "textures/ui/achievement_locked_icon.png"
         },
         {
@@ -21782,6 +22733,9 @@
         },
         {
             "path": "textures/ui/break.png"
+        },
+        {
+            "path": "textures/ui/breath_of_the_nautilus_effect.png"
         },
         {
             "path": "textures/ui/brewing_arrow_empty.png"
@@ -22384,6 +23338,9 @@
             "path": "textures/ui/csbChevronArrowLarge.png"
         },
         {
+            "path": "textures/ui/csbChevronArrowSmall.png"
+        },
+        {
             "path": "textures/ui/csb_animated_banner_default.png"
         },
         {
@@ -22816,6 +23773,9 @@
             "path": "textures/ui/empty_llama_slot_carpet.png"
         },
         {
+            "path": "textures/ui/empty_nautilus_slot_armor.png"
+        },
+        {
             "path": "textures/ui/empty_progress_bar.json"
         },
         {
@@ -22865,6 +23825,12 @@
         },
         {
             "path": "textures/ui/ErrorGlyph_small_hover.png"
+        },
+        {
+            "path": "textures/ui/escape_animated.json"
+        },
+        {
+            "path": "textures/ui/escape_animated.png"
         },
         {
             "path": "textures/ui/experiencebarempty.json"
@@ -23459,6 +24425,9 @@
         },
         {
             "path": "textures/ui/how_to_play_button_pressed_light.png"
+        },
+        {
+            "path": "textures/ui/hud_mob_ambient_effect_background.png"
         },
         {
             "path": "textures/ui/hud_mob_effect_background.png"
@@ -24064,6 +25033,24 @@
             "path": "textures/ui/move.png"
         },
         {
+            "path": "textures/ui/mpp_banner_background_default.json"
+        },
+        {
+            "path": "textures/ui/mpp_banner_background_default.png"
+        },
+        {
+            "path": "textures/ui/mpp_banner_background_hover.json"
+        },
+        {
+            "path": "textures/ui/mpp_banner_background_hover.png"
+        },
+        {
+            "path": "textures/ui/mpp_banner_logo_portal.png"
+        },
+        {
+            "path": "textures/ui/mpp_banner_logo_slim.png"
+        },
+        {
             "path": "textures/ui/multiplayer_glyph.png"
         },
         {
@@ -24242,6 +25229,9 @@
         },
         {
             "path": "textures/ui/paste.png"
+        },
+        {
+            "path": "textures/ui/pause_icon.png"
         },
         {
             "path": "textures/ui/pause_screen_border.json"
@@ -24586,6 +25576,9 @@
             "path": "textures/ui/ps4_select_button.png"
         },
         {
+            "path": "textures/ui/ps4_start_button.png"
+        },
+        {
             "path": "textures/ui/ps4_stick_left.png"
         },
         {
@@ -24880,6 +25873,9 @@
             "path": "textures/ui/realms_chevron_play.png"
         },
         {
+            "path": "textures/ui/realms_core_logo.png"
+        },
+        {
             "path": "textures/ui/realms_faq_bee.png"
         },
         {
@@ -24905,6 +25901,9 @@
         },
         {
             "path": "textures/ui/realms_plus_hover.png"
+        },
+        {
+            "path": "textures/ui/realms_plus_logo.png"
         },
         {
             "path": "textures/ui/realms_plus_normal.png"
@@ -25177,6 +26176,9 @@
             "path": "textures/ui/saleflagtrianglebeveldefault_large.png"
         },
         {
+            "path": "textures/ui/saleflagtrianglebeveleven.png"
+        },
+        {
             "path": "textures/ui/saleflagtrianglebevelpress.json"
         },
         {
@@ -25189,10 +26191,16 @@
             "path": "textures/ui/saleflagtrianglebevelpress_large.png"
         },
         {
+            "path": "textures/ui/saleflagtriangleoffer.png"
+        },
+        {
             "path": "textures/ui/saleribbon.json"
         },
         {
             "path": "textures/ui/saleribbon.png"
+        },
+        {
+            "path": "textures/ui/sale_banner.png"
         },
         {
             "path": "textures/ui/sale_button_borderless_lighthover.json"
@@ -25292,6 +26300,9 @@
         },
         {
             "path": "textures/ui/settings_glyph_color_2x.png"
+        },
+        {
+            "path": "textures/ui/settings_pause_menu_icon.png"
         },
         {
             "path": "textures/ui/shadow.png"
@@ -25421,6 +26432,12 @@
         },
         {
             "path": "textures/ui/slider_step_progress_hover.png"
+        },
+        {
+            "path": "textures/ui/slider_video_menu.json"
+        },
+        {
+            "path": "textures/ui/slider_video_menu.png"
         },
         {
             "path": "textures/ui/slots_bg.json"
@@ -26032,6 +27049,9 @@
             "path": "textures/ui/tnt_animated.png"
         },
         {
+            "path": "textures/ui/toast_divider.png"
+        },
+        {
             "path": "textures/ui/toggle_off.png"
         },
         {
@@ -26057,6 +27077,9 @@
         },
         {
             "path": "textures/ui/tooltip_default_chevron.png"
+        },
+        {
+            "path": "textures/ui/tooltip_default_chevron_right.png"
         },
         {
             "path": "textures/ui/tooltip_default_chevron_rotated.png"
@@ -26164,6 +27187,9 @@
             "path": "textures/ui/undoArrow.png"
         },
         {
+            "path": "textures/ui/union.png"
+        },
+        {
             "path": "textures/ui/unLock.png"
         },
         {
@@ -26222,9 +27248,6 @@
         },
         {
             "path": "textures/ui/update_world_chunks.png"
-        },
-        {
-            "path": "textures/ui/upload_glyph.png"
         },
         {
             "path": "textures/ui/up_arrow.png"
@@ -26530,6 +27553,24 @@
             "path": "textures/ui/yellow_banner.png"
         },
         {
+            "path": "textures/ui/bubble/bubble-background.json"
+        },
+        {
+            "path": "textures/ui/bubble/bubble-background.png"
+        },
+        {
+            "path": "textures/ui/bubble/onboarding_bubble_arrow_down_left.png"
+        },
+        {
+            "path": "textures/ui/bubble/onboarding_bubble_arrow_down_right.png"
+        },
+        {
+            "path": "textures/ui/bubble/onboarding_bubble_arrow_up_left.png"
+        },
+        {
+            "path": "textures/ui/bubble/onboarding_bubble_arrow_up_right.png"
+        },
+        {
             "path": "textures/ui/friendsbutton/navbar-friends-icon.png"
         },
         {
@@ -26791,10 +27832,109 @@
             "path": "textures/ui/hardcore/wither_heart_half.png"
         },
         {
+            "path": "textures/ui/icons/icon_adventuretime.png"
+        },
+        {
+            "path": "textures/ui/icons/icon_angrybirds.png"
+        },
+        {
+            "path": "textures/ui/icons/icon_batman.png"
+        },
+        {
+            "path": "textures/ui/icons/icon_ben10.png"
+        },
+        {
+            "path": "textures/ui/icons/icon_best.png"
+        },
+        {
+            "path": "textures/ui/icons/icon_blackfriday.png"
+        },
+        {
+            "path": "textures/ui/icons/icon_deals.png"
+        },
+        {
+            "path": "textures/ui/icons/icon_fall.png"
+        },
+        {
+            "path": "textures/ui/icons/icon_frozen.png"
+        },
+        {
+            "path": "textures/ui/icons/icon_httyd.png"
+        },
+        {
+            "path": "textures/ui/icons/icon_iceage.png"
+        },
+        {
+            "path": "textures/ui/icons/icon_jurassic.png"
+        },
+        {
+            "path": "textures/ui/icons/icon_lightyear.png"
+        },
+        {
+            "path": "textures/ui/icons/icon_mashupbrush.png"
+        },
+        {
+            "path": "textures/ui/icons/icon_mashuphanger.png"
+        },
+        {
+            "path": "textures/ui/icons/icon_mashupworld.png"
+        },
+        {
+            "path": "textures/ui/icons/icon_minions.png"
+        },
+        {
+            "path": "textures/ui/icons/icon_multiplayer.png"
+        },
+        {
+            "path": "textures/ui/icons/icon_new.png"
+        },
+        {
+            "path": "textures/ui/icons/icon_nightmarebeforechristmas.png"
+        },
+        {
+            "path": "textures/ui/icons/icon_piratesofthecaribbean.png"
+        },
+        {
+            "path": "textures/ui/icons/icon_sonic.png"
+        },
+        {
+            "path": "textures/ui/icons/icon_spongebobsquarepants.png"
+        },
+        {
+            "path": "textures/ui/icons/icon_spring.png"
+        },
+        {
+            "path": "textures/ui/icons/icon_staffpicks.png"
+        },
+        {
+            "path": "textures/ui/icons/icon_starwars.png"
+        },
+        {
+            "path": "textures/ui/icons/icon_summer.png"
+        },
+        {
+            "path": "textures/ui/icons/icon_toystory.png"
+        },
+        {
+            "path": "textures/ui/icons/icon_trailer.png"
+        },
+        {
+            "path": "textures/ui/icons/icon_trending.png"
+        },
+        {
+            "path": "textures/ui/icons/icon_wdwmagickingdomadventure.png"
+        },
+        {
+            "path": "textures/ui/icons/icon_winter.png"
+        },
+        {
             "path": "textures/ui/sidebar_icons/addon.png"
         },
         {
             "path": "textures/ui/sidebar_icons/AdventureTime_packicon.jpg"
+        },
+        {
+            "path": "textures/ui/sidebar_icons/angrybirds_packicon.jpg"
         },
         {
             "path": "textures/ui/sidebar_icons/Ben10_packicon_0.jpg"
@@ -26827,6 +27967,9 @@
             "path": "textures/ui/sidebar_icons/csb_sidebar_icon.png"
         },
         {
+            "path": "textures/ui/sidebar_icons/csb_sidebar_icon_small.png"
+        },
+        {
             "path": "textures/ui/sidebar_icons/dressing_room_animation.png"
         },
         {
@@ -26851,7 +27994,16 @@
             "path": "textures/ui/sidebar_icons/featured.png"
         },
         {
+            "path": "textures/ui/sidebar_icons/Frozen_packicon.jpg"
+        },
+        {
             "path": "textures/ui/sidebar_icons/genre.png"
+        },
+        {
+            "path": "textures/ui/sidebar_icons/HTTYD_packicon.jpg"
+        },
+        {
+            "path": "textures/ui/sidebar_icons/IceAge_packicon.jpg"
         },
         {
             "path": "textures/ui/sidebar_icons/Jurassic_packicon_0.jpg"
@@ -26875,7 +28027,16 @@
             "path": "textures/ui/sidebar_icons/my_content.png"
         },
         {
+            "path": "textures/ui/sidebar_icons/my_content_large.png"
+        },
+        {
+            "path": "textures/ui/sidebar_icons/NightmareBeforeChristmas_packicon.jpg"
+        },
+        {
             "path": "textures/ui/sidebar_icons/owned_skins_icon.png"
+        },
+        {
+            "path": "textures/ui/sidebar_icons/PiratesoftheCaribbean_packicon.jpg"
         },
         {
             "path": "textures/ui/sidebar_icons/profile_screen_icon.png"
@@ -26935,6 +28096,9 @@
             "path": "textures/ui/sidebar_icons/Sonic_packicon.jpg"
         },
         {
+            "path": "textures/ui/sidebar_icons/SpongeBob_SquarePants_packicon.jpg"
+        },
+        {
             "path": "textures/ui/sidebar_icons/squaredonut.png"
         },
         {
@@ -26944,6 +28108,9 @@
             "path": "textures/ui/sidebar_icons/Star_Wars_packicon_0.jpg"
         },
         {
+            "path": "textures/ui/sidebar_icons/ToyStory_packicon.jpg"
+        },
+        {
             "path": "textures/ui/sidebar_icons/unowned_skins_icon.png"
         },
         {
@@ -26951,6 +28118,12 @@
         },
         {
             "path": "textures/ui/sidebar_icons/wish_list.png"
+        },
+        {
+            "path": "textures/ui/socialbuttonicon/social-default-icon.png"
+        },
+        {
+            "path": "textures/ui/socialbuttonicon/social-hover-icon.png"
         },
         {
             "path": "textures/ui/subcategory_icons/arms.png"
@@ -27076,9 +28249,6 @@
             "path": "ui/choose_realm_screen.json"
         },
         {
-            "path": "ui/cloud_upload_screen.json"
-        },
-        {
             "path": "ui/coin_purchase_screen.json"
         },
         {
@@ -27196,9 +28366,6 @@
             "path": "ui/grindstone_screen_pocket.json"
         },
         {
-            "path": "ui/holographic_postrender_screen.json"
-        },
-        {
             "path": "ui/horse_screen.json"
         },
         {
@@ -27230,9 +28397,6 @@
         },
         {
             "path": "ui/in_bed_screen.json"
-        },
-        {
-            "path": "ui/item_detail_description_screen.json"
         },
         {
             "path": "ui/jigsaw_editor_screen.json"
@@ -27319,9 +28483,6 @@
             "path": "ui/portfolio_screen.json"
         },
         {
-            "path": "ui/post_rating_screen.json"
-        },
-        {
             "path": "ui/progress_screen.json"
         },
         {
@@ -27329,9 +28490,6 @@
         },
         {
             "path": "ui/realmsPlus_screen.json"
-        },
-        {
-            "path": "ui/realmsplus_upgrade_notice_screen.json"
         },
         {
             "path": "ui/realms_allowlist.json"
@@ -27521,9 +28679,6 @@
         },
         {
             "path": "ui/ui_friendsbutton.json"
-        },
-        {
-            "path": "ui/ui_holo_cursor.json"
         },
         {
             "path": "ui/ui_iconbutton.json"

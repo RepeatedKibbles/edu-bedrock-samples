@@ -65,11 +65,15 @@
           "$pressed_button_name": "button.action_button",
           "bindings": [
             {
-              "binding_name": "#buy_visible",
+              "binding_name": "#call_to_action_button_visible",
               "binding_name_override": "#visible"
             }
           ],
           "$buy_now_bindings": [
+            {
+              "binding_name": "#landing_buy_button_enabled",
+              "binding_name_override": "#enabled"
+            }
           ]
         }
       },
@@ -110,7 +114,7 @@
           ],
           "bindings": [
             {
-              "binding_name": "#csb_one_month_free_trial_visible",
+              "binding_name": "#free_trial_banner_visible",
               "binding_name_override": "#visible"
             }
           ]
@@ -136,7 +140,7 @@
           ],
           "bindings": [
             {
-              "binding_name": "(not #csb_one_month_free_trial_visible)",
+              "binding_name": "#subscription_banner_visible",
               "binding_name_override": "#visible"
             }
           ]
@@ -284,14 +288,6 @@
         "vertical_small_spacer_2@csb_landing.vertical_small_spacer": {}
       },
       {
-        "info_text_bullet_8@csb_landing.info_text_bullet": {
-          "$info_text_line": "store.csb.landing.info.line8"
-        }
-      },
-      {
-        "vertical_small_spacer_8@csb_landing.vertical_small_spacer": {}
-      },
-      {
         "info_text_bullet_3@csb_landing.info_text_bullet": {
           "$info_text_line": "store.csb.landing.info.line3"
         }
@@ -318,25 +314,6 @@
       {
         "info_text_bullet_6@csb_landing.info_text_bullet": {
           "$info_text_line": "store.csb.landing.info.line6"
-        }
-      },
-      {
-        "vertical_small_spacer_6@csb_landing.vertical_small_spacer": {}
-      },
-      {
-        "info_text_bullet_7@csb_landing.info_text_bullet": {
-          "$info_text_line": "#subscription_info_text",
-          "$text_bindings": [
-            {
-              "binding_name": "#subscription_info_text"
-            }
-          ],
-          "bindings": [
-            {
-              "binding_name": "#sign_in_visible",
-              "binding_name_override": "#visible"
-            }
-          ]
         }
       },
       {

@@ -1,8 +1,8 @@
 {
-  "format_version": "1.20.60",
+  "format_version": "1.21.110",
   "minecraft:biome": {
     "description": {
-      "identifier": "legacy_frozen_ocean"
+      "identifier": "minecraft:legacy_frozen_ocean"
     },
     "components": {
       "minecraft:climate": {

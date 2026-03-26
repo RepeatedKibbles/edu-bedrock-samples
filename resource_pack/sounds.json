@@ -1126,6 +1126,7 @@
           "death.in.water": "game.player.die",
           "attack.nodamage": "game.player.attack.nodamage",
           "attack.strong": "game.player.attack.strong",
+          "attack.critical": "game.player.attack.critical",
           "elderguardian.curse": {
             "sound": "mob.elderguardian.curse",
             "volume": 1.0,
@@ -1690,7 +1691,22 @@
         }
       }
     }
+  },
+  "individual_named_sounds": {
+    "sounds": {
+      "ambient.underwater.loop": {
+        "sound": "ambient.underwater.loop",
+        "volume": 1,
+        "pitch": 1
+      },
+      "ambient.underwater.additions": {
+        "sound": "ambient.underwater.additions",
+        "volume": 1,
+        "pitch": 1
+      }
+    }
   }
+<<<<<<< Updated upstream
 }
 =======
 {
@@ -12784,3 +12800,6 @@
    }
 }
 >>>>>>> f5b651000f52b66334c968f3ccf1aca7950cd6ee
+=======
+}
+>>>>>>> Stashed changes

@@ -657,9 +657,6 @@
     "record_ward": {
       "textures": "textures/items/record_ward"
     },
-    "record_pigstep": {
-      "textures": "textures/items/record_pigstep"
-    },
     "redstone_dust": {
       "textures": "textures/items/redstone_dust"
     },
