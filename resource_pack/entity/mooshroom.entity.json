@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "format_version": "1.8.0",
   "minecraft:client_entity": {
@@ -30,4 +31,50 @@
       }
     }
   }
+=======
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "minecraft:mooshroom",
+      "min_engine_version": "1.8.0",
+      "materials": {
+        "default": "mooshroom"
+      },
+      "textures": {
+        "default": "textures/entity/cow/mooshroom_v2",
+        "brown": "textures/entity/cow/brown_mooshroom_v2",
+        "baby_default": "textures/entity/cow/mooshroom_red_baby",
+        "baby_brown": "textures/entity/cow/mooshroom_brown_baby"
+      },
+      "geometry": {
+        "default": "geometry.mooshroom.v2",
+        "baby": "geometry.cow.baby"
+      },
+      "animations": {
+        "setup": "animation.mooshroom.setup",
+        "walk": "animation.quadruped.walk",
+        "look_at_target": "animation.common.look_at_target",
+        "baby_transform": "animation.mooshroom.baby_transform"
+      },
+      "animation_controllers": [
+        {
+          "setup": "controller.animation.mooshroom.setup"
+        },
+        {
+          "move": "controller.animation.mooshroom.move"
+        }
+      ],
+      "render_controllers": [
+        "controller.render.mooshroom.v2"
+      ],
+      "spawn_egg": {
+        "texture": "spawn_egg_mooshroom"
+      },
+      "scripts": {
+        "scale": "query.is_baby ? 2.0 : 1.0"
+      }
+    }
+  }
+>>>>>>> f5b651000f52b66334c968f3ccf1aca7950cd6ee
 }
