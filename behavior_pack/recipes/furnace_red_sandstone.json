@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "format_version": "1.12",
   "minecraft:recipe_furnace": {
@@ -9,4 +10,28 @@
   "input": "minecraft:red_sandstone",
   "output": "minecraft:red_sandstone:3"
   }
+=======
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_furnace": {
+    "description": {
+      "identifier": "minecraft:furnace_red_sandstone"
+    },
+    "unlock": [
+      {
+        "item": "minecraft:red_sandstone",
+        "data": 0
+      }
+    ],
+    "tags": [
+      "furnace"
+    ],
+    "input": {
+      "item": "minecraft:red_sandstone",
+      "data": 0
+    },
+    "output": "minecraft:smooth_red_sandstone",
+    "priority": 400
+  }
+>>>>>>> 7844835b6baad4c0010f46901a4accf87413a022
 }

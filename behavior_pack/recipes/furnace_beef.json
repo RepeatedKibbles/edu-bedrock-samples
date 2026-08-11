@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "format_version": "1.12",
   "minecraft:recipe_furnace": {
@@ -12,3 +13,27 @@
   }
   
 }
+=======
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_furnace": {
+    "description": {
+      "identifier": "minecraft:furnace_beef"
+    },
+    "unlock": [
+      {
+        "item": "minecraft:beef"
+      }
+    ],
+    "tags": [
+      "furnace",
+      "smoker",
+      "campfire",
+      "soul_campfire"
+    ],
+    "input": "minecraft:beef",
+    "output": "minecraft:cooked_beef",
+    "priority": 30
+  }
+}
+>>>>>>> 7844835b6baad4c0010f46901a4accf87413a022
