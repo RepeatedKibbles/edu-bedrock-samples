@@ -1,182 +1,3 @@
-<<<<<<< HEAD
-{
-  "format_version": "1.13.0",
-  "minecraft:entity": {
-    "description": {
-      "identifier": "minecraft:witch",
-      "is_spawnable": true,
-      "is_summonable": true,
-      "is_experimental": false
-    },
-    "component_groups": {
-      "minecraft:celebrate": {
-        "minecraft:behavior.celebrate": {
-          "priority": 5,
-          "celebration_sound": "celebrate",
-          "sound_interval": {
-            "range_min": 2.0,
-            "range_max": 7.0
-          },
-          "jump_interval": {
-            "range_min": 1.0,
-            "range_max": 3.5
-          },
-          "duration": 30.0,
-          "on_celebration_end_event": {
-            "event": "minecraft:stop_celebrating",
-            "target": "self"
-          }
-        }
-      },
-      "minecraft:raid_configuration": {
-        "minecraft:dweller": {
-          "dwelling_type": "village",
-          "dweller_role": "hostile",
-          "update_interval_base": 60,
-          "update_interval_variant": 40,
-          "can_find_poi": false,
-          "can_migrate": false,
-          "first_founding_reward": 0
-        },
-        "minecraft:behavior.move_to_village": {
-          "priority": 3,
-          "speed_multiplier": 1.2,
-          "goal_radius": 2.0
-        },
-        "minecraft:ambient_sound_interval": {
-          "value": 2.0,
-          "range": 4.0,
-          "event_name": "ambient.in.raid"
-        }
-      }
-    },
-    "components": {
-      "minecraft:experience_reward": {
-        "on_death": "query.last_hit_by_player ? (query.is_baby ? 12 : 5) + (Math.die_roll(query.equipment_count,1,3)) : 0"
-      },
-      "minecraft:breathable": {
-        "total_supply": 15,
-        "suffocate_time": 0
-      },
-      "minecraft:nameable": {
-      },
-      "minecraft:loot": {
-        "table": "loot_tables/entities/witch.json"
-      },
-      "minecraft:health": {
-        "value": 26,
-        "max": 26
-      },
-      "minecraft:hurt_on_condition": {
-        "damage_conditions": [
-          {
-            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
-            "cause": "lava",
-            "damage_per_tick": 4
-          }
-        ]
-      },
-      "minecraft:movement": {
-        "value": 0.25
-      },
-      "minecraft:navigation.walk": {
-        "can_path_over_water": true,
-        "avoid_water": false
-      },
-      "minecraft:movement.basic": {
-      },
-      "minecraft:jump.static": {
-      },
-      "minecraft:can_climb": {
-      },
-      "minecraft:behavior.float": {
-        "priority": 1
-      },
-      "minecraft:behavior.ranged_attack": {
-        "priority": 2,
-        "speed_multiplier": 1.0,
-        "attack_interval_min": 3,
-        "attack_interval_max": 3,
-        "attack_radius": 10.0
-      },
-      "minecraft:behavior.random_stroll": {
-        "priority": 4,
-        "speed_multiplier": 1.0
-      },
-      "minecraft:behavior.look_at_player": {
-        "priority": 5,
-        "look_distance": 8.0
-      },
-      "minecraft:behavior.random_look_around": {
-        "priority": 5,
-        "look_distance": 8.0
-      },
-      "minecraft:behavior.hurt_by_target": {
-        "priority": 1
-      },
-      "minecraft:behavior.nearest_attackable_target": {
-        "priority": 2,
-        "entity_types": [
-          {
-            "filters": {
-              "any_of": [
-                {
-                  "test": "is_family",
-                  "subject": "other",
-                  "value": "player"
-                },
-                {
-                  "test": "is_family",
-                  "subject": "other",
-                  "value": "snowgolem"
-                },
-                {
-                  "test": "is_family",
-                  "subject": "other",
-                  "value": "irongolem"
-                }
-              ]
-            },
-            "max_dist": 10
-          }
-        ],
-        "must_reach": true
-      },
-      "minecraft:type_family": {
-        "family": [ "witch", "monster", "mob" ]
-      },
-      "minecraft:collision_box": {
-        "width": 0.6,
-        "height": 1.9
-      },
-      "minecraft:physics": {
-      },
-      "minecraft:pushable": {
-        "is_pushable": true,
-        "is_pushable_by_piston": true
-      },
-      "minecraft:follow_range": {
-        "value": 64
-      }
-    },
-    "events": {
-      "minecraft:spawn_for_raid": {
-        "add": {
-          "component_groups": [
-            "minecraft:raid_configuration"
-          ]
-        }
-      },
-      "minecraft:start_celebrating": { // Event must be called exactly this for village to fire it when a raid is lost
-        "add": { "component_groups": [ "minecraft:celebrate" ] }
-      },
-      "minecraft:stop_celebrating": {
-        "remove": { "component_groups": [ "minecraft:celebrate" ] }
-      }
-    }
-  }
-}
-=======
 {
   "format_version": "1.26.0",
   "minecraft:entity": {
@@ -200,17 +21,15 @@
                   "value": true
                 },
                 {
-                  "none_of": [
-                    {
-                      "subject": "self",
-                      "test": "has_mob_effect",
-                      "value": "water_breathing"
-                    }
-                  ]
+                  "none_of": {
+                    "subject": "self",
+                    "test": "has_mob_effect",
+                    "value": "water_breathing"
+                  }
                 }
               ]
             },
-            "id": 19 // Water breathing
+            "id": 19
           },
           {
             "chance": 0.15,
@@ -227,26 +46,19 @@
                       "subject": "self",
                       "test": "on_hot_block",
                       "value": true
-                    },
-                    {
-                      "subject": "self",
-                      "test": "taking_fire_damage",
-                      "value": true
                     }
                   ]
                 },
                 {
-                  "none_of": [
-                    {
-                      "subject": "self",
-                      "test": "has_mob_effect",
-                      "value": "fire_resistance"
-                    }
-                  ]
+                  "none_of": {
+                    "subject": "self",
+                    "test": "has_mob_effect",
+                    "value": "fire_resistance"
+                  }
                 }
               ]
             },
-            "id": 12 // Fire resistance
+            "id": 12
           },
           {
             "chance": 0.05,
@@ -259,7 +71,7 @@
                 }
               ]
             },
-            "id": 21 // Healing
+            "id": 21
           },
           {
             "chance": 0.25,
@@ -271,23 +83,21 @@
                   "value": true
                 },
                 {
-                  "none_of": [
-                    {
-                      "subject": "self",
-                      "test": "has_mob_effect",
-                      "value": "speed"
-                    }
-                  ]
-                },
-                {
                   "operator": ">=",
                   "test": "target_distance",
                   "subject": "self",
                   "value": 11
+                },
+                {
+                  "none_of": {
+                    "subject": "self",
+                    "test": "has_mob_effect",
+                    "value": "speed"
+                  }
                 }
               ]
             },
-            "id": 14 // Swiftness
+            "id": 14
           }
         ],
         "priority": 1,
@@ -304,64 +114,42 @@
           "min": 1,
           "max": 2
         },
-        "look_distance": 16,
         "priority": 5
       },
-      "minecraft:behavior.nearest_prioritized_attackable_target": {
+      "minecraft:behavior.nearest_attackable_target": {
+        "set_persistent": true,
+        "must_reach": true,
         "entity_types": [
           {
             "filters": {
-              "any_of": [
+              "AND": [
                 {
-                  "subject": "other",
-                  "test": "is_family",
-                  "value": "player"
-                },
-                {
-                  "subject": "other",
-                  "test": "is_family",
-                  "value": "snowgolem"
-                },
-                {
-                  "subject": "other",
-                  "test": "is_family",
-                  "value": "irongolem"
-                }
-              ]
-            },
-            "max_dist": 10,
-            "priority": 1
-          },
-          {
-            "cooldown": 10,
-            "filters": {
-              "all_of": [
-                {
-                  "subject": "other",
-                  "test": "is_raider",
-                  "value": true
-                },
-                {
-                  "subject": "self",
-                  "test": "is_raider",
-                  "value": true
-                },
-                {
-                  "none_of": [
+                  "OR": [
                     {
-                      "subject": "other",
                       "test": "is_family",
-                      "value": "witch"
+                      "subject": 1,
+                      "operator": 0,
+                      "value": "player"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": 1,
+                      "operator": 0,
+                      "value": "snowgolem"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": 1,
+                      "operator": 0,
+                      "value": "irongolem"
                     }
                   ]
                 }
               ]
             },
-            "max_dist": 10,
-            "priority": 2
+            "max_dist": 10
           }
         ],
-        "must_reach": true,
         "priority": 2
       },
       "minecraft:behavior.random_look_around": {
@@ -377,25 +165,63 @@
         "attack_interval_min": 3,
         "attack_radius": 10,
         "priority": 2,
+        "set_persistent": true,
         "speed_multiplier": 1
       },
       "minecraft:breathable": {
+        "breathes_lava": false,
         "suffocate_time": 0,
         "total_supply": 15
       },
       "minecraft:can_climb": {},
-      "minecraft:can_join_raid": {},
       "minecraft:collision_box": {
         "height": 1.9,
         "width": 0.6
       },
-      "minecraft:conditional_bandwidth_optimization": {},
-      "minecraft:damage_sensor": {},
       "minecraft:despawn": {
-        "despawn_from_distance": {}
+        "filters": [
+          {
+            "all_of": [
+              {
+                "test": "is_persistent",
+                "value": false
+              },
+              {
+                "operator": ">=",
+                "test": "light_level",
+                "value": 8
+              },
+              {
+                "test": "is_daytime",
+                "value": true
+              },
+              {
+                "subject": "self",
+                "test": "inactivity_timer",
+                "value": 600
+              },
+              {
+                "test": "random_chance",
+                "value": 50
+              },
+              {
+                "operator": ">",
+                "test": "distance_to_nearest_player",
+                "value": 54
+              },
+              {
+                "test": "surface_mob",
+                "value": true
+              }
+            ]
+          }
+        ]
       },
       "minecraft:experience_reward": {
-        "on_death": "query.last_hit_by_player ? (query.is_baby ? 12 : 5) + (Math.die_roll(query.equipment_count,1,3)) : 0"
+        "on_death": {
+          "expression": "query.last_hit_by_player ? (query.is_baby ? 12 : 5) + (Math.die_roll(query.equipment_count,1,3)) : 0",
+          "version": 0
+        }
       },
       "minecraft:follow_range": {
         "value": 64
@@ -418,7 +244,6 @@
           }
         ]
       },
-      "minecraft:is_hidden_when_invisible": {},
       "minecraft:jump.static": {},
       "minecraft:loot": {
         "table": "loot_tables/entities/witch.json"
@@ -439,48 +264,14 @@
         "is_pushable_by_piston": true
       },
       "minecraft:shooter": {
-        "aux_val": 23, // harming
+        "aux_val": 23,
         "def": "minecraft:splash_potion",
         "magic": true,
         "sound": "throw",
         "power": 0.75,
         "projectiles": [
           {
-            "aux_val": 21, // healing
-            "def": "minecraft:splash_potion",
-            "filters": {
-              "all_of": [
-                {
-                  "subject": "other",
-                  "test": "is_raider",
-                  "value": true
-                },
-                {
-                  "operator": "<=",
-                  "test": "actor_health",
-                  "subject": "other",
-                  "value": 4
-                }
-              ]
-            },
-            "lose_target": true
-          },
-          {
-            "aux_val": 28, // regeneration
-            "def": "minecraft:splash_potion",
-            "filters": {
-              "all_of": [
-                {
-                  "subject": "other",
-                  "test": "is_raider",
-                  "value": true
-                }
-              ]
-            },
-            "lose_target": true
-          },
-          {
-            "aux_val": 17, // slowness
+            "aux_val": 17,
             "def": "minecraft:splash_potion",
             "filters": {
               "all_of": [
@@ -491,19 +282,17 @@
                   "value": 8
                 },
                 {
-                  "none_of": [
-                    {
-                      "subject": "other",
-                      "test": "has_mob_effect",
-                      "value": "slowness"
-                    }
-                  ]
+                  "none_of": {
+                    "subject": "other",
+                    "test": "has_mob_effect",
+                    "value": "slowness"
+                  }
                 }
               ]
             }
           },
           {
-            "aux_val": 25, // poison
+            "aux_val": 25,
             "def": "minecraft:splash_potion",
             "filters": {
               "all_of": [
@@ -514,19 +303,17 @@
                   "value": 8
                 },
                 {
-                  "none_of": [
-                    {
-                      "subject": "other",
-                      "test": "has_mob_effect",
-                      "value": "poison"
-                    }
-                  ]
+                  "none_of": {
+                    "subject": "other",
+                    "test": "has_mob_effect",
+                    "value": "poison"
+                  }
                 }
               ]
             }
           },
           {
-            "aux_val": 34, // weakness
+            "aux_val": 34,
             "chance": 0.25,
             "def": "minecraft:splash_potion",
             "filters": {
@@ -538,13 +325,11 @@
                   "value": 3
                 },
                 {
-                  "none_of": [
-                    {
-                      "subject": "other",
-                      "test": "has_mob_effect",
-                      "value": "weakness"
-                    }
-                  ]
+                  "none_of": {
+                    "subject": "other",
+                    "test": "has_mob_effect",
+                    "value": "weakness"
+                  }
                 }
               ]
             }
@@ -593,38 +378,19 @@
         "minecraft:dweller": {
           "can_find_poi": false,
           "dwelling_type": "village",
-          "can_migrate": true,
+          "can_migrate": false,
           "dweller_role": "hostile",
           "first_founding_reward": 0,
           "update_interval_base": 60,
           "update_interval_variant": 40
         }
-      },
-      "minecraft:raid_persistence": {
-        "minecraft:persistent": {}
       }
     },
     "events": {
-      "minecraft:raid_expired": {
-        "sequence": [
-          {
-            "filters": {
-              "test": "has_nametag",
-              "value": false
-            },
-            "remove": {
-              "component_groups": [
-                "minecraft:raid_persistence"
-              ]
-            }
-          }
-        ]
-      },
       "minecraft:spawn_for_raid": {
         "add": {
           "component_groups": [
-            "minecraft:raid_configuration",
-            "minecraft:raid_persistence"
+            "minecraft:raid_configuration"
           ]
         }
       },
@@ -636,28 +402,12 @@
         }
       },
       "minecraft:start_celebrating": { // Event must be called exactly this for village to fire it when a raid is lost
-        "sequence": [
-          {
-            "add": {
-              "component_groups": [
-                "minecraft:celebrate"
-              ]
-            }
-          },
-          {
-            "filters": {
-              "test": "has_nametag",
-              "value": false
-            },
-            "remove": {
-              "component_groups": [
-                "minecraft:raid_persistence"
-              ]
-            }
-          }
-        ]
+        "add": {
+          "component_groups": [
+            "minecraft:celebrate"
+          ]
+        }
       }
     }
   }
 }
->>>>>>> 7844835b6baad4c0010f46901a4accf87413a022

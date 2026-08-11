@@ -367,7 +367,7 @@
       "blendSrc": "SourceAlpha",
       "blendDst": "OneMinusSrcAlpha"
     },
-      "entity_emissive_layer_alpha_test:entity_nocull": {
+    "entity_emissive_layer_alpha_test:entity_nocull": {
       "+defines": [ "USE_COLOR_MASK", "ALPHA_TEST" ],
       "depthFunc": "Equal"
     },
@@ -909,7 +909,7 @@
     },
     "banner_pole:banner": {
       "+defines": [ "ENABLE_FOG", "ENABLE_LIGHT", "DISABLE_TINTING" ],
-      "+states": []
+      "-states": [ "Blending" ]
     },
 
     "agent:entity": {},
@@ -1091,7 +1091,6 @@
       "vertexShader": "shaders/pattern.vertex",
       "fragmentShader": "shaders/pattern.fragment",
       "depthFunc": "LessEqual",
-      "+states": [ "Blending" ],
       "vertexFields": [
         { "field": "Position" },
         { "field": "Normal" },
@@ -1169,6 +1168,10 @@
     "copper_golem:entity": {},
     "copper_golem_eyes:entity_emissive_layer_alpha_test": {},
     "copper_golem_flower:entity_alphatest": {},
-    "nautilus:entity_alphatest": {}
+    "nautilus:entity_alphatest": {},
+    "sulfur_cube:entity_alphatest": {},
+    "sulfur_cube_outer:entity": {
+      "+states": [ "Blending" ]
+    }
   }
 }

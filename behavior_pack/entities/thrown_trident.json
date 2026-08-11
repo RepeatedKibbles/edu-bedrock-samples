@@ -1,73 +1,17 @@
-<<<<<<< HEAD
 {
-  "format_version": "1.12.0",
-	"minecraft:entity": {
-    "description": {
-      "identifier": "minecraft:thrown_trident",
-      "is_spawnable": false,
-      "is_summonable": false,
-      "is_experimental": false
-    },
-		  
-		"components": {
-			"minecraft:collision_box": {
-				"width": 0.25,
-				"height": 0.35
-			},
-			"minecraft:projectile": {
-				"on_hit": {
-					"impact_damage": {
-						"damage": 8,
-						"knockback": true,
-						"semi_random_diff_damage": false,
-						"destroy_on_hit": false
-					},
-					"stick_in_ground": {
-						"shake_time" : 0
-					}
-				},
-				"liquid_inertia": 0.99,
-				"hit_sound": "item.trident.hit",
-				"hit_ground_sound": "item.trident.hit_ground",
-				"power": 4,
-				"gravity": 0.10,
-				"uncertainty_base": 1,
-				"uncertainty_multiplier": 0,
-				"stop_on_hurt": true,
-				"anchor": 1,
-				"should_bounce": true,
-				"multiple_targets": false,
-				"offset": [ 0, -0.1, 0 ]
-			},
-			"minecraft:physics": {
-			},
-			"minecraft:pushable": {
-				"is_pushable": true,
-				"is_pushable_by_piston": true
-			}
-		}
-	}
-}
-=======
-{
-  "format_version": "1.26.40",
+  "format_version": "1.26.0",
   "minecraft:entity": {
     "description": {
       "identifier": "minecraft:thrown_trident",
+      "is_experimental": false,
       "is_summonable": false,
-      "is_spawnable": false
+      "is_spawnable": false,
+      "spawn_category": "misc"
     },
     "components": {
       "minecraft:collision_box": {
         "height": 0.35,
         "width": 0.25
-      },
-      "minecraft:conditional_bandwidth_optimization": {
-        "default_values": {
-          "max_dropped_ticks": 7,
-          "max_optimized_distance": 80.0,
-          "use_motion_prediction_hints": true
-        }
       },
       "minecraft:dimension_bound": {},
       "minecraft:physics": {},
@@ -90,18 +34,22 @@
             "shake_time": 0
           }
         },
-        "offset": [ 0, -0.1, 0 ],
+        "offset": [
+          0,
+          -0.1,
+          0
+        ],
         "power": 4,
-        "should_bounce": "if_no_damage_dealt",
+        "should_bounce": true,
         "stop_on_hurt": true,
         "uncertainty_base": 1,
         "uncertainty_multiplier": 0
       },
-      "minecraft:pushable_by_entity": {
-      },
-      "minecraft:pushable_by_block": {
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
       }
-    }
+    },
+    "events": null
   }
 }
->>>>>>> 7844835b6baad4c0010f46901a4accf87413a022

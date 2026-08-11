@@ -320,7 +320,7 @@
                                     ],
                                     "bindings": [
                                         {
-                                            "binding_name": "#members_list_enabled", // a hack: you cannot set "enabled":false directly on a ui control
+                                            "binding_name": "#members_clear_list_enabled",
                                             "binding_name_override": "#enabled"
                                         }
                                     ]
@@ -1359,6 +1359,12 @@
       {
         "binding_type": "collection_details",
         "binding_collection_name": "$collection_binding_name"
+      },
+      {
+        "binding_type": "collection",
+        "binding_collection_name": "$collection_binding_name",
+        "binding_name": "#is_not_owner",
+        "binding_name_override": "#visible"
       },
       {
         "binding_name": "#members_list_enabled", // a hack: you cannot set "enabled":false directly on a ui control

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 {
   "format_version": "1.12",
   "minecraft:recipe_furnace": {
@@ -13,27 +12,3 @@
   }
   
 }
-=======
-{
-  "format_version": "1.20.10",
-  "minecraft:recipe_furnace": {
-    "description": {
-      "identifier": "minecraft:furnace_potato"
-    },
-    "unlock": [
-      {
-        "item": "minecraft:potato"
-      }
-    ],
-    "tags": [
-      "furnace",
-      "smoker",
-      "campfire",
-      "soul_campfire"
-    ],
-    "input": "minecraft:potato",
-    "output": "minecraft:baked_potato",
-    "priority": 40
-  }
-}
->>>>>>> 7844835b6baad4c0010f46901a4accf87413a022

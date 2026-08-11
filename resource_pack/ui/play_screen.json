@@ -842,6 +842,7 @@
     "$world_header_text_binding_type|default": "none",
     "$world_details_text|default": "#player_gamertag",
     "$world_details_text_binding_type|default": "global",
+    "$world_details_text_binding_condition|default": "none",
     "controls": [
       {
         "realms_world_header_text@play.realms_list_text": {
@@ -855,6 +856,8 @@
       {
         "realms_world_details@play.realms_list_text": {
           "$text": "$world_details_text",
+          "$text_binding_condition": "$world_details_text_binding_condition",
+          "$text_binding_type": "$world_details_text_binding_type",
           "color": "$secondary_text_color",
           "anchor_from": "bottom_left",
           "anchor_to": "bottom_left",
@@ -3801,20 +3804,11 @@
   },
 
   "realms_plus_banner": {
+    "ignored": "$is_editor_mode_enabled",
     "type": "panel",
     "size": [ "100%c", "100% + 4px" ],
     "anchor_from": "left_middle",
     "anchor_to": "left_middle",
-    "controls": [
-      {
-        "realms_banner@realmsPlus.markdown_background": {
-          "size": [ "100%c", "100%" ],
-          "$triangle_offset": [ 0, 0 ],
-          "$banner_size": [ "100%c - 4px", "100% - 2px" ],
-          "layer": 9
-        }
-      }
-    ],
     "$banner_content": [
       {
         "realms_icon@common_store.realms_banner_icon": {}
@@ -3878,26 +3872,6 @@
                 "size": [ "100%", "50%" ],
                 "offset": [ -2, 1 ],
                 "controls": [
-                  {
-                    "realms_plus_icon@play.realms_plus_banner": {
-                      "size": [ "100%c", 12 ],
-                      "layer": 1,
-                      "bindings": [
-                        {
-                          "binding_type": "collection",
-                          "binding_collection_name": "local_worlds",
-                          "binding_name": "#realms_chevron_visible",
-                          "binding_name_override": "#visible"
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "pad": {
-                      "type": "panel",
-                      "size": [ 3, "100%" ]
-                    }
-                  },
                   {
                     "local_world_game_mode@play.local_world_game_mode": {
                       "size": [ "fill", 10 ],
@@ -5316,10 +5290,10 @@
                       "$pressed_button_name": "button.menu_realm_world_trial",
                       "$button_content": "play.realms_trial_content_panel",
                       "$button_content_text": "#realms_trial_text",
-                      "$world_details_text": "playscreen.realmsTrialWorld",
+                      "$world_details_text": "#realms_trial_details_text",
                       "$text_binding_condition": "once",
                       "$world_header_text_binding_type": "global",
-                      "$world_details_text_binding_type": "none",
+                      "$world_details_text_binding_type": "global",
                       "$focus_id": "realms_trial_button",
                       "bindings": [
                         {

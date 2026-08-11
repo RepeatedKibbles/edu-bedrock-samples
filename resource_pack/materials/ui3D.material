@@ -148,8 +148,8 @@
       "+states": [ "DisableCulling" ]
     },
     "selection_overlay_opaque:selection_overlay": {
-    "vertexShader": "shaders/selection_box.vertex",
-    "vrGeometryShader": "shaders/position.geometry",
+      "vertexShader": "shaders/selection_box.vertex",
+      "vrGeometryShader": "shaders/position.geometry",
       "fragmentShader": "shaders/current_color.fragment",
       "msaaSupport": "Both"
 
@@ -244,8 +244,18 @@
       "msaaSupport": "Both"
 
     },
+    "name_tag_with_backface:name_tag": {
+      "+states": [
+        "DisableCulling"
+      ]
+    },
     "name_tag_depth_tested:name_tag": {
       "depthFunc": "LessEqual"
+    },
+    "name_tag_depth_tested_with_backface:name_tag_depth_tested": {
+      "+states": [
+        "DisableCulling"
+      ]
     },
     "name_tag_alpha_tested:name_tag": {
       "+defines": [ "ALPHA_TEST" ],
@@ -322,7 +332,17 @@
       "depthFunc": "Always",
       "msaaSupport": "Both"
     },
+    "name_tag_text_with_backface:name_tag_text": {
+      "+states": [
+        "DisableCulling"
+      ]
+    },
     "name_text_depth_tested:sign_text": {},
+    "name_text_depth_tested_with_backface:name_text_depth_tested": {
+      "+states": [
+        "DisableCulling"
+      ]
+    },
     "precipitation": {
       "+defines": [ "COMFORT_MODE" ],
       "+states": [

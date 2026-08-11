@@ -188,7 +188,8 @@
       },
       {
         "debug_button@world_section.debug_button": {
-          "ignored": "$is_publish"
+          "ignored": "$is_publish",
+          "$toggle_group_forced_index": "$dev_options_forced_index"
         }
       }
     ]
@@ -925,12 +926,12 @@
         }
       },
       {
-        "locator_bar_toggle@settings_common.option_toggle": {
+        "player_waypoints_toggle@settings_common.option_toggle": {
           "$tts_section_header": "createWorldScreen.worldSettings",
-          "$option_label": "createWorldScreen.locatorBar",
-          "$option_binding_name": "#locator_bar",
-          "$option_enabled_binding_name": "#locator_bar_enabled",
-          "$toggle_name": "locator_bar",
+          "$option_label": "createWorldScreen.playerWaypoints",
+          "$option_enabled_binding_name": "#player_waypoints_enabled",
+          "$option_binding_name": "#player_waypoints",
+          "$toggle_name": "player_waypoints",
           "$focus_override_right": "FOCUS_OVERRIDE_STOP",
           "$toggle_binding_condition": "always_when_visible"
         }
@@ -3218,7 +3219,9 @@
           "size": [ "100%", 30 ],
           "controls": [
             {
-              "export_as_world@world_section.export_world_button": {}
+              "export_as_world@world_section.export_world_button": {
+                "enabled": false
+              }
             },
             {
               "padding": {
@@ -3234,6 +3237,14 @@
               }
             }
           ]
+        }
+      },
+      {
+        "export_world_disabled_hint": {
+          "type": "label",
+          "size": [ "100%", "default" ],
+          "text": "gui.editor.exportWorldDisabledHint",
+          "color": "$option_description_text_color"
         }
       },
       {
